@@ -1,0 +1,484 @@
+{
+  "h1Text": "Contributo Unificato 2026",
+  "h1Visible": true,
+  "h1Rect": {
+    "top": 172,
+    "bottom": 247,
+    "left": 112,
+    "right": 880
+  },
+  "ctaButtons": [
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Calcolatore",
+      "href": null,
+      "visibleAboveFold": true,
+      "rect": {
+        "top": 572.75,
+        "bottom": 608.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Cos'\u00e8 il CU",
+      "href": null,
+      "visibleAboveFold": true,
+      "rect": {
+        "top": 608.75,
+        "bottom": 644.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Processo Civile",
+      "href": null,
+      "visibleAboveFold": true,
+      "rect": {
+        "top": 644.75,
+        "bottom": 680.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Riduzione 50%",
+      "href": null,
+      "visibleAboveFold": true,
+      "rect": {
+        "top": 680.75,
+        "bottom": 716.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Aumenti",
+      "href": null,
+      "visibleAboveFold": true,
+      "rect": {
+        "top": 716.75,
+        "bottom": 752.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Processo Tributario",
+      "href": null,
+      "visibleAboveFold": true,
+      "rect": {
+        "top": 752.75,
+        "bottom": 788.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Processo Amm.vo",
+      "href": null,
+      "visibleAboveFold": true,
+      "rect": {
+        "top": 788.75,
+        "bottom": 824.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Proc. Esecutivi",
+      "href": null,
+      "visibleAboveFold": true,
+      "rect": {
+        "top": 824.75,
+        "bottom": 860.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Famiglia",
+      "href": null,
+      "visibleAboveFold": true,
+      "rect": {
+        "top": 860.75,
+        "bottom": 896.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Contributo Fisso",
+      "href": null,
+      "visibleAboveFold": true,
+      "rect": {
+        "top": 896.75,
+        "bottom": 932.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Esenzioni",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 932.75,
+        "bottom": 968.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Sanzioni",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 968.75,
+        "bottom": 1004.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Pagamento",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 1004.75,
+        "bottom": 1040.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Rimborso",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 1040.75,
+        "bottom": 1076.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Novit\u00e0 2025",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 1076.75,
+        "bottom": 1112.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "FAQ",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 1112.75,
+        "bottom": 1148.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Normativa",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 1148.75,
+        "bottom": 1184.75,
+        "left": 113,
+        "right": 335,
+        "width": 222,
+        "height": 36
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Calcolatore",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ],
+  "hasHorizontalScroll": false,
+  "scrollWidth": 1440,
+  "clientWidth": 1440,
+  "baseFontSize": "16px",
+  "smallTexts": [
+    {
+      "tag": "SPAN",
+      "text": "Aggiornato al 2026",
+      "fontSize": "12px"
+    },
+    {
+      "tag": "P",
+      "text": "INDICE",
+      "fontSize": "12px"
+    },
+    {
+      "tag": "P",
+      "text": "Indice",
+      "fontSize": "12px"
+    },
+    {
+      "tag": "P",
+      "text": "Procedimenti per ingiunzione, convalida ",
+      "fontSize": "12px"
+    },
+    {
+      "tag": "A",
+      "text": "Consulta il testo su Normattiva",
+      "fontSize": "12px"
+    },
+    {
+      "tag": "TH",
+      "text": "SCAGLIONE DI VALORE",
+      "fontSize": "13.6px"
+    },
+    {
+      "tag": "TH",
+      "text": "I GRADO",
+      "fontSize": "13.6px"
+    },
+    {
+      "tag": "TH",
+      "text": "IMPUGNAZIONE (+50%)",
+      "fontSize": "13.6px"
+    },
+    {
+      "tag": "TH",
+      "text": "CASSAZIONE (X2)",
+      "fontSize": "13.6px"
+    },
+    {
+      "tag": "P",
+      "text": "In caso di mancata dichiarazione di valo",
+      "fontSize": "12px"
+    }
+  ],
+  "images": [
+    {
+      "src": "https://d2xsxph8kpxj0f.cloudfront.net/310419663028236822/PYXMaFM79E4yk2cWCNDAbj/section-civile-gpVEd",
+      "alt": "Processo Civile",
+      "naturalWidth": 1920,
+      "naturalHeight": 1072,
+      "displayWidth": 896,
+      "displayHeight": 160,
+      "loaded": true
+    },
+    {
+      "src": "https://d2xsxph8kpxj0f.cloudfront.net/310419663028236822/PYXMaFM79E4yk2cWCNDAbj/section-tributario-m",
+      "alt": "Processo Tributario",
+      "naturalWidth": 1920,
+      "naturalHeight": 1072,
+      "displayWidth": 896,
+      "displayHeight": 160,
+      "loaded": true
+    },
+    {
+      "src": "https://d2xsxph8kpxj0f.cloudfront.net/310419663028236822/PYXMaFM79E4yk2cWCNDAbj/section-amministrati",
+      "alt": "Processo Amministrativo",
+      "naturalWidth": 1920,
+      "naturalHeight": 1072,
+      "displayWidth": 896,
+      "displayHeight": 160,
+      "loaded": true
+    }
+  ],
+  "smallTouchTargets": [
+    {
+      "tag": "BUTTON",
+      "text": "Calcolatore",
+      "width": 222,
+      "height": 36
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Cos'\u00e8 il CU",
+      "width": 222,
+      "height": 36
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Processo Civile",
+      "width": 222,
+      "height": 36
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Riduzione 50%",
+      "width": 222,
+      "height": 36
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Aumenti",
+      "width": 222,
+      "height": 36
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Processo Tributario",
+      "width": 222,
+      "height": 36
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Processo Amm.vo",
+      "width": 222,
+      "height": 36
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Proc. Esecutivi",
+      "width": 222,
+      "height": 36
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Famiglia",
+      "width": 222,
+      "height": 36
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Contributo Fisso",
+      "width": 222,
+      "height": 36
+    }
+  ],
+  "hasNav": true,
+  "navVisible": true,
+  "hasDrawerButton": false,
+  "fixedElements": [
+    {
+      "tag": "BUTTON",
+      "classes": "lg:hidden fixed bottom-6 right-6 z-50 bg-[oklch(0.25_0.04_250)] text-white p-3 s",
+      "position": "fixed",
+      "rect": {
+        "top": 0,
+        "height": 0,
+        "width": 0
+      }
+    },
+    {
+      "tag": "NAV",
+      "classes": "\n          fixed z-40 bg-white border-r border-border\n          lg:sticky lg:top",
+      "position": "sticky",
+      "rect": {
+        "top": 514.75,
+        "height": 679,
+        "width": 224
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "classes": "lg:hidden fixed bottom-6 right-6 z-50 bg-[oklch(0.25_0.04_250)] text-white p-3 s",
+      "position": "fixed",
+      "rect": {
+        "top": 0,
+        "height": 0,
+        "width": 0
+      }
+    },
+    {
+      "tag": "NAV",
+      "classes": "\n          fixed z-40 bg-white border-r border-border\n          lg:sticky lg:top",
+      "position": "sticky",
+      "rect": {
+        "top": 0,
+        "height": 0,
+        "width": 0
+      }
+    }
+  ]
+}

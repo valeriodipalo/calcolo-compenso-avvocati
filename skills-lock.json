@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "gsc": {
+      "source": "spivx/agent-skills",
+      "sourceType": "github",
+      "computedHash": "e099570e7104b3f117c0acd8dea70219641b19600148d8e6a3da514cb7020feb"
+    }
+  }
+}

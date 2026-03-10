@@ -1,0 +1,484 @@
+{
+  "h1Text": "Contributo Unificato 2026",
+  "h1Visible": true,
+  "h1Rect": {
+    "top": 140,
+    "bottom": 230,
+    "left": 16,
+    "right": 359
+  },
+  "ctaButtons": [
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Calcolatore",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Cos'\u00e8 il CU",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Processo Civile",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Riduzione 50%",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Aumenti",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Processo Tributario",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Processo Amm.vo",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Proc. Esecutivi",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Famiglia",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Contributo Fisso",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Esenzioni",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Sanzioni",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Pagamento",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Rimborso",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Novit\u00e0 2025",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "FAQ",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Normativa",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "visibleAboveFold": true,
+      "rect": {
+        "top": 744,
+        "bottom": 788,
+        "left": 307,
+        "right": 351,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Calcolatore",
+      "href": null,
+      "visibleAboveFold": false,
+      "rect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ],
+  "hasHorizontalScroll": false,
+  "scrollWidth": 375,
+  "clientWidth": 375,
+  "baseFontSize": "16px",
+  "smallTexts": [
+    {
+      "tag": "SPAN",
+      "text": "Aggiornato al 2026",
+      "fontSize": "12px"
+    },
+    {
+      "tag": "P",
+      "text": "Indice",
+      "fontSize": "12px"
+    },
+    {
+      "tag": "P",
+      "text": "Indice",
+      "fontSize": "12px"
+    },
+    {
+      "tag": "P",
+      "text": "Procedimenti per ingiunzione, convalida ",
+      "fontSize": "12px"
+    },
+    {
+      "tag": "A",
+      "text": "Consulta il testo su Normattiva",
+      "fontSize": "12px"
+    },
+    {
+      "tag": "TH",
+      "text": "SCAGLIONE DI VALORE",
+      "fontSize": "13.6px"
+    },
+    {
+      "tag": "TH",
+      "text": "I GRADO",
+      "fontSize": "13.6px"
+    },
+    {
+      "tag": "TH",
+      "text": "IMPUGNAZIONE (+50%)",
+      "fontSize": "13.6px"
+    },
+    {
+      "tag": "TH",
+      "text": "CASSAZIONE (X2)",
+      "fontSize": "13.6px"
+    },
+    {
+      "tag": "P",
+      "text": "In caso di mancata dichiarazione di valo",
+      "fontSize": "12px"
+    }
+  ],
+  "images": [
+    {
+      "src": "https://d2xsxph8kpxj0f.cloudfront.net/310419663028236822/PYXMaFM79E4yk2cWCNDAbj/section-civile-gpVEd",
+      "alt": "Processo Civile",
+      "naturalWidth": 1920,
+      "naturalHeight": 1072,
+      "displayWidth": 311,
+      "displayHeight": 128,
+      "loaded": true
+    },
+    {
+      "src": "https://d2xsxph8kpxj0f.cloudfront.net/310419663028236822/PYXMaFM79E4yk2cWCNDAbj/section-tributario-m",
+      "alt": "Processo Tributario",
+      "naturalWidth": 1920,
+      "naturalHeight": 1072,
+      "displayWidth": 311,
+      "displayHeight": 128,
+      "loaded": true
+    },
+    {
+      "src": "https://d2xsxph8kpxj0f.cloudfront.net/310419663028236822/PYXMaFM79E4yk2cWCNDAbj/section-amministrati",
+      "alt": "Processo Amministrativo",
+      "naturalWidth": 1920,
+      "naturalHeight": 1072,
+      "displayWidth": 311,
+      "displayHeight": 128,
+      "loaded": true
+    }
+  ],
+  "smallTouchTargets": [
+    {
+      "tag": "INPUT",
+      "text": "",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "width": 13,
+      "height": 16
+    },
+    {
+      "tag": "A",
+      "text": "D.P.R. 30 maggio 2002, n. 115",
+      "width": 208.5625,
+      "height": 26
+    },
+    {
+      "tag": "A",
+      "text": "Consulta il testo su Normattiva",
+      "width": 239.203125,
+      "height": 16
+    },
+    {
+      "tag": "A",
+      "text": "art. 30 DPR 115/2002",
+      "width": 153.9375,
+      "height": 26
+    },
+    {
+      "tag": "A",
+      "text": "art. 13, c. 1-bis",
+      "width": 112.34375,
+      "height": 26
+    },
+    {
+      "tag": "A",
+      "text": "Riforma Cartabia",
+      "width": 114.953125,
+      "height": 20
+    },
+    {
+      "tag": "A",
+      "text": "Circ. Min. Giustizia 17/3/2023",
+      "width": 240.8125,
+      "height": 40
+    }
+  ],
+  "hasNav": true,
+  "navVisible": false,
+  "hasDrawerButton": false,
+  "fixedElements": [
+    {
+      "tag": "BUTTON",
+      "classes": "lg:hidden fixed bottom-6 right-6 z-50 bg-[oklch(0.25_0.04_250)] text-white p-3 s",
+      "position": "fixed",
+      "rect": {
+        "top": 0,
+        "height": 0,
+        "width": 0
+      }
+    },
+    {
+      "tag": "NAV",
+      "classes": "\n          fixed z-40 bg-white border-r border-border\n          lg:sticky lg:top",
+      "position": "fixed",
+      "rect": {
+        "top": 0,
+        "height": 0,
+        "width": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "classes": "lg:hidden fixed bottom-6 right-6 z-50 bg-[oklch(0.25_0.04_250)] text-white p-3 s",
+      "position": "fixed",
+      "rect": {
+        "top": 744,
+        "height": 44,
+        "width": 44
+      }
+    },
+    {
+      "tag": "NAV",
+      "classes": "\n          fixed z-40 bg-white border-r border-border\n          lg:sticky lg:top",
+      "position": "fixed",
+      "rect": {
+        "top": 0,
+        "height": 0,
+        "width": 0
+      }
+    }
+  ]
+}

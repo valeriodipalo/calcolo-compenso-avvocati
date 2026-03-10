@@ -1,0 +1,53 @@
+{
+  "h1Text": "Strumenti Legali Gratuiti",
+  "h1Visible": true,
+  "h1Rect": {
+    "top": 124,
+    "bottom": 184,
+    "left": 112,
+    "right": 784
+  },
+  "ctaButtons": [
+    {
+      "tag": "A",
+      "text": "AGGIORNATO 2026\nContributo Unificato\n\nCalcolo rapido del con",
+      "href": "http://localhost:3099/contributo-unificato",
+      "visibleAboveFold": true,
+      "rect": {
+        "top": 370.5,
+        "bottom": 616.75,
+        "left": 112,
+        "right": 548,
+        "width": 436,
+        "height": 246.25
+      }
+    }
+  ],
+  "hasHorizontalScroll": false,
+  "scrollWidth": 1440,
+  "clientWidth": 1440,
+  "baseFontSize": "16px",
+  "smallTexts": [
+    {
+      "tag": "SPAN",
+      "text": "AGGIORNATO 2026",
+      "fontSize": "10px"
+    },
+    {
+      "tag": "SPAN",
+      "text": "PROSSIMAMENTE",
+      "fontSize": "10px"
+    },
+    {
+      "tag": "P",
+      "text": "Tutti gli strumenti hanno carattere mera",
+      "fontSize": "12px"
+    }
+  ],
+  "images": [],
+  "smallTouchTargets": [],
+  "hasNav": false,
+  "navVisible": false,
+  "hasDrawerButton": false,
+  "fixedElements": []
+}
