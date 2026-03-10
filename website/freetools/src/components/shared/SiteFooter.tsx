@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { Scale, Calculator, ExternalLink } from "lucide-react";
+import { Scale, Calculator, TrendingUp, ExternalLink } from "lucide-react";
 
 const tools = [
   { href: "/contributo-unificato", label: "Contributo Unificato", icon: Scale },
+  { href: "/calcolo-interessi-legali", label: "Interessi Legali", icon: TrendingUp },
   { href: "/calcolo-compenso", label: "Calcolo Compenso", icon: Calculator, disabled: true },
 ];
 

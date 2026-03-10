@@ -234,8 +234,8 @@ export default function ContributoUnificatoPage() {
         rows={scaglioniCivile.map((s) => [s.label, formatEur(s.importo / 2)])}
         className="mb-4"
       />
-      <div className="space-y-2 mb-4">
-        {[
+      <div className="mb-4">
+        <BulletList items={[
           "Procedimenti per ingiunzione (decreto ingiuntivo)",
           "Procedimenti per convalida di sfratto",
           "Procedimenti cautelari o possessori",
@@ -245,18 +245,12 @@ export default function ContributoUnificatoPage() {
           "Finita locazione (valore = ammontare canone annuo)",
           "Controversie individuali di lavoro (reddito > € 40.978,92)",
           "Opposizione alla sentenza dichiarativa di fallimento/liquidazione giudiziale",
-        ].map((item, i) => (
-          <div key={i} className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[oklch(0.75_0.10_85)] mt-2 shrink-0" style={{ borderRadius: "50%" }} />
-            <p className="text-sm">{item}</p>
-          </div>
-        ))}
+        ]} />
       </div>
-      <div className="bg-[oklch(0.97_0.01_25)] border-l-3 border-[oklch(0.55_0.20_25)] p-4 text-sm" style={{ borderRadius: "0 0.375rem 0.375rem 0" }}>
-        <p className="font-semibold text-[oklch(0.40_0.15_25)] mb-1">Attenzione</p>
+      <AlertBox variant="warning" title="Attenzione">
         <p>Il <strong>procedimento semplificato di cognizione</strong> (artt. 281-decies e segg. c.p.c., introdotto dalla <InlineNormLink text="Riforma Cartabia" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2022-10-10;149" />) <strong>non</strong> gode del dimezzamento del CU (<a href="https://i2.res.24o.it/pdf2010/Editrice/ILSOLE24ORE/QUOTIDIANI_VERTICALI/Online/_Oggetti_Embedded/Documenti/2023/04/13/Min-Giustizia-circolare-17-3-2023-contributo.pdf" target="_blank" rel="noopener noreferrer" className="text-[oklch(0.45_0.12_250)] underline decoration-dotted underline-offset-2 hover:text-[oklch(0.35_0.15_250)]">Circ. Min. Giustizia 17/3/2023</a>).</p>
         <p className="mt-2">La riduzione del 50% per l&apos;opposizione alla sentenza di fallimento <strong>non si applica</strong> al successivo giudizio di appello (Circ. Min. 29/9/2003).</p>
-      </div>
+      </AlertBox>
 
       {/* Aumenti */}
       <SectionTitle id="aumenti" icon={AlertTriangle} title="Aumenti del Contributo Unificato" subtitle="Art. 13, commi 1-bis, 1-ter, 3-bis, 6" />
@@ -352,10 +346,10 @@ export default function ContributoUnificatoPage() {
         ]}
         className="mb-4"
       />
-      <div className="bg-[oklch(0.97_0.005_85)] p-4 border border-border text-sm" style={{ borderRadius: "0.375rem" }}>
+      <AlertBox variant="info">
         <p><strong>Opposizione al pignoramento:</strong> le opposizioni proposte nell&apos;ambito di un&apos;esecuzione già iniziata non richiedono un ulteriore contributo unificato (Circ. Min. 38550/2015). L&apos;opposizione all&apos;esecuzione proposta prima dell&apos;inizio dell&apos;esecuzione richiede invece il CU secondo il valore della causa.</p>
         <p className="mt-2"><strong>Pubblicità sul Portale vendite pubbliche:</strong> <span className="font-mono">{formatEur(100)}</span> per ciascun lotto.</p>
-      </div>
+      </AlertBox>
 
       {/* Famiglia */}
       <SectionTitle id="famiglia" icon={Users} title="Procedimenti in Materia di Famiglia" subtitle="Art. 13, c. 1, lett. a) e b), e art. 10, DPR 115/2002" />
@@ -392,10 +386,10 @@ export default function ContributoUnificatoPage() {
         ]}
         className="mb-4"
       />
-      <div className="bg-[oklch(0.97_0.005_85)] p-4 border border-border text-sm" style={{ borderRadius: "0.375rem" }}>
+      <AlertBox variant="info">
         <p><strong>Competenza per valore:</strong> il Giudice di Pace è competente per le cause mobiliari di valore fino a <strong className="font-mono">€ 5.000,00</strong> e fino a <strong className="font-mono">€ 20.000,00</strong> per le cause di risarcimento danni da circolazione stradale (art. 7 c.p.c.).</p>
         <p className="mt-2"><strong>Anticipazione forfettaria:</strong> anche per le cause davanti al Giudice di Pace è dovuta la marca da <strong className="font-mono">€ 27,00</strong> (tranne nei casi di esenzione).</p>
-      </div>
+      </AlertBox>
 
       {/* Procedimenti con Contributo Fisso */}
       <SectionTitle id="fissi" icon={FileText} title="Procedimenti con Contributo Fisso" subtitle="Riepilogo completo" />
@@ -417,24 +411,21 @@ export default function ContributoUnificatoPage() {
       {/* Sanzioni */}
       <SectionTitle id="sanzioni" icon={AlertTriangle} title="Sanzioni e Conseguenze" subtitle="Artt. 14, 16, 248, DPR 115/2002" />
       <div className="space-y-4">
-        <div className="bg-[oklch(0.97_0.01_25)] border border-[oklch(0.85_0.08_25)] p-5" style={{ borderRadius: "0.375rem" }}>
-          <h4 className="font-sans font-semibold text-[oklch(0.40_0.15_25)] mb-2">Omesso o insufficiente pagamento</h4>
-          <p className="text-sm leading-relaxed">
+        <AlertBox variant="warning" title="Omesso o insufficiente pagamento">
+          <p className="leading-relaxed">
             Dal 2025 (<InlineNormLink text="L. 207/2024" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024;207~art1!vig=" />), la causa civile <strong>non può essere iscritta a ruolo</strong> se non è versato almeno l&apos;importo minimo di € 43,00 (o il minor contributo dovuto). In caso di versamento parziale, si procede all&apos;immediata iscrizione a ruolo del debito con interessi al saggio legale e irrogazione di sanzione, <strong>senza previo invito al pagamento</strong> (<InlineNormLink text="art. 248, c. 3-bis, DPR 115/2002" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2002-05-30;115" />).
           </p>
-        </div>
-        <div className="bg-[oklch(0.97_0.005_85)] border border-border p-5" style={{ borderRadius: "0.375rem" }}>
-          <h4 className="font-sans font-semibold mb-2">Impugnazione respinta (c.d. &quot;doppio contributo&quot;)</h4>
-          <p className="text-sm leading-relaxed">
+        </AlertBox>
+        <AlertBox variant="info" title="Impugnazione respinta (c.d. &quot;doppio contributo&quot;)">
+          <p className="leading-relaxed">
             Quando l&apos;impugnazione è respinta integralmente, dichiarata inammissibile o improcedibile, la parte è tenuta a versare un <strong>ulteriore importo</strong> pari al CU dovuto per l&apos;impugnazione stessa (art. 13, c. 1-quater). Il giudice ne dà atto nel provvedimento. La Cassazione (SS.UU. 20621/2023) ha chiarito che ha natura di <strong>tributo giudiziario</strong>, non di sanzione.
           </p>
-        </div>
-        <div className="bg-[oklch(0.97_0.005_85)] border border-border p-5" style={{ borderRadius: "0.375rem" }}>
-          <h4 className="font-sans font-semibold mb-2">Omessa dichiarazione di valore</h4>
-          <p className="text-sm leading-relaxed">
+        </AlertBox>
+        <AlertBox variant="info" title="Omessa dichiarazione di valore">
+          <p className="leading-relaxed">
             La mancata dichiarazione di valore comporta il pagamento del CU nella <strong>misura massima</strong>, pari a € 1.686,00 (scaglione oltre € 520.000) per il primo grado (art. 13, c. 6).
           </p>
-        </div>
+        </AlertBox>
       </div>
 
       {/* Pagamento */}
@@ -442,20 +433,15 @@ export default function ContributoUnificatoPage() {
       <p className="text-base leading-relaxed mb-4">
         Dal 1° giugno 2023, il pagamento del contributo unificato deve avvenire esclusivamente tramite la piattaforma telematica <strong>PagoPA</strong> (<InlineNormLink text="art. 192 DPR 115/2002" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2002-05-30;115" />). Il pagamento non effettuato tramite PagoPA non libera la parte dagli obblighi. Vedi anche la <a href="https://www.giustizia.it/giustizia/it/mg_1_8_1.page?contentId=SDC464940" target="_blank" rel="noopener noreferrer" className="text-[oklch(0.45_0.12_250)] underline decoration-dotted underline-offset-2 hover:text-[oklch(0.35_0.15_250)]">Circolare Min. Giustizia 19/3/2024</a> per ulteriori chiarimenti.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-        {[
+      <div className="mb-4">
+        <FeatureGrid items={[
           { title: "Sportello fisico", desc: "Pagamento con contante presso sportelli abilitati" },
           { title: "ATM", desc: "Tramite sportelli automatici bancari" },
           { title: "Home-banking", desc: "Applicazioni di internet banking" },
           { title: "App IO", desc: "Tramite l'applicazione IO della PA" },
           { title: "PagoPA.gov.it", desc: "Servizio \"paga\" sul portale ufficiale" },
           { title: "Bonifico (emergenza)", desc: "Solo se PagoPA non funziona (art. 192, c. 1-sexies)" },
-        ].map((m, i) => (
-          <div key={i} className="bg-white border border-border p-4" style={{ borderRadius: "0.375rem" }}>
-            <p className="font-semibold text-sm">{m.title}</p>
-            <p className="text-xs text-muted-foreground mt-1">{m.desc}</p>
-          </div>
-        ))}
+        ]} />
       </div>
       <p className="text-sm text-muted-foreground">
         L&apos;avvocato deve allegare la ricevuta di pagamento in sede di deposito dell&apos;atto. La verifica spetta al funzionario che riceve l&apos;atto (art. 15 DPR 115/2002).
@@ -466,18 +452,13 @@ export default function ContributoUnificatoPage() {
       <p className="text-base leading-relaxed mb-4">
         È possibile richiedere il rimborso del CU versato in misura superiore al dovuto o per un procedimento esente. L&apos;istanza deve essere presentata entro <strong>2 anni</strong> dal versamento, presso l&apos;ufficio giudiziario competente. Il rimborso è erogato dall&apos;Agenzia delle Entrate.
       </p>
-      <div className="space-y-2 mb-4">
-        {[
+      <div className="mb-4">
+        <BulletList items={[
           "Versamento eccedente lo scaglione di riferimento",
           "Duplicazione di versamenti",
           "Versamento per procedimento esente",
           "Versamento senza successiva iscrizione a ruolo",
-        ].map((item, i) => (
-          <div key={i} className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[oklch(0.75_0.10_85)] mt-2 shrink-0" style={{ borderRadius: "50%" }} />
-            <p className="text-sm">{item}</p>
-          </div>
-        ))}
+        ]} />
       </div>
       <p className="text-sm text-muted-foreground">
         Il diritto alla riscossione del CU è soggetto a <strong>prescrizione decennale</strong> ordinaria (art. 2946 c.c.). L&apos;invito al pagamento interrompe la prescrizione.
@@ -486,24 +467,21 @@ export default function ContributoUnificatoPage() {
       {/* Novità 2025 */}
       <SectionTitle id="novita-2025" icon={Sparkles} title="Novità della Legge di Bilancio 2025" subtitle="L. 207/2024" />
       <div className="space-y-4">
-        <div className="bg-[oklch(0.97_0.005_155)] border border-[oklch(0.80_0.08_155)] p-5" style={{ borderRadius: "0.375rem" }}>
-          <h4 className="font-sans font-semibold text-[oklch(0.35_0.10_155)] mb-2">1. Obbligo di versamento minimo per l&apos;iscrizione a ruolo</h4>
-          <p className="text-sm leading-relaxed">
+        <AlertBox variant="success" title="1. Obbligo di versamento minimo per l'iscrizione a ruolo">
+          <p className="leading-relaxed">
             Il nuovo art. 14, c. 3.1, DPR 115/2002 stabilisce che, nei procedimenti civili, la causa <strong>non può essere iscritta a ruolo</strong> se non è versato almeno l&apos;importo di <strong className="font-mono">€ 43,00</strong> (o il minor contributo dovuto per legge), fatti salvi i casi di esenzione.
           </p>
-        </div>
-        <div className="bg-[oklch(0.97_0.005_155)] border border-[oklch(0.80_0.08_155)] p-5" style={{ borderRadius: "0.375rem" }}>
-          <h4 className="font-sans font-semibold text-[oklch(0.35_0.10_155)] mb-2">2. Recupero immediato senza invito</h4>
-          <p className="text-sm leading-relaxed">
+        </AlertBox>
+        <AlertBox variant="success" title="2. Recupero immediato senza invito">
+          <p className="leading-relaxed">
             Il nuovo art. 248, c. 3-bis, prevede che in caso di parziale omissione del pagamento, si proceda all&apos;<strong>immediata iscrizione a ruolo del debito</strong> con interessi e sanzioni, senza il previo invito al pagamento da parte della cancelleria.
           </p>
-        </div>
-        <div className="bg-[oklch(0.97_0.005_155)] border border-[oklch(0.80_0.08_155)] p-5" style={{ borderRadius: "0.375rem" }}>
-          <h4 className="font-sans font-semibold text-[oklch(0.35_0.10_155)] mb-2">3. Gratuito patrocinio e iscrizione a ruolo</h4>
-          <p className="text-sm leading-relaxed">
+        </AlertBox>
+        <AlertBox variant="success" title="3. Gratuito patrocinio e iscrizione a ruolo">
+          <p className="leading-relaxed">
             La <a href="https://www.giustizia.it/giustizia/it/mg_1_8_1.page?contentId=SDC1454004" target="_blank" rel="noopener noreferrer" className="text-[oklch(0.45_0.12_250)] underline decoration-dotted underline-offset-2 hover:text-[oklch(0.35_0.15_250)]">Circ. Min. Giustizia 24/4/2025</a> ha chiarito che l&apos;ufficio giudiziario deve procedere all&apos;iscrizione a ruolo anche in presenza della <strong>sola istanza di ammissione al patrocinio</strong> purché regolarmente depositata e protocollata, a tutela del diritto di accesso alla difesa (art. 24 Cost.).
           </p>
-        </div>
+        </AlertBox>
       </div>
 
       {/* FAQ */}
@@ -512,58 +490,12 @@ export default function ContributoUnificatoPage() {
 
       {/* Normativa */}
       <SectionTitle id="normativa" icon={BookOpen} title="Normativa di Riferimento" />
-      <div className="overflow-x-auto">
-        <table className="table-legal">
-          <thead>
-            <tr>
-              <th>Norma</th>
-              <th>Descrizione</th>
-              <th className="w-10"></th>
-            </tr>
-          </thead>
-          <tbody>
-            {normativaRiferimento.map((n, i) => (
-              <tr key={i}>
-                <td className="font-semibold">{n.norma}</td>
-                <td>{n.descrizione}</td>
-                <td>
-                  <a href={n.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-[oklch(0.45_0.12_250)] hover:text-[oklch(0.35_0.15_250)] transition-colors" title="Consulta su Normattiva">
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <NormativaRefTable items={normativaRiferimento} />
 
       <h3 className="text-xl text-[oklch(0.25_0.04_250)] mt-8 mb-4 flex items-center gap-2">
         <Link2 className="w-5 h-5 text-[oklch(0.75_0.10_85)]" /> Circolari Ministeriali
       </h3>
-      <div className="overflow-x-auto">
-        <table className="table-legal">
-          <thead>
-            <tr>
-              <th>Circolare</th>
-              <th>Oggetto</th>
-              <th className="w-10"></th>
-            </tr>
-          </thead>
-          <tbody>
-            {circolariMinisteriali.map((c, i) => (
-              <tr key={i}>
-                <td className="font-semibold whitespace-nowrap">{c.circolare}</td>
-                <td>{c.descrizione}</td>
-                <td>
-                  <a href={c.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-[oklch(0.45_0.12_250)] hover:text-[oklch(0.35_0.15_250)] transition-colors" title="Consulta la circolare">
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <CircolariTable items={circolariMinisteriali} />
     </ToolLayout>
   );
 }

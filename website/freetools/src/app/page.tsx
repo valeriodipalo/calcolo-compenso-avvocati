@@ -1,4 +1,4 @@
-import { Scale, Calculator, ArrowRight } from "lucide-react";
+import { Scale, Calculator, TrendingUp, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { JsonLd, webPageSchema } from "@/lib/schema";
 
@@ -9,6 +9,15 @@ const tools = [
     description:
       "Calcolo rapido del contributo unificato in base al valore della causa, al tipo di procedimento e al grado di giudizio. Tabelle, esenzioni e normativa aggiornata.",
     icon: Scale,
+    badge: "Aggiornato 2026",
+    ready: true,
+  },
+  {
+    slug: "calcolo-interessi-legali",
+    title: "Calcolo Interessi Legali",
+    description:
+      "Calcola gli interessi legali al tasso 2026 (1,60%). Tabella storica completa dei tassi dal 1942, formula di calcolo, anatocismo e normativa.",
+    icon: TrendingUp,
     badge: "Aggiornato 2026",
     ready: true,
   },
