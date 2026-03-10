@@ -33,6 +33,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "article",
+    locale: "it_IT",
+    siteName: "Piattaforma Avvocati",
+    url: "/calcolo-interessi-legali",
     title: "Calcolo Interessi Legali 2026: Tasso, Tabella e Calcolatore",
     description:
       "Calcola gli interessi legali online con il calcolatore aggiornato al 2026. Tasso 1,60%, tabella storica completa, formula e guida Art. 1284 c.c.",

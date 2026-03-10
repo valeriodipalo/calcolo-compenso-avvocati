@@ -75,7 +75,7 @@ export const faqData: FAQItem[] = [
     categoria: "Legali vs moratori",
     domanda: "Qual è la differenza tra interessi legali e interessi moratori?",
     risposta:
-      "Gli interessi legali (art. 1284 c.c.) remunerano il creditore per il mancato godimento della somma e si applicano al tasso fissato dal MEF. Gli interessi moratori (D.Lgs. 231/2002) si applicano nelle transazioni commerciali e sono calcolati al tasso BCE + 8 punti percentuali (attualmente intorno al 12%). Gli interessi moratori hanno funzione sanzionatoria e sono significativamente più elevati.",
+      "Gli interessi legali (art. 1284 c.c.) remunerano il creditore per il mancato godimento della somma e si applicano al tasso fissato dal MEF. Gli interessi moratori (D.Lgs. 231/2002) si applicano nelle transazioni commerciali e sono calcolati al tasso BCE + 8 punti percentuali (circa 11,65% nel 2026). Gli interessi moratori hanno funzione sanzionatoria e sono significativamente più elevati.",
     fonti: [
       { label: "Art. 1284 cod. civ.", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art1284" },
       { label: "D.Lgs. 231/2002", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2002-10-09;231" },
