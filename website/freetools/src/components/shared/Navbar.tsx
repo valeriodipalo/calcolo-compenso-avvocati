@@ -18,9 +18,8 @@ const navLinks = [
   },
   {
     href: "/calcolo-compenso",
-    label: "Calcolo Compenso",
+    label: "Compenso Avvocato",
     icon: Calculator,
-    disabled: true,
   },
 ];
 
@@ -49,19 +48,6 @@ export function Navbar() {
           {navLinks.map((link) => {
             const Icon = link.icon;
             const isActive = pathname === link.href;
-
-            if (link.disabled) {
-              return (
-                <span
-                  key={link.href}
-                  className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-[oklch(0.50_0.03_250)] cursor-default"
-                  style={{ borderRadius: "0.375rem" }}
-                >
-                  <Icon className="w-3.5 h-3.5" />
-                  {link.label}
-                </span>
-              );
-            }
 
             return (
               <Link
@@ -98,20 +84,6 @@ export function Navbar() {
             {navLinks.map((link) => {
               const Icon = link.icon;
               const isActive = pathname === link.href;
-
-              if (link.disabled) {
-                return (
-                  <span
-                    key={link.href}
-                    className="flex items-center gap-2 px-3 py-2.5 text-sm text-[oklch(0.50_0.03_250)]"
-                    style={{ borderRadius: "0.375rem" }}
-                  >
-                    <Icon className="w-4 h-4" />
-                    {link.label}
-                    <span className="text-[10px] uppercase tracking-wider ml-auto opacity-60">Presto</span>
-                  </span>
-                );
-              }
 
               return (
                 <Link

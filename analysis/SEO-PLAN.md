@@ -43,6 +43,7 @@
 
 | Competitor | Keyword in comune | Posizione media | Note |
 |------------|-------------------|-----------------|------|
+| avvocatoandreani.it | 8,867 | 4.7 | Competitor di riferimento |
 | studiocataldi.it | 8,867 | 32.8 | Rank 3-9 su diversi tool, competitor diretto |
 | miolegale.it | ~5,000 | ~7.6 | Rank 3-11, mid-level competitor |
 | altalex.com | 12,744 | 27.3 | Rank 3 su contributo unificato |

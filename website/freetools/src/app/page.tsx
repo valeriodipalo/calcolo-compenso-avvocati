@@ -25,10 +25,10 @@ const tools = [
     slug: "calcolo-compenso",
     title: "Calcolo Compenso Avvocato",
     description:
-      "Calcolo del compenso professionale dell'avvocato secondo i parametri del DM 55/2014 aggiornati al DM 147/2022.",
+      "Simulatore per il calcolo della liquidazione giudiziale dei compensi forensi civili. 29 competenze, 17 scaglioni, aumenti, riduzioni, CPA, IVA e ritenuta.",
     icon: Calculator,
-    badge: "Prossimamente",
-    ready: false,
+    badge: "Aggiornato 2026",
+    ready: true,
   },
 ];
 

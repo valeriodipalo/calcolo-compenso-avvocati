@@ -4,7 +4,7 @@ import { Scale, Calculator, TrendingUp, ExternalLink } from "lucide-react";
 const tools = [
   { href: "/contributo-unificato", label: "Contributo Unificato", icon: Scale },
   { href: "/calcolo-interessi-legali", label: "Interessi Legali", icon: TrendingUp },
-  { href: "/calcolo-compenso", label: "Calcolo Compenso", icon: Calculator, disabled: true },
+  { href: "/calcolo-compenso", label: "Compenso Avvocato", icon: Calculator },
 ];
 
 const legalResources = [
@@ -41,17 +41,6 @@ export function SiteFooter() {
             <ul className="space-y-2">
               {tools.map((tool) => {
                 const Icon = tool.icon;
-                if (tool.disabled) {
-                  return (
-                    <li key={tool.href}>
-                      <span className="flex items-center gap-2 text-sm text-[oklch(0.45_0.03_250)]">
-                        <Icon className="w-3.5 h-3.5" />
-                        {tool.label}
-                        <span className="text-[10px] uppercase tracking-wider opacity-60">Presto</span>
-                      </span>
-                    </li>
-                  );
-                }
                 return (
                   <li key={tool.href}>
                     <Link
