@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { Scale, Calculator, TrendingUp, ExternalLink } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, ExternalLink } from "lucide-react";
 
 const tools = [
   { href: "/contributo-unificato", label: "Contributo Unificato", icon: Scale },
   { href: "/calcolo-interessi-legali", label: "Interessi Legali", icon: TrendingUp },
   { href: "/calcolo-compenso", label: "Compenso Avvocato", icon: Calculator },
+  { href: "/calcolo-danno-non-patrimoniale", label: "Danno Non Patrimoniale", icon: HeartPulse },
 ];
 
 const legalResources = [

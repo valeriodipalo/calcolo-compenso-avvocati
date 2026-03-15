@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, ArrowRight } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { JsonLd, webPageSchema } from "@/lib/schema";
 
@@ -27,6 +27,15 @@ const tools = [
     description:
       "Simulatore per il calcolo della liquidazione giudiziale dei compensi forensi civili. 29 competenze, 17 scaglioni, aumenti, riduzioni, CPA, IVA e ritenuta.",
     icon: Calculator,
+    badge: "Aggiornato 2026",
+    ready: true,
+  },
+  {
+    slug: "calcolo-danno-non-patrimoniale",
+    title: "Calcolo Danno Non Patrimoniale",
+    description:
+      "Calcola il risarcimento per danno biologico, morale e parentale con Tabelle Milano 2024, TUN 2025 e art. 139 CdA.",
+    icon: HeartPulse,
     badge: "Aggiornato 2026",
     ready: true,
   },

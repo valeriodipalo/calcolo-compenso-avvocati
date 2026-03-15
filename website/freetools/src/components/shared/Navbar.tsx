@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Scale, Calculator, TrendingUp, Menu, X } from "lucide-react";
+import { Scale, Calculator, TrendingUp, Menu, X, HeartPulse } from "lucide-react";
 
 const navLinks = [
   {
@@ -20,6 +20,11 @@ const navLinks = [
     href: "/calcolo-compenso",
     label: "Compenso Avvocato",
     icon: Calculator,
+  },
+  {
+    href: "/calcolo-danno-non-patrimoniale",
+    label: "Danno Non Patrimoniale",
+    icon: HeartPulse,
   },
 ];
 
