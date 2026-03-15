@@ -389,11 +389,11 @@ export const sections = [
   { id: "esempio-calcolo", label: "Esempio di Calcolo" },
   { id: "stragiudiziale", label: "Stragiudiziale" },
   { id: "valore-indeterminabile", label: "Valore Indeterminabile" },
-  { id: "cause-oltre-520k", label: "Cause > \u20AC 520.000" },
+  { id: "cause-oltre-520k", label: "Cause > € 520.000" },
   { id: "mediazione-negoziazione", label: "Mediazione e Negoziazione" },
   { id: "equo-compenso", label: "Equo Compenso" },
   { id: "verifica-parcella", label: "Verifica Parcella" },
-  { id: "novita-2022", label: "Novit\u00e0 DM 147/2022" },
+  { id: "novita-2022", label: "Novità DM 147/2022" },
   { id: "faq", label: "FAQ" },
   { id: "normativa", label: "Normativa" },
 ];
