@@ -171,7 +171,7 @@ export default function Calcolatore() {
             {/* Punti invalidita */}
             <div>
               <label className="block text-sm font-semibold text-[oklch(0.35_0.02_250)] uppercase tracking-wider mb-2">
-                Punti di invalidit&agrave; permanente ({puntiMin}-{puntiMax}%)
+                Punti di invalidità permanente ({puntiMin}-{puntiMax}%)
               </label>
               <input
                 type="number"
@@ -189,7 +189,7 @@ export default function Calcolatore() {
             {/* Eta */}
             <div>
               <label className="block text-sm font-semibold text-[oklch(0.35_0.02_250)] uppercase tracking-wider mb-2">
-                Et&agrave; del danneggiato (0-100)
+                Età del danneggiato (0-100)
               </label>
               <input
                 type="number"

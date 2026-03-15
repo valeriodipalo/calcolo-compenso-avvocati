@@ -38,6 +38,16 @@ When triggered with `/create-page {args}`:
 
 If no arguments provided, ask the user for the topic and a reference page URL.
 
+## Execution Mode
+
+After confirming the topic/slug/URL, ask the user how they want to proceed:
+
+> **How would you like to run this?**
+> 1. **Step by step** — I pause after each phase for your review and approval before continuing. Best if you want full control over research and content decisions.
+> 2. **All at once** — I run all 6 phases end-to-end, pausing only at mandatory gates (keyword approval, competitor analysis approval). Best if you trust the process and want speed.
+
+Default to step-by-step if the user doesn't specify.
+
 ---
 
 ## Phase 1: Keyword Strategy from Reference Page
@@ -151,6 +161,8 @@ If `--research <path>` was provided, read that file first and use it as the prim
    - `mcp__perplexity__perplexity_search` with `recency: "year"` — find specific Normattiva URLs, ministerial circular URLs, recent legislative changes.
    - `mcp__perplexity__perplexity_ask` — quick targeted questions for specific data points (exact rates, dates, amounts).
    - `mcp__perplexity__perplexity_reason` — if formulas or legal interpretations require step-by-step logical analysis.
+   - **Prioritize institutional sources**: Normattiva.it, Gazzetta Ufficiale, Ministero della Giustizia, Consiglio Nazionale Forense, Agenzia delle Entrate, Camera.it, Senato.it. Use blog posts, legal forums, and commercial sites only to fill gaps that institutional sources don't cover.
+   - **Track every source used**: maintain a running list of all institutional URLs and references consulted. This list will be rendered as a "Fonti e Riferimenti" section on the final page.
 
 2. **Data compilation**:
    - All data tables the page needs (rates, thresholds, brackets, categories)
@@ -236,6 +248,8 @@ Create `src/app/{SLUG}/page.tsx` — follow `references/implementation-guide.md`
 - Add any other applicable schema types for rich results
 - If a needed schema generator doesn't exist in `src/lib/schema.tsx`, create it
 
+**"Fonti e Riferimenti" section** (mandatory): At the bottom of the page (before or after FAQ), render a dedicated section listing all institutional sources used during research. Each entry should include the source name, the specific document/article, and a clickable link. This builds E-E-A-T trust and transparently shows the page's authority basis.
+
 **Target content volume**: match or exceed the top competitor's word count (typically 2000-4000 words of editorial content, not counting tables and FAQ).
 
 ### Step 4.4: Update Existing Files
@@ -313,19 +327,25 @@ If critical issues remain, do another fix → revalidate cycle.
 
 1. **Production build**: `npm run build` — must pass cleanly
 2. **Kill dev server**: stop any running dev server
-3. **Present final summary** to the user:
+3. **Update sitemap `lastModified` dates**: Open `src/app/sitemap.ts` and:
+   - Add the new page URL entry if not already present (from Step 4.4)
+   - Set `lastModified: new Date("YYYY-MM-DD")` using **today's date** for the new page
+   - Update `lastModified` for any other pages that were modified during this process (e.g., homepage, navbar changes)
+   - **Never use `new Date()` without a date string** — every entry must have a fixed date so Google sees stable `lastmod` values
+4. **Present final summary** to the user:
    - Primary keyword targeted
    - Page sections created
    - Schema types implemented
    - Calculator/tool included
    - SEO audit results summary
-4. **Ask user** if they want to commit and deploy
+5. **Ask user** if they want to commit and deploy
 
 ---
 
 ## Important Rules
 
 - **All content in Italian.** Never output English text in page content.
+- **Use native UTF-8 characters, NEVER HTML entities or unicode escapes.** Write `à`, `è`, `é`, `ì`, `ò`, `ù` directly — never `&agrave;`, `&egrave;`, `\u00E0`, etc. JSX and TypeScript fully support UTF-8. This applies to all `.tsx`, `.ts`, and data files. The same rule applies to apostrophes (`'` not `&apos;`), quotes (`"` not `&quot;`), and symbols (`«»` not `&laquo;&raquo;`).
 - **All law references link to Normattiva.** Use `<InlineNormLink>` for every mention.
 - **Every monetary amount cites its article and comma.** No unsourced numbers.
 - **No hardcoded colors.** Use OKLch values from the design system or shared component props.

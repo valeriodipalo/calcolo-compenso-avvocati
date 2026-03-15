@@ -208,13 +208,13 @@ export default function CalcoloCompensoPage() {
         <p className="text-base leading-relaxed">
           I <strong>parametri forensi</strong> sono i criteri stabiliti dal
           Ministero della Giustizia per la determinazione del compenso spettante
-          all&apos;avvocato per l&apos;attività professionale svolta. La
+          all'avvocato per l'attività professionale svolta. La
           disciplina è contenuta nel{" "}
           <InlineNormLink
             text="D.M. 10 marzo 2014, n. 55"
             url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55"
           />
-          , emanato ai sensi dell&apos;
+          , emanato ai sensi dell'
           <InlineNormLink
             text="art. 13, comma 6, della Legge 31 dicembre 2012, n. 247"
             url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-31;247"
@@ -229,20 +229,20 @@ export default function CalcoloCompensoPage() {
         </p>
         <p className="text-base leading-relaxed">
           I parametri si applicano nei seguenti casi: quando il compenso non e
-          stato determinato all&apos;atto dell&apos;incarico o successivamente in
+          stato determinato all'atto dell'incarico o successivamente in
           forma scritta, in caso di{" "}
           <strong>liquidazione giudiziale</strong> del compenso, per prestazioni
-          rese nell&apos;interesse di terzi o per prestazioni d&apos;ufficio
+          rese nell'interesse di terzi o per prestazioni d'ufficio
           previste dalla legge. Quando invece esiste un{" "}
           <strong>accordo scritto</strong> tra avvocato e cliente, i parametri
           non si applicano e fa fede il contratto.
         </p>
         <NormativaQuote url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55">
-          Art. 1, c. 1: &quot;I compensi degli avvocati [...] sono liquidati in
+          Art. 1, c. 1: "I compensi degli avvocati [...] sono liquidati in
           base ai parametri indicati nelle tabelle allegate, che sono applicate
           tenendo conto dei valori medi di cui alla tabella allegata, che possono
-          essere aumentati, di regola, fino all&apos;80 per cento, o diminuiti
-          fino al 50 per cento.&quot;
+          essere aumentati, di regola, fino all'80 per cento, o diminuiti
+          fino al 50 per cento."
         </NormativaQuote>
         <AlertBox variant="info" title="Quando NON si applicano i parametri">
           <p>
@@ -252,8 +252,8 @@ export default function CalcoloCompensoPage() {
               text="art. 13, c. 2, L. 247/2012"
               url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-31;247"
             />
-            ). L&apos;accordo può prevedere un compenso a forfait, a tempo
-            (tariffa oraria) o in percentuale sul valore dell&apos;affare. E
+            ). L'accordo può prevedere un compenso a forfait, a tempo
+            (tariffa oraria) o in percentuale sul valore dell'affare. E
             tuttavia vietato il patto di quota lite puro (compenso correlato al
             solo risultato della lite).
           </p>
@@ -262,8 +262,8 @@ export default function CalcoloCompensoPage() {
           I parametri rappresentano dunque un{" "}
           <strong>riferimento sussidiario</strong>: il giudice li utilizza per
           liquidare il compenso tenendo conto della natura, complessità e
-          importanza dell&apos;incarico, del numero e dell&apos;importanza delle
-          questioni trattate, dell&apos;impegno profuso e dei risultati
+          importanza dell'incarico, del numero e dell'importanza delle
+          questioni trattate, dell'impegno profuso e dei risultati
           conseguiti (
           <InlineNormLink
             text="art. 4, c. 1, D.M. 55/2014"
@@ -284,7 +284,7 @@ export default function CalcoloCompensoPage() {
       />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          Il calcolo del <strong>compenso dell&apos;avvocato</strong> secondo i
+          Il calcolo del <strong>compenso dell'avvocato</strong> secondo i
           parametri forensi segue una procedura articolata in cinque fasi
           successive. Ciascun passaggio è disciplinato dal{" "}
           <InlineNormLink
@@ -307,7 +307,7 @@ export default function CalcoloCompensoPage() {
               Il D.M. 55/2014 prevede <strong>28 tabelle</strong> (Tab. I-XXVI +
               Tab. XX-bis + Tab. XXV-bis), ciascuna riferita a un diverso tipo di
               procedimento o giurisdizione: dal Giudice di pace al Tribunale
-              ordinario, dalla Corte d&apos;Appello alla Cassazione, dai
+              ordinario, dalla Corte d'Appello alla Cassazione, dai
               procedimenti amministrativi (TAR, Consiglio di Stato) alle
               commissioni tributarie, dagli arbitrati alla consulenza
               stragiudiziale.
@@ -327,9 +327,9 @@ export default function CalcoloCompensoPage() {
                 text="artt. 10 e ss. c.p.c."
                 url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1940-10-28;1443~art10"
               />
-              ). Le tabelle prevedono <strong>13 scaglioni</strong> da &quot;fino
-              a {formatEuro(1100)}&quot; a &quot;oltre {formatEuro(32000000)}
-              &quot;, più 4 scaglioni per le cause di valore indeterminabile
+              ). Le tabelle prevedono <strong>13 scaglioni</strong> da "fino
+              a {formatEuro(1100)}" a "oltre {formatEuro(32000000)}
+              ", più 4 scaglioni per le cause di valore indeterminabile
               (bassa, media e alta complessità e valore non determinabile).
             </p>
           </div>
@@ -359,7 +359,7 @@ export default function CalcoloCompensoPage() {
               4. Applica aumenti e riduzioni
             </p>
             <p className="text-sm leading-relaxed">
-              Si applicano gli eventuali aumenti previsti dall&apos;
+              Si applicano gli eventuali aumenti previsti dall'
               <InlineNormLink
                 text="art. 4 D.M. 55/2014"
                 url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55"
@@ -386,10 +386,10 @@ export default function CalcoloCompensoPage() {
                 url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55"
               />
               ), la <strong>CPA al 4%</strong> (contributo Cassa Forense),
-              l&apos;
+              l'
               <strong>IVA al 22%</strong> su compenso, spese imponibili e CPA, e
-              la eventuale <strong>ritenuta d&apos;acconto del 20%</strong> (se
-              il cliente e sostituto d&apos;imposta).
+              la eventuale <strong>ritenuta d'acconto del 20%</strong> (se
+              il cliente e sostituto d'imposta).
             </p>
           </div>
         </div>
@@ -426,7 +426,7 @@ export default function CalcoloCompensoPage() {
             text="D.M. 55/2014"
             url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55"
           />{" "}
-          suddivide l&apos;attività dell&apos;avvocato in{" "}
+          suddivide l'attività dell'avvocato in{" "}
           <strong>quattro fasi processuali</strong> principali, ciascuna con un
           proprio valore parametrico. Il compenso viene calcolato separatamente
           per ciascuna fase effettivamente svolta: se una fase non viene
@@ -460,9 +460,9 @@ export default function CalcoloCompensoPage() {
         />
 
         <NormativaQuote url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55">
-          Art. 4, c. 5: &quot;Il compenso è liquidato per fasi. Nella
+          Art. 4, c. 5: "Il compenso è liquidato per fasi. Nella
           liquidazione, il giudice deve indicare le voci e le fasi in relazione
-          alle quali il compenso è riconosciuto.&quot;
+          alle quali il compenso è riconosciuto."
         </NormativaQuote>
 
         <AlertBox
@@ -627,7 +627,7 @@ export default function CalcoloCompensoPage() {
           ]}
         />
         <p className="text-sm text-muted-foreground mt-2">
-          I valori minimi e massimi si ottengono applicando &minus;50% e +50% al
+          I valori minimi e massimi si ottengono applicando −50% e +50% al
           valore medio. Esempio: per lo scaglione {formatEuro(26000)}-
           {formatEuro(52000)}, il compenso totale varia da {formatEuro(3808)}{" "}
           (minimo) a {formatEuro(11424)} (massimo).
@@ -686,7 +686,7 @@ export default function CalcoloCompensoPage() {
 
         <AlertBox variant="warning" title="Cause di valore indeterminabile">
           <p>
-            Per le cause di valore indeterminabile, l&apos;
+            Per le cause di valore indeterminabile, l'
             <InlineNormLink
               text="art. 5, c. 6, D.M. 55/2014"
               url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55"
@@ -696,7 +696,7 @@ export default function CalcoloCompensoPage() {
             <strong>media</strong> (media aritmetica tra i valori) e{" "}
             <strong>alta</strong> (equiparata allo scaglione{" "}
             {formatEuro(52000)}-{formatEuro(260000)}). Esiste inoltre lo
-            scaglione &quot;valore non determinabile&quot; per i casi residuali.
+            scaglione "valore non determinabile" per i casi residuali.
           </p>
         </AlertBox>
       </div>
@@ -712,7 +712,7 @@ export default function CalcoloCompensoPage() {
       />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          L&apos;
+          L'
           <InlineNormLink
             text="art. 4 del D.M. 55/2014"
             url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55"
@@ -836,18 +836,18 @@ export default function CalcoloCompensoPage() {
         />
 
         <NormativaQuote url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55">
-          Art. 4, c. 2: &quot;Quando in una causa l&apos;avvocato assiste piu
+          Art. 4, c. 2: "Quando in una causa l'avvocato assiste piu
           soggetti aventi la stessa posizione processuale, il compenso unico puo
           essere aumentato per ogni soggetto oltre il primo nella misura del 20
           per cento, fino a un massimo di dieci soggetti, e del 10 per cento per
-          ogni soggetto oltre il decimo.&quot;
+          ogni soggetto oltre il decimo."
         </NormativaQuote>
 
         <AlertBox variant="info" title="Esempio: pluralità di parti">
           <p>
-            Se l&apos;avvocato assiste 5 clienti in una causa, l&apos;aumento e:
-            (5 - 1) &times; 20% = <strong>+80%</strong> sul compenso totale. Per
-            12 parti: (9 &times; 20%) + (2 &times; 10%) = 180% + 20% ={" "}
+            Se l'avvocato assiste 5 clienti in una causa, l'aumento e:
+            (5 - 1) × 20% = <strong>+80%</strong> sul compenso totale. Per
+            12 parti: (9 × 20%) + (2 × 10%) = 180% + 20% ={" "}
             <strong>+200%</strong>.
           </p>
         </AlertBox>
@@ -864,8 +864,8 @@ export default function CalcoloCompensoPage() {
       />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          Oltre al compenso per l&apos;attività professionale, la parcella
-          dell&apos;avvocato comprende una serie di{" "}
+          Oltre al compenso per l'attività professionale, la parcella
+          dell'avvocato comprende una serie di{" "}
           <strong>voci accessorie</strong> obbligatorie e facoltative. La
           corretta determinazione di ciascuna voce è fondamentale per verificare
           la congruità della parcella.
@@ -893,11 +893,11 @@ export default function CalcoloCompensoPage() {
         />
 
         <NormativaQuote url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55">
-          Art. 2: &quot;Oltre al compenso e al rimborso delle spese documentate
+          Art. 2: "Oltre al compenso e al rimborso delle spese documentate
           e di quelle forfettarie nella misura del 15 per cento del compenso, il
-          cliente è tenuto a corrispondere all&apos;avvocato il contributo
+          cliente è tenuto a corrispondere all'avvocato il contributo
           integrativo alla Cassa nazionale di previdenza e assistenza forense
-          [4%] e l&apos;IVA se dovuta.&quot;
+          [4%] e l'IVA se dovuta."
         </NormativaQuote>
 
         <h3 className="text-xl text-[oklch(0.25_0.04_250)] mt-6 mb-3">
@@ -924,13 +924,13 @@ export default function CalcoloCompensoPage() {
 
         <AlertBox variant="warning" title="Attenzione alla ritenuta d'acconto">
           <p>
-            La <strong>ritenuta d&apos;acconto del 20%</strong> (
+            La <strong>ritenuta d'acconto del 20%</strong> (
             <InlineNormLink
               text="art. 25 D.P.R. 600/1973"
               url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600"
             />
             ) si applica <strong>solo</strong> quando il cliente e sostituto
-            d&apos;imposta (società, enti, altri professionisti con dipendenti).
+            d'imposta (società, enti, altri professionisti con dipendenti).
             Non si applica quando il cliente e un privato consumatore. La base di
             calcolo è il compenso comprensivo di spese generali, esclusi CPA,
             IVA e spese documentate.
@@ -953,7 +953,7 @@ export default function CalcoloCompensoPage() {
           una causa civile ordinaria di cognizione davanti al Tribunale, con
           valore della causa di {formatEuro(30000)} (scaglione{" "}
           {formatEuro(26000)}-{formatEuro(52000)}, Tab. II). Ipotizziamo che
-          l&apos;avvocato abbia svolto tutte e quattro le fasi con valori medi e
+          l'avvocato abbia svolto tutte e quattro le fasi con valori medi e
           non si applichino aumenti ne riduzioni.
         </p>
 
@@ -1040,7 +1040,7 @@ export default function CalcoloCompensoPage() {
       />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          L&apos;attività <strong>stragiudiziale</strong> dell&apos;avvocato
+          L'attività <strong>stragiudiziale</strong> dell'avvocato
           comprende le consulenze, i pareri, la redazione di atti e la
           negoziazione che si svolgono al di fuori di un procedimento
           giudiziario. Il compenso è disciplinato dagli{" "}
@@ -1056,17 +1056,17 @@ export default function CalcoloCompensoPage() {
           .
         </p>
         <p className="text-base leading-relaxed">
-          Per l&apos;attività stragiudiziale, il compenso e{" "}
+          Per l'attività stragiudiziale, il compenso e{" "}
           <strong>onnicomprensivo</strong>: comprende tutte le attività svolte e
           non è suddiviso in fasi. Si applica un unico valore parametrico in
-          base allo scaglione di valore dell&apos;affare, con la consueta
+          base allo scaglione di valore dell'affare, con la consueta
           variazione del &plusmn;50%.
         </p>
 
         <NormativaQuote url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55">
-          Art. 18: &quot;Per l&apos;assistenza stragiudiziale, il compenso e
-          determinato con riferimento ai parametri di cui all&apos;articolo 4,
-          commi 1, 2, 3, 4, 5, 6, 7 e 8, in quanto applicabili.&quot;
+          Art. 18: "Per l'assistenza stragiudiziale, il compenso e
+          determinato con riferimento ai parametri di cui all'articolo 4,
+          commi 1, 2, 3, 4, 5, 6, 7 e 8, in quanto applicabili."
         </NormativaQuote>
 
         <BulletList
@@ -1087,7 +1087,7 @@ export default function CalcoloCompensoPage() {
               text="D.M. 147/2022"
               url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2022-08-13;147"
             />{" "}
-            ha introdotto l&apos;art. 22-bis che prevede un parametro indicativo
+            ha introdotto l'art. 22-bis che prevede un parametro indicativo
             per la <strong>tariffazione oraria</strong>: da un minimo di{" "}
             {formatEuro(200)} a un massimo di {formatEuro(500)} per ciascuna ora
             o frazione di ora superiore a 30 minuti. Si tratta di un riferimento
@@ -1148,16 +1148,16 @@ export default function CalcoloCompensoPage() {
         />
 
         <NormativaQuote url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55">
-          Art. 5, c. 6: &quot;Le cause di valore indeterminabile sono equiparate
+          Art. 5, c. 6: "Le cause di valore indeterminabile sono equiparate
           allo scaglione da euro 26.001 a euro 52.000, se di bassa complessità,
           e allo scaglione da euro 52.001 a euro 260.000, se di alta
-          complessità.&quot;
+          complessità."
         </NormativaQuote>
 
         <AlertBox variant="info">
           <p>
             Il calcolatore prevede anche lo scaglione{" "}
-            <strong>&quot;valore non determinabile&quot;</strong>, che si applica
+            <strong>"valore non determinabile"</strong>, che si applica
             quando la causa non è nemmeno classificabile nei tre livelli di
             complessità. In questo caso il giudice liquida il compenso in via
             equitativa, utilizzando i parametri come mero riferimento
@@ -1184,8 +1184,8 @@ export default function CalcoloCompensoPage() {
             url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2022-08-13;147"
           />{" "}
           ha introdotto un meccanismo progressivo di incremento del compenso. La
-          tabella prevede scaglioni aggiuntivi fino a &quot;oltre{" "}
-          {formatEuro(32000000)}&quot;, con valori parametrici crescenti.
+          tabella prevede scaglioni aggiuntivi fino a "oltre{" "}
+          {formatEuro(32000000)}", con valori parametrici crescenti.
         </p>
 
         <p className="text-base leading-relaxed">
@@ -1234,7 +1234,7 @@ export default function CalcoloCompensoPage() {
           <p>
             Anche per le cause di valore superiore a {formatEuro(520000)}, il
             giudice può applicare la variazione del &plusmn;50% sul valore medio
-            di ciascuna fase. L&apos;aumento progressivo del 30% si cumula con
+            di ciascuna fase. L'aumento progressivo del 30% si cumula con
             la variazione ordinaria, creando un range potenzialmente molto ampio.
           </p>
         </AlertBox>
@@ -1313,14 +1313,14 @@ export default function CalcoloCompensoPage() {
         />
         <p className="text-sm text-muted-foreground mt-2">
           Valori indicativi. Per i valori esatti e aggiornati, utilizzare il
-          calcolatore selezionando la competenza &quot;Proced. risoluzione
-          alternativa controversie (ADR/Negoziazione/Mediazione)&quot;.
+          calcolatore selezionando la competenza "Proced. risoluzione
+          alternativa controversie (ADR/Negoziazione/Mediazione)".
         </p>
 
         <AlertBox variant="success" title="Aumento per accordo raggiunto (+30%)">
           <p>
             Quando la mediazione o la negoziazione assistita si conclude con un{" "}
-            <strong>accordo</strong>, il compenso dell&apos;avvocato può essere
+            <strong>accordo</strong>, il compenso dell'avvocato può essere
             aumentato fino al <strong>30%</strong>. Questo aumento si aggiunge
             alla consueta possibilita di variazione del &plusmn;50% e premia il
             risultato conciliativo raggiunto.
@@ -1353,7 +1353,7 @@ export default function CalcoloCompensoPage() {
             text="Legge 21 aprile 2023, n. 49"
             url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2023-04-21;49"
           />{" "}
-          ha introdotto la disciplina dell&apos;
+          ha introdotto la disciplina dell'
           <strong>equo compenso</strong> per le prestazioni professionali degli
           avvocati (e degli altri professionisti). La legge garantisce che il
           compenso sia{" "}
@@ -1367,8 +1367,8 @@ export default function CalcoloCompensoPage() {
           Quando si applica
         </h3>
         <p className="text-base leading-relaxed">
-          La disciplina dell&apos;equo compenso si applica ai rapporti
-          professionali con i cosiddetti &quot;contraenti forti&quot;:
+          La disciplina dell'equo compenso si applica ai rapporti
+          professionali con i cosiddetti "contraenti forti":
         </p>
         <BulletList
           items={[
@@ -1385,27 +1385,27 @@ export default function CalcoloCompensoPage() {
         <p className="text-base leading-relaxed">
           Sono <strong>nulle</strong> le clausole contrattuali che prevedono un
           compenso inferiore ai parametri ministeriali, che impongono
-          all&apos;avvocato di anticipare le spese, che riservano al committente
+          all'avvocato di anticipare le spese, che riservano al committente
           la facoltà di modificare unilateralmente le condizioni contrattuali, o
           che prevedono la rinuncia al rimborso delle spese. La nullità opera a
           favore del professionista e può essere fatta valere in giudizio.
         </p>
 
         <NormativaQuote url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2023-04-21;49">
-          Art. 3, c. 1, L. 49/2023: &quot;Si considera equo il compenso
+          Art. 3, c. 1, L. 49/2023: "Si considera equo il compenso
           determinato nelle convenzioni o negli accordi [...] quando è conforme
           ai parametri previsti dai decreti ministeriali adottati ai sensi
-          dell&apos;articolo 13, comma 6, della legge 31 dicembre 2012, n.
-          247.&quot;
+          dell'articolo 13, comma 6, della legge 31 dicembre 2012, n.
+          247."
         </NormativaQuote>
 
         <AlertBox variant="warning" title="Non si applica tra privati">
           <p>
-            La disciplina dell&apos;equo compenso{" "}
-            <strong>non si applica</strong> ai rapporti tra l&apos;avvocato e un
+            La disciplina dell'equo compenso{" "}
+            <strong>non si applica</strong> ai rapporti tra l'avvocato e un
             privato cittadino o una piccola impresa. In questi casi, il compenso
             resta liberamente concordabile tra le parti, fermo restando il
-            divieto di patto di quota lite puro e l&apos;obbligo di preventivo
+            divieto di patto di quota lite puro e l'obbligo di preventivo
             informativo (
             <InlineNormLink
               text="art. 13, c. 5, L. 247/2012"
@@ -1445,7 +1445,7 @@ export default function CalcoloCompensoPage() {
               Verifica che il tipo di procedimento (competenza) e il valore della
               causa (scaglione) indicati in parcella corrispondano al tuo caso.
               Un errore nella scelta della tabella o dello scaglione può alterare
-              significativamente l&apos;importo.
+              significativamente l'importo.
             </p>
           </div>
 
@@ -1459,7 +1459,7 @@ export default function CalcoloCompensoPage() {
             <p className="text-sm leading-relaxed">
               Verifica che le fasi addebitate corrispondano ad attività{" "}
               <strong>effettivamente svolte</strong>. Se la causa si è conclusa
-              prima dell&apos;istruttoria, la fase istruttoria non dovrebbe
+              prima dell'istruttoria, la fase istruttoria non dovrebbe
               essere addebitata. Controlla anche che i valori siano compresi tra
               il minimo (-50%) e il massimo (+50%) del valore medio tabellare.
             </p>
@@ -1476,7 +1476,7 @@ export default function CalcoloCompensoPage() {
               Se sono stati applicati aumenti (pluralità di parti, conciliazione,
               ecc.), verifica che siano giustificati e correttamente calcolati.
               Se sono state applicate riduzioni, controlla che le percentuali
-              siano conformi all&apos;
+              siano conformi all'
               <InlineNormLink
                 text="art. 4 D.M. 55/2014"
                 url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55"
@@ -1494,10 +1494,10 @@ export default function CalcoloCompensoPage() {
             </p>
             <p className="text-sm leading-relaxed">
               Le spese generali devono essere al <strong>15%</strong>, la CPA al{" "}
-              <strong>4%</strong>, l&apos;IVA al <strong>22%</strong>. Verifica
+              <strong>4%</strong>, l'IVA al <strong>22%</strong>. Verifica
               che le spese documentate siano effettive e correttamente
-              classificate (esenti o imponibili). La ritenuta d&apos;acconto
-              (20%) si applica solo se sei sostituto d&apos;imposta.
+              classificate (esenti o imponibili). La ritenuta d'acconto
+              (20%) si applica solo se sei sostituto d'imposta.
             </p>
           </div>
 
@@ -1518,15 +1518,15 @@ export default function CalcoloCompensoPage() {
 
         <AlertBox variant="info" title="Parere di congruità">
           <p>
-            In caso di contestazione, l&apos;avvocato può richiedere il{" "}
-            <strong>parere di congruità</strong> al Consiglio dell&apos;Ordine
+            In caso di contestazione, l'avvocato può richiedere il{" "}
+            <strong>parere di congruità</strong> al Consiglio dell'Ordine
             degli Avvocati competente (
             <InlineNormLink
               text="art. 636 c.p.c."
               url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1940-10-28;1443~art636"
             />
             ). Il parere attesta che la parcella è conforme ai parametri
-            ministeriali e consente all&apos;avvocato di ottenere un decreto
+            ministeriali e consente all'avvocato di ottenere un decreto
             ingiuntivo provvisoriamente esecutivo per il recupero del credito. Il
             cliente può opporsi entro 40 giorni dalla notifica.
           </p>
@@ -1549,7 +1549,7 @@ export default function CalcoloCompensoPage() {
             text="D.M. 13 agosto 2022, n. 147"
             url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2022-08-13;147"
           />
-          , pubblicato nella G.U. n. 236 dell&apos;8 ottobre 2022, ha
+          , pubblicato nella G.U. n. 236 dell'8 ottobre 2022, ha
           introdotto significative modifiche ai parametri forensi. Le nuove
           disposizioni si applicano alle prestazioni professionali esaurite dopo
           il <strong>23 ottobre 2022</strong>.
@@ -1563,7 +1563,7 @@ export default function CalcoloCompensoPage() {
             <p className="leading-relaxed">
               Tutti i valori medi delle tabelle sono stati aggiornati al costo
               della vita con un incremento medio di circa il <strong>5%</strong>{" "}
-              rispetto ai parametri del 2014. L&apos;aggiornamento riguarda
+              rispetto ai parametri del 2014. L'aggiornamento riguarda
               tutte le 28 tabelle e tutti gli scaglioni.
             </p>
           </AlertBox>
@@ -1575,7 +1575,7 @@ export default function CalcoloCompensoPage() {
             <p className="leading-relaxed">
               La variazione è stata uniformata al <strong>&plusmn;50%</strong>{" "}
               per tutte le fasi. Nel regime precedente, le percentuali erano
-              differenziate: diminuzione fino al 50% e aumento fino all&apos;80%
+              differenziate: diminuzione fino al 50% e aumento fino all'80%
               (100% per la fase istruttoria). Il nuovo sistema semplifica il
               calcolo e riduce la discrezionalità giudiziale.
             </p>
@@ -1586,7 +1586,7 @@ export default function CalcoloCompensoPage() {
             title='3. Soppressione delle parole "di regola"'
           >
             <p className="leading-relaxed">
-              È stata soppressa l&apos;espressione &quot;di regola&quot; che
+              È stata soppressa l'espressione "di regola" che
               accompagnava i limiti percentuali di variazione. Questo significa
               che i limiti del &plusmn;50% sono ora <strong>tassativi</strong>: il
               giudice non può superarli senza specifica motivazione, riducendo il
@@ -1601,8 +1601,8 @@ export default function CalcoloCompensoPage() {
             <p className="leading-relaxed">
               È stato introdotto un aumento fino al <strong>30%</strong> del
               compenso per le predisposizioni informatiche nel Processo Civile
-              Telematico (PCT). L&apos;aumento compensa l&apos;impegno
-              aggiuntivo richiesto dall&apos;utilizzo degli strumenti digitali (
+              Telematico (PCT). L'aumento compensa l'impegno
+              aggiuntivo richiesto dall'utilizzo degli strumenti digitali (
               <InlineNormLink
                 text="art. 4, c. 1-bis"
                 url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55"
@@ -1613,9 +1613,9 @@ export default function CalcoloCompensoPage() {
 
           <AlertBox variant="success" title="5. Conciliazione (+25%)">
             <p className="leading-relaxed">
-              Confermato e rafforzato l&apos;aumento fino al{" "}
+              Confermato e rafforzato l'aumento fino al{" "}
               <strong>25%</strong> sulla fase decisionale in caso di
-              conciliazione giudiziale o transazione. L&apos;obiettivo e
+              conciliazione giudiziale o transazione. L'obiettivo e
               incentivare la definizione bonaria delle controversie.
             </p>
           </AlertBox>
@@ -1635,10 +1635,10 @@ export default function CalcoloCompensoPage() {
         </div>
 
         <NormativaQuote url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2022-08-13;147">
-          Preambolo D.M. 147/2022: &quot;Visto l&apos;articolo 13, comma 6,
+          Preambolo D.M. 147/2022: "Visto l'articolo 13, comma 6,
           della legge 31 dicembre 2012, n. 247, il quale prevede che i parametri
           indicati nel decreto del Ministro della giustizia siano aggiornati ogni
-          due anni.&quot;
+          due anni."
         </NormativaQuote>
       </div>
 

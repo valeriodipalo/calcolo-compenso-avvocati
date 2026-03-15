@@ -147,16 +147,16 @@ export default function ContributoUnificatoPage() {
       <SectionTitle id="cos-e" icon={BookOpen} title="Cos'è il Contributo Unificato" subtitle="Art. 9, DPR 115/2002" />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          Il <strong>contributo unificato di iscrizione a ruolo</strong> è una somma che viene corrisposta all&apos;Erario ogni volta in cui una parte inizia un processo civile, amministrativo o tributario. Ha sostituito le imposte di bollo, la tassa di iscrizione a ruolo e i diritti di cancelleria, semplificando l&apos;imposizione fiscale sugli atti giudiziari. La disciplina è contenuta nel <InlineNormLink text="D.P.R. 30 maggio 2002, n. 115" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2002-05-30;115" /> (Testo Unico Spese di Giustizia).
+          Il <strong>contributo unificato di iscrizione a ruolo</strong> è una somma che viene corrisposta all'Erario ogni volta in cui una parte inizia un processo civile, amministrativo o tributario. Ha sostituito le imposte di bollo, la tassa di iscrizione a ruolo e i diritti di cancelleria, semplificando l'imposizione fiscale sugli atti giudiziari. La disciplina è contenuta nel <InlineNormLink text="D.P.R. 30 maggio 2002, n. 115" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2002-05-30;115" /> (Testo Unico Spese di Giustizia).
         </p>
         <p className="text-base leading-relaxed">
           La Corte Costituzionale ha riconosciuto al contributo unificato la <strong>natura di tributo</strong>, stante la doverosità della prestazione e il collegamento ad una spesa pubblica come quella giudiziaria (C. Cost. sent. 73/2005).
         </p>
         <NormativaQuote url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2002-05-30;115">
-          Art. 9, c. 1: &quot;È dovuto il contributo unificato di iscrizione a ruolo, per ciascun grado di giudizio, nel processo civile, compresa la procedura concorsuale e di volontaria giurisdizione, nel processo amministrativo e nel processo tributario, secondo gli importi previsti dall&apos;articolo 13 e salvo quanto previsto dall&apos;articolo 10.&quot;
+          Art. 9, c. 1: "È dovuto il contributo unificato di iscrizione a ruolo, per ciascun grado di giudizio, nel processo civile, compresa la procedura concorsuale e di volontaria giurisdizione, nel processo amministrativo e nel processo tributario, secondo gli importi previsti dall'articolo 13 e salvo quanto previsto dall'articolo 10."
         </NormativaQuote>
         <p className="text-base leading-relaxed">
-          Oltre al contributo unificato, per tutte le cause civili è dovuto anche il pagamento dell&apos;<strong>anticipazione forfettaria</strong> pari a <strong className="font-mono">€ 27,00</strong> (<InlineNormLink text="art. 30 DPR 115/2002" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2002-05-30;115" />), salvo esenzioni specifiche (giudizi di lavoro, procedimenti familiari, ricerca telematica beni ex art. 492-bis c.p.c.).
+          Oltre al contributo unificato, per tutte le cause civili è dovuto anche il pagamento dell'<strong>anticipazione forfettaria</strong> pari a <strong className="font-mono">€ 27,00</strong> (<InlineNormLink text="art. 30 DPR 115/2002" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2002-05-30;115" />), salvo esenzioni specifiche (giudizi di lavoro, procedimenti familiari, ricerca telematica beni ex art. 492-bis c.p.c.).
         </p>
       </div>
 
@@ -186,7 +186,7 @@ export default function ContributoUnificatoPage() {
       <SectionTitle id="civile" icon={Gavel} title="Processo Civile" subtitle="Art. 13, comma 1, DPR 115/2002" />
       <SectionBanner image={CIVILE_IMG} alt="Processo Civile" text="Tabella degli importi per scaglione di valore e grado di giudizio" />
       <p className="text-base leading-relaxed mb-4">
-        L&apos;importo del contributo unificato è determinato in base ai cosiddetti &quot;scaglioni&quot; di valore della causa. Il CU è <strong>aumentato del 50%</strong> nei giudizi di impugnazione e <strong>raddoppiato</strong> per i processi dinanzi alla Corte di Cassazione (<InlineNormLink text="art. 13, c. 1-bis" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2002-05-30;115~art13" />).
+        L'importo del contributo unificato è determinato in base ai cosiddetti "scaglioni" di valore della causa. Il CU è <strong>aumentato del 50%</strong> nei giudizi di impugnazione e <strong>raddoppiato</strong> per i processi dinanzi alla Corte di Cassazione (<InlineNormLink text="art. 13, c. 1-bis" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2002-05-30;115~art13" />).
       </p>
       <LegalTable
         headers={["Scaglione di valore", "I Grado", "Impugnazione (+50%)", "Cassazione (x2)"]}
@@ -208,7 +208,7 @@ export default function ContributoUnificatoPage() {
       {/* Decreto Ingiuntivo */}
       <SectionTitle id="decreto-ingiuntivo" icon={Hammer} title="Contributo Unificato Decreto Ingiuntivo" subtitle="Art. 13, comma 3, DPR 115/2002" />
       <p className="text-base leading-relaxed mb-4">
-        Il <strong>contributo unificato per il decreto ingiuntivo</strong> gode della <strong>riduzione del 50%</strong> rispetto agli importi ordinari del processo civile (art. 13, c. 3, DPR 115/2002). Il dimezzamento si applica sia al ricorso per ingiunzione sia all&apos;<strong>opposizione a decreto ingiuntivo</strong> in primo grado.
+        Il <strong>contributo unificato per il decreto ingiuntivo</strong> gode della <strong>riduzione del 50%</strong> rispetto agli importi ordinari del processo civile (art. 13, c. 3, DPR 115/2002). Il dimezzamento si applica sia al ricorso per ingiunzione sia all'<strong>opposizione a decreto ingiuntivo</strong> in primo grado.
       </p>
       <LegalTable
         headers={["Scaglione di valore", "CU Ordinario", "CU Decreto Ingiuntivo (−50%)"]}
@@ -220,8 +220,8 @@ export default function ContributoUnificatoPage() {
         className="mb-4"
       />
       <AlertBox variant="info">
-        <p><strong>Opposizione a decreto ingiuntivo:</strong> anche l&apos;opposizione gode del dimezzamento in primo grado. In appello, si applica l&apos;importo pieno con aumento del 50% (art. 13, c. 1-bis).</p>
-        <p className="mt-2"><strong>Decreto ingiuntivo provvisoriamente esecutivo:</strong> se viene concessa la provvisoria esecuzione ex art. 642 c.p.c., il CU resta dimezzato. La provvisoria esecutività non incide sull&apos;importo del contributo.</p>
+        <p><strong>Opposizione a decreto ingiuntivo:</strong> anche l'opposizione gode del dimezzamento in primo grado. In appello, si applica l'importo pieno con aumento del 50% (art. 13, c. 1-bis).</p>
+        <p className="mt-2"><strong>Decreto ingiuntivo provvisoriamente esecutivo:</strong> se viene concessa la provvisoria esecuzione ex art. 642 c.p.c., il CU resta dimezzato. La provvisoria esecutività non incide sull'importo del contributo.</p>
       </AlertBox>
 
       {/* Riduzione 50% */}
@@ -249,7 +249,7 @@ export default function ContributoUnificatoPage() {
       </div>
       <AlertBox variant="warning" title="Attenzione">
         <p>Il <strong>procedimento semplificato di cognizione</strong> (artt. 281-decies e segg. c.p.c., introdotto dalla <InlineNormLink text="Riforma Cartabia" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2022-10-10;149" />) <strong>non</strong> gode del dimezzamento del CU (<a href="https://i2.res.24o.it/pdf2010/Editrice/ILSOLE24ORE/QUOTIDIANI_VERTICALI/Online/_Oggetti_Embedded/Documenti/2023/04/13/Min-Giustizia-circolare-17-3-2023-contributo.pdf" target="_blank" rel="noopener noreferrer" className="text-[oklch(0.45_0.12_250)] underline decoration-dotted underline-offset-2 hover:text-[oklch(0.35_0.15_250)]">Circ. Min. Giustizia 17/3/2023</a>).</p>
-        <p className="mt-2">La riduzione del 50% per l&apos;opposizione alla sentenza di fallimento <strong>non si applica</strong> al successivo giudizio di appello (Circ. Min. 29/9/2003).</p>
+        <p className="mt-2">La riduzione del 50% per l'opposizione alla sentenza di fallimento <strong>non si applica</strong> al successivo giudizio di appello (Circ. Min. 29/9/2003).</p>
       </AlertBox>
 
       {/* Aumenti */}
@@ -267,21 +267,21 @@ export default function ContributoUnificatoPage() {
         ]}
       />
       <p className="text-sm text-muted-foreground mt-3">
-        Nota: nel processo civile, dal 2014, l&apos;avvocato non è più tenuto ad indicare la PEC (art. 125, c. 1, c.p.c. come modificato dal <InlineNormLink text="D.L. 90/2014" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-06-24;90!vig=" />). L&apos;aumento per omessa PEC resta applicabile nel processo tributario e amministrativo.
+        Nota: nel processo civile, dal 2014, l'avvocato non è più tenuto ad indicare la PEC (art. 125, c. 1, c.p.c. come modificato dal <InlineNormLink text="D.L. 90/2014" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-06-24;90!vig=" />). L'aumento per omessa PEC resta applicabile nel processo tributario e amministrativo.
       </p>
 
       {/* Processo Tributario */}
       <SectionTitle id="tributario" icon={FileText} title="Processo Tributario" subtitle="Art. 13, comma 6-quater, DPR 115/2002" />
       <SectionBanner image={TRIBUTARIO_IMG} alt="Processo Tributario" text="Scaglioni specifici per le controversie tributarie" />
       <p className="text-base leading-relaxed mb-4">
-        A partire dal 2011 (<InlineNormLink text="D.L. 98/2011" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-07-06;98" />), anche il processo tributario è regolato dal contributo unificato, con scaglioni propri previsti dall&apos;<InlineNormLink text="art. 13, c. 6-quater" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2002-05-30;115~art13" />. Per le controversie di valore indeterminabile, il CU è pari a <strong className="font-mono">€ 120,00</strong>.
+        A partire dal 2011 (<InlineNormLink text="D.L. 98/2011" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-07-06;98" />), anche il processo tributario è regolato dal contributo unificato, con scaglioni propri previsti dall'<InlineNormLink text="art. 13, c. 6-quater" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2002-05-30;115~art13" />. Per le controversie di valore indeterminabile, il CU è pari a <strong className="font-mono">€ 120,00</strong>.
       </p>
       <LegalTable
         headers={["Scaglione di valore", "Contributo Unificato"]}
         rows={scaglioniTributario.map((s) => [s.label, formatEur(s.importo)])}
       />
       <NormativaQuote url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2002-05-30;115">
-        Art. 261: &quot;Per i ricorsi in cassazione in materia tributaria il contributo unificato si applica nella misura prevista per il processo civile.&quot; Pertanto, in Cassazione si applicano gli scaglioni del processo civile con raddoppio dell&apos;importo.
+        Art. 261: "Per i ricorsi in cassazione in materia tributaria il contributo unificato si applica nella misura prevista per il processo civile." Pertanto, in Cassazione si applicano gli scaglioni del processo civile con raddoppio dell'importo.
       </NormativaQuote>
 
       {/* Processo Amministrativo */}
@@ -328,13 +328,13 @@ export default function ContributoUnificatoPage() {
         ]}
       />
       <p className="text-sm text-muted-foreground mt-3">
-        Le opposizioni (atti esecutivi, esecuzione, terzo) proposte in un&apos;esecuzione già iniziata non richiedono un ulteriore CU, essendo già stato versato (Circ. Min. Giustizia 38550/2015).
+        Le opposizioni (atti esecutivi, esecuzione, terzo) proposte in un'esecuzione già iniziata non richiedono un ulteriore CU, essendo già stato versato (Circ. Min. Giustizia 38550/2015).
       </p>
 
       {/* Pignoramento presso Terzi */}
       <SectionTitle id="pignoramento" icon={FileText} title="Contributo Unificato Pignoramento presso Terzi" subtitle="Art. 13, comma 2, DPR 115/2002" />
       <p className="text-base leading-relaxed mb-4">
-        Il <strong>contributo unificato per il pignoramento presso terzi</strong> (es. pignoramento dello stipendio o del conto corrente) segue le regole delle esecuzioni mobiliari. L&apos;importo dipende dal valore del credito azionato.
+        Il <strong>contributo unificato per il pignoramento presso terzi</strong> (es. pignoramento dello stipendio o del conto corrente) segue le regole delle esecuzioni mobiliari. L'importo dipende dal valore del credito azionato.
       </p>
       <LegalTable
         headers={["Procedimento", "Contributo Unificato", "Note"]}
@@ -347,7 +347,7 @@ export default function ContributoUnificatoPage() {
         className="mb-4"
       />
       <AlertBox variant="info">
-        <p><strong>Opposizione al pignoramento:</strong> le opposizioni proposte nell&apos;ambito di un&apos;esecuzione già iniziata non richiedono un ulteriore contributo unificato (Circ. Min. 38550/2015). L&apos;opposizione all&apos;esecuzione proposta prima dell&apos;inizio dell&apos;esecuzione richiede invece il CU secondo il valore della causa.</p>
+        <p><strong>Opposizione al pignoramento:</strong> le opposizioni proposte nell'ambito di un'esecuzione già iniziata non richiedono un ulteriore contributo unificato (Circ. Min. 38550/2015). L'opposizione all'esecuzione proposta prima dell'inizio dell'esecuzione richiede invece il CU secondo il valore della causa.</p>
         <p className="mt-2"><strong>Pubblicità sul Portale vendite pubbliche:</strong> <span className="font-mono">{formatEur(100)}</span> per ciascun lotto.</p>
       </AlertBox>
 
@@ -375,7 +375,7 @@ export default function ContributoUnificatoPage() {
       {/* Giudice di Pace */}
       <SectionTitle id="giudice-di-pace" icon={Building} title="Contributo Unificato Giudice di Pace" subtitle="Art. 13, c. 1 e art. 46 L. 374/1991" />
       <p className="text-base leading-relaxed mb-4">
-        Il <strong>contributo unificato per il Giudice di Pace</strong> segue gli stessi scaglioni del processo civile. Tuttavia, per le cause di valore fino a <strong className="font-mono">€ 1.100,00</strong> sussiste l&apos;<strong>esenzione totale</strong> dal pagamento del CU (art. 46 L. 374/1991).
+        Il <strong>contributo unificato per il Giudice di Pace</strong> segue gli stessi scaglioni del processo civile. Tuttavia, per le cause di valore fino a <strong className="font-mono">€ 1.100,00</strong> sussiste l'<strong>esenzione totale</strong> dal pagamento del CU (art. 46 L. 374/1991).
       </p>
       <LegalTable
         headers={["Valore della causa", "CU Giudice di Pace", "Note"]}
@@ -413,12 +413,12 @@ export default function ContributoUnificatoPage() {
       <div className="space-y-4">
         <AlertBox variant="warning" title="Omesso o insufficiente pagamento">
           <p className="leading-relaxed">
-            Dal 2025 (<InlineNormLink text="L. 207/2024" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024;207~art1!vig=" />), la causa civile <strong>non può essere iscritta a ruolo</strong> se non è versato almeno l&apos;importo minimo di € 43,00 (o il minor contributo dovuto). In caso di versamento parziale, si procede all&apos;immediata iscrizione a ruolo del debito con interessi al saggio legale e irrogazione di sanzione, <strong>senza previo invito al pagamento</strong> (<InlineNormLink text="art. 248, c. 3-bis, DPR 115/2002" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2002-05-30;115" />).
+            Dal 2025 (<InlineNormLink text="L. 207/2024" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024;207~art1!vig=" />), la causa civile <strong>non può essere iscritta a ruolo</strong> se non è versato almeno l'importo minimo di € 43,00 (o il minor contributo dovuto). In caso di versamento parziale, si procede all'immediata iscrizione a ruolo del debito con interessi al saggio legale e irrogazione di sanzione, <strong>senza previo invito al pagamento</strong> (<InlineNormLink text="art. 248, c. 3-bis, DPR 115/2002" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2002-05-30;115" />).
           </p>
         </AlertBox>
-        <AlertBox variant="info" title="Impugnazione respinta (c.d. &quot;doppio contributo&quot;)">
+        <AlertBox variant="info" title={'Impugnazione respinta (c.d. "doppio contributo")'}>
           <p className="leading-relaxed">
-            Quando l&apos;impugnazione è respinta integralmente, dichiarata inammissibile o improcedibile, la parte è tenuta a versare un <strong>ulteriore importo</strong> pari al CU dovuto per l&apos;impugnazione stessa (art. 13, c. 1-quater). Il giudice ne dà atto nel provvedimento. La Cassazione (SS.UU. 20621/2023) ha chiarito che ha natura di <strong>tributo giudiziario</strong>, non di sanzione.
+            Quando l'impugnazione è respinta integralmente, dichiarata inammissibile o improcedibile, la parte è tenuta a versare un <strong>ulteriore importo</strong> pari al CU dovuto per l'impugnazione stessa (art. 13, c. 1-quater). Il giudice ne dà atto nel provvedimento. La Cassazione (SS.UU. 20621/2023) ha chiarito che ha natura di <strong>tributo giudiziario</strong>, non di sanzione.
           </p>
         </AlertBox>
         <AlertBox variant="info" title="Omessa dichiarazione di valore">
@@ -444,13 +444,13 @@ export default function ContributoUnificatoPage() {
         ]} />
       </div>
       <p className="text-sm text-muted-foreground">
-        L&apos;avvocato deve allegare la ricevuta di pagamento in sede di deposito dell&apos;atto. La verifica spetta al funzionario che riceve l&apos;atto (art. 15 DPR 115/2002).
+        L'avvocato deve allegare la ricevuta di pagamento in sede di deposito dell'atto. La verifica spetta al funzionario che riceve l'atto (art. 15 DPR 115/2002).
       </p>
 
       {/* Rimborso */}
       <SectionTitle id="rimborso" icon={RotateCcw} title="Rimborso del Contributo Unificato" subtitle="Circ. MEF n. 33/2007 e Circ. Min. Giustizia 9/2/2021" />
       <p className="text-base leading-relaxed mb-4">
-        È possibile richiedere il rimborso del CU versato in misura superiore al dovuto o per un procedimento esente. L&apos;istanza deve essere presentata entro <strong>2 anni</strong> dal versamento, presso l&apos;ufficio giudiziario competente. Il rimborso è erogato dall&apos;Agenzia delle Entrate.
+        È possibile richiedere il rimborso del CU versato in misura superiore al dovuto o per un procedimento esente. L'istanza deve essere presentata entro <strong>2 anni</strong> dal versamento, presso l'ufficio giudiziario competente. Il rimborso è erogato dall'Agenzia delle Entrate.
       </p>
       <div className="mb-4">
         <BulletList items={[
@@ -461,7 +461,7 @@ export default function ContributoUnificatoPage() {
         ]} />
       </div>
       <p className="text-sm text-muted-foreground">
-        Il diritto alla riscossione del CU è soggetto a <strong>prescrizione decennale</strong> ordinaria (art. 2946 c.c.). L&apos;invito al pagamento interrompe la prescrizione.
+        Il diritto alla riscossione del CU è soggetto a <strong>prescrizione decennale</strong> ordinaria (art. 2946 c.c.). L'invito al pagamento interrompe la prescrizione.
       </p>
 
       {/* Novità 2025 */}
@@ -469,17 +469,17 @@ export default function ContributoUnificatoPage() {
       <div className="space-y-4">
         <AlertBox variant="success" title="1. Obbligo di versamento minimo per l'iscrizione a ruolo">
           <p className="leading-relaxed">
-            Il nuovo art. 14, c. 3.1, DPR 115/2002 stabilisce che, nei procedimenti civili, la causa <strong>non può essere iscritta a ruolo</strong> se non è versato almeno l&apos;importo di <strong className="font-mono">€ 43,00</strong> (o il minor contributo dovuto per legge), fatti salvi i casi di esenzione.
+            Il nuovo art. 14, c. 3.1, DPR 115/2002 stabilisce che, nei procedimenti civili, la causa <strong>non può essere iscritta a ruolo</strong> se non è versato almeno l'importo di <strong className="font-mono">€ 43,00</strong> (o il minor contributo dovuto per legge), fatti salvi i casi di esenzione.
           </p>
         </AlertBox>
         <AlertBox variant="success" title="2. Recupero immediato senza invito">
           <p className="leading-relaxed">
-            Il nuovo art. 248, c. 3-bis, prevede che in caso di parziale omissione del pagamento, si proceda all&apos;<strong>immediata iscrizione a ruolo del debito</strong> con interessi e sanzioni, senza il previo invito al pagamento da parte della cancelleria.
+            Il nuovo art. 248, c. 3-bis, prevede che in caso di parziale omissione del pagamento, si proceda all'<strong>immediata iscrizione a ruolo del debito</strong> con interessi e sanzioni, senza il previo invito al pagamento da parte della cancelleria.
           </p>
         </AlertBox>
         <AlertBox variant="success" title="3. Gratuito patrocinio e iscrizione a ruolo">
           <p className="leading-relaxed">
-            La <a href="https://www.giustizia.it/giustizia/it/mg_1_8_1.page?contentId=SDC1454004" target="_blank" rel="noopener noreferrer" className="text-[oklch(0.45_0.12_250)] underline decoration-dotted underline-offset-2 hover:text-[oklch(0.35_0.15_250)]">Circ. Min. Giustizia 24/4/2025</a> ha chiarito che l&apos;ufficio giudiziario deve procedere all&apos;iscrizione a ruolo anche in presenza della <strong>sola istanza di ammissione al patrocinio</strong> purché regolarmente depositata e protocollata, a tutela del diritto di accesso alla difesa (art. 24 Cost.).
+            La <a href="https://www.giustizia.it/giustizia/it/mg_1_8_1.page?contentId=SDC1454004" target="_blank" rel="noopener noreferrer" className="text-[oklch(0.45_0.12_250)] underline decoration-dotted underline-offset-2 hover:text-[oklch(0.35_0.15_250)]">Circ. Min. Giustizia 24/4/2025</a> ha chiarito che l'ufficio giudiziario deve procedere all'iscrizione a ruolo anche in presenza della <strong>sola istanza di ammissione al patrocinio</strong> purché regolarmente depositata e protocollata, a tutela del diritto di accesso alla difesa (art. 24 Cost.).
           </p>
         </AlertBox>
       </div>

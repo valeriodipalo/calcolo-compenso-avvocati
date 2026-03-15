@@ -726,7 +726,7 @@ export default function Calcolatore() {
               </div>
               <div className="flex items-center gap-2">
                 <Toggle checked={accessori.ritenutaEnabled} onChange={checked => setAccessori({ ...accessori, ritenutaEnabled: checked })} />
-                <span className="text-sm">Ritenuta d&apos;acconto 20%</span>
+                <span className="text-sm">Ritenuta d'acconto 20%</span>
               </div>
             </div>
           </div>

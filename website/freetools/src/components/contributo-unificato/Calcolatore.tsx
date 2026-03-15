@@ -61,7 +61,7 @@ export default function Calcolatore() {
                 <option value="civile">Civile</option>
                 <option value="tributario">Tributario</option>
                 <option value="amministrativo">Amministrativo (generico)</option>
-                <option value="amministrativo_appalti">Amministrativo (appalti / autorit&agrave; indipendenti)</option>
+                <option value="amministrativo_appalti">Amministrativo (appalti / autorità indipendenti)</option>
               </select>
             </div>
 
@@ -149,7 +149,7 @@ export default function Calcolatore() {
                 <div>
                   <span className="text-sm font-semibold">Riduzione del 50%</span>
                   <p className="text-xs text-muted-foreground mt-1">
-                    Procedimenti per ingiunzione, convalida sfratto, cautelari, possessori, ATP, opposizione a decreto ingiuntivo, sfratto per morosit&agrave;, finita locazione, controversie di lavoro.
+                    Procedimenti per ingiunzione, convalida sfratto, cautelari, possessori, ATP, opposizione a decreto ingiuntivo, sfratto per morosità, finita locazione, controversie di lavoro.
                   </p>
                 </div>
               </label>
@@ -209,7 +209,7 @@ export default function Calcolatore() {
               )}
 
               <p className="text-xs text-muted-foreground mt-4 italic">
-                Oltre al contributo unificato, potrebbe essere dovuta l&apos;anticipazione forfettaria di &euro; 27,00 (art. 30 DPR 115/2002), salvo esenzioni.
+                Oltre al contributo unificato, potrebbe essere dovuta l'anticipazione forfettaria di &euro; 27,00 (art. 30 DPR 115/2002), salvo esenzioni.
               </p>
             </div>
           )}

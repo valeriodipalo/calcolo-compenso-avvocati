@@ -50,7 +50,7 @@ export const faqData: FAQItem[] = [
     categoria: "Calcolo",
     domanda: "Come si calcolano gli interessi legali?",
     risposta:
-      "La formula per il calcolo degli interessi legali semplici è: I = C \u00D7 S \u00D7 N / 36.500, dove I = interessi, C = capitale, S = tasso percentuale annuo, N = numero di giorni. Il divisore è sempre 36.500 (365 giorni \u00D7 100) anche negli anni bisestili, come confermato dalla Risoluzione dell'Agenzia delle Entrate n. 296/E del 14 luglio 2008.",
+      "La formula per il calcolo degli interessi legali semplici è: I = C × S × N / 36.500, dove I = interessi, C = capitale, S = tasso percentuale annuo, N = numero di giorni. Il divisore è sempre 36.500 (365 giorni × 100) anche negli anni bisestili, come confermato dalla Risoluzione dell'Agenzia delle Entrate n. 296/E del 14 luglio 2008.",
     fonti: [
       { label: "Ris. AE 296/E/2008", url: "https://www.agenziaentrate.gov.it/portale/documents/20143/0/Risoluzione_14_07_2008_296.pdf" },
     ],
@@ -59,7 +59,7 @@ export const faqData: FAQItem[] = [
     categoria: "Calcolo",
     domanda: "Come si calcolano gli interessi quando il periodo attraversa più anni con tassi diversi?",
     risposta:
-      "Quando il periodo di calcolo attraversa più anni con tassi diversi, occorre suddividerlo in sotto-periodi corrispondenti a ciascun tasso vigente. Per ogni sotto-periodo si applica la formula I = C \u00D7 S \u00D7 N / 36.500 con il tasso del periodo. Il totale degli interessi è la somma degli interessi di ciascun sotto-periodo.",
+      "Quando il periodo di calcolo attraversa più anni con tassi diversi, occorre suddividerlo in sotto-periodi corrispondenti a ciascun tasso vigente. Per ogni sotto-periodo si applica la formula I = C × S × N / 36.500 con il tasso del periodo. Il totale degli interessi è la somma degli interessi di ciascun sotto-periodo.",
   },
   {
     categoria: "Calcolo",
@@ -112,7 +112,7 @@ export const faqData: FAQItem[] = [
     categoria: "Applicazioni pratiche",
     domanda: "Come si calcolano gli interessi per il ravvedimento operoso?",
     risposta:
-      "Per il ravvedimento operoso (art. 13 D.Lgs. 472/1997), gli interessi si calcolano con la formula: I = imposta \u00D7 tasso legale \u00D7 giorni / 36.500. Si applica il tasso legale vigente nel periodo di ritardo. Se il ritardo attraversa più anni con tassi diversi, si fraziona il calcolo per ciascun periodo. Gli interessi vanno versati separatamente dall'imposta e dalla sanzione ridotta.",
+      "Per il ravvedimento operoso (art. 13 D.Lgs. 472/1997), gli interessi si calcolano con la formula: I = imposta × tasso legale × giorni / 36.500. Si applica il tasso legale vigente nel periodo di ritardo. Se il ritardo attraversa più anni con tassi diversi, si fraziona il calcolo per ciascun periodo. Gli interessi vanno versati separatamente dall'imposta e dalla sanzione ridotta.",
     fonti: [
       { label: "Art. 13 D.Lgs. 472/1997", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13" },
     ],
@@ -127,7 +127,7 @@ export const faqData: FAQItem[] = [
     categoria: "Applicazioni pratiche",
     domanda: "Come si calcolano gli interessi sulla caparra confirmatoria da restituire?",
     risposta:
-      "Quando il contratto viene risolto e la caparra confirmatoria deve essere restituita, gli interessi legali decorrono dalla data della domanda giudiziale (se la restituzione è controversa) oppure dalla data della messa in mora (se stragiudiziale). Il calcolo segue la formula standard: I = C \u00D7 S \u00D7 N / 36.500.",
+      "Quando il contratto viene risolto e la caparra confirmatoria deve essere restituita, gli interessi legali decorrono dalla data della domanda giudiziale (se la restituzione è controversa) oppure dalla data della messa in mora (se stragiudiziale). Il calcolo segue la formula standard: I = C × S × N / 36.500.",
     fonti: [{ label: "Art. 1385 cod. civ.", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art1385" }],
   },
   {

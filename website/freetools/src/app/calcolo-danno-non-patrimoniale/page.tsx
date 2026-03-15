@@ -144,19 +144,19 @@ export default function CalcoloDannoNonPatrimonialePage() {
       <Calcolatore />
 
       {/* ===== Definizione ===== */}
-      <SectionTitle id="definizione" icon={Scale} title="Cos&apos;&egrave; il Danno Non Patrimoniale" subtitle="Art. 2059 c.c. e interpretazione costituzionale" />
+      <SectionTitle id="definizione" icon={Scale} title="Cos'è il Danno Non Patrimoniale" subtitle="Art. 2059 c.c. e interpretazione costituzionale" />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          Il <strong>danno non patrimoniale</strong> &egrave; il pregiudizio che colpisce interessi della persona privi di valore economico diretto, quali la salute, la dignit&agrave;, la vita di relazione e gli affetti familiari. La sua disciplina trova fondamento nell&apos;<InlineNormLink text="art. 2059 del Codice Civile" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art2059" />, il quale prevede che il danno non patrimoniale sia risarcibile &laquo;solo nei casi determinati dalla legge&raquo;.
+          Il <strong>danno non patrimoniale</strong> è il pregiudizio che colpisce interessi della persona privi di valore economico diretto, quali la salute, la dignità, la vita di relazione e gli affetti familiari. La sua disciplina trova fondamento nell'<InlineNormLink text="art. 2059 del Codice Civile" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art2059" />, il quale prevede che il danno non patrimoniale sia risarcibile «solo nei casi determinati dalla legge».
         </p>
         <NormativaQuote url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art2059">
-          Art. 2059 cod. civ.: &quot;Il danno non patrimoniale deve essere risarcito solo nei casi determinati dalla legge.&quot;
+          Art. 2059 cod. civ.: "Il danno non patrimoniale deve essere risarcito solo nei casi determinati dalla legge."
         </NormativaQuote>
         <p className="text-base leading-relaxed">
-          Con le celebri <strong>sentenze gemelle</strong> del novembre 2008 (Cass. SS.UU. nn. 26972, 26973, 26974, 26975/2008), le Sezioni Unite della Cassazione hanno rivoluzionato l&apos;interpretazione della norma, affermando che il danno non patrimoniale costituisce una <strong>categoria unitaria</strong> e non &egrave; scomponibile in sotto-voci autonomamente risarcibili. Le denominazioni &laquo;danno biologico&raquo;, &laquo;danno morale&raquo; e &laquo;danno esistenziale&raquo; hanno funzione meramente descrittiva. Il risarcimento &egrave; ammesso non solo quando la legge lo prevede espressamente (come l&apos;<InlineNormLink text="art. 185 c.p." url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1930-10-19;1398~art185" /> per i danni da reato), ma anche quando il fatto illecito leda un <strong>diritto inviolabile della persona</strong> costituzionalmente garantito, secondo un&apos;interpretazione costituzionalmente orientata dell&apos;art. 2059 c.c.
+          Con le celebri <strong>sentenze gemelle</strong> del novembre 2008 (Cass. SS.UU. nn. 26972, 26973, 26974, 26975/2008), le Sezioni Unite della Cassazione hanno rivoluzionato l'interpretazione della norma, affermando che il danno non patrimoniale costituisce una <strong>categoria unitaria</strong> e non è scomponibile in sotto-voci autonomamente risarcibili. Le denominazioni «danno biologico», «danno morale» e «danno esistenziale» hanno funzione meramente descrittiva. Il risarcimento è ammesso non solo quando la legge lo prevede espressamente (come l'<InlineNormLink text="art. 185 c.p." url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1930-10-19;1398~art185" /> per i danni da reato), ma anche quando il fatto illecito leda un <strong>diritto inviolabile della persona</strong> costituzionalmente garantito, secondo un'interpretazione costituzionalmente orientata dell'art. 2059 c.c.
         </p>
         <p className="text-base leading-relaxed">
-          La lesione deve essere grave e il danno deve superare la soglia di tollerabilit&agrave; imposta dai doveri di solidariet&agrave; sociale (<InlineNormLink text="art. 2 Cost." url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:costituzione~art2" />). In ambito assicurativo, gli <InlineNormLink text="artt. 138 e 139 del Codice delle Assicurazioni" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-07;209" /> (D.Lgs. 209/2005) forniscono il quadro normativo specifico per la liquidazione del danno biologico da sinistro stradale, distinguendo tra lesioni di <strong>non lieve entit&agrave;</strong> (macropermanenti, art. 138) e di <strong>lieve entit&agrave;</strong> (micropermanenti, art. 139).
+          La lesione deve essere grave e il danno deve superare la soglia di tollerabilità imposta dai doveri di solidarietà sociale (<InlineNormLink text="art. 2 Cost." url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:costituzione~art2" />). In ambito assicurativo, gli <InlineNormLink text="artt. 138 e 139 del Codice delle Assicurazioni" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-07;209" /> (D.Lgs. 209/2005) forniscono il quadro normativo specifico per la liquidazione del danno biologico da sinistro stradale, distinguendo tra lesioni di <strong>non lieve entità</strong> (macropermanenti, art. 138) e di <strong>lieve entità</strong> (micropermanenti, art. 139).
         </p>
       </div>
 
@@ -164,7 +164,7 @@ export default function CalcoloDannoNonPatrimonialePage() {
       <SectionTitle id="tipologie" icon={List} title="Tipologie di Danno Non Patrimoniale" subtitle="Biologico, morale, esistenziale, parentale e catastrofale" />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          Pur trattandosi di una categoria unitaria, la giurisprudenza e la dottrina individuano diverse <strong>componenti descrittive</strong> del danno non patrimoniale, ciascuna con proprie caratteristiche ai fini della prova e della liquidazione. Conoscerle &egrave; essenziale per impostare correttamente la domanda risarcitoria.
+          Pur trattandosi di una categoria unitaria, la giurisprudenza e la dottrina individuano diverse <strong>componenti descrittive</strong> del danno non patrimoniale, ciascuna con proprie caratteristiche ai fini della prova e della liquidazione. Conoscerle è essenziale per impostare correttamente la domanda risarcitoria.
         </p>
         <LegalTable
           headers={["Componente", "Definizione", "Accertamento"]}
@@ -179,11 +179,11 @@ export default function CalcoloDannoNonPatrimonialePage() {
         />
         <AlertBox variant="warning" title="Danno tanatologico">
           <p className="leading-relaxed">
-            Le Sezioni Unite della Cassazione (sent. 15350/2015) hanno escluso la risarcibilit&agrave; del <strong>danno tanatologico</strong> (danno da morte in s&eacute;), confermando che il diritto alla vita non si trasmette agli eredi iure hereditatis. Restano invece trasmissibili il danno catastrofale (sofferenza ante mortem) e il danno biologico terminale (lesione dell&apos;integrit&agrave; psicofisica nel periodo di sopravvivenza).
+            Le Sezioni Unite della Cassazione (sent. 15350/2015) hanno escluso la risarcibilità del <strong>danno tanatologico</strong> (danno da morte in sé), confermando che il diritto alla vita non si trasmette agli eredi iure hereditatis. Restano invece trasmissibili il danno catastrofale (sofferenza ante mortem) e il danno biologico terminale (lesione dell'integrità psicofisica nel periodo di sopravvivenza).
           </p>
         </AlertBox>
         <p className="text-base leading-relaxed">
-          Il <strong>danno catastrofale</strong>, riconosciuto dalla Cassazione con la sentenza n. 35228/2022, si configura quando la vittima ha avuto consapevolezza dell&apos;approssimarsi della propria morte. L&apos;importo viene liquidato in via equitativa tenendo conto dell&apos;intensit&agrave; della sofferenza e della durata dell&apos;agonia cosciente. Il credito risarcitorio entra nel patrimonio del defunto ed &egrave; trasmissibile <em>iure hereditatis</em> agli eredi.
+          Il <strong>danno catastrofale</strong>, riconosciuto dalla Cassazione con la sentenza n. 35228/2022, si configura quando la vittima ha avuto consapevolezza dell'approssimarsi della propria morte. L'importo viene liquidato in via equitativa tenendo conto dell'intensità della sofferenza e della durata dell'agonia cosciente. Il credito risarcitorio entra nel patrimonio del defunto ed è trasmissibile <em>iure hereditatis</em> agli eredi.
         </p>
       </div>
 
@@ -191,10 +191,10 @@ export default function CalcoloDannoNonPatrimonialePage() {
       <SectionTitle id="tabelle-milano" icon={Table} title="Tabelle Milano 2024" subtitle="Criteri orientativi del Tribunale di Milano — Prot. P.7646_24" />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          Le <strong>Tabelle di Milano</strong> sono elaborate dall&apos;Osservatorio sulla Giustizia Civile del Tribunale di Milano e costituiscono il principale riferimento per la liquidazione equitativa del danno non patrimoniale in Italia. La <InlineNormLink text="Cassazione (sent. 12408/2011)" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art2059" /> le ha elevate a <strong>parametro para-normativo</strong>, stabilendo che il giudice di merito che se ne discosti deve adeguatamente motivare la scelta.
+          Le <strong>Tabelle di Milano</strong> sono elaborate dall'Osservatorio sulla Giustizia Civile del Tribunale di Milano e costituiscono il principale riferimento per la liquidazione equitativa del danno non patrimoniale in Italia. La <InlineNormLink text="Cassazione (sent. 12408/2011)" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art2059" /> le ha elevate a <strong>parametro para-normativo</strong>, stabilendo che il giudice di merito che se ne discosti deve adeguatamente motivare la scelta.
         </p>
         <p className="text-base leading-relaxed">
-          L&apos;edizione 2024 incorpora una rivalutazione ISTAT del <strong className="font-mono">16,2268%</strong> rispetto al 2021 e prevede un sistema a doppio binario: il <strong>punto biologico</strong> ({formatCurrency(milanoData.puntoBiologico)}) e l&apos;<strong>incremento per sofferenza</strong> ({formatCurrency(milanoData.incrementoSofferenza)}) per un valore totale per punto di {formatCurrency(milanoData.totalePunto)}. La personalizzazione &egrave; ammessa fino al <strong className="font-mono">50%</strong> per adeguare il risarcimento alle peculiarit&agrave; del caso concreto.
+          L'edizione 2024 incorpora una rivalutazione ISTAT del <strong className="font-mono">16,2268%</strong> rispetto al 2021 e prevede un sistema a doppio binario: il <strong>punto biologico</strong> ({formatCurrency(milanoData.puntoBiologico)}) e l'<strong>incremento per sofferenza</strong> ({formatCurrency(milanoData.incrementoSofferenza)}) per un valore totale per punto di {formatCurrency(milanoData.totalePunto)}. La personalizzazione è ammessa fino al <strong className="font-mono">50%</strong> per adeguare il risarcimento alle peculiarità del caso concreto.
         </p>
         <LegalTable
           headers={["Punti IP", "Biologico", "Sofferenza", "Totale"]}
@@ -206,11 +206,11 @@ export default function CalcoloDannoNonPatrimonialePage() {
           ])}
         />
         <p className="text-sm text-muted-foreground mt-2">
-          Valori base senza demoltiplicatore per et&agrave;. Fonte: Tabelle Milano 2024, Prot. P.7646_24.
+          Valori base senza demoltiplicatore per età. Fonte: Tabelle Milano 2024, Prot. P.7646_24.
         </p>
         <AlertBox variant="info" title="ITT con Tabelle Milano">
           <p className="leading-relaxed">
-            L&apos;inabilit&agrave; temporanea totale (ITT) viene liquidata a <strong className="font-mono">{formatCurrency(milanoData.ittGiornaliero100)}</strong> al giorno, comprensivi di {formatCurrency(milanoData.ittBiologico)} per danno biologico temporaneo e {formatCurrency(milanoData.ittSofferenza)} per sofferenza. Per l&apos;ITP, l&apos;importo si riduce in proporzione alla percentuale di incapacit&agrave; (es. ITP al 50% = {formatCurrency(milanoData.ittGiornaliero100 * 0.5)}/giorno).
+            L'inabilità temporanea totale (ITT) viene liquidata a <strong className="font-mono">{formatCurrency(milanoData.ittGiornaliero100)}</strong> al giorno, comprensivi di {formatCurrency(milanoData.ittBiologico)} per danno biologico temporaneo e {formatCurrency(milanoData.ittSofferenza)} per sofferenza. Per l'ITP, l'importo si riduce in proporzione alla percentuale di incapacità (es. ITP al 50% = {formatCurrency(milanoData.ittGiornaliero100 * 0.5)}/giorno).
           </p>
         </AlertBox>
       </div>
@@ -220,11 +220,11 @@ export default function CalcoloDannoNonPatrimonialePage() {
       <div className="space-y-4">
         <AlertBox variant="success" title="Novità: Tabella Unica Nazionale in vigore">
           <p className="leading-relaxed">
-            Dal <strong>5 marzo 2025</strong> &egrave; in vigore la Tabella Unica Nazionale per il risarcimento del danno non patrimoniale da macropermanenti, introdotta dal <InlineNormLink text="D.P.R. 13 gennaio 2025, n. 12" url="https://www.gazzettaufficiale.it/eli/id/2025/02/18/25G00019/SG" /> in attuazione dell&apos;<InlineNormLink text="art. 138 del Codice delle Assicurazioni Private" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-07;209" />. Si tratta della prima tabella con valore <strong>normativo vincolante</strong> per tutti i giudici.
+            Dal <strong>5 marzo 2025</strong> è in vigore la Tabella Unica Nazionale per il risarcimento del danno non patrimoniale da macropermanenti, introdotta dal <InlineNormLink text="D.P.R. 13 gennaio 2025, n. 12" url="https://www.gazzettaufficiale.it/eli/id/2025/02/18/25G00019/SG" /> in attuazione dell'<InlineNormLink text="art. 138 del Codice delle Assicurazioni Private" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-07;209" />. Si tratta della prima tabella con valore <strong>normativo vincolante</strong> per tutti i giudici.
           </p>
         </AlertBox>
         <p className="text-base leading-relaxed">
-          La TUN si applica obbligatoriamente alla liquidazione del danno biologico per lesioni di <strong>non lieve entit&agrave;</strong> (invalidit&agrave; permanente dal 10% al 100%) derivanti da sinistri stradali e da responsabilit&agrave; sanitaria (<InlineNormLink text="art. 7 L. 24/2017 — Legge Gelli-Bianco" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-03-08;24" />). Per gli illeciti di diversa natura (infortuni sul lavoro, cadute, ecc.) resta applicabile il criterio equitativo delle Tabelle di Milano.
+          La TUN si applica obbligatoriamente alla liquidazione del danno biologico per lesioni di <strong>non lieve entità</strong> (invalidità permanente dal 10% al 100%) derivanti da sinistri stradali e da responsabilità sanitaria (<InlineNormLink text="art. 7 L. 24/2017 — Legge Gelli-Bianco" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-03-08;24" />). Per gli illeciti di diversa natura (infortuni sul lavoro, cadute, ecc.) resta applicabile il criterio equitativo delle Tabelle di Milano.
         </p>
         <LegalTable
           headers={["Parametro", "Valore TUN 2025", "Confronto Milano 2024"]}
@@ -238,30 +238,30 @@ export default function CalcoloDannoNonPatrimonialePage() {
           ]}
         />
         <p className="text-base leading-relaxed">
-          La differenza nei valori &egrave; significativa: il punto base TUN ({formatCurrency(tunData.valoreBasePunto)}) &egrave; inferiore di quasi il 46% rispetto al punto Milano ({formatCurrency(milanoData.totalePunto)}). Tuttavia, la TUN incorpora gi&agrave; la componente morale/sofferenza nel valore base, mentre Milano la scinde in biologico e incremento per sofferenza. Il dibattito giurisprudenziale sulla congruit&agrave; dei valori TUN &egrave; ancora in corso.
+          La differenza nei valori è significativa: il punto base TUN ({formatCurrency(tunData.valoreBasePunto)}) è inferiore di quasi il 46% rispetto al punto Milano ({formatCurrency(milanoData.totalePunto)}). Tuttavia, la TUN incorpora già la componente morale/sofferenza nel valore base, mentre Milano la scinde in biologico e incremento per sofferenza. Il dibattito giurisprudenziale sulla congruità dei valori TUN è ancora in corso.
         </p>
-        <AlertBox variant="warning" title="Applicabilit&agrave; retroattiva">
+        <AlertBox variant="warning" title="Applicabilità retroattiva">
           <p className="leading-relaxed">
-            La TUN si applica ai sinistri verificatisi dal 5 marzo 2025 in poi. Per i sinistri anteriori, la Cassazione (sent. 11319/2025) ha ammesso l&apos;utilizzo della TUN in via equitativa come parametro di riferimento, senza obbligo vincolante. Il giudice conserva la facolt&agrave; di applicare le Tabelle di Milano se ritenute pi&ugrave; congrue.
+            La TUN si applica ai sinistri verificatisi dal 5 marzo 2025 in poi. Per i sinistri anteriori, la Cassazione (sent. 11319/2025) ha ammesso l'utilizzo della TUN in via equitativa come parametro di riferimento, senza obbligo vincolante. Il giudice conserva la facoltà di applicare le Tabelle di Milano se ritenute più congrue.
           </p>
         </AlertBox>
       </div>
 
       {/* ===== Micropermanenti ===== */}
-      <SectionTitle id="micropermanenti" icon={Shield} title="Micropermanenti (Art. 139 CdA)" subtitle="Lesioni di lieve entit&agrave; — 1-9% di invalidit&agrave; permanente" />
+      <SectionTitle id="micropermanenti" icon={Shield} title="Micropermanenti (Art. 139 CdA)" subtitle="Lesioni di lieve entità — 1-9% di invalidità permanente" />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          Le <strong>micropermanenti</strong> sono le lesioni di lieve entit&agrave; con invalidit&agrave; permanente compresa tra l&apos;1% e il 9%. La loro liquidazione &egrave; disciplinata dall&apos;<InlineNormLink text="art. 139 del Codice delle Assicurazioni Private" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-07;209" /> (D.Lgs. 209/2005), che prevede una formula matematica per il calcolo del risarcimento.
+          Le <strong>micropermanenti</strong> sono le lesioni di lieve entità con invalidità permanente compresa tra l'1% e il 9%. La loro liquidazione è disciplinata dall'<InlineNormLink text="art. 139 del Codice delle Assicurazioni Private" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-07;209" /> (D.Lgs. 209/2005), che prevede una formula matematica per il calcolo del risarcimento.
         </p>
         <NormativaQuote url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-07;209">
-          Art. 139, c. 1, D.Lgs. 209/2005: &quot;Il risarcimento del danno biologico per lesioni di lieve entit&agrave; [...] &egrave; effettuato secondo i criteri e le misure seguenti [...] a titolo di danno biologico permanente, &egrave; liquidato [...] un importo crescente in misura pi&ugrave; che proporzionale in relazione ad ogni punto percentuale di invalidit&agrave;.&quot;
+          Art. 139, c. 1, D.Lgs. 209/2005: "Il risarcimento del danno biologico per lesioni di lieve entità [...] è effettuato secondo i criteri e le misure seguenti [...] a titolo di danno biologico permanente, è liquidato [...] un importo crescente in misura più che proporzionale in relazione ad ogni punto percentuale di invalidità."
         </NormativaQuote>
         <div className="bg-[oklch(0.97_0.005_250)] border border-[oklch(0.90_0.02_250)] p-5 text-center" style={{ borderRadius: "0.375rem" }}>
           <p className="text-lg font-mono font-bold text-[oklch(0.25_0.04_250)]">
-            Danno = PuntoBase &times; PuntiIP &times; (1 &minus; Et&agrave; &times; 0,005)
+            Danno = PuntoBase × PuntiIP × (1 − Età × 0,005)
           </p>
           <p className="text-sm text-muted-foreground mt-2">
-            PuntoBase 2026 = {formatCurrency(micropermanentiData.puntoBase2026)} &bull; ITT = {formatCurrency(micropermanentiData.ittGiornaliero)}/giorno &bull; Personalizzazione max = {micropermanentiData.personalizzazioneMax}%
+            PuntoBase 2026 = {formatCurrency(micropermanentiData.puntoBase2026)} • ITT = {formatCurrency(micropermanentiData.ittGiornaliero)}/giorno • Personalizzazione max = {micropermanentiData.personalizzazioneMax}%
           </p>
         </div>
         <LegalTable
@@ -273,9 +273,9 @@ export default function CalcoloDannoNonPatrimonialePage() {
             ["Rivalutazione ISTAT", "—", "+1,7% (stima)"],
           ]}
         />
-        <h3 className="text-xl text-[oklch(0.25_0.04_250)] mt-4 mb-3">Esempio: 5 punti, et&agrave; 35 anni</h3>
+        <h3 className="text-xl text-[oklch(0.25_0.04_250)] mt-4 mb-3">Esempio: 5 punti, età 35 anni</h3>
         <p className="text-base leading-relaxed">
-          Con 5 punti di invalidit&agrave; e 35 anni di et&agrave;, il demoltiplicatore &egrave; 1 &minus; (35 &times; 0,005) = <strong className="font-mono">0,825</strong>. Il danno biologico &egrave; {formatCurrency(micropermanentiData.puntoBase2026)} &times; 5 &times; 0,825 = <strong className="font-mono">{formatCurrency(micropermanentiData.puntoBase2026 * 5 * 0.825)}</strong>. Aggiungendo 30 giorni di ITT ({formatCurrency(micropermanentiData.ittGiornaliero * 30)}), il totale base &egrave; di circa <strong className="font-mono">{formatCurrency(micropermanentiData.puntoBase2026 * 5 * 0.825 + micropermanentiData.ittGiornaliero * 30)}</strong> prima della personalizzazione.
+          Con 5 punti di invalidità e 35 anni di età, il demoltiplicatore è 1 − (35 × 0,005) = <strong className="font-mono">0,825</strong>. Il danno biologico è {formatCurrency(micropermanentiData.puntoBase2026)} × 5 × 0,825 = <strong className="font-mono">{formatCurrency(micropermanentiData.puntoBase2026 * 5 * 0.825)}</strong>. Aggiungendo 30 giorni di ITT ({formatCurrency(micropermanentiData.ittGiornaliero * 30)}), il totale base è di circa <strong className="font-mono">{formatCurrency(micropermanentiData.puntoBase2026 * 5 * 0.825 + micropermanentiData.ittGiornaliero * 30)}</strong> prima della personalizzazione.
         </p>
       </div>
 
@@ -283,7 +283,7 @@ export default function CalcoloDannoNonPatrimonialePage() {
       <SectionTitle id="come-si-calcola" icon={Calculator} title="Come si Calcola il Danno Non Patrimoniale" subtitle="Guida passo-passo alla liquidazione" />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          Il calcolo del <strong>danno non patrimoniale</strong> segue un percorso articolato in pi&ugrave; fasi, dalla qualificazione medico-legale della lesione fino alla determinazione dell&apos;importo finale. Il procedimento varia in base alla gravit&agrave; della lesione e alla tabella applicabile.
+          Il calcolo del <strong>danno non patrimoniale</strong> segue un percorso articolato in più fasi, dalla qualificazione medico-legale della lesione fino alla determinazione dell'importo finale. Il procedimento varia in base alla gravità della lesione e alla tabella applicabile.
         </p>
         <FeatureGrid items={[
           { title: "1. CTU medico-legale", desc: "Il consulente tecnico d'ufficio accerta la percentuale di invalidità permanente, i giorni di ITT e ITP, e le eventuali peculiarità soggettive della lesione." },
@@ -295,7 +295,7 @@ export default function CalcoloDannoNonPatrimonialePage() {
         ]} />
         <AlertBox variant="info" title="Demoltiplicatore per età">
           <p className="leading-relaxed">
-            Il <strong>demoltiplicatore per et&agrave;</strong> riduce il valore del punto in ragione dell&apos;et&agrave; del danneggiato: pi&ugrave; il soggetto &egrave; giovane, maggiore &egrave; il danno riconosciuto (perch&eacute; convivr&agrave; pi&ugrave; a lungo con l&apos;invalidit&agrave;). Il coefficiente si calcola come 1 &minus; (et&agrave; &times; 0,5%). Per un soggetto di 20 anni il demoltiplicatore &egrave; 0,90; a 50 anni scende a 0,75; a 80 anni &egrave; 0,60.
+            Il <strong>demoltiplicatore per età</strong> riduce il valore del punto in ragione dell'età del danneggiato: più il soggetto è giovane, maggiore è il danno riconosciuto (perché convivrà più a lungo con l'invalidità). Il coefficiente si calcola come 1 − (età × 0,5%). Per un soggetto di 20 anni il demoltiplicatore è 0,90; a 50 anni scende a 0,75; a 80 anni è 0,60.
           </p>
         </AlertBox>
         <p className="text-base leading-relaxed">
@@ -304,10 +304,10 @@ export default function CalcoloDannoNonPatrimonialePage() {
       </div>
 
       {/* ===== Personalizzazione ===== */}
-      <SectionTitle id="personalizzazione" icon={Sparkles} title="Personalizzazione del Danno" subtitle="Criteri e limiti per l&apos;aumento del risarcimento tabellare" />
+      <SectionTitle id="personalizzazione" icon={Sparkles} title="Personalizzazione del Danno" subtitle="Criteri e limiti per l'aumento del risarcimento tabellare" />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          La <strong>personalizzazione</strong> &egrave; lo strumento attraverso il quale il giudice adegua il risarcimento tabellare alle specificit&agrave; del caso concreto. Non si tratta di un &laquo;bonus&raquo; automatico, ma di un aumento che deve essere allegato e provato dalla parte che lo richiede.
+          La <strong>personalizzazione</strong> è lo strumento attraverso il quale il giudice adegua il risarcimento tabellare alle specificità del caso concreto. Non si tratta di un «bonus» automatico, ma di un aumento che deve essere allegato e provato dalla parte che lo richiede.
         </p>
         <LegalTable
           headers={["Tabella", "Personalizzazione max", "Criteri principali"]}
@@ -318,11 +318,11 @@ export default function CalcoloDannoNonPatrimonialePage() {
           ]}
         />
         <p className="text-base leading-relaxed">
-          I criteri di personalizzazione pi&ugrave; frequentemente riconosciuti dalla giurisprudenza includono: l&apos;et&agrave; particolarmente giovane del danneggiato, l&apos;incidenza della lesione sulla professione svolta (es. invalidi&agrave; alle mani per un musicista), la compromissione di attivit&agrave; sportive o ludiche praticate con costanza, l&apos;impatto sulla vita sessuale e di relazione, la sofferenza morale di particolare intensit&agrave; documentata o desumibile dalle circostanze del caso.
+          I criteri di personalizzazione più frequentemente riconosciuti dalla giurisprudenza includono: l'età particolarmente giovane del danneggiato, l'incidenza della lesione sulla professione svolta (es. invalidià alle mani per un musicista), la compromissione di attività sportive o ludiche praticate con costanza, l'impatto sulla vita sessuale e di relazione, la sofferenza morale di particolare intensità documentata o desumibile dalle circostanze del caso.
         </p>
         <AlertBox variant="info" title="Onere della prova">
           <p className="leading-relaxed">
-            L&apos;onere di allegare e provare le circostanze che giustificano la personalizzazione grava sul danneggiato. Non &egrave; sufficiente la mera richiesta generica: occorre indicare specificamente le ragioni per le quali il caso concreto si discosta dalla media e fornire elementi di prova a supporto (documenti, testimonianze, perizie). Il giudice non pu&ograve; procedere d&apos;ufficio alla personalizzazione.
+            L'onere di allegare e provare le circostanze che giustificano la personalizzazione grava sul danneggiato. Non è sufficiente la mera richiesta generica: occorre indicare specificamente le ragioni per le quali il caso concreto si discosta dalla media e fornire elementi di prova a supporto (documenti, testimonianze, perizie). Il giudice non può procedere d'ufficio alla personalizzazione.
           </p>
         </AlertBox>
       </div>
@@ -331,7 +331,7 @@ export default function CalcoloDannoNonPatrimonialePage() {
       <SectionTitle id="perdita-parentale" icon={Users} title="Danno da Perdita Parentale" subtitle="Risarcimento iure proprio ai familiari superstiti" />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          Il <strong>danno da perdita parentale</strong> (o danno da lutto) &egrave; il pregiudizio sofferto <em>iure proprio</em> dai familiari superstiti in conseguenza della morte di un congiunto. Non si tratta di un diritto ereditato dal defunto, ma di un danno direttamente subito dal familiare per la perdita del rapporto affettivo. Le Tabelle di Milano 2024 adottano un <strong>sistema a punti</strong> che tiene conto della relazione parentale, dell&apos;et&agrave;, della convivenza, della composizione del nucleo familiare e della qualit&agrave; del rapporto.
+          Il <strong>danno da perdita parentale</strong> (o danno da lutto) è il pregiudizio sofferto <em>iure proprio</em> dai familiari superstiti in conseguenza della morte di un congiunto. Non si tratta di un diritto ereditato dal defunto, ma di un danno direttamente subito dal familiare per la perdita del rapporto affettivo. Le Tabelle di Milano 2024 adottano un <strong>sistema a punti</strong> che tiene conto della relazione parentale, dell'età, della convivenza, della composizione del nucleo familiare e della qualità del rapporto.
         </p>
         <h3 className="text-xl text-[oklch(0.25_0.04_250)] mt-4 mb-3">Tabelle Milano 2024</h3>
         <LegalTable
@@ -354,11 +354,11 @@ export default function CalcoloDannoNonPatrimonialePage() {
           ])}
         />
         <p className="text-base leading-relaxed">
-          Le Tabelle di Roma prevedono importi generalmente inferiori rispetto a Milano. La scelta della tabella da applicare dipende dalla giurisdizione e dall&apos;orientamento del giudice. La Cassazione ha ribadito che le Tabelle di Milano costituiscono il parametro di riferimento anche per i tribunali di altre sedi giudiziarie (Cass. 12408/2011), ma il giudice pu&ograve; motivatamente discostarsene.
+          Le Tabelle di Roma prevedono importi generalmente inferiori rispetto a Milano. La scelta della tabella da applicare dipende dalla giurisdizione e dall'orientamento del giudice. La Cassazione ha ribadito che le Tabelle di Milano costituiscono il parametro di riferimento anche per i tribunali di altre sedi giudiziarie (Cass. 12408/2011), ma il giudice può motivatamente discostarsene.
         </p>
         <AlertBox variant="warning" title="Legittimati attivi">
           <p className="leading-relaxed">
-            Sono legittimati a richiedere il danno da perdita parentale il <strong>coniuge</strong> (o convivente more uxorio), i <strong>genitori</strong>, i <strong>figli</strong>, i <strong>fratelli e sorelle</strong> e, in casi particolari, anche i <strong>nonni e nipoti</strong>. La prova del vincolo affettivo &egrave; presunta per i congiunti pi&ugrave; stretti, ma deve essere specificamente provata per i parenti pi&ugrave; lontani.
+            Sono legittimati a richiedere il danno da perdita parentale il <strong>coniuge</strong> (o convivente more uxorio), i <strong>genitori</strong>, i <strong>figli</strong>, i <strong>fratelli e sorelle</strong> e, in casi particolari, anche i <strong>nonni e nipoti</strong>. La prova del vincolo affettivo è presunta per i congiunti più stretti, ma deve essere specificamente provata per i parenti più lontani.
           </p>
         </AlertBox>
       </div>
@@ -367,7 +367,7 @@ export default function CalcoloDannoNonPatrimonialePage() {
       <SectionTitle id="prova-del-danno" icon={FileText} title="Prova del Danno Non Patrimoniale" subtitle="Onere di allegazione, presunzioni e CTU" />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          La prova del danno non patrimoniale segue regole specifiche che si differenziano per ciascuna componente descrittiva. Il principio generale &egrave; quello dell&apos;<strong>allegazione</strong>: il danneggiato deve indicare specificamente i pregiudizi subiti e fornire elementi per la loro dimostrazione, anche se la liquidazione avverr&agrave; in via equitativa.
+          La prova del danno non patrimoniale segue regole specifiche che si differenziano per ciascuna componente descrittiva. Il principio generale è quello dell'<strong>allegazione</strong>: il danneggiato deve indicare specificamente i pregiudizi subiti e fornire elementi per la loro dimostrazione, anche se la liquidazione avverrà in via equitativa.
         </p>
         <BulletList items={[
           "Danno biologico: si prova con la CTU medico-legale che accerta la percentuale di invalidità permanente e i giorni di ITT/ITP. La relazione medico-legale è il fondamento della liquidazione tabellare.",
@@ -376,18 +376,18 @@ export default function CalcoloDannoNonPatrimonialePage() {
           "Danno parentale: il vincolo affettivo è presunto per i congiunti più stretti (coniuge, genitori, figli); per i parenti meno prossimi occorre provare l'effettiva convivenza e la qualità del rapporto.",
         ]} />
         <NormativaQuote url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art2729">
-          Art. 2729 cod. civ.: &quot;Le presunzioni non stabilite dalla legge sono lasciate alla prudenza del giudice, il quale non deve ammettere che presunzioni gravi, precise e concordanti.&quot;
+          Art. 2729 cod. civ.: "Le presunzioni non stabilite dalla legge sono lasciate alla prudenza del giudice, il quale non deve ammettere che presunzioni gravi, precise e concordanti."
         </NormativaQuote>
         <p className="text-base leading-relaxed">
-          La giurisprudenza ammette un ampio ventaglio di mezzi di prova: documentazione sanitaria, referti di pronto soccorso, certificati medici, perizie psicologiche, testimonianze di familiari e conoscenti, fotografie che documentino le condizioni fisiche, dichiarazioni del medico curante. Per la prova del danno morale, la Cassazione ha chiarito che &egrave; sufficiente dimostrare la gravit&agrave; della lesione per far presumere la sofferenza (Cass. 901/2018).
+          La giurisprudenza ammette un ampio ventaglio di mezzi di prova: documentazione sanitaria, referti di pronto soccorso, certificati medici, perizie psicologiche, testimonianze di familiari e conoscenti, fotografie che documentino le condizioni fisiche, dichiarazioni del medico curante. Per la prova del danno morale, la Cassazione ha chiarito che è sufficiente dimostrare la gravità della lesione per far presumere la sofferenza (Cass. 901/2018).
         </p>
       </div>
 
       {/* ===== Novita 2025-2026 ===== */}
-      <SectionTitle id="novita-2025" icon={Sparkles} title="Novit&agrave; Normative 2025-2026" subtitle="TUN, aggiornamenti ISTAT e giurisprudenza recente" />
+      <SectionTitle id="novita-2025" icon={Sparkles} title="Novità Normative 2025-2026" subtitle="TUN, aggiornamenti ISTAT e giurisprudenza recente" />
       <div className="space-y-4">
         <p className="text-base leading-relaxed">
-          Il biennio 2025-2026 segna un punto di svolta nella liquidazione del danno non patrimoniale in Italia, con l&apos;entrata in vigore della Tabella Unica Nazionale e le prime pronunce giurisprudenziali sulla sua applicazione.
+          Il biennio 2025-2026 segna un punto di svolta nella liquidazione del danno non patrimoniale in Italia, con l'entrata in vigore della Tabella Unica Nazionale e le prime pronunce giurisprudenziali sulla sua applicazione.
         </p>
         <FeatureGrid items={[
           { title: "TUN in vigore dal 5/3/2025", desc: "D.P.R. 12/2025: prima tabella normativa vincolante per macropermanenti. Punto base € 947,30, personalizzazione 30%." },
@@ -397,19 +397,19 @@ export default function CalcoloDannoNonPatrimonialePage() {
         ]} />
         <AlertBox variant="success" title="Aggiornamento ISTAT micropermanenti 2026">
           <p className="leading-relaxed">
-            Il punto base delle micropermanenti (<InlineNormLink text="art. 139 CdA" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-07;209" />) &egrave; stato aggiornato per il 2026 con la rivalutazione ISTAT dell&apos;1,7%, passando da {formatCurrency(micropermanentiData.puntoBase2025)} a <strong className="font-mono">{formatCurrency(micropermanentiData.puntoBase2026)}</strong>. L&apos;aggiornamento si applica alle liquidazioni effettuate dal 1&deg; gennaio 2026.
+            Il punto base delle micropermanenti (<InlineNormLink text="art. 139 CdA" url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-07;209" />) è stato aggiornato per il 2026 con la rivalutazione ISTAT dell'1,7%, passando da {formatCurrency(micropermanentiData.puntoBase2025)} a <strong className="font-mono">{formatCurrency(micropermanentiData.puntoBase2026)}</strong>. L'aggiornamento si applica alle liquidazioni effettuate dal 1° gennaio 2026.
           </p>
         </AlertBox>
         <p className="text-base leading-relaxed">
-          Sul piano giurisprudenziale, si registrano le prime tensioni tra i valori della TUN e quelli delle Tabelle di Milano. Diversi tribunali di merito hanno sollevato dubbi sulla congruit&agrave; dei valori TUN, significativamente inferiori a quelli milanesi. La Cassazione sar&agrave; chiamata a pronunciarsi sulla questione della possibile incostituzionalit&agrave; dei valori della TUN, in relazione al principio di integrale riparazione del danno e al diritto alla salute (<InlineNormLink text="art. 32 Cost." url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:costituzione~art32" />).
+          Sul piano giurisprudenziale, si registrano le prime tensioni tra i valori della TUN e quelli delle Tabelle di Milano. Diversi tribunali di merito hanno sollevato dubbi sulla congruità dei valori TUN, significativamente inferiori a quelli milanesi. La Cassazione sarà chiamata a pronunciarsi sulla questione della possibile incostituzionalità dei valori della TUN, in relazione al principio di integrale riparazione del danno e al diritto alla salute (<InlineNormLink text="art. 32 Cost." url="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:costituzione~art32" />).
         </p>
         <p className="text-base leading-relaxed">
-          Per quanto riguarda la TUN, il <InlineNormLink text="D.P.R. 12/2025" url="https://www.gazzettaufficiale.it/eli/id/2025/02/18/25G00019/SG" /> prevede un meccanismo di aggiornamento periodico dei valori, ma non ha ancora stabilito una tempistica precisa. Le Tabelle di Milano continueranno ad essere aggiornate dall&apos;Osservatorio sulla Giustizia Civile e resteranno il riferimento prevalente per gli illeciti non rientranti nell&apos;ambito di applicazione della TUN.
+          Per quanto riguarda la TUN, il <InlineNormLink text="D.P.R. 12/2025" url="https://www.gazzettaufficiale.it/eli/id/2025/02/18/25G00019/SG" /> prevede un meccanismo di aggiornamento periodico dei valori, ma non ha ancora stabilito una tempistica precisa. Le Tabelle di Milano continueranno ad essere aggiornate dall'Osservatorio sulla Giustizia Civile e resteranno il riferimento prevalente per gli illeciti non rientranti nell'ambito di applicazione della TUN.
         </p>
       </div>
 
       {/* ===== FAQ ===== */}
-      <SectionTitle id="faq" icon={HelpCircle} title="Domande Frequenti (FAQ)" subtitle="Le risposte ai dubbi pi&ugrave; comuni sul danno non patrimoniale" />
+      <SectionTitle id="faq" icon={HelpCircle} title="Domande Frequenti (FAQ)" subtitle="Le risposte ai dubbi più comuni sul danno non patrimoniale" />
       <FAQ items={faqData} />
 
       {/* ===== Normativa ===== */}
