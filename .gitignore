@@ -26,3 +26,8 @@ Thumbs.db
 # Claude/Playwright local
 .playwright-mcp/
 .claude-plugin/
+.mcp.json
+
+# google credentials
+client_secret_256387947268-e9q4qp3tpl4snr5ubnon3riu5h8f5o1c.apps.googleusercontent.com.json
+gsc-report.html

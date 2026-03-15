@@ -1,0 +1,4 @@
+{
+  "siteUrl": "sc-domain:avvocatotools.it",
+  "defaults": { "range": "28d", "limit": 25 }
+}
