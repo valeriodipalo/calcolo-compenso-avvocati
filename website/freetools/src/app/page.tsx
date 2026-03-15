@@ -66,7 +66,7 @@ export default function HomePage() {
 
       {/* Tools grid */}
       <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl">
           {tools.map((tool) => {
             const Icon = tool.icon;
             const cardContent = (

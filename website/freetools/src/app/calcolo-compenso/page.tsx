@@ -34,7 +34,7 @@ import type { ToolConfig } from "@/types/tool";
 import type { Metadata } from "next";
 
 const HERO_IMG =
-  "https://d2xsxph8kpxj0f.cloudfront.net/avvocatitools/calcolo-compenso-hero.webp";
+  "https://d2xsxph8kpxj0f.cloudfront.net/310419663028236822/PYXMaFM79E4yk2cWCNDAbj/hero-banner-MQeTtdfMiZ3YzxFgU6R99M.webp";
 
 export const metadata: Metadata = {
   title: "Calcolo Compenso Avvocato 2026: Parametri Forensi e Tabelle",
