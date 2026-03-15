@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://avvocatotools.it/sitemap.xml",
+    sitemap: "https://www.avvocatotools.it/sitemap.xml",
   };
 }

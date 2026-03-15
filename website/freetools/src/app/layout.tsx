@@ -26,7 +26,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://avvocatotools.it"),
+  metadataBase: new URL("https://www.avvocatotools.it"),
   title: {
     default: "Strumenti Legali Gratuiti | Piattaforma Avvocati",
     template: "%s | Piattaforma Avvocati",

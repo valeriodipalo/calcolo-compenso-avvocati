@@ -37,7 +37,7 @@ const HERO_IMG =
   "https://d2xsxph8kpxj0f.cloudfront.net/310419663028236822/PYXMaFM79E4yk2cWCNDAbj/hero-banner-MQeTtdfMiZ3YzxFgU6R99M.webp";
 
 export const metadata: Metadata = {
-  title: "Calcolo Compenso Avvocato 2026: Parametri Forensi e Tabelle",
+  title: "Calcolo Compenso Avvocato 2026",
   description:
     "Calcola il compenso dell'avvocato con i parametri forensi aggiornati al DM 147/2022. Tabelle, scaglioni, fasi processuali, aumenti, riduzioni e calcolatore gratuito.",
   alternates: {

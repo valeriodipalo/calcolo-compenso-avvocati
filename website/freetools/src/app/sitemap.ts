@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://avvocatotools.it";
+  const baseUrl = "https://www.avvocatotools.it";
   const now = new Date();
 
   return [
