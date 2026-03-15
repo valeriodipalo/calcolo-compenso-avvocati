@@ -1,232 +1,325 @@
 ---
 name: create-page
 description: >-
-  End-to-end creation of new free legal tool pages for Piattaforma Avvocati.
-  Handles keyword research, competitive analysis, deep info gathering, page
-  development with shared components, SEO validation, and deployment. Use when
-  the user says "create page", "new tool page", "add a new tool", or
-  "/create-page {topic}".
+  End-to-end creation of SEO-optimized Italian legal tool pages for Piattaforma
+  Avvocati. Starts from a reference competitor page, performs keyword research
+  with DataForSEO (including People Also Ask), SERP competitor analysis, deep
+  legal research via Perplexity, builds the complete Next.js page with expanded
+  schema markup for rich results, then iteratively refines through SEO
+  validation until publication-ready. Use when the user says "create page",
+  "new tool page", "add a new tool", "new page", or "/create-page {topic}".
+  Also use when the user provides a competitor URL and asks to build a page
+  around that topic.
 metadata:
-  version: "1.0.0"
-  argument-hint: "{topic} [slug] [primary-keyword]"
+  version: "2.0.0"
+  argument-hint: "{topic} [reference-url] [slug]"
 ---
 
 # Create Page
 
-You are an expert Italian legal content strategist and Next.js developer. Create a complete, SEO-optimized tool page for Piattaforma Avvocati following the 6-phase workflow below.
+You are building a **complete, SEO-dominant Italian legal tool page** for Piattaforma Avvocati. The page must rank in the top 5 for its target keyword in Google Italy, maximize dwell time through interactive tools, and trigger rich results through expanded schema markup.
 
-## Prerequisites
+## Before You Start
 
-Before starting, read these reference files for exact patterns and APIs:
+Read these reference files — they contain exact patterns, APIs, and quality standards:
 
-1. **Read** `.agents/skills/create-page/references/template-pattern.md` — code skeletons for all files
-2. **Read** `.agents/skills/create-page/references/design-system.md` — colors, typography, component APIs
-3. **Read** `.agents/skills/create-page/references/file-checklist.md` — complete file inventory and verification steps
+1. **`references/research-strategy.md`** — DataForSEO tool usage, SERP analysis method, PAA extraction
+2. **`references/implementation-guide.md`** — code skeletons, component APIs, file checklist, design system
+3. **`references/content-model.md`** — what "deep enough" content looks like, with examples from existing pages
+4. **`references/schema-enrichment.md`** — all JSON-LD schema types for rich results, when to use each
 
 ## Parsing Arguments
 
 When triggered with `/create-page {args}`:
-- First argument: **topic** (required) — e.g., "interessi legali", "termini processuali"
-- Second argument: **slug** (optional) — URL slug, e.g., "interessi-legali". If omitted, derive from topic (lowercase, hyphens, no accents)
-- Third argument: **primary keyword** (optional) — if omitted, determine in Phase 1
+- First argument: **topic** (required) — e.g., "interessi moratori", "diritti di copia"
+- Second argument: **reference URL** (optional) — competitor page to analyze and beat
+- Third argument: **slug** (optional) — if omitted, derive from topic (lowercase, hyphens, no accents)
+- Optional flag: `--research <path>` — path to pre-existing research file (e.g., from Manus)
 
-If no arguments provided, ask the user for the topic.
+If no arguments provided, ask the user for the topic and a reference page URL.
 
 ---
 
-## Phase 1: Strategy Input & Keyword Validation
+## Phase 1: Keyword Strategy from Reference Page
+
+The goal is to understand the keyword landscape around this topic by starting from a real page that already ranks.
 
 ### Steps
 
-1. **Confirm topic and slug** with the user
-2. **Check slug availability**: verify `src/app/{SLUG}/` doesn't already exist
-3. **Keyword research** using DataForSEO MCP tools:
-   - `mcp__dfs-mcp__ai_optimization_keyword_data_search_volume` — get search volume for primary keyword and variants
-   - `mcp__dfs-mcp__dataforseo_labs_google_keyword_ideas` — discover related keywords
-   - `mcp__dfs-mcp__dataforseo_labs_search_intent` — verify search intent is informational/transactional
-4. **Present keyword strategy** to user: primary keyword, secondary keywords (5-10), long-tail targets (10-15)
+1. **Confirm topic, slug, and reference URL** with the user. If no reference URL was given, ask for one — even a competitor page on the same topic works.
+
+2. **Check slug availability**: verify `website/freetools/src/app/{SLUG}/` doesn't already exist.
+
+3. **Analyze reference page keywords**:
+   - `mcp__dfs-mcp__dataforseo_labs_google_ranked_keywords` on the reference URL — get the top 50 keywords it ranks for, sorted by search volume. Use `location_name: "Italy"`, `language_code: "it"`.
+   - This reveals the keyword universe around the topic.
+
+4. **Expand keyword universe**:
+   - Take the top 3-5 keywords from step 3 as seeds.
+   - `mcp__dfs-mcp__dataforseo_labs_google_keyword_ideas` with those seeds — get 50 related keywords.
+   - `mcp__dfs-mcp__dataforseo_labs_google_keyword_suggestions` on the primary keyword — get 30 long-tail suggestions.
+   - `mcp__dfs-mcp__dataforseo_labs_search_intent` on the top 20 candidates — verify intent is informational or transactional.
+
+5. **Assess difficulty**:
+   - `mcp__dfs-mcp__dataforseo_labs_bulk_keyword_difficulty` on the top 30 keyword candidates.
+
+6. **Collect People Also Ask** (critical for FAQ and content structure):
+   - `mcp__dfs-mcp__serp_organic_live_advanced` for the primary keyword with `people_also_ask_click_depth: 3`, `location_name: "Italy"`, `language_code: "it"`, `depth: 20`.
+   - Repeat for 2-3 secondary keywords with `people_also_ask_click_depth: 2`.
+   - Collect ALL PAA questions — these become FAQ items and content section ideas.
+
+7. **Save findings** to `analysis/{SLUG}/keyword-strategy.md`:
+   - Primary keyword (highest volume + achievable difficulty)
+   - Secondary keywords (10-15, sorted by volume)
+   - Long-tail targets (15-20)
+   - All PAA questions collected (grouped by theme)
+   - Search intent classification for each
+
+8. **Present to user** for approval before proceeding.
 
 ### Gate
-- Primary keyword volume > 100/month
-- Search intent matches (informational or transactional)
-- Slug is available (no existing route conflict)
-- User approves keyword strategy
+- Primary keyword identified with volume and difficulty
+- 10+ secondary keywords
+- 15+ PAA questions collected
+- User approved the keyword strategy
 
 ---
 
-## Phase 2: Competitive Research
+## Phase 2: SERP & Competitor Deep Analysis
+
+The goal is to understand exactly what the top-ranking pages cover, so we can match and exceed them.
 
 ### Steps
 
-1. **SERP analysis**: `mcp__dfs-mcp__serp_organic_live_advanced` for primary keyword (location: Italy, language: Italian)
-2. **Content parsing**: `mcp__dfs-mcp__on_page_content_parsing` for top 3-5 competitor URLs from SERP
-3. **Keyword coverage**: `mcp__dfs-mcp__dataforseo_labs_google_ranked_keywords` for top competitor domains
-4. **Determine page features**:
-   - Does the page need an interactive calculator/lookup tool? (Check if competitors have one)
-   - What data tables are needed?
-   - What's the optimal content structure?
-   - What differentiates our page?
+1. **Full SERP analysis** (if not already done in Phase 1):
+   - `mcp__dfs-mcp__serp_organic_live_advanced` for primary keyword — `depth: 30`, `location_name: "Italy"`, `language_code: "it"`.
+   - Extract top 10 organic URLs.
+
+2. **Parse competitor content**:
+   - `mcp__dfs-mcp__on_page_content_parsing` for top 5 competitor URLs.
+   - For each: extract headings structure, word count, tables present, FAQ presence, interactive tools.
+
+3. **Competitor keyword coverage**:
+   - `mcp__dfs-mcp__dataforseo_labs_google_ranked_keywords` for the top 3 competitor domains — `limit: 30`, filtered to keywords relevant to our topic.
+   - This reveals keywords they rank for that we must also target.
+
+4. **Build comparison matrix** and save to `analysis/{SLUG}/competitor-analysis.md`:
+
+   ```
+   | Feature                    | Comp. 1 | Comp. 2 | Comp. 3 | Our Page |
+   |----------------------------|:-------:|:-------:|:-------:|:--------:|
+   | Interactive calculator     |   ✅    |   ❌    |   ✅    |   ✅     |
+   | Complete fee tables        |   ❌    |   ✅    |   ❌    |   ✅     |
+   | FAQ section                |   ❌    |   ❌    |   ✅    |   ✅     |
+   | Normativa source links     |   ❌    |   ❌    |   ❌    |   ✅     |
+   | Schema markup              |   ❌    |   ❌    |   ❌    |   ✅     |
+   | [add all relevant features]|         |         |         |          |
+   ```
+
+5. **Identify dwell-time opportunities**: based on what competitors have, recommend:
+   - What calculator/tool should the page include?
+   - If no competitors have an interactive tool, this is a major differentiator — propose one.
+   - If the topic involves any calculation, lookup, comparison, or decision tree → build a tool.
+   - Present the tool recommendation to the user.
+
+6. **Define content sections** based on:
+   - Union of all sections across top 5 competitors (we must cover everything they cover)
+   - PAA questions that deserve their own section (not just FAQ)
+   - Gaps that no competitor addresses
+
+7. **Present competitor analysis and proposed page structure** to the user.
 
 ### Gate
-- 3+ competitors analyzed
-- Content depth target set (word count, section count)
-- Differentiator identified (e.g., more complete data, better calculator, clearer structure)
-- Decision made: interactive tool needed? YES/NO
+- 5+ competitors analyzed
+- Content comparison matrix saved
+- Tool/calculator opportunity identified and user-approved
+- Full section list defined
+- All keyword gaps identified
 
 ---
 
-## Phase 3: Deep Information Gathering
+## Phase 3: Legal Research
+
+The goal is to gather every piece of factual data the page needs, with verified sources.
 
 ### Steps
 
-1. **Legal framework research** using Perplexity MCP tools:
-   - `mcp__perplexity__perplexity_research` — deep investigation of the legal topic (laws, decrees, regulations, current rates, tables, formulas, thresholds). Use Italian-language queries for best results. This is the primary tool for comprehensive legal research — it returns multi-source findings with citations.
-   - `mcp__perplexity__perplexity_search` — find specific Normattiva URLs, ministerial circular URLs, and recent legislative changes (last 2 years). Use `recency: "year"` to focus on recent updates.
-   - `mcp__perplexity__perplexity_ask` — quick targeted questions for specific data points (e.g., "qual è il tasso di interesse legale 2026?", "importi contributo unificato aggiornati")
-   - Gather: all relevant laws/decrees/regulations with Normattiva URLs, current rates/tables/formulas/thresholds, recent changes, ministerial circulars with URLs
+If `--research <path>` was provided, read that file first and use it as the primary data source. Fill gaps with the steps below.
+
+1. **Deep legal research** via Perplexity:
+   - `mcp__perplexity__perplexity_research` — comprehensive investigation of the legal topic. Use Italian-language queries. Ask about: all relevant laws/decrees/regulations, current rates and tables, formulas, thresholds, exemptions, special cases, recent changes (last 2 years).
+   - `mcp__perplexity__perplexity_search` with `recency: "year"` — find specific Normattiva URLs, ministerial circular URLs, recent legislative changes.
+   - `mcp__perplexity__perplexity_ask` — quick targeted questions for specific data points (exact rates, dates, amounts).
+   - `mcp__perplexity__perplexity_reason` — if formulas or legal interpretations require step-by-step logical analysis.
+
 2. **Data compilation**:
-   - All data tables the page needs (rates, thresholds, categories)
-   - Calculation formulas (if calculator needed)
+   - All data tables the page needs (rates, thresholds, brackets, categories)
+   - Calculation formulas (if calculator determined in Phase 2)
    - Important dates and deadlines
-   - Use `mcp__perplexity__perplexity_reason` if formulas or legal interpretations require step-by-step logical analysis
-3. **FAQ compilation**: 15-25 questions from:
-   - Use `mcp__perplexity__perplexity_search` to find "People Also Ask" and common questions for primary and secondary keywords
-   - Long-tail keywords from Phase 1
-   - Common practitioner questions
+   - Exemptions and special cases
+   - Recent legislative changes worth highlighting
+
+3. **FAQ compilation** (15-25 items):
+   - Start from PAA questions collected in Phase 1
+   - Add questions from long-tail keywords
+   - Add common practitioner questions discovered in research
    - Each FAQ must have: domanda, risposta, categoria, fonti (with URLs)
-4. **Source verification**: Ensure ALL normativa URLs are valid Normattiva links. Use `mcp__perplexity__perplexity_search` to cross-check any uncertain URLs.
+   - Organize by 4-6 categories
+
+4. **Source verification**:
+   - Every monetary amount must cite a specific article and comma
+   - All Normattiva URLs must follow correct URN patterns
+   - All circular URLs must be valid
+   - Cross-check at least 3 key amounts against official legislative text
+
+5. **Save everything** to `analysis/{SLUG}/research-brief.md`:
+   - Laws and regulations section (with URLs)
+   - Data tables section
+   - Formulas section (if applicable)
+   - FAQ section (all 15-25 items)
+   - Recent changes section
+   - Sources bibliography
 
 ### Gate
-- All factual data sourced and verified
-- Formulas verified against official sources
-- 15+ FAQ items compiled with sources
-- All Normattiva URLs valid
-- All circolari URLs valid
+- All factual data sourced with article references
+- Formulas verified
+- 15+ FAQ items with categories and sources
+- All Normattiva/circular URLs verified
+- Research brief saved and readable
 
 ---
 
-## Phase 4: Page Development
+## Phase 4: Implementation
 
-Follow the template patterns from `references/template-pattern.md` exactly.
+Read `references/implementation-guide.md` for exact code patterns. Follow the existing pages as the model — look at `src/app/contributo-unificato/page.tsx` and `src/app/calcolo-interessi-legali/page.tsx` for the exact style.
 
 ### Step 4.1: Create Data Files
 
 Create `src/data/{SLUG}/{slug}Data.ts`:
-- Define TypeScript interfaces for the data
-- Export all data arrays (tables, rates, etc.)
-- Export `normativaRiferimento` and optionally `circolariMinisteriali`
-- Export `sections` array (sidebar navigation)
+- TypeScript interfaces for the data
+- All data arrays (tables, rates, brackets)
 - If calculator needed: export the calculation function
+- Export `normativaRiferimento` and optionally `circolariMinisteriali`
+- Export `sections` array (must match every SectionTitle id in the page)
 
 Create `src/data/{SLUG}/faqData.ts`:
 - Export `faqData: FAQItem[]` with 15-25 items
-- Organize by category (4-6 categories)
-- Include `fonti` with Normattiva/official URLs
+- 4-6 categories
+- Include `fonti` with Normattiva/official URLs per answer
 
-### Step 4.2: Create Calculator (only if Phase 2 determined it's needed)
+### Step 4.2: Create Calculator (if Phase 2 determined one is needed)
 
 Create `src/components/{SLUG}/Calcolatore.tsx`:
 - `"use client"` directive
 - Import calculation function from data file
 - Form inputs matching the tool's parameters
-- Result display with Italian number formatting
+- Result display with Italian number formatting (`Intl.NumberFormat("it-IT", ...)`)
 - Mobile-responsive layout
+- The calculator should be genuinely useful — it's the main dwell-time driver
 
 ### Step 4.3: Create Page Component
 
-Create `src/app/{SLUG}/page.tsx`:
-- Server component (no `"use client"`)
-- Export `metadata: Metadata` with title, description, canonical, OG, Twitter
-- Define `toolConfig: ToolConfig`
-- Render `<ToolLayout config={toolConfig}>` with:
-  - 3 JSON-LD blocks (BreadcrumbList, Article, FAQPage)
-  - Calculator component (if applicable)
-  - Content sections using shared components
-  - FAQ section
-  - Normativa section (NormativaRefTable + optional CircolariTable)
+Create `src/app/{SLUG}/page.tsx` — follow `references/implementation-guide.md` exactly for the skeleton.
 
-**Content guidelines:**
-- 800-1500 words of editorial content
-- Use `<SectionTitle>` for every section (IDs must match `sections` array)
-- Use `<LegalTable>` for all data tables
-- Use `<NormativaQuote>` for quoted regulatory text
-- Use `<InlineNormLink>` for every law reference
-- Use `<AlertBox variant="warning">` for important warnings
-- Use `<AlertBox variant="info">` for supplementary info boxes
-- Use `<AlertBox variant="success">` for positive highlights (new laws, improvements)
-- Use `<SectionBanner>` for major section images (if images are available)
-- Use `<BulletList>` for enumerated items
-- Use `<FeatureGrid>` for feature/method cards
-- All UI text in Italian
-- All numbers formatted with Italian locale
+**Content depth is critical.** Read `references/content-model.md` for examples. Each content section should:
+- Open with a clear explanation paragraph citing the relevant law
+- Include a data table (LegalTable) where applicable
+- Add AlertBoxes for edge cases, warnings, recent changes
+- Use InlineNormLink for EVERY law reference
+- Use NormativaQuote for key legislative text
+- Cross-reference related sections
+
+**Schema markup — read `references/schema-enrichment.md`**:
+- Always include: BreadcrumbList, Article, FAQPage
+- Add HowTo if the page explains a calculation process
+- Add WebApplication if the page has a calculator
+- Add any other applicable schema types for rich results
+- If a needed schema generator doesn't exist in `src/lib/schema.tsx`, create it
+
+**Target content volume**: match or exceed the top competitor's word count (typically 2000-4000 words of editorial content, not counting tables and FAQ).
 
 ### Step 4.4: Update Existing Files
 
-See `references/file-checklist.md` for exact locations.
+See `references/implementation-guide.md` for exact locations:
+1. `src/components/shared/Navbar.tsx` — add to `navLinks` array
+2. `src/components/shared/SiteFooter.tsx` — add to `tools` array
+3. `src/app/page.tsx` (homepage) — add to `tools` array with `ready: true`
+4. `src/app/sitemap.ts` — add URL entry
+5. `src/app/layout.tsx` — update root description only if needed
 
-1. **Navbar.tsx**: Add to `navLinks` array
-2. **SiteFooter.tsx**: Add to `tools` array
-3. **Homepage page.tsx**: Add to `tools` array with `ready: true`
-4. **sitemap.ts**: Add URL entry
-5. **layout.tsx**: Update root description only if the new tool changes the site's scope
+### Step 4.5: Build Check
+
+```bash
+cd "website/freetools" && npm run build
+```
+
+Must pass with zero errors. Fix any issues before proceeding.
 
 ### Gate
-- `npm run build` passes with zero errors
-- All section IDs in `sections` array match actual `<SectionTitle id="">` in page
-- 3 JSON-LD schemas present
-- Meta title ≤ 60 chars, description 140-160 chars
+- `npm run build` passes cleanly
+- All section IDs in `sections` array match `<SectionTitle id="">` in page
+- Calculator works correctly (if applicable)
+- Content matches or exceeds competitor depth from Phase 2
 
 ---
 
-## Phase 5: SEO Validation
+## Phase 5: SEO Refinement Loop
 
-Start the dev server and run SEO audits against localhost:
+This phase is iterative. The page is NOT ready until it passes SEO validation with no critical issues.
 
+### Iteration 1: Run SEO Audits
+
+Start the dev server:
 ```bash
-cd website/freetools && npm run dev &
+cd "website/freetools" && npm run dev &
 ```
 
-Run these skill-based audits (invoke them as slash commands or directly):
+Run these SEO audits on `http://localhost:3000/{SLUG}`:
 
-1. `/seo-page` — Deep single-page analysis on `http://localhost:3000/{SLUG}`
-2. `/seo-schema` — Validate JSON-LD structured data
-3. `/seo-content` — Content quality and E-E-A-T analysis
-4. `/seo-technical` — Technical SEO check
-5. `/seo-images` — Image optimization (if images used)
-6. `/seo-geo` — AI/GEO optimization check
+1. **`/seo-page`** — deep single-page analysis (on-page elements, meta tags, headings, content)
+2. **`/seo-schema`** — validate ALL JSON-LD blocks (not just the basic 3 — check HowTo, WebApplication, etc.)
+3. **`/seo-content`** — E-E-A-T signals, content depth, readability, thin content detection
 
-### Fix any critical issues found, then re-validate.
+Collect all findings.
+
+### Iteration 2: Refine
+
+Fix every critical and high-priority issue found:
+- Missing or suboptimal meta tags
+- Schema validation errors
+- Content gaps identified by the audits
+- E-E-A-T signal weaknesses
+- Heading structure issues
+
+### Iteration 3: Re-validate
+
+Run the same 3 audits again on the updated page. Verify that:
+- All critical issues from iteration 1 are resolved
+- No new issues introduced by the fixes
+- Schema markup validates cleanly
+
+If critical issues remain, do another fix → revalidate cycle.
 
 ### Gate
 - All SEO audits pass (no critical issues)
-- Schema validation: 3 valid JSON-LD blocks
-- Content score: adequate E-E-A-T signals
+- All JSON-LD schemas validate
+- Content score shows adequate E-E-A-T signals
 - No technical SEO blockers
+- Page is publication-ready
 
 ---
 
-## Phase 6: Build, Test & Publish
-
-### Steps
+## Phase 6: Build & Publish
 
 1. **Production build**: `npm run build` — must pass cleanly
-2. **Screenshots**: Use Playwright MCP to capture:
-   - Desktop screenshot (1440px width)
-   - Mobile screenshot (375px width)
-   - Save to `website/freetools/screenshots/{SLUG}/`
-3. **Functional testing** (if calculator):
-   - Test edge cases (min/max values, empty inputs)
-   - Verify calculation results against known correct values
-4. **Git commit**: Stage all new and modified files, commit with descriptive message
-5. **Deploy**: If deployment process is configured, trigger it
-6. **Post-deploy verification**: Check the live URL responds correctly
-
-### Gate
-- Production build passes
-- Screenshots captured (desktop + mobile)
-- Calculator tests pass (if applicable)
-- Committed to git
-- Live page accessible (if deployed)
+2. **Kill dev server**: stop any running dev server
+3. **Present final summary** to the user:
+   - Primary keyword targeted
+   - Page sections created
+   - Schema types implemented
+   - Calculator/tool included
+   - SEO audit results summary
+4. **Ask user** if they want to commit and deploy
 
 ---
 
@@ -234,9 +327,14 @@ Run these skill-based audits (invoke them as slash commands or directly):
 
 - **All content in Italian.** Never output English text in page content.
 - **All law references link to Normattiva.** Use `<InlineNormLink>` for every mention.
-- **No hardcoded colors.** Use the OKLch values from the design system, or use shared component props.
+- **Every monetary amount cites its article and comma.** No unsourced numbers.
+- **No hardcoded colors.** Use OKLch values from the design system or shared component props.
 - **Border radius via inline style only.** Never use Tailwind `rounded-*` classes.
-- **Server components by default.** Only use `"use client"` for the Calculator component.
-- **No external dependencies.** All components are built-in. Don't add npm packages.
-- **Data separate from presentation.** All data in `src/data/`, computation in `src/lib/` or data files.
+- **Server components by default.** Only `"use client"` for the Calculator component.
+- **No external dependencies.** Don't add npm packages.
+- **Data separate from presentation.** All data in `src/data/`, computation in data files or `src/lib/`.
 - **Italian number formatting.** Use `Intl.NumberFormat("it-IT", ...)` for all numbers and currency.
+- **Schema markup is maximized.** Don't limit to 3 basic schemas — use every applicable type for rich results.
+- **Content must be comprehensive.** Match or exceed top competitor word count. Every section must have substance — no thin filler paragraphs.
+- **PAA questions drive content.** If a PAA question deserves a full section (not just an FAQ entry), give it one.
+- **Tool/calculator is for dwell time.** If you see any opportunity for an interactive element, propose it to the user.

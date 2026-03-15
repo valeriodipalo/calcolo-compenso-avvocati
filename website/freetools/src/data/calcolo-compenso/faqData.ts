@@ -180,4 +180,81 @@ export const faqData: FAQItem[] = [
       { label: "Art. 5, c. 6 DM 55/2014", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55" },
     ],
   },
+  // ── Costi e Casistica (PAA-driven) ──
+  {
+    categoria: "Costi e Casistica",
+    domanda: "Quanto costa un avvocato per una causa civile?",
+    risposta: "Il costo dipende dal valore della causa e dalla complessit\u00e0 del procedimento. Per una causa di valore fino a \u20ac 5.200 il compenso medio totale (tutte le fasi) \u00e8 circa \u20ac 2.552. Per cause da \u20ac 26.001 a \u20ac 52.000 il compenso medio \u00e8 circa \u20ac 7.616. A questi importi vanno aggiunte le spese generali (15%), la CPA (4%) e l'IVA (22%), per un totale lordo superiore di circa il 45% rispetto al compenso netto.",
+    fonti: [
+      { label: "Tabella II DM 55/2014", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55" },
+    ],
+  },
+  {
+    categoria: "Costi e Casistica",
+    domanda: "Come si calcola la parcella per un decreto ingiuntivo?",
+    risposta: "Per i procedimenti monitori (decreto ingiuntivo) si applicano solo due fasi: studio della controversia e fase introduttiva (Tab. VIII DM 147/2022). Ad esempio, per un decreto ingiuntivo di valore da \u20ac 5.201 a \u20ac 26.000, il compenso medio \u00e8: studio \u20ac 236 + introduttiva \u20ac 425 = \u20ac 661, a cui aggiungere spese generali, CPA e IVA.",
+    fonti: [
+      { label: "Tab. VIII DM 55/2014", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55" },
+    ],
+  },
+  {
+    categoria: "Costi e Casistica",
+    domanda: "Quanto costa un avvocato per una separazione o divorzio?",
+    risposta: "Per la separazione consensuale o il divorzio congiunto si applicano i parametri della volontaria giurisdizione (Tab. VII). Per una causa di valore da \u20ac 5.201 a \u20ac 26.000 il compenso medio totale \u00e8 circa \u20ac 1.265. Per la separazione giudiziale o il divorzio contenzioso si applicano i parametri del Tribunale ordinario (Tab. II), con importi significativamente pi\u00f9 elevati.",
+    fonti: [
+      { label: "Tab. VII DM 55/2014", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55" },
+    ],
+  },
+  {
+    categoria: "Costi e Casistica",
+    domanda: "Quanto costa un'ora di consulenza con un avvocato?",
+    risposta: "Il DM 147/2022 ha introdotto la possibilit\u00e0 di pattuire il compenso a tempo. L'art. 22-bis prevede un parametro indicativo da un minimo di \u20ac 200,00 a un massimo di \u20ac 500,00 per ciascuna ora o frazione di ora superiore a 30 minuti. Si tratta di un riferimento orientativo: il compenso orario effettivo pu\u00f2 essere liberamente concordato tra le parti.",
+    fonti: [
+      { label: "Art. 22-bis DM 55/2014", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55" },
+    ],
+  },
+  // ── Verifica e Contestazione ──
+  {
+    categoria: "Verifica e Contestazione",
+    domanda: "Come sapere se la parcella dell'avvocato \u00e8 giusta?",
+    risposta: "Confronta le singole voci della parcella con i parametri del DM 147/2022 per lo scaglione e la competenza corretti. Verifica che le fasi addebitate corrispondano ad attivit\u00e0 effettivamente svolte, che le spese generali siano al 15%, la CPA al 4% e l'IVA al 22%. Se il compenso \u00e8 stato pattuito per iscritto, fa fede l'accordo. In caso di dubbi, richiedi chiarimenti scritti all'avvocato prima di procedere.",
+    fonti: [
+      { label: "Art. 4 DM 55/2014", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55" },
+      { label: "Art. 13 L. 247/2012", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-31;247" },
+    ],
+  },
+  {
+    categoria: "Verifica e Contestazione",
+    domanda: "Cosa fare se la parcella dell'avvocato \u00e8 troppo alta?",
+    risposta: "Invia una contestazione scritta all'avvocato motivando l'eccessivit\u00e0 e proponendo una rideterminazione. Se l'avvocato agisce per il recupero del credito, pu\u00f2 richiedere il parere di congruit\u00e0 al Consiglio dell'Ordine e ottenere un decreto ingiuntivo (art. 636 c.p.c.). Il cliente pu\u00f2 opporsi entro 40 giorni: il giudice liquida il compenso secondo equit\u00e0 (art. 2233 c.c.), usando i parametri ministeriali come riferimento.",
+    fonti: [
+      { label: "Art. 636 c.p.c.", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1940-10-28;1443~art636" },
+      { label: "Art. 2233 c.c.", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art2233" },
+    ],
+  },
+  {
+    categoria: "Verifica e Contestazione",
+    domanda: "L'avvocato \u00e8 obbligato a dare il preventivo?",
+    risposta: "S\u00ec. L'art. 13, comma 5, della L. 247/2012 prevede che l'avvocato debba comunicare al cliente il grado di complessit\u00e0 dell'incarico e gli oneri ipotizzabili. Il preventivo deve essere reso in forma scritta se richiesto dal cliente. In mancanza di accordo scritto, i compensi vengono liquidati secondo i parametri DM 55/2014.",
+    fonti: [
+      { label: "Art. 13, c. 5, L. 247/2012", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-31;247" },
+    ],
+  },
+  {
+    categoria: "Verifica e Contestazione",
+    domanda: "Cosa succede se non pago l'avvocato?",
+    risposta: "L'avvocato pu\u00f2 agire in giudizio per il recupero del credito. Pu\u00f2 ottenere un decreto ingiuntivo provvisoriamente esecutivo sulla base del parere di congruit\u00e0 del Consiglio dell'Ordine (art. 636 c.p.c.). Il mancato pagamento comporta interessi moratori e spese legali aggiuntive a carico del cliente inadempiente.",
+    fonti: [
+      { label: "Art. 636 c.p.c.", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1940-10-28;1443~art636" },
+    ],
+  },
+  // ── Equo Compenso ──
+  {
+    categoria: "Equo Compenso",
+    domanda: "Cos'\u00e8 l'equo compenso per gli avvocati?",
+    risposta: "La L. 49/2023 garantisce che il compenso degli avvocati sia proporzionato alla qualit\u00e0 e quantit\u00e0 del lavoro svolto e conforme ai parametri DM 55/2014. Si applica ai rapporti con banche, assicurazioni, imprese con oltre 50 dipendenti o ricavi superiori a 10 milioni di euro, e con la Pubblica Amministrazione. Clausole che prevedono compensi inferiori ai parametri sono nulle.",
+    fonti: [
+      { label: "L. 49/2023", url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2023-04-21;49" },
+    ],
+  },
 ];

@@ -8,7 +8,7 @@ import type { FAQItem } from "@/components/shared/FAQ";
 // SITE-WIDE: IMPORTANT -- use the production domain when deploying.
 // During development this is localhost; replace before go-live.
 // ============================================================
-const SITE_URL = "https://avvocatotools.it";
+const SITE_URL = "https://www.avvocatotools.it";
 const SITE_NAME = "Piattaforma Avvocati";
 const SITE_DESCRIPTION =
   "Calcolatori e strumenti gratuiti per avvocati: contributo unificato, compenso professionale e altro.";
@@ -145,6 +145,65 @@ export function articleSchema(opts: {
     ...(opts.sections && {
       articleSection: opts.sections,
     }),
+  };
+}
+
+// ============================================================
+// HowTo schema  (step-by-step guides)
+// Triggers step-by-step rich snippets in Google for "Come si
+// calcola..." type queries. Each step must be substantive.
+// ============================================================
+export function howToSchema(opts: {
+  name: string;
+  description: string;
+  path: string;
+  steps: { name: string; text: string }[];
+  totalTime?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: opts.name,
+    description: opts.description,
+    url: `${SITE_URL}${opts.path}`,
+    inLanguage: "it-IT",
+    ...(opts.totalTime && { totalTime: opts.totalTime }),
+    step: opts.steps.map((step, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  };
+}
+
+// ============================================================
+// WebApplication schema  (interactive calculator tools)
+// Signals to Google that the page contains an interactive tool.
+// Can trigger Software App rich results with rating display.
+// ============================================================
+export function webApplicationSchema(opts: {
+  name: string;
+  description: string;
+  path: string;
+  applicationCategory?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: opts.name,
+    description: opts.description,
+    url: `${SITE_URL}${opts.path}`,
+    applicationCategory: opts.applicationCategory || "FinanceApplication",
+    operatingSystem: "All",
+    browserRequirements: "Requires JavaScript",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "EUR",
+    },
+    inLanguage: "it-IT",
+    publisher: organizationSchema(),
   };
 }
 

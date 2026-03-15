@@ -331,14 +331,24 @@ export const normativaRiferimento = [
     url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55",
   },
   {
+    norma: "D.M. 8 marzo 2018, n. 37",
+    descrizione: "Primo aggiornamento parametri forensi (introduzione Tab. XXV-bis mediazione)",
+    url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2018-03-08;37",
+  },
+  {
     norma: "D.M. 13 agosto 2022, n. 147",
-    descrizione: "Aggiornamento dei parametri forensi - modifica del DM 55/2014",
+    descrizione: "Aggiornamento vigente dei parametri forensi (in vigore dal 23/10/2022)",
     url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2022-08-13;147",
   },
   {
     norma: "L. 31 dicembre 2012, n. 247",
-    descrizione: "Nuova disciplina dell'ordinamento della professione forense",
+    descrizione: "Nuova disciplina dell'ordinamento della professione forense (art. 13, c. 6)",
     url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-31;247",
+  },
+  {
+    norma: "L. 21 aprile 2023, n. 49",
+    descrizione: "Disposizioni in materia di equo compenso delle prestazioni professionali",
+    url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2023-04-21;49",
   },
   {
     norma: "Art. 2233 c.c.",
@@ -352,15 +362,37 @@ export const normativaRiferimento = [
   },
 ];
 
+export const circolariMinisteriali = [
+  {
+    circolare: "G.U. n. 236 del 08/10/2022",
+    descrizione: "Pubblicazione DM 147/2022 — nuovi parametri forensi in vigore dal 23/10/2022",
+    url: "https://www.gazzettaufficiale.it/eli/id/2022/10/08/22G00155/sg",
+  },
+  {
+    circolare: "G.U. n. 77 del 02/04/2014",
+    descrizione: "Pubblicazione DM 55/2014 — parametri forensi originari in vigore dal 03/04/2014",
+    url: "https://www.gazzettaufficiale.it/eli/id/2014/04/02/14G00063/sg",
+  },
+];
+
 // ── Sidebar Sections ───────────────────────────────────────────────
 
 export const sections = [
   { id: "calcolatore", label: "Calcolatore" },
-  { id: "come-funziona", label: "Come funziona" },
-  { id: "fasi-procedimento", label: "Fasi del procedimento" },
-  { id: "aumenti-riduzioni", label: "Aumenti e riduzioni" },
-  { id: "scaglioni", label: "Scaglioni di valore" },
-  { id: "ambito-applicazione", label: "Ambito di applicazione" },
+  { id: "parametri-forensi", label: "Parametri Forensi" },
+  { id: "come-si-calcola", label: "Come si Calcola" },
+  { id: "fasi-processuali", label: "Fasi Processuali" },
+  { id: "tabelle-parametri", label: "Tabelle Parametri" },
+  { id: "scaglioni", label: "Scaglioni di Valore" },
+  { id: "aumenti-riduzioni", label: "Aumenti e Riduzioni" },
+  { id: "spese-accessori", label: "Spese e Accessori" },
+  { id: "esempio-calcolo", label: "Esempio di Calcolo" },
+  { id: "stragiudiziale", label: "Stragiudiziale" },
+  { id: "valore-indeterminabile", label: "Valore Indeterminabile" },
+  { id: "cause-oltre-520k", label: "Cause > \u20AC 520.000" },
+  { id: "mediazione-negoziazione", label: "Mediazione e Negoziazione" },
+  { id: "equo-compenso", label: "Equo Compenso" },
+  { id: "verifica-parcella", label: "Verifica Parcella" },
   { id: "novita-2022", label: "Novit\u00e0 DM 147/2022" },
   { id: "faq", label: "FAQ" },
   { id: "normativa", label: "Normativa" },
