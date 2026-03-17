@@ -122,7 +122,7 @@ Homepage
 | 1 | Calcolo Compenso Civile | `/strumenti/compenso-avvocato/civile/` | calcolo compenso avvocato | 33,100 cluster | bassa | 49,125 | €4.56 | nav+comm | |
 | 2 | Calcolo Fattura Avvocato | `/strumenti/compenso-avvocato/fattura/` | calcolo fattura avvocato | 33,100 | bassa | 21,884 | €4.56 | nav | |
 | 3 | Calcolo Contributo Unificato | `/contributo-unificato` | calcolo contributo unificato | 18,100 | **3** | 22,753 | - | info | ✅ LIVE |
-| 4 | Interessi Legali | `/strumenti/interessi-calcolo/interessi-legali/` | interessi legali calcolo | 33,100 | **3** | 23,552 | - | nav | |
+| 4 | Interessi Legali | `/strumenti/interessi-calcolo/interessi-legali/` | interessi legali calcolo | 33,100 | **3** | 23,552 | - | nav | ✅ LIVE (migliorabile con tool per interessi)|
 | 5 | Calcolo Termini Processuali | `/strumenti/termini-processuali/calcolo/` | calcolo termini processuali | 60,500 | **19** | 31,749 | - | info | |
 | 6 | Scadenze e Termini Udienze | `/strumenti/termini-processuali/scadenze-udienze/` | termini | 550,000 cluster | - | 72,104 | - | info |
 | 7 | Interessi Moratori | `/strumenti/interessi-calcolo/moratori/` | calcolo interessi moratori | 18,100 | bassa | 10,592 | - | comm |
