@@ -88,10 +88,12 @@ export function breadcrumbSchema(
 
 // ============================================================
 // FAQPage schema
-// Converts FAQItem[] (from faqData.ts) into Google-supported
-// FAQPage markup. FAQ schema is restricted to government and
-// healthcare authority sites since August 2023; legal/government-
-// adjacent sites like this one qualify.
+// Converts FAQItem[] (from faqData.ts) into FAQPage markup.
+// WARNING: Since August 2023, Google restricts FAQ rich results
+// to government and healthcare authority sites ONLY. Private
+// sites (including legal tools) will NOT get rich results from
+// this schema. Keep the function for potential future use but
+// do NOT include it in page JSON-LD blocks.
 // ============================================================
 export function faqPageSchema(faqs: FAQItem[]) {
   return {
@@ -149,33 +151,10 @@ export function articleSchema(opts: {
 }
 
 // ============================================================
-// HowTo schema  (step-by-step guides)
-// Triggers step-by-step rich snippets in Google for "Come si
-// calcola..." type queries. Each step must be substantive.
+// HowTo schema — DEPRECATED
+// Google removed HowTo rich results in September 2023.
+// This function is kept for reference only. Do NOT use in pages.
 // ============================================================
-export function howToSchema(opts: {
-  name: string;
-  description: string;
-  path: string;
-  steps: { name: string; text: string }[];
-  totalTime?: string;
-}) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    name: opts.name,
-    description: opts.description,
-    url: `${SITE_URL}${opts.path}`,
-    inLanguage: "it-IT",
-    ...(opts.totalTime && { totalTime: opts.totalTime }),
-    step: opts.steps.map((step, i) => ({
-      "@type": "HowToStep",
-      position: i + 1,
-      name: step.name,
-      text: step.text,
-    })),
-  };
-}
 
 // ============================================================
 // WebApplication schema  (interactive calculator tools)

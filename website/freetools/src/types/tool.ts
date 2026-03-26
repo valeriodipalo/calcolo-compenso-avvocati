@@ -20,3 +20,15 @@ export interface ToolConfig {
   disclaimerLines: string[];
   sources: { label: string; url: string }[];
 }
+
+export interface NormativaRiferimento {
+  norma: string;
+  descrizione: string;
+  url: string;
+}
+
+export interface CircolareMinisteriale {
+  circolare: string;
+  descrizione: string;
+  url: string;
+}

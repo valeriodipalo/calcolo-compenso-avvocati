@@ -42,30 +42,35 @@ Reference URL
 - Sort by `keyword_data.keyword_info.search_volume,desc`
 - Set `limit: 50` for reference page, `limit: 30` for competitors
 - Filter to organic results: `item_types: ["organic"]`
+- **Returns per keyword**: `keyword_info.search_volume`, `keyword_info.cpc`, `keyword_properties.keyword_difficulty`, `search_intent_info.main_intent` — capture ALL four fields
 
 **`dataforseo_labs_google_keyword_ideas`**
 - Use to expand the keyword universe from seed keywords
 - Pass 3-5 seed keywords from ranked_keywords results
 - Set `limit: 50`
 - Filter: `["keyword_info.search_volume", ">", 10]` to exclude zero-volume
+- **Returns per keyword**: `keyword_info.search_volume`, `keyword_info.cpc`, `keyword_properties.keyword_difficulty`, `search_intent_info.main_intent` — capture ALL four fields
 
 **`dataforseo_labs_google_keyword_suggestions`**
 - Use to find long-tail variants of the primary keyword
 - Pass the single primary keyword
 - Set `limit: 30`
 - These are great for FAQ items and H3 subheadings
+- **Returns per keyword**: `keyword_info.search_volume`, `keyword_info.cpc`, `keyword_properties.keyword_difficulty` — capture all fields
 
 **`dataforseo_labs_bulk_keyword_difficulty`**
-- Use to assess ranking difficulty for top candidates
+- Use to assess ranking difficulty for keywords that didn't have KD in previous responses
 - Pass up to 30 keywords at once
 - Difficulty scale: 0-100 (lower = easier to rank)
 - Target keywords with difficulty < 60 for a new site
+- **Note**: most keywords already have KD from `ranked_keywords` and `keyword_ideas` — only call this for gaps
 
 **`dataforseo_labs_search_intent`**
-- Use to classify keyword intent
+- Use to classify keyword intent for keywords that didn't have `search_intent_info` in previous responses
 - Pass top 20 keyword candidates
 - We want: informational or transactional intent
 - Skip purely navigational keywords
+- **Note**: `ranked_keywords` and `keyword_ideas` already return intent — only call this for gaps
 
 **`dataforseo_labs_google_serp_competitors`**
 - Use to find which domains compete for the same keyword space

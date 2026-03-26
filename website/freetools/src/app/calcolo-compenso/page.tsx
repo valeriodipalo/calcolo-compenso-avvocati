@@ -25,9 +25,7 @@ import { faqData } from "@/data/calcolo-compenso/faqData";
 import {
   JsonLd,
   breadcrumbSchema,
-  faqPageSchema,
   articleSchema,
-  howToSchema,
   webApplicationSchema,
 } from "@/lib/schema";
 import type { ToolConfig } from "@/types/tool";
@@ -143,43 +141,7 @@ export default function CalcoloCompensoPage() {
         })}
       />
 
-      {/* 3. FAQPage */}
-      <JsonLd data={faqPageSchema(faqData)} />
-
-      {/* 4. HowTo */}
-      <JsonLd
-        data={howToSchema({
-          name: "Come si calcola il compenso dell'avvocato",
-          description:
-            "Guida in 5 passaggi per calcolare il compenso professionale dell'avvocato secondo i parametri forensi del DM 55/2014 aggiornati al DM 147/2022.",
-          path: "/calcolo-compenso",
-          totalTime: "PT5M",
-          steps: [
-            {
-              name: "Individua la competenza",
-              text: "Identifica il tipo di procedimento e la giurisdizione: Giudice di Pace, Tribunale, Corte d'Appello, Cassazione, TAR, Consiglio di Stato, Commissioni Tributarie, Arbitrati oppure una materia specifica (esecuzioni, procedimenti speciali, ADR, consulenza stragiudiziale). La scelta della competenza determina quale tabella del DM 55/2014 si applica.",
-            },
-            {
-              name: "Determina lo scaglione di valore",
-              text: "Individua il valore della causa secondo le regole processuali (artt. 10 e ss. c.p.c.) e seleziona lo scaglione corrispondente tra i 17 disponibili: da 'fino a 1.100 euro' a 'oltre 32.000.000 euro', oppure uno dei 4 scaglioni per cause di valore indeterminabile (bassa, media, alta complessità e valore non determinabile).",
-            },
-            {
-              name: "Seleziona le fasi e i valori",
-              text: "Per ciascuna delle fasi effettivamente svolte (studio, introduttiva, istruttoria/trattazione, decisionale), seleziona il valore minimo (-50%), medio o massimo (+50%) dalla tabella parametrica. Il compenso base è la somma dei valori di tutte le fasi selezionate.",
-            },
-            {
-              name: "Applica aumenti e riduzioni",
-              text: "Aggiungi gli eventuali aumenti (pluralità parti fino a +200%, conciliazione +25% sulla fase decisionale, class action fino a +300%, manifesta fondatezza +33%, PCT +30%) e sottrai le riduzioni (assenza questioni fino a -30%, condotte ostative fino a -50%, gratuito patrocinio -50%).",
-            },
-            {
-              name: "Aggiungi spese e accessori",
-              text: "Al compenso adeguato aggiungi le spese generali forfettarie del 15%, calcola la CPA al 4% sul compenso, applica l'IVA al 22% su compenso, spese imponibili e CPA. Se il cliente e sostituto d'imposta, sottrai la ritenuta d'acconto del 20% per ottenere il netto.",
-            },
-          ],
-        })}
-      />
-
-      {/* 5. WebApplication */}
+      {/* 3. WebApplication */}
       <JsonLd
         data={webApplicationSchema({
           name: "Calcolatore Compenso Avvocato",

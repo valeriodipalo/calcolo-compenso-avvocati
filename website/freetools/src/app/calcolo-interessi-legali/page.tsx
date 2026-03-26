@@ -18,7 +18,7 @@ import {
   sections,
 } from "@/data/calcolo-interessi-legali/interessiData";
 import { faqData } from "@/data/calcolo-interessi-legali/faqData";
-import { JsonLd, breadcrumbSchema, faqPageSchema, articleSchema } from "@/lib/schema";
+import { JsonLd, breadcrumbSchema, articleSchema } from "@/lib/schema";
 import type { ToolConfig } from "@/types/tool";
 import type { Metadata } from "next";
 
@@ -124,9 +124,6 @@ export default function CalcoloInteressiLegaliPage() {
           ],
         })}
       />
-
-      {/* 3. FAQPage */}
-      <JsonLd data={faqPageSchema(faqData)} />
 
       {/* Calcolatore */}
       <Calcolatore />

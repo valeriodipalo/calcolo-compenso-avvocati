@@ -21,7 +21,7 @@ import {
   perditaParentaleRoma,
 } from "@/data/calcolo-danno-non-patrimoniale/dannoData";
 import { faqData } from "@/data/calcolo-danno-non-patrimoniale/faqData";
-import { JsonLd, breadcrumbSchema, faqPageSchema, articleSchema, webApplicationSchema } from "@/lib/schema";
+import { JsonLd, breadcrumbSchema, articleSchema, webApplicationSchema } from "@/lib/schema";
 import type { ToolConfig } from "@/types/tool";
 import type { Metadata } from "next";
 
@@ -127,10 +127,7 @@ export default function CalcoloDannoNonPatrimonialePage() {
         })}
       />
 
-      {/* 3. FAQPage */}
-      <JsonLd data={faqPageSchema(faqData)} />
-
-      {/* 4. WebApplication */}
+      {/* 3. WebApplication */}
       <JsonLd
         data={webApplicationSchema({
           name: "Calcolatore Danno Non Patrimoniale",

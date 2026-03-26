@@ -23,7 +23,7 @@ import {
   sections,
 } from "@/data/contributo-unificato/contributoData";
 import { faqData } from "@/data/contributo-unificato/faqData";
-import { JsonLd, breadcrumbSchema, faqPageSchema, articleSchema } from "@/lib/schema";
+import { JsonLd, breadcrumbSchema, articleSchema } from "@/lib/schema";
 import type { ToolConfig } from "@/types/tool";
 import type { Metadata } from "next";
 
@@ -136,9 +136,6 @@ export default function ContributoUnificatoPage() {
           ],
         })}
       />
-
-      {/* 3. FAQPage (acceptable for legal/government authority sites) */}
-      <JsonLd data={faqPageSchema(faqData)} />
 
       {/* Calcolatore */}
       <Calcolatore />

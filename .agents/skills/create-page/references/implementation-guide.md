@@ -33,12 +33,20 @@ Code patterns, component APIs, design system, and file checklist for building pa
 
 | # | Path | Change |
 |---|------|--------|
-| 5 | `src/components/shared/Navbar.tsx` | Add to `navLinks` array |
-| 6 | `src/components/shared/SiteFooter.tsx` | Add to `tools` array |
-| 7 | `src/app/page.tsx` (homepage) | Add to `tools` array with `ready: true` |
-| 8 | `src/app/sitemap.ts` | Add URL entry |
-| 9 | `src/app/layout.tsx` | Update description only if site scope changes |
-| 10 | `src/lib/schema.tsx` | Add new schema generators if needed (HowTo, WebApplication, etc.) |
+| 5 | `src/data/toolRegistry.ts` | Add new `ToolEntry` — this auto-populates Navbar, Footer, homepage, sitemap |
+| 6 | `src/app/layout.tsx` | Update description only if site scope changes |
+| 7 | `src/lib/schema.tsx` | Add new schema generators if needed (HowTo, WebApplication, etc.) |
+
+**Note**: Navbar, SiteFooter, homepage (`app/page.tsx`), and sitemap all consume `TOOLS` from `src/data/toolRegistry.ts`. You only need to add one entry there — no other navigation files need editing.
+
+### Shared Infrastructure (use, don't duplicate)
+
+| Resource | Path | What it provides |
+|----------|------|------------------|
+| Tool Registry | `src/data/toolRegistry.ts` | `TOOLS` array — single source for all tool metadata |
+| Shared Types | `src/types/tool.ts` | `ToolConfig`, `ToolSection`, `NormativaRiferimento`, `CircolareMinisteriale` |
+| Formatting Utils | `src/lib/utils.ts` | `formatEur()`, `formatPct()`, `formatDate()`, `cn()` |
+| Schema Generators | `src/lib/schema.tsx` | `breadcrumbSchema`, `articleSchema`, `faqPageSchema`, `webApplicationSchema`, `howToSchema`, `JsonLd` |
 
 ---
 

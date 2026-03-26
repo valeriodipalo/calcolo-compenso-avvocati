@@ -3,30 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Scale, Calculator, TrendingUp, Menu, X, HeartPulse } from "lucide-react";
-
-const navLinks = [
-  {
-    href: "/contributo-unificato",
-    label: "Contributo Unificato",
-    icon: Scale,
-  },
-  {
-    href: "/calcolo-interessi-legali",
-    label: "Interessi Legali",
-    icon: TrendingUp,
-  },
-  {
-    href: "/calcolo-compenso",
-    label: "Compenso Avvocato",
-    icon: Calculator,
-  },
-  {
-    href: "/calcolo-danno-non-patrimoniale",
-    label: "Danno Non Patrimoniale",
-    icon: HeartPulse,
-  },
-];
+import { Scale, Menu, X } from "lucide-react";
+import { TOOLS } from "@/data/toolRegistry";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -50,14 +28,15 @@ export function Navbar() {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-1">
-          {navLinks.map((link) => {
-            const Icon = link.icon;
-            const isActive = pathname === link.href;
+          {TOOLS.filter((t) => t.ready).map((tool) => {
+            const Icon = tool.icon;
+            const href = `/${tool.slug}`;
+            const isActive = pathname === href;
 
             return (
               <Link
-                key={link.href}
-                href={link.href}
+                key={tool.slug}
+                href={href}
                 className={`flex items-center gap-1.5 px-3 py-1.5 text-sm transition-colors ${
                   isActive
                     ? "bg-[oklch(0.30_0.04_250)] text-[oklch(0.75_0.10_85)] font-semibold"
@@ -66,7 +45,7 @@ export function Navbar() {
                 style={{ borderRadius: "0.375rem" }}
               >
                 <Icon className="w-3.5 h-3.5" />
-                {link.label}
+                {tool.navLabel}
               </Link>
             );
           })}
@@ -86,14 +65,15 @@ export function Navbar() {
       {mobileOpen && (
         <div className="md:hidden border-t border-[oklch(0.30_0.04_250)] pb-3">
           <div className="container flex flex-col gap-1 pt-2">
-            {navLinks.map((link) => {
-              const Icon = link.icon;
-              const isActive = pathname === link.href;
+            {TOOLS.filter((t) => t.ready).map((tool) => {
+              const Icon = tool.icon;
+              const href = `/${tool.slug}`;
+              const isActive = pathname === href;
 
               return (
                 <Link
-                  key={link.href}
-                  href={link.href}
+                  key={tool.slug}
+                  href={href}
                   onClick={() => setMobileOpen(false)}
                   className={`flex items-center gap-2 px-3 py-2.5 text-sm transition-colors ${
                     isActive
@@ -103,7 +83,7 @@ export function Navbar() {
                   style={{ borderRadius: "0.375rem" }}
                 >
                   <Icon className="w-4 h-4" />
-                  {link.label}
+                  {tool.navLabel}
                 </Link>
               );
             })}

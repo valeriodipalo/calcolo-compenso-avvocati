@@ -1,12 +1,6 @@
 import Link from "next/link";
-import { Scale, Calculator, TrendingUp, HeartPulse, ExternalLink } from "lucide-react";
-
-const tools = [
-  { href: "/contributo-unificato", label: "Contributo Unificato", icon: Scale },
-  { href: "/calcolo-interessi-legali", label: "Interessi Legali", icon: TrendingUp },
-  { href: "/calcolo-compenso", label: "Compenso Avvocato", icon: Calculator },
-  { href: "/calcolo-danno-non-patrimoniale", label: "Danno Non Patrimoniale", icon: HeartPulse },
-];
+import { Scale, ExternalLink } from "lucide-react";
+import { TOOLS } from "@/data/toolRegistry";
 
 const legalResources = [
   { label: "Normattiva", url: "https://www.normattiva.it" },
@@ -40,16 +34,16 @@ export function SiteFooter() {
               Strumenti
             </h4>
             <ul className="space-y-2">
-              {tools.map((tool) => {
+              {TOOLS.filter((t) => t.ready).map((tool) => {
                 const Icon = tool.icon;
                 return (
-                  <li key={tool.href}>
+                  <li key={tool.slug}>
                     <Link
-                      href={tool.href}
+                      href={`/${tool.slug}`}
                       className="flex items-center gap-2 text-sm text-[oklch(0.70_0.03_250)] hover:text-white transition-colors"
                     >
                       <Icon className="w-3.5 h-3.5" />
-                      {tool.label}
+                      {tool.navLabel}
                     </Link>
                   </li>
                 );

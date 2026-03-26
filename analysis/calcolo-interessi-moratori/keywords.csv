@@ -1,0 +1,33 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+primary,calcolo interessi moratori,18100,0,0,commercial,134.54,134.54
+secondary,calcolatrice interessi moratori,18100,0,0,commercial,134.54,134.54
+secondary,calcolo interessi di mora,6600,0,0,commercial,81.24,81.24
+secondary,interessi moratori,4400,0,0,informational,66.33,66.33
+secondary,interessi di mora,2400,0,0,informational,48.99,48.99
+secondary,calcolo interessi moratori andreani,3600,21,0,informational,47.4,47.4
+secondary,interessi moratori dlgs 231/02,320,0,0,commercial,17.89,17.89
+secondary,interessi moratori transazioni commerciali,260,0,0,commercial,16.12,16.12
+longtail,interessi di mora 2026,260,0,0,informational,16.12,16.12
+secondary,interessi moratori quando sono dovuti,210,0,0,informational,14.49,14.49
+secondary,interessi legali e moratori,210,0,0,informational,14.49,14.49
+secondary,calcolo interessi moratori dlgs 231/02,210,0,0,commercial,14.49,14.49
+secondary,tasso interessi moratori,170,0,0,commercial,13.04,13.04
+secondary,tabella interessi moratori,170,0,0,informational,13.04,13.04
+secondary,interessi moratori tra privati,170,0,0,commercial,13.04,13.04
+longtail,tasso di mora 2026,170,0,0,transactional,13.04,13.04
+secondary,calcolo interessi legali e moratori,170,12,0,commercial,11.47,11.47
+longtail,calcolo interessi moratori tasso fisso,90,0,0,commercial,9.49,9.49
+longtail,interessi moratori fattura,90,0,0,informational,9.49,9.49
+longtail,calcolo interessi moratori e rivalutazione monetaria,110,10,0,commercial,9.44,9.44
+longtail,interessi moratori art 1224,70,0,0,transactional,8.37,8.37
+longtail,interessi moratori tra privati art 1224,50,0,0,commercial,7.07,7.07
+longtail,calcolo interessi di mora dlgs 231,50,0,0,commercial,7.07,7.07
+longtail,interessi moratori legge,50,0,0,informational,7.07,7.07
+longtail,interessi di mora quando si applicano,50,0,0,commercial,7.07,7.07
+longtail,interessi di mora per ritardato pagamento,50,0,0,transactional,7.07,7.07
+longtail,calcolo interessi moratori Excel,50,0,0,commercial,7.07,7.07
+longtail,interessi di mora e interessi legali,50,0,0,commercial,7.07,7.07
+longtail,interessi di mora tasso,50,0,0,commercial,7.07,7.07
+longtail,interessi di mora dlgs 231 02,50,0,0,transactional,7.07,7.07
+longtail,formula calcolo interessi moratori,90,49,0,commercial,4.84,4.84
+longtail,tabella interessi di mora,50,50,0,informational,3.54,3.54

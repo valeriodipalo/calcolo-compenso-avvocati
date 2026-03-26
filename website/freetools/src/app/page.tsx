@@ -1,45 +1,7 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { JsonLd, webPageSchema } from "@/lib/schema";
-
-const tools = [
-  {
-    slug: "contributo-unificato",
-    title: "Contributo Unificato",
-    description:
-      "Calcolo rapido del contributo unificato in base al valore della causa, al tipo di procedimento e al grado di giudizio. Tabelle, esenzioni e normativa aggiornata.",
-    icon: Scale,
-    badge: "Aggiornato 2026",
-    ready: true,
-  },
-  {
-    slug: "calcolo-interessi-legali",
-    title: "Calcolo Interessi Legali",
-    description:
-      "Calcola gli interessi legali al tasso 2026 (1,60%). Tabella storica completa dei tassi dal 1942, formula di calcolo, anatocismo e normativa.",
-    icon: TrendingUp,
-    badge: "Aggiornato 2026",
-    ready: true,
-  },
-  {
-    slug: "calcolo-compenso",
-    title: "Calcolo Compenso Avvocato",
-    description:
-      "Simulatore per il calcolo della liquidazione giudiziale dei compensi forensi civili. 29 competenze, 17 scaglioni, aumenti, riduzioni, CPA, IVA e ritenuta.",
-    icon: Calculator,
-    badge: "Aggiornato 2026",
-    ready: true,
-  },
-  {
-    slug: "calcolo-danno-non-patrimoniale",
-    title: "Calcolo Danno Non Patrimoniale",
-    description:
-      "Calcola il risarcimento per danno biologico, morale e parentale con Tabelle Milano 2024, TUN 2025 e art. 139 CdA.",
-    icon: HeartPulse,
-    badge: "Aggiornato 2026",
-    ready: true,
-  },
-];
+import { TOOLS } from "@/data/toolRegistry";
 
 export default function HomePage() {
   return (
@@ -52,7 +14,7 @@ export default function HomePage() {
             "Calcolatori e strumenti gratuiti per avvocati: contributo unificato, compenso professionale e altro.",
           path: "/",
           datePublished: "2025-06-01",
-          dateModified: "2026-03-10",
+          dateModified: "2026-03-26",
         })}
       />
 
@@ -76,7 +38,7 @@ export default function HomePage() {
       {/* Tools grid */}
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl">
-          {tools.map((tool) => {
+          {TOOLS.map((tool) => {
             const Icon = tool.icon;
             const cardContent = (
               <>
