@@ -134,6 +134,8 @@ export function articleSchema(opts: {
       image: {
         "@type": "ImageObject",
         url: opts.image,
+        width: 1920,
+        height: 1072,
       },
     }),
     datePublished: opts.datePublished,

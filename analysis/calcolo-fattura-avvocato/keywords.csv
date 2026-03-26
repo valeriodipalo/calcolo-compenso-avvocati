@@ -1,0 +1,32 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+primary,calcolo fattura avvocato,33100,0,5.96,informational,181.93,534.92
+secondary,fattura avvocato,12100,0,7.52,informational,110.0,345.67
+secondary,fatturazione avvocati,12100,11,7.52,informational,97.9,307.64
+secondary,calcola fattura,9900,0,4.58,transactional,99.5,270.56
+secondary,calcolo fattura,9900,0,4.58,commercial,99.5,270.56
+secondary,fattura proforma avvocato,5400,0,2.94,informational,73.48,174.25
+secondary,fattura avvocato regime forfettario,880,0,6.88,informational,29.66,90.9
+secondary,modello fattura avvocato,1300,0,2.58,informational,36.06,82.04
+secondary,acconto fattura avvocato,880,0,2.91,transactional,29.66,70.11
+secondary,marca da bollo fattura avvocato,1300,0,1.43,informational,36.06,68.07
+longtail,calcolo inverso fattura avvocato,390,0,8.08,commercial,19.75,63.31
+secondary,scorporo fattura avvocato,3600,0,0.00,commercial,60.0,60.0
+secondary,calcolo fattura avvocato andreani,2900,26,0.00,informational,39.85,39.85
+secondary,calcolo fattura avvocato inversa,1300,0,0.00,commercial,36.06,36.06
+longtail,calcolo fattura avvocato regime forfettario,40,0,6.88,informational,6.32,19.38
+longtail,calcolo fattura avvocato forfettario,70,0,2.35,informational,8.37,18.48
+longtail,calcolo fattura avvocato con scorporo,210,0,0.00,informational,14.49,14.49
+longtail,calcolo fattura avvocato scorporo,210,0,0.00,commercial,14.49,14.49
+longtail,calcolo scorporo fattura avvocato,50,0,0.00,commercial,7.07,7.07
+longtail,calcolo a ritroso fattura avvocato,30,0,0.00,informational,5.48,5.48
+longtail,calcolo fattura penale avvocato,20,0,0.00,informational,4.47,4.47
+longtail,calcolo fattura avvocato a ritroso,20,0,0.00,informational,4.47,4.47
+longtail,calcolo fattura avvocato stragiudiziale,20,0,0.00,informational,4.47,4.47
+longtail,calcolo fattura avvocato con acconto,10,0,0.00,informational,3.16,3.16
+longtail,calcolo fattura con ritenuta acconto avvocato,10,0,0.00,commercial,3.16,3.16
+longtail,calcolo imponibile fattura avvocato,10,0,0.00,commercial,3.16,3.16
+longtail,calcolo fattura avvocato dal netto,10,0,0.00,informational,3.16,3.16
+longtail,fattura avvocato acconto e saldo,10,0,0.00,informational,3.16,3.16
+longtail,fattura avvocato senza iva,10,0,0.00,informational,3.16,3.16
+longtail,causale fattura avvocato,10,0,0.00,informational,3.16,3.16
+longtail,fac simile fattura avvocato regime ordinario,10,0,0.00,informational,3.16,3.16

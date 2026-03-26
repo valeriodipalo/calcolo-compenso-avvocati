@@ -1,6 +1,6 @@
-#,Tier,Tool,URL Pianificato,URL Attuale,KW Principale,SV/mese,KD,ETV Competitor,CPC,Intent,Stato
+#,Tier,Tool,URL Pianificato,URL Attuale,KW Principale,SV/mese,KD,ETV Competitor,CPC,Intent,Stato,Data Pubblicazione
 1,1,Calcolo Compenso Civile,/strumenti/compenso-avvocato/civile/,/calcolo-compenso,calcolo compenso avvocato,33100,bassa,49125,€4.56,nav+comm,LIVE
-2,1,Calcolo Fattura Avvocato,/strumenti/compenso-avvocato/fattura/,,calcolo fattura avvocato,33100,bassa,21884,€4.56,nav,DA FARE
+2,1,Calcolo Fattura Avvocato,/strumenti/compenso-avvocato/fattura/,/calcolo-fattura-avvocato,calcolo fattura avvocato,33100,bassa,21884,€4.56,nav,LIVE,2026-03-26
 3,1,Calcolo Contributo Unificato,/contributo-unificato,/contributo-unificato,calcolo contributo unificato,18100,3,22753,,info,LIVE
 4,1,Interessi Legali,/strumenti/interessi-calcolo/interessi-legali/,/calcolo-interessi-legali,interessi legali calcolo,33100,3,23552,,nav,LIVE
 5,1,Calcolo Termini Processuali,/strumenti/termini-processuali/calcolo/,,calcolo termini processuali,60500,19,31749,,info,DA FARE

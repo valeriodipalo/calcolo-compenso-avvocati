@@ -31,12 +31,38 @@ Read these reference files — they contain exact patterns, APIs, and quality st
 ## Parsing Arguments
 
 When triggered with `/create-page {args}`:
-- First argument: **topic** (required) — e.g., "interessi moratori", "diritti di copia"
+- First argument: **topic or row number** (optional) — e.g., "interessi moratori", "7", or "#7"
 - Second argument: **reference URL** (optional) — competitor page to analyze and beat
 - Third argument: **slug** (optional) — if omitted, derive from topic (lowercase, hyphens, no accents)
 - Optional flag: `--research <path>` — path to pre-existing research file (e.g., from Manus)
 
-If no arguments provided, ask the user for the topic and a reference page URL.
+### Content Plan Integration
+
+**Always start from the content plan.** Read `analysis/content-plan.csv` — this is the master list of all planned pages.
+
+1. Parse the CSV and filter rows where `Stato` = `DA FARE`.
+2. Present the available pages as a numbered list, grouped by Tier:
+   ```
+   **Tier 1 — Core Legal Tools:**
+   #2  Calcolo Fattura Avvocato      | KW: calcolo fattura avvocato (SV: 33100)
+   #5  Calcolo Termini Processuali   | KW: calcolo termini processuali (SV: 60500)
+   #7  Interessi Moratori            | KW: calcolo interessi moratori (SV: 18100)
+   ...
+
+   **Tier 2 — Fiscal/Property Tools:**
+   #18 Scorporo IVA                  | KW: scorporo iva (SV: 33100)
+   ...
+   ```
+3. Ask the user to pick a page by its `#` number (or they can specify a custom topic not in the plan).
+4. Once selected, extract from the CSV row:
+   - **Topic**: from `Tool` column
+   - **Planned URL**: from `URL Pianificato` column (use as reference for slug, but actual slug is derived from topic unless overridden)
+   - **Primary keyword**: from `KW Principale` column (pre-validated seed for Phase 1)
+   - **Search volume**: from `SV/mese` column
+   - **CPC**: from `CPC` column
+   - **Intent**: from `Intent` column
+
+If arguments were provided directly (topic or row number), skip the interactive selection and use the matching row. If the argument is a number (e.g., "7" or "#7"), match it to the `#` column in the CSV.
 
 ## Execution Mode
 
@@ -493,13 +519,21 @@ If critical issues remain, repeat fix → revalidate. Maximum 3 iterations — i
    - Set `lastModified: new Date("YYYY-MM-DD")` using **today's date** for the new page
    - Update `lastModified` for any other pages that were modified during this process (e.g., homepage, navbar changes)
    - **Never use `new Date()` without a date string** — every entry must have a fixed date so Google sees stable `lastmod` values
-4. **Present final summary** to the user:
+4. **Update content-plan.csv**: Open `analysis/content-plan.csv` and update the row for this page:
+   - Set `URL Attuale` to the final published slug (e.g., `/calcolo-interessi-moratori`)
+   - Set `Stato` from `DA FARE` to `LIVE`
+   - Set `Data Pubblicazione` to today's date in `YYYY-MM-DD` format
+   - If the page was not originally in the CSV (custom topic), append a new row with all available fields filled
+
+5. **Present final summary** to the user:
    - Primary keyword targeted
    - Page sections created
    - Schema types implemented
    - Calculator/tool included
    - SEO audit results summary
-5. **Ask user** if they want to commit and deploy
+   - **Published URL**: `https://www.avvocatotools.it/{SLUG}`
+   - **Content plan updated**: row #{N} → LIVE, published {YYYY-MM-DD}
+6. **Ask user** if they want to commit and deploy
 
 ---
 

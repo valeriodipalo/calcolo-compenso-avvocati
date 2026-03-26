@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export interface ToolEntry {
@@ -64,6 +64,17 @@ export const TOOLS: ToolEntry[] = [
     description:
       "Calcola gli interessi moratori ex D.Lgs. 231/2002. Tasso 2026 al 10,15% (BCE + 8%), tabella storica, forfettario 40 euro e tre modalità di calcolo.",
     icon: Landmark,
+    badge: "Aggiornato 2026",
+    ready: true,
+    lastModified: "2026-03-26",
+  },
+  {
+    slug: "calcolo-fattura-avvocato",
+    title: "Calcolo Fattura Avvocato",
+    navLabel: "Fattura Avvocato",
+    description:
+      "Calcola la fattura dell'avvocato: calcolo diretto e inverso (scorporo), regime ordinario e forfettario, IVA, CPA 4%, ritenuta 20%, split payment PA.",
+    icon: FileText,
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-03-26",
