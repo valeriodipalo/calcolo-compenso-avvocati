@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export interface ToolEntry {
@@ -67,6 +67,17 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-03-26",
+  },
+  {
+    slug: "calcolo-danno-biologico",
+    title: "Calcolo Danno Biologico",
+    navLabel: "Danno Biologico",
+    description:
+      "Calcola il danno biologico: micropermanenti art. 139 CdA, macropermanenti con Tabelle Milano 2024 e TUN 2025. Formula, tabelle, INAIL e normativa aggiornata.",
+    icon: Activity,
+    badge: "Aggiornato 2026",
+    ready: true,
+    lastModified: "2026-03-30",
   },
   {
     slug: "calcolo-fattura-avvocato",
