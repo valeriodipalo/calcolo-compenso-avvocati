@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export interface ToolEntry {
@@ -75,6 +75,17 @@ export const TOOLS: ToolEntry[] = [
     description:
       "Calcola il danno biologico: micropermanenti art. 139 CdA, macropermanenti con Tabelle Milano 2024 e TUN 2025. Formula, tabelle, INAIL e normativa aggiornata.",
     icon: Activity,
+    badge: "Aggiornato 2026",
+    ready: true,
+    lastModified: "2026-03-30",
+  },
+  {
+    slug: "calcolo-rivalutazione-monetaria",
+    title: "Calcolo Rivalutazione Monetaria",
+    navLabel: "Rivalutazione Monetaria",
+    description:
+      "Calcola la rivalutazione monetaria ISTAT con interessi legali. Indice FOI aggiornato 2026, formula, tabella coefficienti, debiti di valore e normativa.",
+    icon: ArrowRightLeft,
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-03-30",

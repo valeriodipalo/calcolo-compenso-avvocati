@@ -6,7 +6,7 @@
 5,1,Calcolo Termini Processuali,/strumenti/termini-processuali/calcolo/,,calcolo termini processuali,60500,19,31749,,info,DA FARE
 6,1,Scadenze e Termini Udienze,/strumenti/termini-processuali/scadenze-udienze/,,termini,550000,,72104,,info,DA FARE
 7,1,Interessi Moratori,/strumenti/interessi-calcolo/moratori/,/calcolo-interessi-moratori,calcolo interessi moratori,18100,bassa,10592,,comm,LIVE,2026-03-26
-8,1,Rivalutazione Monetaria,/strumenti/interessi-calcolo/rivalutazione/,,rivalutazione monetaria,cluster,bassa,14252,,nav,DA FARE
+8,1,Rivalutazione Monetaria,/strumenti/interessi-calcolo/rivalutazione/,/calcolo-rivalutazione-monetaria,rivalutazione monetaria,cluster,bassa,14252,,nav,LIVE,2026-03-30
 9,1,Danno Biologico,/strumenti/danno-risarcimento/biologico/,/calcolo-danno-biologico,calcolo danno biologico,8100,3,10954,€1.44,nav,LIVE,2026-03-30
 10,1,Danno Non Patrimoniale,/strumenti/danno-risarcimento/non-patrimoniale/,/calcolo-danno-non-patrimoniale,calcolo danno non patrimoniale,1300,6,6671,€0.97,info,LIVE
 11,1,Compenso Stragiudiziale,/strumenti/compenso-avvocato/stragiudiziale/,,parametri stragiudiziali,cluster,bassa,6679,,nav,DA FARE

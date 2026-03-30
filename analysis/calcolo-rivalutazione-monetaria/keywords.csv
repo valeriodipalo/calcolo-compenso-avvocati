@@ -1,0 +1,31 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+secondary,rivalutazione istat,18100,11,1.45,commercial,119.74,227.03
+longtail,calcolatore istat,2900,5,0.80,transactional,51.16,81.23
+secondary,calcolo rivalutazione istat,2400,13,1.40,commercial,42.62,79.93
+secondary,calcolo interessi e rivalutazione,4400,2,0.00,commercial,65.01,65.01
+primary,rivalutazione monetaria,3600,5,0.02,commercial,57.0,58.13
+secondary,calcolo rivalutazione monetaria,2900,9,0.02,commercial,49.0,49.98
+secondary,rivalutazione monetaria calcolo,2900,11,0.02,commercial,47.93,48.88
+secondary,calcolo interessi legali e rivalutazione,1600,5,0.07,commercial,38.0,40.57
+secondary,interessi e rivalutazione,1300,2,0.00,commercial,35.33,35.33
+secondary,calcolo interessi e rivalutazione monetaria,1000,9,0.02,commercial,28.78,29.35
+secondary,calcolo rivalutazione monetaria e interessi,1000,10,0.02,commercial,28.46,29.02
+secondary,rivalutazione monetaria istat,1000,9,0.00,commercial,28.78,28.78
+longtail,calcolo rivalutazione,590,0,0.00,commercial,24.29,24.29
+secondary,tabella rivalutazione monetaria,390,0,0.00,commercial,19.75,19.75
+secondary,calcolo interessi legali e rivalutazione monetaria,480,10,0.00,commercial,19.72,19.72
+secondary,rivalutazione monetaria e interessi legali,320,1,0.00,commercial,17.71,17.71
+secondary,interessi legali rivalutazione monetaria,320,1,0.00,commercial,17.71,17.71
+longtail,rivalutazione monetaria andreani,480,36,0.00,commercial,14.02,14.02
+longtail,interessi e rivalutazione monetaria,170,1,0.02,commercial,12.91,13.16
+longtail,formula calcolo rivalutazione monetaria excel,170,0,0.00,commercial,13.04,13.04
+longtail,calcolo rivalutazione monetaria istat,210,15,0.00,commercial,12.32,12.32
+longtail,rivalutazione monetaria e interessi,170,9,0.02,commercial,11.86,12.1
+longtail,divieto di cumulo interessi legali e rivalutazione monetaria,110,0,0.00,commercial,10.49,10.49
+longtail,rivalutazione monetaria assegno di mantenimento,90,0,0.00,commercial,9.49,9.49
+longtail,calcolo rivalutazione monetaria assegno mantenimento,90,0,0.00,commercial,9.49,9.49
+longtail,rivalutazione monetaria assegno mantenimento,90,0,0.00,commercial,9.49,9.49
+longtail,rivalutazione monetaria storica,110,11,0.00,commercial,9.33,9.33
+longtail,tabella rivalutazione monetaria 2025,70,0,0.00,commercial,8.37,8.37
+longtail,rivalutazione monetaria quando e dovuta,70,0,0.00,commercial,8.37,8.37
+longtail,calcolo interessi moratori e rivalutazione monetaria,70,10,0.00,commercial,7.53,7.53
