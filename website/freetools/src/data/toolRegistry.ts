@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export interface ToolEntry {
@@ -100,5 +100,16 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-03-26",
+  },
+  {
+    slug: "calcolo-termini-impugnazione",
+    title: "Calcolo Termini Impugnazione",
+    navLabel: "Termini Impugnazione",
+    description:
+      "Calcola i termini di impugnazione: appello (30 gg), cassazione (60 gg), revocazione e opposizione di terzo. Civile, amministrativo e tributario con sospensione feriale.",
+    icon: Clock,
+    badge: "Aggiornato 2026",
+    ready: true,
+    lastModified: "2026-04-01",
   },
 ];

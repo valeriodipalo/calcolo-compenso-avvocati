@@ -6,8 +6,8 @@ interface LegalTableProps {
 
 export function LegalTable({ headers, rows, className = "" }: LegalTableProps) {
   return (
-    <div className={`overflow-x-auto ${className}`}>
-      <table className="table-legal">
+    <div className={`overflow-x-auto max-w-full ${className}`}>
+      <table className="table-legal w-full">
         <thead>
           <tr>
             {headers.map((h, i) => (

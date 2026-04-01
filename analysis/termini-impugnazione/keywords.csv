@@ -1,0 +1,31 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+secondary,calcolo termine appello,1900,0,0.00,commercial,43.59,43.59
+secondary,ricorso cassazione termini,1900,0,0.00,informational,43.59,43.59
+secondary,termini impugnazione licenziamento,1600,0,0.02,informational,40.0,40.79
+secondary,calcola termini impugnazione,1300,0,0.00,informational,36.06,36.06
+primary,calcolo termini impugnazione,1300,5,0.00,commercial,34.25,34.25
+secondary,termini appello,1000,0,0.00,informational,31.62,31.62
+secondary,appello civile termini,880,0,0.00,informational,29.66,29.66
+secondary,termini appello civile,880,0,0.00,informational,29.66,29.66
+secondary,revocazione,880,0,0.00,informational,29.66,29.66
+secondary,impugnazione testamento termini,720,0,0.10,informational,26.83,29.39
+secondary,ricorso tar termini,720,0,0.00,informational,26.83,26.83
+secondary,passaggio in giudicato della sentenza,720,0,0.00,informational,26.83,26.83
+secondary,termini impugnazione,390,0,0.00,informational,19.75,19.75
+secondary,termini impugnazione penale,320,0,0.00,informational,17.89,17.89
+secondary,termini impugnazione sentenza civile,320,0,0.00,informational,17.89,17.89
+secondary,termini impugnazione andreani,320,13,0.00,informational,15.56,15.56
+longtail,termini impugnazione delibera condominiale,210,0,0.00,informational,14.49,14.49
+longtail,calcolo termini impugnazione penale,170,0,0.00,informational,13.04,13.04
+longtail,termini impugnazione cartella esattoriale,170,0,0.00,informational,13.04,13.04
+longtail,termini impugnazione sentenza penale,140,0,0.00,informational,11.83,11.83
+longtail,termini impugnazione sentenza tar,90,0,0.00,informational,9.49,9.49
+longtail,impugnazione licenziamento termini cartabia,70,0,0.00,informational,8.37,8.37
+longtail,impugnazione donazione termini,70,0,0.00,informational,8.37,8.37
+longtail,calcolo termini impugnazione andreani,70,0,0.00,informational,8.37,8.37
+longtail,termini impugnazione sentenza giudice di pace,50,0,0.00,informational,7.07,7.07
+longtail,impugnazione testamento olografo termini,50,0,0.00,informational,7.07,7.07
+longtail,calcolo termini processuali impugnazione,50,0,0.00,informational,7.07,7.07
+longtail,termini impugnazione sanzione disciplinare,50,12,0.00,informational,6.22,6.22
+longtail,termini impugnazione donazione,50,47,0.00,informational,3.75,3.75
+longtail,calcolo termini impugnazione licenziamento,50,50,0.00,commercial,3.54,3.54

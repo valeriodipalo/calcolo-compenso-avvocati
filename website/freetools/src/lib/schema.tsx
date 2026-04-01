@@ -38,8 +38,7 @@ export function organizationSchema() {
     "@type": "Organization",
     name: SITE_NAME,
     url: SITE_URL,
-    // Add logo URL when available:
-    // logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
+    logo: { "@type": "ImageObject", url: `${SITE_URL}/apple-icon.png` },
   };
 }
 

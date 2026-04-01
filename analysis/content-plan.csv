@@ -14,7 +14,8 @@
 13,1,Risarcimento INAIL,/strumenti/danno-risarcimento/inail/,,calcolo risarcimento inail,140,bassa,6649,,nav,DA FARE
 14,1,Termini Memorie 183/190,/strumenti/termini-processuali/memorie-183-190/,,termini memorie integrative,cluster,bassa,5923,,info,DA FARE
 15,1,Tabella Contributo Unificato,/tabelle/contributo-unificato/,,tabella contributo unificato,cluster,bassa,11868,,info,DA FARE
-16,1,Termini Impugnazioni,/strumenti/termini-processuali/impugnazioni/,,termini impugnazioni civile,cluster,bassa,3032,,info,DA FARE
+16,1,Termini Impugnazioni (Pillar),/strumenti/termini-processuali/impugnazioni/,/calcolo-termini-impugnazione,calcolo termini impugnazione,1300,5,3032,,info+comm,LIVE,2026-04-01
+16b,1,Opposizione Decreto Ingiuntivo (Satellite),/opposizione-decreto-ingiuntivo,,opposizione decreto ingiuntivo,3600,0,,€0.51,info,DA FARE
 17,1,Tabelle Parametri Forensi,/tabelle/parametri-forensi/,,parametri forensi tabelle,cluster,bassa,3139,,info,DA FARE
 18,2,Scorporo IVA,/strumenti/fiscale/scorporo-iva/,,scorporo iva,33100,bassa,29133,€0.12,,DA FARE
 19,2,Calcolo IRPEF,/strumenti/fiscale/irpef/,,calcolo irpef,8100,16,11916,€0.23,,DA FARE
