@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>avvocatotools — Navbar Preview</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #ffffff;
+    --bg2: #f9fafb;
+    --bg3: #f3f4f6;
+    --fg: #111827;
+    --fg2: #6b7280;
+    --fg3: #9ca3af;
+    --border: #e5e7eb;
+    --primary: #111827;
+    --primary-fg: #ffffff;
+    --radius: 8px;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+    background: var(--bg2);
+    color: var(--fg);
+    min-height: 100vh;
+  }
+
+  /* ── NAVBAR ── */
+  .navbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    height: 56px;
+    background: rgba(255,255,255,.97);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(8px);
+    display: flex; align-items: center;
+    padding: 0 24px; gap: 0;
+  }
+
+  .nav-logo {
+    display: flex; align-items: center; gap: 8px;
+    text-decoration: none; color: var(--fg);
+    font-size: 14px; font-weight: 600; letter-spacing: -.3px;
+    margin-right: 32px; flex-shrink: 0;
+  }
+  .logo-box {
+    width: 28px; height: 28px; border-radius: 7px;
+    background: var(--primary);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .logo-box svg { width: 15px; height: 15px; fill: #fff; }
+
+  .nav-links { display: flex; align-items: center; flex: 1; }
+
+  .nav-btn {
+    display: flex; align-items: center; gap: 5px;
+    height: 56px; padding: 0 16px;
+    font-size: 13.5px; font-weight: 500;
+    color: var(--fg2);
+    background: none; border: none; border-bottom: 2px solid transparent;
+    cursor: pointer; transition: color .15s, border-color .15s;
+    white-space: nowrap;
+  }
+  .nav-btn:hover, .nav-btn.active {
+    color: var(--primary); border-bottom-color: var(--primary);
+  }
+  .nav-btn .chev {
+    width: 12px; height: 12px;
+    transition: transform .2s;
+    stroke: currentColor; fill: none; stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
+    flex-shrink: 0;
+  }
+  .nav-btn.active .chev { transform: rotate(180deg); }
+
+  .nav-plain {
+    display: flex; align-items: center;
+    height: 56px; padding: 0 16px;
+    font-size: 13.5px; font-weight: 500;
+    color: var(--fg2); text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color .15s;
+    white-space: nowrap;
+  }
+  .nav-plain:hover { color: var(--fg); }
+
+  .nav-right { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+
+  .btn-search {
+    display: flex; align-items: center; gap: 7px;
+    padding: 7px 14px; border-radius: 20px;
+    background: var(--bg3); border: 1px solid var(--border);
+    font-size: 13px; color: var(--fg2); cursor: pointer;
+  }
+  .btn-search svg { width: 14px; height: 14px; stroke: var(--fg3); fill: none; stroke-width: 2; }
+
+  .btn-cta {
+    padding: 8px 16px; border-radius: var(--radius);
+    background: var(--primary); color: #fff;
+    font-size: 13px; font-weight: 500; border: none; cursor: pointer;
+  }
+
+  .hamburger {
+    display: none; align-items: center; justify-content: center;
+    width: 36px; height: 36px; border-radius: var(--radius);
+    border: 1px solid var(--border); background: none; cursor: pointer;
+  }
+  .hamburger svg { width: 18px; height: 18px; stroke: var(--fg); fill: none; stroke-width: 2; stroke-linecap: round; }
+
+  /* ── FLY-OUT PANEL ── */
+  .flyout {
+    position: fixed; top: 56px; left: 0; right: 0; z-index: 99;
+    background: #fff; border-bottom: 1px solid var(--border);
+    box-shadow: 0 8px 24px rgba(0,0,0,.07);
+    display: none;
+  }
+  .flyout.open { display: block; }
+  .flyout-inner {
+    max-width: 900px; margin: 0 auto;
+    display: flex;
+  }
+
+  /* Cluster column */
+  .cluster-col {
+    width: 220px; flex-shrink: 0;
+    border-right: 1px solid var(--border);
+    padding: 8px 0;
+  }
+  .cluster-btn {
+    width: 100%; display: flex; align-items: center; gap: 10px;
+    padding: 10px 16px; text-align: left;
+    background: none; border: none; cursor: pointer;
+    transition: background .12s; border-radius: 0;
+  }
+  .cluster-btn:hover { background: var(--bg3); }
+  .cluster-btn.active { background: var(--bg3); }
+  .cluster-icon {
+    width: 34px; height: 34px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; flex-shrink: 0;
+  }
+  .cluster-name { font-size: 13px; font-weight: 500; color: var(--fg); display: block; text-align:left; }
+  .cluster-desc { font-size: 11px; color: var(--fg3); display: block; text-align:left; }
+  .cluster-chev {
+    margin-left: auto; flex-shrink: 0;
+    width: 12px; height: 12px; stroke: var(--fg3); fill: none;
+    stroke-width: 2; stroke-linecap: round;
+  }
+
+  /* Tools panel */
+  .tools-panel {
+    flex: 1; padding: 16px 24px; display: none;
+  }
+  .tools-panel.active { display: block; }
+  .tools-header {
+    display: flex; align-items: center; gap: 8px; margin-bottom: 12px;
+  }
+  .tools-header h3 { font-size: 13px; font-weight: 600; color: var(--fg); }
+  .tools-see-all {
+    margin-left: auto; font-size: 12px; color: var(--primary);
+    text-decoration: none;
+  }
+  .tools-see-all:hover { text-decoration: underline; }
+  .tools-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .tool-link {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 10px; border-radius: 6px;
+    text-decoration: none; color: var(--fg2);
+    font-size: 13px; transition: background .12s, color .12s;
+  }
+  .tool-link:hover { background: var(--bg3); color: var(--fg); }
+  .tool-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--border); flex-shrink: 0;
+    transition: background .12s;
+  }
+  .tool-link:hover .tool-dot { background: var(--primary); }
+  .tool-badge {
+    margin-left: auto; font-size: 10px; font-weight: 600;
+    background: var(--bg3); color: var(--fg2);
+    padding: 1px 6px; border-radius: 10px; flex-shrink: 0;
+  }
+
+  /* Backdrop */
+  .backdrop {
+    display: none; position: fixed; inset: 0; top: 56px;
+    background: rgba(0,0,0,.08); z-index: 98;
+  }
+  .backdrop.open { display: block; }
+
+  /* ── MOBILE DRAWER ── */
+  .drawer-overlay {
+    display: none; position: fixed; inset: 0; z-index: 200;
+    background: rgba(0,0,0,.4);
+  }
+  .drawer-overlay.open { display: block; }
+  .drawer {
+    position: fixed; top: 0; left: 0; bottom: 0; z-index: 201;
+    width: 320px; max-width: 90vw;
+    background: #fff; display: flex; flex-direction: column;
+    transform: translateX(-100%); transition: transform .25s ease;
+    border-right: 1px solid var(--border);
+  }
+  .drawer.open { transform: translateX(0); }
+
+  .drawer-head {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 16px; border-bottom: 1px solid var(--border); flex-shrink: 0;
+  }
+  .drawer-close {
+    width: 30px; height: 30px; border-radius: 6px;
+    border: 1px solid var(--border); background: none;
+    display: flex; align-items: center; justify-content: center; cursor: pointer;
+  }
+  .drawer-close svg { width: 14px; height: 14px; stroke: var(--fg2); fill: none; stroke-width: 2; stroke-linecap: round; }
+  .drawer-search {
+    display: flex; align-items: center; gap: 8px;
+    margin: 12px 16px; padding: 9px 12px;
+    border: 1px solid var(--border); border-radius: var(--radius);
+    font-size: 13px; color: var(--fg3); flex-shrink: 0;
+  }
+  .drawer-search svg { width: 14px; height: 14px; stroke: var(--fg3); fill: none; stroke-width: 2; }
+
+  .drawer-body { flex: 1; overflow-y: auto; }
+
+  /* Accordion */
+  .acc-section { border-bottom: 1px solid var(--border); }
+  .acc-trigger {
+    width: 100%; display: flex; align-items: center; justify-content: space-between;
+    padding: 13px 16px; background: none; border: none; cursor: pointer;
+    font-size: 13.5px; font-weight: 500; color: var(--fg); text-align: left;
+  }
+  .acc-trigger .chev { width: 14px; height: 14px; stroke: var(--fg3); fill: none; stroke-width: 2; stroke-linecap: round; flex-shrink:0; transition: transform .2s; }
+  .acc-trigger.open .chev { transform: rotate(180deg); }
+  .acc-content { display: none; }
+  .acc-content.open { display: block; }
+
+  .acc-cluster-trigger {
+    width: 100%; display: flex; align-items: center; gap: 10px;
+    padding: 10px 16px; background: none; border: none; cursor: pointer;
+    border-top: 1px solid #f3f4f6; text-align: left;
+  }
+  .acc-cluster-trigger .chev { margin-left: auto; width: 12px; height: 12px; stroke: var(--fg3); fill: none; stroke-width: 2; stroke-linecap: round; flex-shrink:0; transition: transform .2s; }
+  .acc-cluster-trigger.open .chev { transform: rotate(180deg); }
+  .acc-cluster-content { display: none; }
+  .acc-cluster-content.open { display: block; }
+
+  .mob-tools { margin-left: 16px; border-left: 1px solid var(--border); padding-left: 12px; padding-bottom: 8px; }
+  .mob-pillar-link {
+    display: block; font-size: 11.5px; font-weight: 600; color: var(--primary);
+    padding: 6px 0 2px; text-decoration: none;
+  }
+  .mob-tool-link {
+    display: flex; align-items: center; gap: 8px;
+    padding: 7px 0; font-size: 13px; color: var(--fg2); text-decoration: none;
+  }
+  .mob-tool-link:hover { color: var(--fg); }
+  .mob-line { width: 12px; height: 1px; background: var(--border); flex-shrink: 0; }
+
+  .mob-direct {
+    display: flex; align-items: center;
+    height: 44px; padding: 0 16px; border-bottom: 1px solid var(--border);
+    font-size: 13.5px; font-weight: 500; color: var(--fg2); text-decoration: none;
+  }
+
+  .drawer-foot {
+    padding: 16px; border-top: 1px solid var(--border); flex-shrink: 0;
+  }
+  .drawer-foot button {
+    width: 100%; padding: 10px; border-radius: var(--radius);
+    background: var(--primary); color: #fff;
+    font-size: 14px; font-weight: 500; border: none; cursor: pointer;
+  }
+
+  /* ── PAGE CONTENT ── */
+  .page { padding-top: 56px; }
+
+  .hero {
+    background: linear-gradient(135deg, #0b2040 0%, #1a3a6b 65%, #1d4580 100%);
+    padding: 64px 24px 72px; text-align: center; color: #fff;
+  }
+  .hero-eyebrow { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.5); margin-bottom: 14px; }
+  .hero h1 { font-size: 38px; font-weight: 700; line-height: 1.15; letter-spacing: -.6px; margin-bottom: 14px; }
+  .hero h1 em { font-style: normal; color: #7eb6f7; }
+  .hero p { font-size: 16px; color: rgba(255,255,255,.65); max-width: 500px; margin: 0 auto 32px; line-height: 1.65; }
+  .hero-searchbar {
+    max-width: 520px; margin: 0 auto;
+    background: #fff; border-radius: 10px;
+    padding: 8px 8px 8px 18px;
+    display: flex; align-items: center; gap: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.25);
+  }
+  .hero-searchbar input { flex: 1; border: none; outline: none; font-size: 14px; color: var(--fg); background: transparent; }
+  .hero-searchbar button { padding: 9px 20px; background: var(--primary); color: #fff; border: none; border-radius: 7px; font-size: 13px; font-weight: 500; cursor: pointer; white-space: nowrap; }
+  .hero-stats { display: flex; justify-content: center; gap: 48px; margin-top: 48px; }
+  .stat-n { font-size: 26px; font-weight: 700; }
+  .stat-l { font-size: 11px; color: rgba(255,255,255,.45); margin-top: 2px; }
+
+  .section { padding: 56px 24px; max-width: 900px; margin: 0 auto; }
+  .section-eyebrow { font-size: 11px; font-weight: 600; color: var(--fg3); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 6px; }
+  .section-h2 { font-size: 26px; font-weight: 700; color: #0b2040; letter-spacing: -.3px; margin-bottom: 6px; }
+  .section-sub { font-size: 14px; color: var(--fg2); margin-bottom: 28px; }
+
+  .quick-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+  .quick-card {
+    background: #fff; border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px; display: flex; align-items: flex-start; gap: 12px;
+    cursor: pointer; transition: box-shadow .18s, transform .18s;
+  }
+  .quick-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); transform: translateY(-2px); }
+  .qc-icon { width: 40px; height: 40px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+  .qc-title { font-size: 13.5px; font-weight: 600; color: var(--fg); margin-bottom: 3px; }
+  .qc-sub { font-size: 11.5px; color: var(--fg3); line-height: 1.4; }
+  .qc-badge { display: inline-block; margin-top: 6px; font-size: 10px; font-weight: 600; background: var(--bg3); color: var(--fg2); padding: 2px 8px; border-radius: 10px; }
+
+  .cluster-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+  .cluster-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 20px; transition: box-shadow .18s; }
+  .cluster-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,.07); }
+  .cc-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .cc-head-icon { width: 38px; height: 38px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+  .cc-head-name { font-size: 14px; font-weight: 600; color: var(--fg); }
+  .cc-list { list-style: none; }
+  .cc-list li { font-size: 12.5px; color: var(--fg2); padding: 5px 0; border-bottom: 1px solid #f3f4f6; display: flex; align-items: center; gap: 7px; }
+  .cc-list li:last-child { border-bottom: none; }
+  .cc-list li::before { content: '→'; color: #d1d5db; font-size: 11px; }
+  .cc-link { display: block; margin-top: 12px; font-size: 12px; font-weight: 600; color: var(--primary); text-decoration: none; }
+  .cc-link:hover { text-decoration: underline; }
+
+  .footer { background: #0b2040; color: rgba(255,255,255,.4); text-align: center; padding: 28px 24px; font-size: 12.5px; margin-top: 0; }
+
+  /* Color helpers */
+  .ic-blue   { background: #eff6ff; }
+  .ic-teal   { background: #f0fdf9; }
+  .ic-amber  { background: #fffbeb; }
+  .ic-coral  { background: #fff1f0; }
+  .ic-purple { background: #faf5ff; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .nav-links, .btn-search, .btn-cta { display: none !important; }
+    .hamburger { display: flex !important; }
+    .hero h1 { font-size: 28px; }
+    .hero-stats { gap: 28px; }
+    .quick-grid, .cluster-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── BACKDROP ── -->
+<div class="backdrop" id="backdrop" onclick="closeAll()"></div>
+
+<!-- ── NAVBAR ── -->
+<header class="navbar">
+  <a class="nav-logo" href="#">
+    <div class="logo-box">
+      <svg viewBox="0 0 20 20"><path d="M10 2L3 7v11h14V7L10 2zm0 2.3 5 3.7v8H5V8l5-3.7zM8 12h4v5H8z"/></svg>
+    </div>
+    avvocatotools
+  </a>
+
+  <div class="nav-links">
+    <button class="nav-btn" id="btn-legali" onmouseenter="openSection('legali')" onclick="toggleSection('legali')">
+      Strumenti legali
+      <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+    </button>
+    <button class="nav-btn" id="btn-fisco" onmouseenter="openSection('fisco')" onclick="toggleSection('fisco')">
+      Fisco e patrimonio
+      <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+    </button>
+    <button class="nav-btn" id="btn-calcolatori" onmouseenter="openSection('calcolatori')" onclick="toggleSection('calcolatori')">
+      Calcolatori
+      <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+    </button>
+    <a class="nav-plain" href="#" onmouseenter="closeAll()">Guide e tabelle</a>
+  </div>
+
+  <div class="nav-right">
+    <div class="btn-search">
+      <svg viewBox="0 0 20 20" stroke-width="1.8"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="13" y1="13" x2="17" y2="17"/></svg>
+      Cerca…
+    </div>
+    <button class="btn-cta">Accedi</button>
+    <button class="hamburger" onclick="openDrawer()">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ── FLY-OUT: STRUMENTI LEGALI ── -->
+<div class="flyout" id="flyout-legali" onmouseenter="cancelClose()" onmouseleave="scheduleClose()">
+  <div class="flyout-inner">
+    <div class="cluster-col">
+      <button class="cluster-btn active" id="cb-compenso" onmouseenter="selectCluster('legali','compenso')">
+        <span class="cluster-icon ic-blue">⚖️</span>
+        <span><span class="cluster-name">Compenso avvocato</span><span class="cluster-desc">Parametri forensi DM 147/2022</span></span>
+        <svg class="cluster-chev" viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg>
+      </button>
+      <button class="cluster-btn" id="cb-termini" onmouseenter="selectCluster('legali','termini')">
+        <span class="cluster-icon ic-blue">📅</span>
+        <span><span class="cluster-name">Termini processuali</span><span class="cluster-desc">Scadenze, impugnazioni, udienze</span></span>
+        <svg class="cluster-chev" viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg>
+      </button>
+      <button class="cluster-btn" id="cb-contributo" onmouseenter="selectCluster('legali','contributo')">
+        <span class="cluster-icon ic-blue">🏛️</span>
+        <span><span class="cluster-name">Contributo unificato</span><span class="cluster-desc">Calcolo e tabella 2026</span></span>
+        <svg class="cluster-chev" viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg>
+      </button>
+      <button class="cluster-btn" id="cb-danno" onmouseenter="selectCluster('legali','danno')">
+        <span class="cluster-icon ic-coral">🩹</span>
+        <span><span class="cluster-name">Danno e risarcimento</span><span class="cluster-desc">Biologico, non patrimoniale</span></span>
+        <svg class="cluster-chev" viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg>
+      </button>
+      <button class="cluster-btn" id="cb-interessi" onmouseenter="selectCluster('legali','interessi')">
+        <span class="cluster-icon ic-teal">📈</span>
+        <span><span class="cluster-name">Interessi e rivalutazione</span><span class="cluster-desc">Legali, moratori, ISTAT</span></span>
+        <svg class="cluster-chev" viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg>
+      </button>
+    </div>
+
+    <div class="tools-panel active" id="tp-compenso">
+      <div class="tools-header"><span>⚖️</span><h3>Compenso avvocato</h3><a class="tools-see-all" href="#">Vedi tutti →</a></div>
+      <div class="tools-grid">
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Calcolo compenso civile<span class="tool-badge">Top</span></a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Calcolo compenso penale</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Compenso stragiudiziale</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Calcolo fattura avvocato</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Fattura elettronica</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Tabella parametri forensi</a>
+      </div>
+    </div>
+    <div class="tools-panel" id="tp-termini">
+      <div class="tools-header"><span>📅</span><h3>Termini processuali</h3><a class="tools-see-all" href="#">Vedi tutti →</a></div>
+      <div class="tools-grid">
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Calcolo termini processuali<span class="tool-badge">Top</span></a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Scadenze e termini udienze</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Termini impugnazioni</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Memorie 183/190 c.p.c.</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Opposizione decreto ingiuntivo</a>
+      </div>
+    </div>
+    <div class="tools-panel" id="tp-contributo">
+      <div class="tools-header"><span>🏛️</span><h3>Contributo unificato</h3><a class="tools-see-all" href="#">Vedi tutti →</a></div>
+      <div class="tools-grid">
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Calcolo contributo unificato<span class="tool-badge">Top</span></a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Tabella scaglioni 2026</a>
+      </div>
+    </div>
+    <div class="tools-panel" id="tp-danno">
+      <div class="tools-header"><span>🩹</span><h3>Danno e risarcimento</h3><a class="tools-see-all" href="#">Vedi tutti →</a></div>
+      <div class="tools-grid">
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Danno non patrimoniale<span class="tool-badge">Top</span></a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Danno biologico</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Risarcimento INAIL</a>
+      </div>
+    </div>
+    <div class="tools-panel" id="tp-interessi">
+      <div class="tools-header"><span>📈</span><h3>Interessi e rivalutazione</h3><a class="tools-see-all" href="#">Vedi tutti →</a></div>
+      <div class="tools-grid">
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Interessi legali</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Interessi moratori</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Rivalutazione monetaria</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── FLY-OUT: FISCO ── -->
+<div class="flyout" id="flyout-fisco" onmouseenter="cancelClose()" onmouseleave="scheduleClose()">
+  <div class="flyout-inner">
+    <div class="cluster-col">
+      <button class="cluster-btn active" id="cb-fiscale" onmouseenter="selectCluster('fisco','fiscale')">
+        <span class="cluster-icon ic-amber">🧾</span>
+        <span><span class="cluster-name">Fiscale e lavoro</span><span class="cluster-desc">IVA, IRPEF, TFR, ritenuta</span></span>
+        <svg class="cluster-chev" viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg>
+      </button>
+      <button class="cluster-btn" id="cb-immobiliare" onmouseenter="selectCluster('fisco','immobiliare')">
+        <span class="cluster-icon ic-amber">🏠</span>
+        <span><span class="cluster-name">Immobiliare</span><span class="cluster-desc">IMU, catasto, mutuo, locazione</span></span>
+        <svg class="cluster-chev" viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg>
+      </button>
+    </div>
+    <div class="tools-panel active" id="tp-fiscale">
+      <div class="tools-header"><span>🧾</span><h3>Fiscale e lavoro</h3><a class="tools-see-all" href="#">Vedi tutti →</a></div>
+      <div class="tools-grid">
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Scorporo IVA<span class="tool-badge">Top</span></a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Verifica partita IVA</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Calcolo IRPEF</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Ravvedimento operoso</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Ritenuta d'acconto</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Calcolo TFR</a>
+      </div>
+    </div>
+    <div class="tools-panel" id="tp-immobiliare">
+      <div class="tools-header"><span>🏠</span><h3>Immobiliare</h3><a class="tools-see-all" href="#">Vedi tutti →</a></div>
+      <div class="tools-grid">
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Adeguamento ISTAT locazione</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Valore catastale</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Calcolo IMU</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Ammortamento mutuo</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Imposta registro locazione</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Usufrutto e nuda proprietà</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── FLY-OUT: CALCOLATORI ── -->
+<div class="flyout" id="flyout-calcolatori" onmouseenter="cancelClose()" onmouseleave="scheduleClose()">
+  <div class="flyout-inner">
+    <div class="cluster-col">
+      <button class="cluster-btn active" id="cb-generici">
+        <span class="cluster-icon ic-purple">🔢</span>
+        <span><span class="cluster-name">Calcolatori generici</span><span class="cluster-desc">Utilità di calcolo generale</span></span>
+        <svg class="cluster-chev" viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg>
+      </button>
+    </div>
+    <div class="tools-panel active" id="tp-generici">
+      <div class="tools-header"><span>🔢</span><h3>Calcolatori generici</h3><a class="tools-see-all" href="#">Vedi tutti →</a></div>
+      <div class="tools-grid">
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Calcolo codice fiscale<span class="tool-badge">Top</span></a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Calcolatrice online</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Calcolo percentuale</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Giorni tra date</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Verifica IBAN</a>
+        <a class="tool-link" href="#"><span class="tool-dot"></span>Differenza ore</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── MOBILE DRAWER ── -->
+<div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <div class="nav-logo" style="margin:0">
+      <div class="logo-box" style="width:24px;height:24px;border-radius:6px">
+        <svg viewBox="0 0 20 20" style="width:13px;height:13px;fill:#fff"><path d="M10 2L3 7v11h14V7L10 2zm0 2.3 5 3.7v8H5V8l5-3.7zM8 12h4v5H8z"/></svg>
+      </div>
+      <span style="font-size:13px">avvocatotools</span>
+    </div>
+    <button class="drawer-close" onclick="closeDrawer()">
+      <svg viewBox="0 0 14 14"><line x1="1" y1="1" x2="13" y2="13"/><line x1="13" y1="1" x2="1" y2="13"/></svg>
+    </button>
+  </div>
+  <div class="drawer-search">
+    <svg viewBox="0 0 20 20" stroke-width="1.8"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="13" y1="13" x2="17" y2="17"/></svg>
+    Cerca uno strumento…
+  </div>
+  <div class="drawer-body">
+
+    <!-- Sezione: Strumenti legali -->
+    <div class="acc-section">
+      <button class="acc-trigger" onclick="toggleAcc(this)">
+        Strumenti legali
+        <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+      </button>
+      <div class="acc-content">
+        <!-- Compenso -->
+        <button class="acc-cluster-trigger" onclick="toggleAcc(this)">
+          <span class="cluster-icon ic-blue" style="width:28px;height:28px;border-radius:6px;font-size:13px">⚖️</span>
+          <span style="font-size:13px;font-weight:500">Compenso avvocato</span>
+          <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+        </button>
+        <div class="acc-cluster-content">
+          <div class="mob-tools">
+            <a class="mob-pillar-link" href="#">→ Vai alla guida completa</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Calcolo compenso civile</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Calcolo compenso penale</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Compenso stragiudiziale</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Calcolo fattura avvocato</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Fattura elettronica</a>
+          </div>
+        </div>
+        <!-- Termini -->
+        <button class="acc-cluster-trigger" onclick="toggleAcc(this)">
+          <span class="cluster-icon ic-blue" style="width:28px;height:28px;border-radius:6px;font-size:13px">📅</span>
+          <span style="font-size:13px;font-weight:500">Termini processuali</span>
+          <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+        </button>
+        <div class="acc-cluster-content">
+          <div class="mob-tools">
+            <a class="mob-pillar-link" href="#">→ Vai alla guida completa</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Calcolo termini processuali</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Scadenze e termini udienze</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Termini impugnazioni</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Opposizione decreto ingiuntivo</a>
+          </div>
+        </div>
+        <!-- Contributo -->
+        <button class="acc-cluster-trigger" onclick="toggleAcc(this)">
+          <span class="cluster-icon ic-blue" style="width:28px;height:28px;border-radius:6px;font-size:13px">🏛️</span>
+          <span style="font-size:13px;font-weight:500">Contributo unificato</span>
+          <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+        </button>
+        <div class="acc-cluster-content">
+          <div class="mob-tools">
+            <a class="mob-pillar-link" href="#">→ Vai alla guida completa</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Calcolo contributo unificato</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Tabella scaglioni 2026</a>
+          </div>
+        </div>
+        <!-- Danno -->
+        <button class="acc-cluster-trigger" onclick="toggleAcc(this)">
+          <span class="cluster-icon ic-coral" style="width:28px;height:28px;border-radius:6px;font-size:13px">🩹</span>
+          <span style="font-size:13px;font-weight:500">Danno e risarcimento</span>
+          <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+        </button>
+        <div class="acc-cluster-content">
+          <div class="mob-tools">
+            <a class="mob-pillar-link" href="#">→ Vai alla guida completa</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Danno non patrimoniale</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Danno biologico</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Risarcimento INAIL</a>
+          </div>
+        </div>
+        <!-- Interessi -->
+        <button class="acc-cluster-trigger" onclick="toggleAcc(this)">
+          <span class="cluster-icon ic-teal" style="width:28px;height:28px;border-radius:6px;font-size:13px">📈</span>
+          <span style="font-size:13px;font-weight:500">Interessi e rivalutazione</span>
+          <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+        </button>
+        <div class="acc-cluster-content">
+          <div class="mob-tools">
+            <a class="mob-pillar-link" href="#">→ Vai alla guida completa</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Interessi legali</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Interessi moratori</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Rivalutazione monetaria</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sezione: Fisco e patrimonio -->
+    <div class="acc-section">
+      <button class="acc-trigger" onclick="toggleAcc(this)">
+        Fisco e patrimonio
+        <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+      </button>
+      <div class="acc-content">
+        <button class="acc-cluster-trigger" onclick="toggleAcc(this)">
+          <span class="cluster-icon ic-amber" style="width:28px;height:28px;border-radius:6px;font-size:13px">🧾</span>
+          <span style="font-size:13px;font-weight:500">Fiscale e lavoro</span>
+          <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+        </button>
+        <div class="acc-cluster-content">
+          <div class="mob-tools">
+            <a class="mob-pillar-link" href="#">→ Vai alla guida completa</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Scorporo IVA</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Verifica partita IVA</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Calcolo IRPEF</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Ravvedimento operoso</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Calcolo TFR</a>
+          </div>
+        </div>
+        <button class="acc-cluster-trigger" onclick="toggleAcc(this)">
+          <span class="cluster-icon ic-amber" style="width:28px;height:28px;border-radius:6px;font-size:13px">🏠</span>
+          <span style="font-size:13px;font-weight:500">Immobiliare</span>
+          <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+        </button>
+        <div class="acc-cluster-content">
+          <div class="mob-tools">
+            <a class="mob-pillar-link" href="#">→ Vai alla guida completa</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Adeguamento ISTAT locazione</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Valore catastale</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Calcolo IMU</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Ammortamento mutuo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sezione: Calcolatori -->
+    <div class="acc-section">
+      <button class="acc-trigger" onclick="toggleAcc(this)">
+        Calcolatori
+        <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+      </button>
+      <div class="acc-content">
+        <button class="acc-cluster-trigger" onclick="toggleAcc(this)">
+          <span class="cluster-icon ic-purple" style="width:28px;height:28px;border-radius:6px;font-size:13px">🔢</span>
+          <span style="font-size:13px;font-weight:500">Calcolatori generici</span>
+          <svg class="chev" viewBox="0 0 12 8"><polyline points="1,1 6,7 11,1"/></svg>
+        </button>
+        <div class="acc-cluster-content">
+          <div class="mob-tools">
+            <a class="mob-pillar-link" href="#">→ Vai alla guida completa</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Calcolo codice fiscale</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Calcolatrice online</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Calcolo percentuale</a>
+            <a class="mob-tool-link" href="#"><span class="mob-line"></span>Giorni tra date</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="mob-direct" href="#">Guide e tabelle</a>
+
+  </div>
+  <div class="drawer-foot">
+    <button>Accedi</button>
+  </div>
+</div>
+
+<!-- ── PAGE CONTENT ── -->
+<div class="page">
+  <div class="hero">
+    <div class="hero-eyebrow">Piattaforma gratuita per professionisti legali</div>
+    <h1>Tutti gli strumenti<br>che ti servono, <em>subito</em></h1>
+    <p>Calcola compensi, termini, contributo unificato e molto altro. Aggiornati 2026, sempre gratuiti.</p>
+    <div class="hero-searchbar">
+      <input type="text" placeholder="Es. calcolo compenso civile, contributo unificato…">
+      <button>Cerca</button>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-n">50+</div><div class="stat-l">Strumenti</div></div>
+      <div><div class="stat-n">9</div><div class="stat-l">Categorie</div></div>
+      <div><div class="stat-n">100%</div><div class="stat-l">Gratuito</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-eyebrow">Accesso rapido</div>
+    <div class="section-h2">Strumenti più utilizzati</div>
+    <div class="section-sub">I tool con il maggior volume di ricerca, sempre aggiornati.</div>
+    <div class="quick-grid">
+      <div class="quick-card"><span class="qc-icon ic-blue">⚖️</span><div><div class="qc-title">Calcolo compenso civile</div><div class="qc-sub">DM 147/2022 — parametri forensi</div><span class="qc-badge">33.100 ricerche/mese</span></div></div>
+      <div class="quick-card"><span class="qc-icon ic-blue">🏛️</span><div><div class="qc-title">Contributo unificato</div><div class="qc-sub">Calcolo e tabella scaglioni 2026</div><span class="qc-badge">18.100 ricerche/mese</span></div></div>
+      <div class="quick-card"><span class="qc-icon ic-coral">🩹</span><div><div class="qc-title">Danno non patrimoniale</div><div class="qc-sub">Tabelle di Milano e Roma</div><span class="qc-badge">1.300 ricerche/mese</span></div></div>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:0">
+    <div class="section-eyebrow">Esplora</div>
+    <div class="section-h2">Tutte le categorie</div>
+    <div class="section-sub">Ogni categoria raggruppa tool, guide e tabelle correlate.</div>
+    <div class="cluster-grid">
+      <div class="cluster-card"><div class="cc-head"><span class="cc-head-icon ic-blue">⚖️</span><span class="cc-head-name">Compenso avvocato</span></div><ul class="cc-list"><li>Calcolo compenso civile</li><li>Calcolo compenso penale</li><li>Compenso stragiudiziale</li><li>Calcolo fattura avvocato</li></ul><a class="cc-link" href="#">Esplora categoria →</a></div>
+      <div class="cluster-card"><div class="cc-head"><span class="cc-head-icon ic-blue">📅</span><span class="cc-head-name">Termini processuali</span></div><ul class="cc-list"><li>Calcolo termini processuali</li><li>Scadenze e termini udienze</li><li>Termini impugnazioni</li><li>Opposizione decreto ingiuntivo</li></ul><a class="cc-link" href="#">Esplora categoria →</a></div>
+      <div class="cluster-card"><div class="cc-head"><span class="cc-head-icon ic-blue">🏛️</span><span class="cc-head-name">Contributo unificato</span></div><ul class="cc-list"><li>Calcolo contributo unificato</li><li>Tabella scaglioni 2026</li></ul><a class="cc-link" href="#">Esplora categoria →</a></div>
+      <div class="cluster-card"><div class="cc-head"><span class="cc-head-icon ic-teal">📈</span><span class="cc-head-name">Interessi e rivalutazione</span></div><ul class="cc-list"><li>Interessi legali</li><li>Interessi moratori</li><li>Rivalutazione monetaria</li></ul><a class="cc-link" href="#">Esplora categoria →</a></div>
+      <div class="cluster-card"><div class="cc-head"><span class="cc-head-icon ic-coral">🩹</span><span class="cc-head-name">Danno e risarcimento</span></div><ul class="cc-list"><li>Danno non patrimoniale</li><li>Danno biologico</li><li>Risarcimento INAIL</li></ul><a class="cc-link" href="#">Esplora categoria →</a></div>
+      <div class="cluster-card"><div class="cc-head"><span class="cc-head-icon ic-amber">🧾</span><span class="cc-head-name">Fiscale e lavoro</span></div><ul class="cc-list"><li>Scorporo IVA</li><li>Calcolo IRPEF</li><li>Ravvedimento operoso</li><li>Calcolo TFR</li></ul><a class="cc-link" href="#">Esplora categoria →</a></div>
+      <div class="cluster-card"><div class="cc-head"><span class="cc-head-icon ic-amber">🏠</span><span class="cc-head-name">Immobiliare</span></div><ul class="cc-list"><li>Calcolo IMU</li><li>Valore catastale</li><li>Adeguamento ISTAT locazione</li><li>Ammortamento mutuo</li></ul><a class="cc-link" href="#">Esplora categoria →</a></div>
+      <div class="cluster-card"><div class="cc-head"><span class="cc-head-icon ic-purple">🔢</span><span class="cc-head-name">Calcolatori generici</span></div><ul class="cc-list"><li>Calcolo codice fiscale</li><li>Calcolatrice online</li><li>Verifica IBAN</li><li>Giorni tra date</li></ul><a class="cc-link" href="#">Esplora categoria →</a></div>
+      <div class="cluster-card"><div class="cc-head"><span class="cc-head-icon ic-teal">📖</span><span class="cc-head-name">Guide e tabelle</span></div><ul class="cc-list"><li>Parametri forensi 2026</li><li>Tabella ISTAT</li><li>Uffici giudiziari e PEC</li></ul><a class="cc-link" href="#">Esplora categoria →</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">© 2026 avvocatotools.it — Strumenti gratuiti per professionisti legali</div>
+
+<script>
+let closeTimer = null;
+let currentSection = null;
+
+const sectionClusters = {
+  legali: { default: 'compenso', clusters: ['compenso','termini','contributo','danno','interessi'] },
+  fisco:  { default: 'fiscale',  clusters: ['fiscale','immobiliare'] },
+  calcolatori: { default: 'generici', clusters: ['generici'] }
+};
+
+function openSection(id) {
+  if (closeTimer) clearTimeout(closeTimer);
+  if (currentSection === id) return;
+
+  // close others
+  document.querySelectorAll('.flyout').forEach(f => f.classList.remove('open'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+
+  currentSection = id;
+  document.getElementById('flyout-' + id).classList.add('open');
+  document.getElementById('btn-' + id).classList.add('active');
+  document.getElementById('backdrop').classList.add('open');
+
+  // pre-select default cluster
+  selectCluster(id, sectionClusters[id].default);
+}
+
+function toggleSection(id) {
+  if (currentSection === id) { closeAll(); return; }
+  openSection(id);
+}
+
+function closeAll() {
+  if (closeTimer) clearTimeout(closeTimer);
+  document.querySelectorAll('.flyout').forEach(f => f.classList.remove('open'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('backdrop').classList.remove('open');
+  currentSection = null;
+}
+
+function scheduleClose() {
+  closeTimer = setTimeout(closeAll, 180);
+}
+
+function cancelClose() {
+  if (closeTimer) clearTimeout(closeTimer);
+}
+
+function selectCluster(section, clusterId) {
+  const clusters = sectionClusters[section].clusters;
+
+  // update cluster buttons
+  clusters.forEach(c => {
+    const btn = document.getElementById('cb-' + c);
+    if (btn) btn.classList.toggle('active', c === clusterId);
+  });
+
+  // update tool panels
+  clusters.forEach(c => {
+    const panel = document.getElementById('tp-' + c);
+    if (panel) panel.classList.toggle('active', c === clusterId);
+  });
+}
+
+// accordion (mobile)
+function toggleAcc(trigger) {
+  const content = trigger.nextElementSibling;
+  const isOpen = trigger.classList.contains('open');
+  trigger.classList.toggle('open', !isOpen);
+  content.classList.toggle('open', !isOpen);
+}
+
+// drawer
+function openDrawer() {
+  document.getElementById('drawer').classList.add('open');
+  document.getElementById('drawerOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeDrawer() {
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('drawerOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// close on ESC
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeAll(); closeDrawer(); } });
+</script>
+</body>
+</html>

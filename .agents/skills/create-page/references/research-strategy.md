@@ -162,19 +162,35 @@ Group PAA questions into 4-6 categories:
 | `perplexity_ask` | Quick factual data points | Fast |
 | `perplexity_reason` | Complex formula analysis, legal interpretations | Medium |
 
-### Query Language
+### Italian Language Configuration
 
-Always use Italian-language queries for best results on Italian legal topics:
-- "calcolo contributo unificato 2026 scaglioni aggiornati"
-- "art. 13 DPR 115/2002 testo vigente importi"
-- "circolare ministero giustizia contributo unificato 2024 2025"
+Perplexity tools have no explicit `language` parameter. To get results in Italian, apply ALL of these:
+
+1. **System message (mandatory for all `messages`-based tools)**:
+   ```
+   role: "system"
+   content: "Sei un esperto di diritto italiano e fiscalità. Rispondi SEMPRE in italiano, usando terminologia giuridica e fiscale precisa. Cita le fonti normative con riferimenti completi (articolo, comma, decreto/legge, data e numero). Privilegia fonti istituzionali italiane: Normattiva.it, Gazzetta Ufficiale, Ministero della Giustizia, Agenzia delle Entrate, Consiglio Nazionale Forense."
+   ```
+
+2. **User queries must be in Italian**:
+   - "calcolo contributo unificato 2026 scaglioni aggiornati normative recenti"
+   - "art. 13 DPR 115/2002 testo vigente importi aggiornati"
+   - "circolare ministero giustizia contributo unificato 2024 2025"
+
+3. **`perplexity_search`**: always pass `country: "IT"` to bias results toward Italian sources.
+
+4. **`perplexity_ask` and `perplexity_reason`**: use `search_context_size: "high"` to pull more Italian web context, and add `search_domain_filter` to prioritize Italian legal sources:
+   ```json
+   ["normattiva.it", "gazzettaufficiale.it", "giustizia.it", "agenziaentrate.gov.it", "altalex.com", "brocardi.it", "camera.it", "senato.it"]
+   ```
+   Note: domain filter restricts results to ONLY those domains — use it when you need precise institutional data. Omit it when you need broader coverage (practical how-to content, fiscal treatment, etc.).
 
 ### Research Workflow
 
-1. **`perplexity_research`** — start with a broad query about the full topic. This returns multi-source findings with citations.
-2. **`perplexity_search`** with `recency: "year"` — find recent changes, new circulars, legislative updates.
-3. **`perplexity_ask`** — targeted questions for specific data points: exact rates, dates, amounts.
-4. **`perplexity_reason`** — when a formula or legal interpretation requires step-by-step logical analysis.
+1. **`perplexity_research`** — start with a broad query about the full topic. Always include the Italian system message. Use `reasoning_effort: "high"` and `search_context_size: "high"` (if available). This returns multi-source findings with citations, directly in Italian.
+2. **`perplexity_search`** with `recency: "year"` and `country: "IT"` — find recent changes, new circulars, legislative updates from Italian sources.
+3. **`perplexity_ask`** with Italian system message and `search_context_size: "high"` — targeted questions for specific data points: exact rates, dates, amounts.
+4. **`perplexity_reason`** with Italian system message and `search_context_size: "high"` — when a formula or legal interpretation requires step-by-step logical analysis.
 
 ---
 

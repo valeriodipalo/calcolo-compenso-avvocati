@@ -231,13 +231,36 @@ If `--research <path>` was provided, read that file first and use it as the prim
 
 #### Step 3.1: Deep Research (primary data gathering)
 
-1. **`mcp__perplexity__perplexity_research`** with `reasoning_effort: "high"` and `strip_thinking: true` — comprehensive investigation of the legal topic. Use Italian-language queries. Structure the query to explicitly request:
+1. **`mcp__perplexity__perplexity_research`** with `reasoning_effort: "high"` and `strip_thinking: true` — comprehensive investigation of the legal topic.
+
+   **Always include the Italian system message** to get results directly in Italian:
+   ```json
+   {
+     "messages": [
+       {
+         "role": "system",
+         "content": "Sei un esperto di diritto italiano e fiscalità. Rispondi SEMPRE in italiano, usando terminologia giuridica e fiscale precisa. Cita le fonti normative con riferimenti completi (articolo, comma, decreto/legge, data e numero). Privilegia fonti istituzionali italiane: Normattiva.it, Gazzetta Ufficiale, Ministero della Giustizia, Agenzia delle Entrate, Consiglio Nazionale Forense. Fornisci spiegazioni dettagliate con esempi pratici, casi particolari, e contesto storico delle norme."
+       },
+       {
+         "role": "user",
+         "content": "[Italian query here]"
+       }
+     ],
+     "reasoning_effort": "high",
+     "strip_thinking": true
+   }
+   ```
+
+   Structure the user query in Italian to explicitly request:
    - All relevant laws/decrees/regulations with Normattiva URLs
    - Current rates, tables, thresholds with official source references
-   - Formulas with worked examples
+   - Formulas with worked examples (esempi pratici di calcolo)
    - Exemptions, special cases, recent changes (last 2 years)
    - Historical data tables if applicable
    - Verbatim quotes of key legislative articles (for NormativaQuote components)
+   - Practical context: how practitioners actually use this in daily work
+   - Common mistakes and pitfalls (errori comuni)
+   - Connections between related norms (e.g., how CPA/IVA interact with the main calculation)
 
 2. **Save the raw output immediately** to `analysis/{SLUG}/raw-research.md`. This file is the primary reference document — it preserves the full research output (~5,000-10,000 words) so no data is lost between phases. Phase 4 must read this file when writing content.
 
@@ -262,19 +285,20 @@ The deep research provides the foundation (~80% of content needs). This step sys
    - Identify any section that requires data the raw research doesn't provide
    - Add these to the gap list
 
-6. **Run targeted supplementary calls** (2-5 calls, ~$0.01-0.03 total) to fill gaps:
+6. **Run targeted supplementary calls** (3-6 calls) to fill gaps. **All calls must use the Italian system message** (see Step 3.1 template). This ensures responses come back in Italian, ready to use as content.
 
-   - **`mcp__perplexity__perplexity_search`** with `recency: "year"` — for:
+   - **`mcp__perplexity__perplexity_search`** with `recency: "year"` and `country: "IT"` — for:
      - Verification of numerical data (rates, thresholds) against official sources (TuttoCamere, GU)
      - Missing Normattiva URLs
      - Recent legislative changes not covered
 
-   - **`mcp__perplexity__perplexity_ask`** — for:
+   - **`mcp__perplexity__perplexity_ask`** with Italian system message and `search_context_size: "high"` — for:
      - Practical "how-to" angles from keywords (e.g., "in fattura", "Excel", "tasso fisso")
      - IVA/fiscal treatment of the topic (always a gap in legal-only research)
      - Specific data points the deep research was vague about
+     - When you need precise institutional data, add `search_domain_filter: ["normattiva.it", "gazzettaufficiale.it", "giustizia.it", "agenziaentrate.gov.it", "altalex.com"]`
 
-   - **`mcp__perplexity__perplexity_reason`** — only if:
+   - **`mcp__perplexity__perplexity_reason`** with Italian system message and `search_context_size: "high"` — only if:
      - Formulas or legal interpretations require step-by-step logical analysis
      - There are conflicting data points between deep research and verification sources
 
@@ -282,16 +306,39 @@ The deep research provides the foundation (~80% of content needs). This step sys
 
 8. **Append supplementary findings** to `analysis/{SLUG}/raw-research.md` under a `## Supplementary Research` section with clear source attribution.
 
-#### Step 3.3: Data compilation and verification
+#### Step 3.3: Data compilation and content extraction
 
-7. **Build structured research brief** at `analysis/{SLUG}/research-brief.md` by extracting and organizing from raw-research.md + supplementary calls:
+7. **Build enriched research brief** at `analysis/{SLUG}/research-brief.md`. This file is the bridge between research and content — it must preserve BOTH structured data AND narrative content from the raw research. Extract and organize from raw-research.md + supplementary calls:
+
+   **Structured data (for calculator/tables):**
    - **Normativa**: Every law/decree cited, with article numbers and verified Normattiva URLs
    - **Data tables**: All rates, thresholds, brackets — verified against official sources
    - **Formulas**: With variable definitions and worked examples
-   - **Key legislative quotes**: Verbatim text for NormativaQuote components
-   - **FAQ answers** (15-25 items): Start from PAA questions (Phase 1), add questions from long-tail keywords, add practitioner questions from research. Each must have: domanda, risposta, categoria, fonti (with URLs). Organize by 4-6 categories.
-   - **Recent changes**: Legislative updates from last 24 months
-   - **Sources bibliography**: Complete list of institutional URLs for "Fonti e Riferimenti" section
+
+   **Editorial content (for page sections) — DO NOT summarize, preserve full paragraphs:**
+   - **Explanatory passages**: Copy verbatim from raw-research any well-written paragraphs that explain how the law works, its rationale, or its practical application. These become the backbone of page sections.
+   - **Historical context**: How the norm evolved over time — legislative history, key reforms, reasons for changes. This adds depth competitors lack.
+   - **Practical examples**: Any worked examples, case studies, or "in practice" explanations from the research. Include the full example, not just a summary.
+   - **Edge cases and exceptions**: Special situations, exemptions, lesser-known rules. These are high-value content for SEO (long-tail queries) and user trust.
+   - **Common mistakes**: Errors practitioners commonly make. Excellent for AlertBox components and FAQ items.
+   - **Connections between norms**: How this topic interacts with related laws (e.g., IVA treatment, CPA, procedural deadlines). This cross-referencing adds unique value.
+   - **Key legislative quotes**: Verbatim text of key articles for NormativaQuote components
+
+   **FAQ answers (15-25 items):** Start from PAA questions (Phase 1), add questions from long-tail keywords, add practitioner questions from research. Each must have: domanda, risposta (3-5 sentences minimum, not one-liners), categoria, fonti (with URLs). Organize by 4-6 categories.
+
+   **Recent changes**: Legislative updates from last 24 months — include context on WHY the change happened and its practical impact.
+
+   **Sources bibliography**: Complete list of institutional URLs for "Fonti e Riferimenti" section.
+
+   **Section-to-research mapping table** (new, mandatory):
+   ```
+   | Planned Page Section | Raw Research Sections to Use | Key Data Points |
+   |----------------------|------------------------------|-----------------|
+   | Come si Calcola      | §2.1 Formula, §3.4 Examples  | Art. 13, rates   |
+   | Tabella Importi      | §2.3 Tables                  | All brackets     |
+   | Esenzioni            | §4.1 Exemptions, §4.2 Cases  | Art. 10, 46      |
+   ```
+   This mapping ensures no valuable research content is lost during implementation.
 
 8. **Source verification checklist**:
    - Every monetary amount cites a specific article and comma
@@ -315,7 +362,19 @@ The deep research provides the foundation (~80% of content needs). This step sys
 
 Read `references/implementation-guide.md` for exact code patterns. Follow the existing pages as the model — look at `src/app/contributo-unificato/page.tsx` and `src/app/calcolo-interessi-legali/page.tsx` for the exact style.
 
-**Critical**: Before writing any content, read both `analysis/{SLUG}/raw-research.md` and `analysis/{SLUG}/research-brief.md` in full. The raw research file contains the comprehensive deep research output (5,000-10,000 words) and must be used as the primary source for editorial content. Every factual claim, legislative quote, and data point in the page should trace back to these files.
+**Critical — research-to-content pipeline**: Before writing any content, read ALL THREE files in full:
+1. `analysis/{SLUG}/raw-research.md` — the comprehensive deep research output (5,000-10,000 words). This is the **primary content source**.
+2. `analysis/{SLUG}/research-brief.md` — structured data extraction + the **section-to-research mapping table**.
+3. `analysis/{SLUG}/keyword-strategy.md` — keyword targets per section.
+
+**How to use raw research in content writing:**
+- Follow the **section-to-research mapping table** from the research-brief — it tells you exactly which research sections feed each page section.
+- For each page section, go back to the corresponding raw research paragraphs and **adapt them into editorial content** — don't summarize, expand. Use the research's explanations, examples, and context as the foundation, then enrich with proper formatting (InlineNormLink, NormativaQuote, AlertBox, LegalTable).
+- **Preserve depth**: if the raw research explains a concept in 3 paragraphs with examples, the page section should be at least as detailed — not condensed into 1 paragraph.
+- **Transfer practical examples verbatim**: worked calculations, case scenarios, and "in practice" explanations from research should appear in the page (adapted for formatting, not shortened).
+- **Include edge cases and exceptions**: these are high-value for both SEO (long-tail matches) and user trust. Use AlertBox components to highlight them.
+- **Include historical context**: brief legislative history paragraphs add unique depth that competitors skip. Use them in the normativa section or as intro context.
+- Every factual claim, legislative quote, and data point in the page must trace back to these files.
 
 ### Step 4.1: Create Data Files
 
