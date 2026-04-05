@@ -7,10 +7,6 @@ import {
   FileText,
   Home,
   Calculator,
-  BookOpen,
-  Activity,
-  ArrowRightLeft,
-  Timer,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -176,14 +172,3 @@ export const NAV_SECTIONS: NavSection[] = [
   },
 ];
 
-/** Icons re-exported for mobile drawer cluster display */
-export const CLUSTER_ICONS: Record<string, LucideIcon> = {
-  compenso: Scale,
-  termini: Clock,
-  contributo: Landmark,
-  danno: HeartPulse,
-  interessi: TrendingUp,
-  fiscale: FileText,
-  immobiliare: Home,
-  generici: Calculator,
-};

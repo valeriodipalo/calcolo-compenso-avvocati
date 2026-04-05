@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { DM_Serif_Display, Source_Sans_3, JetBrains_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { JsonLd, websiteSchema } from "@/lib/schema";
@@ -62,6 +63,13 @@ export default function RootLayout({
       <head>
         {/* Site-wide: WebSite + Organization schema */}
         <JsonLd data={websiteSchema()} />
+        {process.env.NODE_ENV === "development" && (
+          <Script
+            src="//unpkg.com/react-grab/dist/index.global.js"
+            crossOrigin="anonymous"
+            strategy="beforeInteractive"
+          />
+        )}
       </head>
       <body
         className={`${dmSerif.variable} ${sourceSans.variable} ${jetbrainsMono.variable} antialiased`}
