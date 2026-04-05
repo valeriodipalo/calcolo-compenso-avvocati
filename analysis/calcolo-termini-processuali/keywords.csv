@@ -1,0 +1,39 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+primary,calcolo termini processuali,60500,19,1.92,commercial,199.23,412.73
+secondary,calcolo termini processuali andreani,9900,9,0.00,informational,90.54,90.54
+secondary,termini processuali,5400,0,0.00,informational,73.48,73.48
+secondary,calcolo termini processuali penali,880,5,1.78,commercial,28.18,57.0
+secondary,computo dei termini,2400,0,0.00,informational,48.99,48.99
+secondary,termini processuali andreani,2900,19,0.00,informational,43.62,43.62
+secondary,calcola termini liberi,1900,0,0.00,commercial,43.59,43.59
+secondary,calcolo termine a ritroso,1900,0,0.00,informational,43.59,43.59
+secondary,calcolo termini processuali 171-ter,1300,0,0.00,commercial,36.06,36.06
+secondary,calcolo termine opposizione decreto ingiuntivo,1300,0,0.00,commercial,36.06,36.06
+secondary,computo termini processuali,1300,0,0.00,informational,36.06,36.06
+secondary,calcolo termini liberi,1900,19,0.00,commercial,35.31,35.31
+secondary,calcolo termini a ritroso,1900,19,0.00,informational,35.31,35.31
+secondary,calcolo termine costituzione,1000,0,0.00,commercial,31.62,31.62
+secondary,calcolo termini costituzione,1000,19,0.00,commercial,25.61,25.61
+secondary,calcolo termini processuali cartabia,880,19,0.00,informational,24.03,24.03
+longtail,calcolo termini processuali civili,880,19,0.00,informational,24.03,24.03
+longtail,calcolo termini processuali liberi,320,19,0.00,commercial,14.49,14.49
+longtail,calcolo termini processuali a ritroso,320,19,0.00,informational,14.49,14.49
+longtail,calcolo termini processuali tributari,70,30,2.07,commercial,5.86,12.43
+longtail,calcolo termini processuali mesi,170,5,0.00,informational,12.39,12.39
+longtail,calcolo termini processuali appello,140,0,0.00,commercial,11.83,11.83
+longtail,calcolo termini processuali andreani 171 ter,90,0,0.00,informational,9.49,9.49
+longtail,calcolo termini processuali 189,90,0,0.00,informational,9.49,9.49
+longtail,calcolo termini processuali costituzione convenuto,90,0,0.00,commercial,9.49,9.49
+longtail,calcolo termini processuali 190,110,19,0.00,informational,8.5,8.5
+longtail,calcolo termini processuali penali andreani,70,0,0.00,commercial,8.37,8.37
+longtail,calcolo termini processuali giorni liberi,50,0,0.00,commercial,7.07,7.07
+longtail,calcolo termini processuali opposizione decreto ingiuntivo,50,0,0.00,informational,7.07,7.07
+longtail,calcolo termini processuali impugnazione,50,0,0.00,informational,7.07,7.07
+longtail,calcolo termini processuali a giorni,50,0,0.00,informational,7.07,7.07
+longtail,calcolo termini processuali 473 bis 17,50,0,0.00,informational,7.07,7.07
+longtail,calcolo termini processuali 352 cpc,40,0,0.00,commercial,6.32,6.32
+longtail,calcolo termini processuali conclusionali e repliche,30,0,0.00,commercial,5.48,5.48
+longtail,calcolo termini processuali tra due date,30,0,0.00,commercial,5.48,5.48
+longtail,calcolo termini processuali amministrativi,30,0,0.00,commercial,5.48,5.48
+longtail,calcolo termini processuali cartabia 171 ter,30,0,0.00,informational,5.48,5.48
+longtail,calcolo termini processuali appello penale,30,50,0.00,informational,2.74,2.74

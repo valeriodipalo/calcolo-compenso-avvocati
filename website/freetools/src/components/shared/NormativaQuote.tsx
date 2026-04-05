@@ -7,7 +7,7 @@ interface NormativaQuoteProps {
 
 export function NormativaQuote({ children, url }: NormativaQuoteProps) {
   return (
-    <div className="normativa-quote my-4">
+    <blockquote cite={url} className="normativa-quote my-4">
       {children}
       {url && (
         <a
@@ -19,6 +19,6 @@ export function NormativaQuote({ children, url }: NormativaQuoteProps) {
           <ExternalLink className="w-3 h-3" /> Consulta il testo su Normattiva
         </a>
       )}
-    </div>
+    </blockquote>
   );
 }

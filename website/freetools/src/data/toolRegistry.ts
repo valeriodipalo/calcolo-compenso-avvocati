@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export interface ToolEntry {
@@ -111,5 +111,16 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-04-01",
+  },
+  {
+    slug: "calcolo-termini-processuali",
+    title: "Calcolo Termini Processuali",
+    navLabel: "Termini Processuali",
+    description:
+      "Calcola i termini processuali civili: a giorni, a mesi, termini liberi, calcolo a ritroso. Sospensione feriale, Riforma Cartabia e tabella completa dei termini.",
+    icon: Timer,
+    badge: "Aggiornato 2026",
+    ready: true,
+    lastModified: "2026-04-05",
   },
 ];
