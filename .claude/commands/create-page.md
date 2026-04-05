@@ -40,16 +40,23 @@ When triggered with `/create-page {args}`:
 
 **Always start from the content plan.** Read `analysis/content-plan.csv` — this is the master list of all planned pages.
 
-1. Parse the CSV and filter rows where `Stato` = `DA FARE`.
-2. Present the available pages as a numbered list, grouped by Tier:
-   ```
-   **Tier 1 — Core Legal Tools:**
-   #2  Calcolo Fattura Avvocato      | KW: calcolo fattura avvocato (SV: 33100)
-   #5  Calcolo Termini Processuali   | KW: calcolo termini processuali (SV: 60500)
-   #7  Interessi Moratori            | KW: calcolo interessi moratori (SV: 18100)
-   ...
+**Cluster assignment is mandatory.** Read `src/data/toolRegistry.ts` to get the `CLUSTERS` array and the cluster map from `silos-restructure/2.Manus-Guida Operativa_ Ristrutturazione a Topic Cluster per avvocatotools.it.md` (Section 3). Every new tool MUST be assigned to exactly one cluster.
 
-   **Tier 2 — Fiscal/Property Tools:**
+1. Parse the CSV and filter rows where `Stato` = `DA FARE`.
+2. Present the available pages as a numbered list, grouped by **cluster** (matching the `CLUSTERS` array in `toolRegistry.ts`):
+   ```
+   **Compenso e Fatturazione:**
+   #11 Compenso Stragiudiziale       | KW: compenso stragiudiziale (SV: cluster)
+   #12 Compenso Penale               | KW: compenso penale (SV: cluster)
+
+   **Termini e Scadenze:**
+   #6  Scadenze e Termini Udienze    | KW: calcolo scadenze (SV: 550000)
+   #14 Termini Memorie 183/190       | KW: memorie 183 (SV: cluster)
+
+   **Contributo Unificato:**
+   #15 Tabella Contributo Unificato  | KW: tabella contributo unificato (SV: 11868)
+
+   **Fiscale e Lavoro:**
    #18 Scorporo IVA                  | KW: scorporo iva (SV: 33100)
    ...
    ```
@@ -415,7 +422,8 @@ Create `src/app/{SLUG}/page.tsx` — follow `references/implementation-guide.md`
 - Cross-reference related sections
 
 **Schema markup — read `references/schema-enrichment.md`**:
-- Always include: **BreadcrumbList** + **Article** (with `image` property)
+- **BreadcrumbList**: Check if the shared `Breadcrumb` component exists in `src/components/shared/Breadcrumb.tsx`. If it does, it is automatically injected by `ToolLayout` — do NOT add inline breadcrumb schema. If it does not exist yet, add a 3-level BreadcrumbList inline: `Home → [Cluster Label] → [Tool Name]`. Use `getClusterForTool(slug)` from `toolRegistry.ts` to get the cluster label and hub slug.
+- Always include: **Article** (with `image` property)
 - Add **WebApplication** if the page has a calculator
 - **Do NOT include FAQPage** — since Aug 2023, Google restricts FAQ rich results to government/healthcare sites only. Keep the FAQ UI component for UX, but no JSON-LD.
 - **Do NOT include HowTo** — Google deprecated HowTo rich results in Sept 2023. The `howToSchema` function is removed.
@@ -439,14 +447,24 @@ Add the new tool to the **single registry file** `src/data/toolRegistry.ts`:
   badge: "Aggiornato {YEAR}",
   ready: true,
   lastModified: "{YYYY-MM-DD}",
+  cluster: "{CLUSTER_ID}",
+  relatedSlugs: ["{cross-cluster-tool-1}", "{cross-cluster-tool-2}"],
 }
 ```
 
+**Cluster assignment rules:**
+- `cluster` is **mandatory** — must match one of the `id` values in the `CLUSTERS` array (e.g., `"compensi"`, `"termini"`, `"interessi"`, `"contributo"`, `"danno"`, `"fiscale"`, `"immobiliare"`, `"generici"`)
+- Refer to the Manus cluster map in `silos-restructure/2.Manus-Guida Operativa_ Ristrutturazione a Topic Cluster per avvocatotools.it.md` (Section 3) for the authoritative assignment of each tool to its cluster
+- Each tool belongs to **exactly one cluster** — no duplicates across clusters
+- `relatedSlugs` is optional but recommended — list 1-2 tools from OTHER clusters that have a logical workflow connection (e.g., after computing damages, the user may need interest calculation)
+
 This **automatically** updates:
-- `Navbar.tsx` (desktop + mobile nav links)
-- `SiteFooter.tsx` (footer tools list)
-- `app/page.tsx` (homepage tools grid)
+- `Navbar.tsx` (desktop + mobile nav links, grouped by cluster)
+- `SiteFooter.tsx` (footer tools list, grouped by cluster)
+- `app/page.tsx` (homepage tools grid, organized in cluster sections)
 - `app/sitemap.ts` (XML sitemap entries)
+- `RelatedTools` component on sibling tool pages (same-cluster tools auto-appear)
+- `Breadcrumb` component (shows cluster context: Home › Cluster › Tool)
 
 **No other navigation files need editing.** Only update `src/app/layout.tsx` if the site-wide root description needs to change.
 

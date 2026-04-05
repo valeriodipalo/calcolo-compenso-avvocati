@@ -5,6 +5,21 @@ export interface ToolSection {
   label: string;
 }
 
+export interface ToolCluster {
+  id: string;
+  label: string;
+  slug: string;
+  description: string;
+  icon: LucideIcon;
+  hubReady: boolean;
+}
+
+export interface NavGroup {
+  id: string;
+  label: string;
+  clusterIds: string[];
+}
+
 export interface ToolConfig {
   slug: string;
   title: string;

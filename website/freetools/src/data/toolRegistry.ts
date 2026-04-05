@@ -1,5 +1,6 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import type { ToolCluster, NavGroup } from "@/types/tool";
 
 export interface ToolEntry {
   slug: string;
@@ -10,7 +11,107 @@ export interface ToolEntry {
   badge: string;
   ready: boolean;
   lastModified: string;
+  cluster: string;
+  relatedSlugs?: string[];
 }
+
+// ---------------------------------------------------------------------------
+// Clusters
+// ---------------------------------------------------------------------------
+
+export const CLUSTERS: ToolCluster[] = [
+  {
+    id: "compensi",
+    label: "Compenso e Fatturazione",
+    slug: "compensi-forensi",
+    description: "Strumenti per il calcolo dei compensi professionali forensi e la fatturazione dell'avvocato.",
+    icon: Calculator,
+    hubReady: false,
+  },
+  {
+    id: "termini",
+    label: "Termini e Scadenze",
+    slug: "termini-processuali",
+    description: "Calcolo dei termini processuali, di impugnazione e delle scadenze legali.",
+    icon: Clock,
+    hubReady: false,
+  },
+  {
+    id: "interessi",
+    label: "Interessi e Rivalutazione",
+    slug: "interessi-e-rivalutazione",
+    description: "Calcolo di interessi legali, moratori e rivalutazione monetaria ISTAT.",
+    icon: TrendingUp,
+    hubReady: false,
+  },
+  {
+    id: "contributo",
+    label: "Contributo Unificato",
+    slug: "guida-contributo-unificato",
+    description: "Calcolo e guida completa al contributo unificato per ogni tipo di procedimento.",
+    icon: Scale,
+    hubReady: false,
+  },
+  {
+    id: "danno",
+    label: "Danno e Risarcimento",
+    slug: "danno-e-risarcimento",
+    description: "Calcolo del danno biologico, non patrimoniale e dei risarcimenti.",
+    icon: HeartPulse,
+    hubReady: false,
+  },
+  {
+    id: "fiscale",
+    label: "Fiscale e Lavoro",
+    slug: "fiscale-e-lavoro",
+    description: "Strumenti per calcoli fiscali, tributari e del lavoro.",
+    icon: Landmark,
+    hubReady: false,
+  },
+  {
+    id: "immobiliare",
+    label: "Immobiliare",
+    slug: "strumenti-immobiliari",
+    description: "Calcoli per immobili: IMU, valore catastale, adeguamento ISTAT.",
+    icon: Building,
+    hubReady: false,
+  },
+  {
+    id: "generici",
+    label: "Calcolatori Generici",
+    slug: "calcolatori-generici",
+    description: "Calcolatori di uso generale: percentuali, codice fiscale, date.",
+    icon: Hash,
+    hubReady: false,
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Nav Groups (macro-areas for navbar dropdowns)
+// ---------------------------------------------------------------------------
+
+export const NAV_GROUPS: NavGroup[] = [
+  {
+    id: "processo",
+    label: "Processo",
+    clusterIds: ["compensi", "termini", "contributo"],
+  },
+  {
+    id: "calcoli",
+    label: "Calcoli",
+    clusterIds: ["interessi", "danno"],
+  },
+  {
+    id: "fiscale-nav",
+    label: "Fiscale",
+    clusterIds: ["fiscale", "immobiliare"],
+  },
+  {
+    id: "utility",
+    label: "Utility",
+    clusterIds: ["generici"],
+  },
+];
 
 export const TOOLS: ToolEntry[] = [
   {
@@ -23,6 +124,8 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-03-10",
+    cluster: "contributo",
+    relatedSlugs: ["calcolo-compenso"],
   },
   {
     slug: "calcolo-interessi-legali",
@@ -34,6 +137,8 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-03-10",
+    cluster: "interessi",
+    relatedSlugs: ["calcolo-rivalutazione-monetaria"],
   },
   {
     slug: "calcolo-compenso",
@@ -45,6 +150,8 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-03-15",
+    cluster: "compensi",
+    relatedSlugs: ["calcolo-fattura-avvocato"],
   },
   {
     slug: "calcolo-danno-non-patrimoniale",
@@ -56,6 +163,8 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-03-15",
+    cluster: "danno",
+    relatedSlugs: ["calcolo-interessi-legali", "calcolo-danno-biologico"],
   },
   {
     slug: "calcolo-interessi-moratori",
@@ -67,6 +176,8 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-03-26",
+    cluster: "interessi",
+    relatedSlugs: ["calcolo-interessi-legali"],
   },
   {
     slug: "calcolo-danno-biologico",
@@ -78,6 +189,8 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-03-30",
+    cluster: "danno",
+    relatedSlugs: ["calcolo-interessi-legali", "calcolo-rivalutazione-monetaria"],
   },
   {
     slug: "calcolo-rivalutazione-monetaria",
@@ -89,6 +202,8 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-03-30",
+    cluster: "interessi",
+    relatedSlugs: ["calcolo-interessi-legali", "calcolo-danno-biologico"],
   },
   {
     slug: "calcolo-fattura-avvocato",
@@ -100,6 +215,8 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-03-26",
+    cluster: "compensi",
+    relatedSlugs: ["calcolo-compenso"],
   },
   {
     slug: "calcolo-termini-impugnazione",
@@ -111,6 +228,8 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-04-01",
+    cluster: "termini",
+    relatedSlugs: ["calcolo-termini-processuali"],
   },
   {
     slug: "calcolo-termini-processuali",
@@ -122,5 +241,60 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-04-05",
+    cluster: "termini",
+    relatedSlugs: ["calcolo-termini-impugnazione"],
   },
 ];
+
+// ---------------------------------------------------------------------------
+// Helper functions
+// ---------------------------------------------------------------------------
+
+/** Clusters that have at least one ready tool */
+export function getActiveClusters(): ToolCluster[] {
+  return CLUSTERS.filter((c) =>
+    TOOLS.some((t) => t.cluster === c.id && t.ready)
+  );
+}
+
+/** All ready tools belonging to a cluster */
+export function getToolsByCluster(clusterId: string): ToolEntry[] {
+  return TOOLS.filter((t) => t.cluster === clusterId && t.ready);
+}
+
+/** The cluster a tool belongs to */
+export function getClusterForTool(slug: string): ToolCluster | undefined {
+  const tool = TOOLS.find((t) => t.slug === slug);
+  return tool ? CLUSTERS.find((c) => c.id === tool.cluster) : undefined;
+}
+
+/** Same-cluster siblings + cross-cluster related tools */
+export function getRelatedTools(slug: string): {
+  sameCluster: ToolEntry[];
+  crossCluster: ToolEntry[];
+} {
+  const tool = TOOLS.find((t) => t.slug === slug);
+  if (!tool) return { sameCluster: [], crossCluster: [] };
+
+  const sameCluster = TOOLS.filter(
+    (t) => t.cluster === tool.cluster && t.slug !== slug && t.ready
+  );
+  const crossCluster = (tool.relatedSlugs ?? [])
+    .map((s) => TOOLS.find((t) => t.slug === s))
+    .filter((t): t is ToolEntry => t !== undefined && t.ready);
+
+  return { sameCluster, crossCluster };
+}
+
+/** Nav groups that have at least one active cluster */
+export function getActiveNavGroups(): (NavGroup & { clusters: ToolCluster[] })[] {
+  const activeClusters = getActiveClusters();
+  const activeIds = new Set(activeClusters.map((c) => c.id));
+
+  return NAV_GROUPS.map((g) => ({
+    ...g,
+    clusters: g.clusterIds
+      .map((id) => CLUSTERS.find((c) => c.id === id))
+      .filter((c): c is ToolCluster => c !== undefined && activeIds.has(c.id)),
+  })).filter((g) => g.clusters.length > 0);
+}
