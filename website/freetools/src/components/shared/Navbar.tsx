@@ -122,7 +122,7 @@ export function Navbar() {
               <Scale className="w-4 h-4 text-[oklch(0.22_0.04_250)]" />
             </div>
             <span className="font-serif text-lg text-white tracking-tight group-hover:text-[oklch(0.75_0.10_85)] transition-colors">
-              Avvocatitools<span className="text-[oklch(0.75_0.10_85)]">.it</span>
+              Avvocatotools<span className="text-[oklch(0.75_0.10_85)]">.it</span>
             </span>
           </Link>
 

@@ -20,7 +20,7 @@ export function SiteFooter() {
                 <Scale className="w-3.5 h-3.5 text-[oklch(0.22_0.04_250)]" />
               </div>
               <span className="font-serif text-base text-white tracking-tight">
-                Avvocatitools<span className="text-[oklch(0.75_0.10_85)]">.it</span>
+                Avvocatotools<span className="text-[oklch(0.75_0.10_85)]">.it</span>
               </span>
             </Link>
             <p className="text-sm text-[oklch(0.60_0.03_250)] mt-3 leading-relaxed max-w-xs">
@@ -81,7 +81,7 @@ export function SiteFooter() {
             Tutti gli strumenti hanno carattere meramente informativo e non costituiscono parere legale.
           </p>
           <p className="text-xs text-[oklch(0.45_0.03_250)]">
-            &copy; {new Date().getFullYear()} Avvocatitools.it
+            &copy; {new Date().getFullYear()} Avvocatotools.it
           </p>
         </div>
       </div>

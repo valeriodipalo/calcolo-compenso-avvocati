@@ -23,7 +23,7 @@ export default function HomePage() {
         <div className="container">
           <div className="max-w-2xl">
             <p className="text-[oklch(0.75_0.10_85)] text-sm font-semibold uppercase tracking-widest mb-3">
-              Avvocatitools.it
+              Avvocatotools.it
             </p>
             <h1 className="text-4xl md:text-5xl text-white leading-tight mb-4">
               Strumenti Legali Gratuiti
