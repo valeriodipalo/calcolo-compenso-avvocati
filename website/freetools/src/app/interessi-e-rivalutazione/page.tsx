@@ -5,19 +5,25 @@ import { JsonLd, breadcrumbSchema, articleSchema } from "@/lib/schema";
 import { getToolsByCluster } from "@/data/toolRegistry";
 
 export const metadata: Metadata = {
-  title: "Interessi Legali, Moratori e Rivalutazione Monetaria: Guida 2026",
+  title: "Interessi Legali, Moratori e Rivalutazione: Guida 2026",
   description:
-    "Guida completa a interessi legali, moratori e rivalutazione monetaria ISTAT. Differenze, quando si applicano, normativa aggiornata e strumenti di calcolo gratuiti.",
+    "Guida agli interessi legali, moratori e rivalutazione monetaria ISTAT. Differenze, normativa, tassi 2026 e calcolatori gratuiti.",
   alternates: {
     canonical: "https://www.avvocatotools.it/interessi-e-rivalutazione",
   },
   openGraph: {
-    title: "Interessi Legali, Moratori e Rivalutazione Monetaria: Guida 2026",
+    title: "Interessi Legali, Moratori e Rivalutazione: Guida 2026",
     description:
-      "Guida completa a interessi legali, moratori e rivalutazione monetaria ISTAT. Differenze, normativa e calcolatori gratuiti.",
+      "Guida agli interessi legali, moratori e rivalutazione ISTAT. Differenze, normativa e calcolatori gratuiti.",
     url: "https://www.avvocatotools.it/interessi-e-rivalutazione",
     locale: "it_IT",
     type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Interessi Legali, Moratori e Rivalutazione: Guida 2026",
+    description:
+      "Guida agli interessi legali, moratori e rivalutazione ISTAT. Differenze, normativa e calcolatori gratuiti.",
   },
 };
 
@@ -42,6 +48,17 @@ export default function InteressiERivalutazionePage() {
           datePublished: "2026-04-06",
           dateModified: "2026-04-06",
           image: "https://www.avvocatotools.it/apple-icon.png",
+          sections: [
+            "Strumenti di Calcolo",
+            "Cosa sono gli interessi legali",
+            "Cosa sono gli interessi moratori",
+            "Cos'è la rivalutazione monetaria",
+            "Tabella storica dei tassi",
+            "Differenze tra interessi legali, moratori e rivalutazione",
+            "Quando si applicano nella pratica forense",
+            "Normativa di riferimento",
+            "Domande frequenti",
+          ],
         })}
       />
 
@@ -78,6 +95,9 @@ export default function InteressiERivalutazionePage() {
             <p className="text-[oklch(0.75_0.05_250)] text-lg leading-relaxed">
               Cosa sono, quando si applicano, come si calcolano e quali sono le differenze.
               Normativa aggiornata al 2026 con strumenti di calcolo gratuiti.
+            </p>
+            <p className="text-[oklch(0.55_0.03_250)] text-xs mt-4">
+              Ultimo aggiornamento: 6 aprile 2026 · Redazione AvvocatoTools
             </p>
           </div>
         </div>
@@ -129,29 +149,19 @@ export default function InteressiERivalutazionePage() {
           {/* Interessi Legali */}
           <section className="mb-10">
             <h2 className="text-2xl font-serif text-[oklch(0.25_0.04_250)] mb-4">
-              Cosa sono gli interessi legali
+              Interessi legali: definizione e tasso 2026
             </h2>
             <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed mb-4">
               Gli interessi legali sono il rendimento che la legge riconosce al creditore per l'utilizzo
-              di un capitale altrui. Sono disciplinati dall'art. 1284 del Codice Civile, che attribuisce
-              al Ministro dell'Economia il potere di fissare annualmente il tasso con decreto pubblicato
-              in Gazzetta Ufficiale entro il 15 dicembre dell'anno precedente.
-            </p>
-            <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed mb-4">
-              Per il 2026 il tasso di interesse legale è fissato all'<strong>1,60% annuo</strong> (D.M. 10 dicembre 2025,
-              pubblicato in G.U. n. 291 del 13 dicembre 2025). Il tasso si applica automaticamente
-              a ogni obbligazione pecuniaria per la quale le parti non abbiano concordato una misura diversa.
-            </p>
-            <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed mb-4">
-              Gli interessi legali si applicano in numerosi contesti: risarcimenti del danno, restituzioni,
-              crediti da lavoro, successioni, espropriazioni. Hanno natura <strong>corrispettiva</strong> —
-              compensano il creditore per il mancato godimento della somma dovuta, indipendentemente
-              da qualsiasi colpa del debitore.
+              di un capitale altrui. Disciplinati dall'<strong>art. 1284 del Codice Civile</strong>, hanno
+              natura <strong>corrispettiva</strong>: compensano il creditore per il mancato godimento della
+              somma dovuta, indipendentemente da qualsiasi colpa del debitore. Si applicano a risarcimenti,
+              restituzioni, crediti da lavoro, successioni e espropriazioni.
             </p>
             <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed">
-              Per calcolare gli interessi legali su un capitale specifico, con la possibilità di
-              selezionare periodi che attraversano più annualità (e quindi più tassi), puoi utilizzare
-              il nostro{" "}
+              Per il 2026 il tasso è fissato all'<strong>1,60% annuo</strong> (D.M. 10 dicembre 2025,
+              G.U. n. 291). Per la tabella storica completa dei tassi dal 1942, la formula di calcolo,
+              le regole sull'anatocismo e gli esempi pratici, consulta il nostro{" "}
               <Link
                 href="/calcolo-interessi-legali"
                 className="font-semibold text-[oklch(0.45_0.12_250)] hover:text-[oklch(0.35_0.15_250)] underline underline-offset-2 transition-colors"
@@ -164,29 +174,18 @@ export default function InteressiERivalutazionePage() {
           {/* Interessi Moratori */}
           <section className="mb-10">
             <h2 className="text-2xl font-serif text-[oklch(0.25_0.04_250)] mb-4">
-              Cosa sono gli interessi moratori
+              Interessi moratori: definizione e quando si applicano
             </h2>
             <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed mb-4">
-              Gli interessi moratori sono una forma di risarcimento forfettario che il debitore
-              deve corrispondere al creditore quando è in ritardo nel pagamento. A differenza
-              degli interessi legali (che compensano il semplice uso del capitale), i moratori
-              hanno funzione <strong>sanzionatoria</strong>: puniscono l'inadempimento.
-            </p>
-            <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed mb-4">
-              La principale fonte normativa è il <strong>D.Lgs. 231/2002</strong>, che recepisce la
-              Direttiva UE 2000/35/CE sulla lotta contro i ritardi di pagamento nelle transazioni
-              commerciali. Il tasso di mora per il primo semestre 2026 è pari al <strong>10,15%</strong> annuo
-              (tasso BCE 2,15% + maggiorazione dell'8%).
-            </p>
-            <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed mb-4">
-              Gli interessi moratori si applicano automaticamente, senza necessità di costituzione
-              in mora, nelle transazioni commerciali tra imprese (o tra imprese e pubblica
-              amministrazione). Nei rapporti tra privati, invece, è generalmente necessaria
-              la costituzione in mora ai sensi dell'art. 1219 c.c.
+              Gli interessi moratori sono il risarcimento forfettario dovuto dal debitore in ritardo
+              nel pagamento. A differenza degli interessi legali, hanno funzione <strong>sanzionatoria</strong>:
+              puniscono l'inadempimento. La fonte principale è il <strong>D.Lgs. 231/2002</strong> (Direttiva UE
+              2011/7/UE). Il tasso per il primo semestre 2026 è del <strong>10,15%</strong> annuo (BCE 2,15% + 8%).
             </p>
             <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed">
-              Per calcolare gli interessi moratori con il tasso aggiornato al 2026 e la
-              possibilità di scegliere tra più modalità di calcolo, utilizza il nostro{" "}
+              Si applicano automaticamente nelle transazioni commerciali (B2B e B2PA), senza necessità
+              di messa in mora. Tra privati serve invece la costituzione in mora ex art. 1219 c.c.
+              Per la guida completa su decorrenza, forfettario 40 euro, usura e calcolo, utilizza il nostro{" "}
               <Link
                 href="/calcolo-interessi-moratori"
                 className="font-semibold text-[oklch(0.45_0.12_250)] hover:text-[oklch(0.35_0.15_250)] underline underline-offset-2 transition-colors"
@@ -199,29 +198,76 @@ export default function InteressiERivalutazionePage() {
           {/* Rivalutazione Monetaria */}
           <section className="mb-10">
             <h2 className="text-2xl font-serif text-[oklch(0.25_0.04_250)] mb-4">
-              Cos'è la rivalutazione monetaria
+              Rivalutazione monetaria ISTAT: cos'è e quando spetta
             </h2>
             <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed mb-4">
-              La rivalutazione monetaria è il meccanismo che adegua il valore di una somma
-              di denaro all'inflazione, compensando la perdita di potere d'acquisto tra la data
-              in cui il credito è sorto e quella del pagamento effettivo. Si basa sugli indici
-              ISTAT dei prezzi al consumo per le famiglie di operai e impiegati (indice FOI).
-            </p>
-            <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed mb-4">
-              In ambito giuridico, la rivalutazione è fondamentale per i <strong>debiti di valore</strong>
-              (risarcimenti danni, crediti da lavoro, indennità): il giudice liquida il danno
-              rivalutando il capitale dalla data dell'evento lesivo alla data della sentenza.
-              Ai debiti di valuta (somme nominalmente determinate), la rivalutazione si applica
-              solo se il creditore prova un danno ulteriore ai sensi dell'art. 1224, comma 2, c.c.
+              La rivalutazione monetaria adegua il valore di una somma all'inflazione, compensando
+              la perdita di potere d'acquisto. Si basa sugli indici ISTAT FOI (Famiglie di Operai e
+              Impiegati, base 2015 = 100) ed è fondamentale per i <strong>debiti di valore</strong>:
+              risarcimenti danni, crediti da lavoro, indennità. Per i debiti di valuta (somme
+              nominalmente determinate) serve invece la prova del danno ulteriore ex art. 1224,
+              comma 2, c.c.
             </p>
             <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed">
-              Per calcolare la rivalutazione monetaria con gli indici FOI ISTAT aggiornati al 2026,
-              puoi utilizzare il nostro{" "}
+              Per la formula di calcolo, gli indici FOI aggiornati, la distinzione tra debiti di valore
+              e di valuta, e gli errori comuni, utilizza il nostro{" "}
               <Link
                 href="/calcolo-rivalutazione-monetaria"
                 className="font-semibold text-[oklch(0.45_0.12_250)] hover:text-[oklch(0.35_0.15_250)] underline underline-offset-2 transition-colors"
               >
                 calcolatore della rivalutazione monetaria
+              </Link>.
+            </p>
+          </section>
+
+          {/* Tabella storica dei tassi */}
+          <section className="mb-10">
+            <h2 className="text-2xl font-serif text-[oklch(0.25_0.04_250)] mb-4">
+              Confronto tassi legali e moratori 2020-2026
+            </h2>
+            <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed mb-6">
+              Il confronto tra tassi legali e moratori degli ultimi anni mostra andamenti divergenti:
+              il tasso legale segue le politiche monetarie della BCE, mentre il moratorio incorpora
+              la maggiorazione fissa dell'8%. Ecco l'evoluzione recente a confronto:
+            </p>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-sm border border-border" style={{ borderRadius: "0.375rem" }}>
+                <thead>
+                  <tr className="bg-[oklch(0.97_0.005_250)]">
+                    <th className="text-left p-3 border-b border-border font-semibold text-[oklch(0.25_0.04_250)]">Anno</th>
+                    <th className="text-left p-3 border-b border-border font-semibold text-[oklch(0.25_0.04_250)]">Tasso legale</th>
+                    <th className="text-left p-3 border-b border-border font-semibold text-[oklch(0.25_0.04_250)]">Decreto</th>
+                    <th className="text-left p-3 border-b border-border font-semibold text-[oklch(0.25_0.04_250)]">Tasso moratorio (I sem.)</th>
+                  </tr>
+                </thead>
+                <tbody className="text-[oklch(0.30_0.04_250)]">
+                  {[
+                    { anno: "2026", legale: "1,60%", decreto: "D.M. 10/12/2025", moratorio: "10,15%" },
+                    { anno: "2025", legale: "2,00%", decreto: "D.M. 10/12/2024", moratorio: "11,50%" },
+                    { anno: "2024", legale: "2,50%", decreto: "D.M. 11/12/2023", moratorio: "12,50%" },
+                    { anno: "2023", legale: "5,00%", decreto: "D.M. 13/12/2022", moratorio: "10,50%" },
+                    { anno: "2022", legale: "1,25%", decreto: "D.M. 13/12/2021", moratorio: "8,00%" },
+                    { anno: "2021", legale: "0,01%", decreto: "D.M. 11/12/2020", moratorio: "8,00%" },
+                    { anno: "2020", legale: "0,05%", decreto: "D.M. 12/12/2019", moratorio: "8,00%" },
+                  ].map((row) => (
+                    <tr key={row.anno}>
+                      <td className="p-3 border-b border-border font-medium">{row.anno}</td>
+                      <td className="p-3 border-b border-border">{row.legale}</td>
+                      <td className="p-3 border-b border-border">{row.decreto}</td>
+                      <td className="p-3 border-b border-border">{row.moratorio}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Il tasso moratorio indicato si riferisce al primo semestre di ogni anno ed è calcolato come tasso BCE + 8%.
+              Per la tabella storica completa dei tassi legali dal 1942, consulta il nostro{" "}
+              <Link
+                href="/calcolo-interessi-legali"
+                className="font-semibold text-[oklch(0.45_0.12_250)] hover:text-[oklch(0.35_0.15_250)] underline underline-offset-2 transition-colors"
+              >
+                calcolatore degli interessi legali
               </Link>.
             </p>
           </section>
@@ -233,7 +279,10 @@ export default function InteressiERivalutazionePage() {
             </h2>
             <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed mb-6">
               La distinzione tra questi tre istituti è fondamentale nella pratica forense, perché
-              determinano importi, tassi e presupposti diversi. Ecco un confronto sintetico:
+              determinano importi, tassi e presupposti diversi. L'errore più comune nella pratica
+              è confondere la cumulabilità: interessi legali e moratori non si cumulano mai sullo
+              stesso periodo (i moratori assorbono i legali), mentre rivalutazione e interessi legali
+              sono cumulabili sui debiti di valore. Ecco un confronto dettagliato:
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full text-sm border border-border" style={{ borderRadius: "0.375rem" }}>
@@ -277,6 +326,12 @@ export default function InteressiERivalutazionePage() {
                     <td className="p-3 border-b border-border">Perdita di potere d'acquisto</td>
                   </tr>
                   <tr>
+                    <td className="p-3 border-b border-border font-medium">Decorrenza</td>
+                    <td className="p-3 border-b border-border">Dalla scadenza del credito</td>
+                    <td className="p-3 border-b border-border">Dal giorno dopo la scadenza (B2B) o dalla messa in mora (privati)</td>
+                    <td className="p-3 border-b border-border">Dalla data dell'evento lesivo</td>
+                  </tr>
+                  <tr>
                     <td className="p-3 font-medium">Cumulabilità</td>
                     <td className="p-3">Non cumulabile con i moratori sullo stesso periodo</td>
                     <td className="p-3">Assorbe gli interessi legali</td>
@@ -295,6 +350,7 @@ export default function InteressiERivalutazionePage() {
             <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed mb-4">
               Nella pratica quotidiana dell'avvocato, la scelta tra interessi legali, moratori e
               rivalutazione dipende dalla natura del credito e dal contesto del rapporto obbligatorio.
+              Di seguito i casi più frequenti.
             </p>
 
             <h3 className="text-lg font-semibold text-[oklch(0.25_0.04_250)] mb-2 mt-6">
@@ -306,7 +362,15 @@ export default function InteressiERivalutazionePage() {
               più gli <strong>interessi legali</strong> calcolati sulla somma via via rivalutata
               (metodo della Cassazione, Sez. Un. 1712/1995). I due istituti sono cumulabili
               perché rispondono a funzioni diverse: la rivalutazione ripristina il valore reale,
-              gli interessi compensano il mancato godimento.
+              gli interessi compensano il mancato godimento. Per quantificare il risarcimento
+              complessivo puoi combinare il nostro{" "}
+              <Link
+                href="/calcolo-danno-biologico"
+                className="font-semibold text-[oklch(0.45_0.12_250)] hover:text-[oklch(0.35_0.15_250)] underline underline-offset-2 transition-colors"
+              >
+                calcolatore del danno biologico
+              </Link>
+              {" "}con il calcolatore della rivalutazione e degli interessi.
             </p>
 
             <h3 className="text-lg font-semibold text-[oklch(0.25_0.04_250)] mb-2 mt-6">
@@ -316,7 +380,9 @@ export default function InteressiERivalutazionePage() {
               Nelle transazioni tra imprese soggette al D.Lgs. 231/2002, il ritardo nel
               pagamento fa scattare automaticamente gli <strong>interessi moratori</strong>
               al tasso BCE + 8%, senza bisogno di diffida. Il creditore ha anche diritto
-              al risarcimento forfettario di 40 euro per i costi di recupero.
+              al risarcimento forfettario di 40 euro per i costi di recupero. I termini di
+              pagamento standard sono 30 giorni dalla ricezione della fattura (60 giorni per
+              la PA), salvo diversa pattuizione che non sia gravemente iniqua per il creditore.
             </p>
 
             <h3 className="text-lg font-semibold text-[oklch(0.25_0.04_250)] mb-2 mt-6">
@@ -326,17 +392,79 @@ export default function InteressiERivalutazionePage() {
               Nel ricorso per decreto ingiuntivo è prassi chiedere la condanna al pagamento
               degli interessi legali (o moratori, se applicabili) dalla data di scadenza
               dell'obbligazione al saldo. Se il credito deriva da una transazione commerciale,
-              si chiederanno gli interessi moratori ex D.Lgs. 231/2002.
+              si chiederanno gli interessi moratori ex D.Lgs. 231/2002. Ricorda che per il
+              deposito del ricorso è necessario versare il{" "}
+              <Link
+                href="/contributo-unificato"
+                className="font-semibold text-[oklch(0.45_0.12_250)] hover:text-[oklch(0.35_0.15_250)] underline underline-offset-2 transition-colors"
+              >
+                contributo unificato
+              </Link>
+              , calcolabile con il nostro strumento dedicato.
             </p>
 
             <h3 className="text-lg font-semibold text-[oklch(0.25_0.04_250)] mb-2 mt-6">
               Crediti da lavoro
             </h3>
-            <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed">
+            <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed mb-4">
               I crediti retributivi sono debiti di valore: il lavoratore ha diritto alla
               rivalutazione monetaria ex art. 429, comma 3, c.p.c. più gli interessi legali
               sulla somma rivalutata. Anche in questo caso rivalutazione e interessi sono cumulabili.
+              La Cassazione (Sez. Lav. 12941/2012) ha confermato che il cumulo opera automaticamente
+              senza necessità di specifica domanda.
             </p>
+
+            <h3 className="text-lg font-semibold text-[oklch(0.25_0.04_250)] mb-2 mt-6">
+              Danno non patrimoniale
+            </h3>
+            <p className="text-base text-[oklch(0.30_0.04_250)] leading-relaxed">
+              Anche il{" "}
+              <Link
+                href="/calcolo-danno-non-patrimoniale"
+                className="font-semibold text-[oklch(0.45_0.12_250)] hover:text-[oklch(0.35_0.15_250)] underline underline-offset-2 transition-colors"
+              >
+                danno non patrimoniale
+              </Link>
+              {" "}(danno morale, esistenziale, parentale) è un debito di valore soggetto a rivalutazione
+              e interessi. Le Tabelle di Milano, utilizzate come riferimento dalla giurisprudenza di
+              legittimità, esprimono valori già rivalutati: gli interessi legali vanno calcolati
+              dalla data dell'evento alla sentenza sulla somma progressivamente rivalutata.
+            </p>
+          </section>
+
+          {/* Normativa */}
+          <section className="mb-10">
+            <h2 className="text-2xl font-serif text-[oklch(0.25_0.04_250)] mb-4">
+              Normativa di riferimento
+            </h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border border-border" style={{ borderRadius: "0.375rem" }}>
+                <thead>
+                  <tr className="bg-[oklch(0.97_0.005_250)]">
+                    <th className="text-left p-3 border-b border-border font-semibold text-[oklch(0.25_0.04_250)]">Norma</th>
+                    <th className="text-left p-3 border-b border-border font-semibold text-[oklch(0.25_0.04_250)]">Argomento</th>
+                  </tr>
+                </thead>
+                <tbody className="text-[oklch(0.30_0.04_250)]">
+                  {[
+                    { norma: "Art. 1284 c.c.", desc: "Tasso di interesse legale e sua determinazione annuale" },
+                    { norma: "Art. 1224 c.c.", desc: "Danni nelle obbligazioni pecuniarie (interessi moratori tra privati)" },
+                    { norma: "Art. 1283 c.c.", desc: "Anatocismo — divieto di capitalizzazione degli interessi" },
+                    { norma: "Art. 1219 c.c.", desc: "Costituzione in mora del debitore" },
+                    { norma: "D.Lgs. 231/2002", desc: "Lotta contro i ritardi di pagamento nelle transazioni commerciali" },
+                    { norma: "Direttiva 2011/7/UE", desc: "Direttiva europea sui ritardi di pagamento (recepita dal D.Lgs. 231/2002)" },
+                    { norma: "Art. 429, co. 3, c.p.c.", desc: "Rivalutazione e interessi sui crediti da lavoro" },
+                    { norma: "Art. 2043 c.c.", desc: "Risarcimento del danno extracontrattuale" },
+                    { norma: "D.M. 10/12/2025", desc: "Fissazione del tasso legale 2026 all'1,60%" },
+                  ].map((row) => (
+                    <tr key={row.norma}>
+                      <td className="p-3 border-b border-border font-medium">{row.norma}</td>
+                      <td className="p-3 border-b border-border">{row.desc}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </section>
 
           {/* FAQ */}
@@ -360,7 +488,7 @@ export default function InteressiERivalutazionePage() {
                 },
                 {
                   q: "Qual è il tasso degli interessi legali per il 2026?",
-                  a: "Il tasso di interesse legale per il 2026 è dell'1,60% annuo, stabilito con D.M. 10 dicembre 2025 (G.U. n. 291 del 13 dicembre 2025). Il tasso precedente (2025) era del 2,00%.",
+                  a: "Il tasso di interesse legale per il 2026 è dell'1,60% annuo, stabilito con D.M. 10 dicembre 2025 (G.U. n. 291 del 13 dicembre 2025). Il tasso precedente (2025) era del 2,00%. Il tasso legale è calato progressivamente dal picco del 5,00% del 2023, seguendo la discesa dei tassi BCE.",
                 },
                 {
                   q: "Cosa sono gli interessi compensativi?",
@@ -368,15 +496,27 @@ export default function InteressiERivalutazionePage() {
                 },
                 {
                   q: "Come si calcola la rivalutazione monetaria ISTAT?",
-                  a: "La rivalutazione si calcola applicando al capitale originario la variazione percentuale dell'indice FOI (Famiglie di Operai e Impiegati) pubblicato dall'ISTAT. La formula è: Capitale Rivalutato = Capitale × (Indice FOI data finale / Indice FOI data iniziale). L'indice viene aggiornato mensilmente dall'ISTAT.",
+                  a: "La rivalutazione si calcola applicando al capitale originario la variazione percentuale dell'indice FOI (Famiglie di Operai e Impiegati) pubblicato dall'ISTAT. La formula è: Capitale Rivalutato = Capitale × (Indice FOI data finale / Indice FOI data iniziale). L'indice viene aggiornato mensilmente dall'ISTAT con base 2015 = 100.",
                 },
                 {
                   q: "Quando non sono dovuti gli interessi moratori?",
-                  a: "Gli interessi moratori non sono dovuti quando il ritardo nel pagamento non è imputabile al debitore, ad esempio in caso di forza maggiore o di contestazione legittima del debito. Inoltre, quando il tasso moratorio supera la soglia di usura al momento della stipula del contratto, gli interessi moratori non sono dovuti e, se pagati, devono essere restituiti.",
+                  a: "Gli interessi moratori non sono dovuti quando il ritardo nel pagamento non è imputabile al debitore, ad esempio in caso di forza maggiore o di contestazione legittima del debito. Inoltre, quando il tasso moratorio supera la soglia di usura al momento della stipula del contratto, gli interessi moratori non sono dovuti e, se pagati, devono essere restituiti (Cass. Sez. Un. 19597/2020).",
                 },
                 {
                   q: "Gli interessi moratori si applicano tra privati?",
                   a: "Il D.Lgs. 231/2002 si applica solo alle transazioni commerciali (B2B e B2PA). Tra privati, il creditore può chiedere gli interessi moratori al tasso legale (art. 1224, comma 1, c.c.) dalla data della costituzione in mora. Se dimostra un danno maggiore, può ottenere anche il risarcimento supplementare ex art. 1224, comma 2, c.c.",
+                },
+                {
+                  q: "Cos'è il forfettario di 40 euro per i costi di recupero?",
+                  a: "L'art. 6 del D.Lgs. 231/2002 prevede che il creditore abbia diritto a un importo forfettario di 40 euro a titolo di risarcimento dei costi di recupero del credito, senza dover fornire alcuna prova del danno subito. Questo importo è dovuto automaticamente ed è cumulabile con gli interessi moratori e con l'eventuale risarcimento del danno ulteriore.",
+                },
+                {
+                  q: "Come si calcolano gli interessi su un credito che attraversa più anni?",
+                  a: "Quando il periodo di calcolo attraversa più annualità, si devono applicare i diversi tassi legali vigenti in ciascun anno. Il calcolo va frazionato per ogni periodo con tasso omogeneo. Ad esempio, per un credito dal 1° marzo 2025 al 30 giugno 2026: dal 1/3/2025 al 31/12/2025 si applica il 2,00%, dal 1/1/2026 al 30/6/2026 si applica l'1,60%. Il nostro calcolatore gestisce automaticamente questa suddivisione.",
+                },
+                {
+                  q: "Qual è la differenza tra debito di valore e debito di valuta?",
+                  a: "Il debito di valore ha ad oggetto una prestazione che al momento del sorgere dell'obbligazione non è determinata in denaro ma va tradotta in denaro al momento della liquidazione (es. risarcimento danni). Il debito di valuta ha invece ad oggetto fin dall'origine una somma di denaro determinata (es. prezzo di vendita, canone di locazione). La distinzione è cruciale perché solo i debiti di valore beneficiano automaticamente della rivalutazione monetaria.",
                 },
               ].map((item, i) => (
                 <details
@@ -408,6 +548,7 @@ export default function InteressiERivalutazionePage() {
                 { slug: "calcolo-danno-biologico", title: "Calcolo Danno Biologico" },
                 { slug: "calcolo-danno-non-patrimoniale", title: "Calcolo Danno Non Patrimoniale" },
                 { slug: "calcolo-compenso", title: "Calcolo Compenso Avvocato" },
+                { slug: "contributo-unificato", title: "Contributo Unificato" },
               ].map((tool) => (
                 <Link
                   key={tool.slug}
@@ -422,6 +563,16 @@ export default function InteressiERivalutazionePage() {
               ))}
             </div>
           </section>
+
+          {/* Disclaimer */}
+          <div className="mt-10 pt-6 border-t border-border">
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              Le informazioni contenute in questa pagina hanno carattere meramente informativo e non
+              costituiscono parere legale. I tassi, gli importi e i riferimenti normativi sono aggiornati
+              alla data di ultima modifica indicata. Per questioni specifiche si consiglia di rivolgersi
+              a un professionista abilitato.
+            </p>
+          </div>
 
         </div>
       </div>

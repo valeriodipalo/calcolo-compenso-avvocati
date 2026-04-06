@@ -21,8 +21,11 @@ You are creating a **pillar/hub page** for an existing topic cluster on Avvocato
 
 1. **Informational intent only** — pillar pages target "cosa sono", "differenza", "quando si applicano", "guida" keywords. NEVER target "calcolo X" keywords (those belong to tool pages).
 2. **Zero cannibalization** — before writing, audit every existing tool page's keywords to ensure no overlap.
-3. **Registry-driven** — setting `hubReady: true` automatically activates breadcrumbs, homepage link, and navbar integration.
-4. **Internal linking is the core purpose** — every section must link to at least one tool page.
+3. **"Define briefly, differentiate, link out"** — each child topic section on the hub should be MAX 2 paragraphs (~20-30% of the tool page's depth on the same subject). The hub's job is to orient the user and funnel them to the right tool, NOT to replicate the tool page's content.
+4. **Unique H2 headings** — hub H2s MUST differ from tool page H2s. If a tool has H2 "Cosa sono gli interessi moratori", the hub CANNOT use the same H2. Use differentiated headings like "Interessi moratori: definizione e quando si applicano" or "Interessi moratori in sintesi".
+5. **Hub-exclusive sections** — the comparison table ("Differenze tra X, Y e Z") and the "Quando si applicano nella pratica" section are hub-exclusive content that tool pages cannot replicate. These are the hub's highest-value sections — invest depth here, not in the per-topic definitions.
+6. **Registry-driven** — setting `hubReady: true` automatically activates breadcrumbs, homepage link, and navbar integration.
+7. **Internal linking is the core purpose** — every section must link to at least one tool page.
 
 ## Parsing Arguments
 
@@ -424,7 +427,11 @@ Maximum 3 iterations — if still failing after 3, present remaining issues to u
 - **Server component.** No `"use client"` — hub pages have no interactive elements.
 - **max-w-5xl mx-auto** for content width (wider than tool pages).
 - **No external dependencies.** Don't add npm packages.
-- **Hub page schema**: BreadcrumbList (2 levels) + Article. NO WebApplication, NO FAQPage.
+- **Hub page JSON-LD schemas** (both are MANDATORY for Google indexing):
+  - **BreadcrumbList** — 2 levels: `Home → [Cluster Label]`. Use `breadcrumbSchema()` from `@/lib/schema`. This tells Google the page's position in the site hierarchy.
+  - **Article** — with ALL required fields: `headline`, `description`, `path`, `datePublished`, `dateModified`, `image` (use `/apple-icon.png` if no dedicated image). Use `articleSchema()` from `@/lib/schema`. This enables Article rich results in Google.
+  - **Do NOT include** WebApplication (not a calculator), FAQPage JSON-LD schema (restricted to gov/health since Aug 2023 — won't produce rich results for us), or HowTo (deprecated Sept 2023).
+  - **FAQ UI component IS included** — the `<details>` accordion with Q&A is part of the page template and is great for UX and dwell time. Google reads the HTML content. The restriction is only on the JSON-LD `FAQPage` schema markup, not on having FAQ content on the page.
 
 ## Cluster Reference
 
