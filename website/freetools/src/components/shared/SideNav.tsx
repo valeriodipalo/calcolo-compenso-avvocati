@@ -44,7 +44,7 @@ export function SideNav({ sections }: SideNavProps) {
       <nav
         className={`
           fixed z-40 bg-white border-r border-border
-          lg:sticky lg:top-6 lg:h-fit lg:max-h-[calc(100vh-3rem)] lg:overflow-y-auto
+          lg:sticky lg:top-20 lg:z-0 lg:h-fit lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto
           lg:border lg:shadow-sm
           ${mobileOpen ? "inset-y-0 left-0 w-72 shadow-2xl" : "hidden lg:block"}
         `}
