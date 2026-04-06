@@ -22,7 +22,7 @@ import {
   tabellaINAIL,
 } from "@/data/calcolo-danno-biologico/dannoBiologicoData";
 import { faqData } from "@/data/calcolo-danno-biologico/faqData";
-import { JsonLd, breadcrumbSchema, articleSchema, webApplicationSchema } from "@/lib/schema";
+import { JsonLd, articleSchema, webApplicationSchema } from "@/lib/schema";
 import type { ToolConfig } from "@/types/tool";
 import type { Metadata } from "next";
 
@@ -94,15 +94,7 @@ export default function CalcoloDannoBiologicoPage() {
     <ToolLayout config={toolConfig}>
       {/* ===== Structured Data ===== */}
 
-      {/* 1. BreadcrumbList */}
-      <JsonLd
-        data={breadcrumbSchema([
-          { name: "Strumenti Legali Gratuiti", path: "/" },
-          { name: "Calcolo Danno Biologico", path: "/calcolo-danno-biologico" },
-        ])}
-      />
-
-      {/* 2. Article */}
+      {/* Article */}
       <JsonLd
         data={articleSchema({
           headline: "Calcolo Danno Biologico 2026: Tabelle Milano, TUN e Art. 139 CdA",

@@ -63,6 +63,11 @@ export default function RootLayout({
       <head>
         {/* Site-wide: WebSite + Organization schema */}
         <JsonLd data={websiteSchema()} />
+        {/* Iubenda Cookie Banner */}
+        <Script
+          src="https://embeds.iubenda.com/widgets/c663785b-616d-4328-b1f4-16465802fa62.js"
+          strategy="beforeInteractive"
+        />
         {process.env.NODE_ENV === "development" && (
           <Script
             src="//unpkg.com/react-grab/dist/index.global.js"

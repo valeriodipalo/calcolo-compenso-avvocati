@@ -23,7 +23,7 @@ import {
   sections,
 } from "@/data/contributo-unificato/contributoData";
 import { faqData } from "@/data/contributo-unificato/faqData";
-import { JsonLd, breadcrumbSchema, articleSchema } from "@/lib/schema";
+import { JsonLd, articleSchema } from "@/lib/schema";
 import type { ToolConfig } from "@/types/tool";
 import type { Metadata } from "next";
 
@@ -92,17 +92,9 @@ const formatEur = (n: number) =>
 export default function ContributoUnificatoPage() {
   return (
     <ToolLayout config={toolConfig}>
-      {/* ===== Structured Data: 3 JSON-LD blocks ===== */}
+      {/* ===== Structured Data ===== */}
 
-      {/* 1. BreadcrumbList */}
-      <JsonLd
-        data={breadcrumbSchema([
-          { name: "Strumenti Legali Gratuiti", path: "/" },
-          { name: "Contributo Unificato 2026", path: "/contributo-unificato" },
-        ])}
-      />
-
-      {/* 2. Article (legal guide) */}
+      {/* Article (legal guide) */}
       <JsonLd
         data={articleSchema({
           headline: "Contributo Unificato 2026: Tabella Scaglioni, Calcolo e Guida Completa",

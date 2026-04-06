@@ -21,7 +21,7 @@ import {
   perditaParentaleRoma,
 } from "@/data/calcolo-danno-non-patrimoniale/dannoData";
 import { faqData } from "@/data/calcolo-danno-non-patrimoniale/faqData";
-import { JsonLd, breadcrumbSchema, articleSchema, webApplicationSchema } from "@/lib/schema";
+import { JsonLd, articleSchema, webApplicationSchema } from "@/lib/schema";
 import type { ToolConfig } from "@/types/tool";
 import type { Metadata } from "next";
 
@@ -92,15 +92,7 @@ export default function CalcoloDannoNonPatrimonialePage() {
     <ToolLayout config={toolConfig}>
       {/* ===== Structured Data ===== */}
 
-      {/* 1. BreadcrumbList */}
-      <JsonLd
-        data={breadcrumbSchema([
-          { name: "Strumenti Legali Gratuiti", path: "/" },
-          { name: "Calcolo Danno Non Patrimoniale", path: "/calcolo-danno-non-patrimoniale" },
-        ])}
-      />
-
-      {/* 2. Article */}
+      {/* Article */}
       <JsonLd
         data={articleSchema({
           headline: "Calcolo Danno Non Patrimoniale 2025 2026: Tabelle Milano, TUN e Art. 139 CdA",

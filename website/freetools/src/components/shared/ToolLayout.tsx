@@ -1,6 +1,8 @@
+import { Breadcrumb } from "./Breadcrumb";
 import { HeroSection } from "./HeroSection";
 import { SideNav } from "./SideNav";
 import { Footer } from "./Footer";
+import { RelatedTools } from "./RelatedTools";
 import type { ToolConfig } from "@/types/tool";
 
 interface ToolLayoutProps {
@@ -11,6 +13,7 @@ interface ToolLayoutProps {
 export function ToolLayout({ config, children }: ToolLayoutProps) {
   return (
     <div className="bg-background">
+      <Breadcrumb slug={config.slug} />
       <HeroSection
         image={config.heroImage}
         eyebrow={config.heroEyebrow}
@@ -38,6 +41,8 @@ export function ToolLayout({ config, children }: ToolLayoutProps) {
               disclaimerLines={config.disclaimerLines}
               sources={config.sources}
             />
+
+            <RelatedTools slug={config.slug} />
           </div>
         </div>
       </div>

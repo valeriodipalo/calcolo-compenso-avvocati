@@ -30,7 +30,6 @@ import {
 import { faqData } from "@/data/calcolo-fattura-avvocato/faqData";
 import {
   JsonLd,
-  breadcrumbSchema,
   articleSchema,
   webApplicationSchema,
 } from "@/lib/schema";
@@ -103,14 +102,6 @@ const toolConfig: ToolConfig = {
 export default function CalcoloFatturaAvvocatoPage() {
   return (
     <ToolLayout config={toolConfig}>
-      {/* ── JSON-LD: BreadcrumbList ── */}
-      <JsonLd
-        data={breadcrumbSchema([
-          { name: "Strumenti Legali Gratuiti", path: "/" },
-          { name: "Calcolo Fattura Avvocato", path: "/calcolo-fattura-avvocato" },
-        ])}
-      />
-
       {/* ── JSON-LD: Article ── */}
       <JsonLd
         data={articleSchema({

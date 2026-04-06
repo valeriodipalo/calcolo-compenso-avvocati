@@ -17,7 +17,7 @@ import {
   sections,
 } from "@/data/calcolo-rivalutazione-monetaria/rivalutazioneData";
 import { faqData } from "@/data/calcolo-rivalutazione-monetaria/faqData";
-import { JsonLd, breadcrumbSchema, articleSchema, webApplicationSchema } from "@/lib/schema";
+import { JsonLd, articleSchema, webApplicationSchema } from "@/lib/schema";
 import type { ToolConfig } from "@/types/tool";
 import type { Metadata } from "next";
 
@@ -91,14 +91,6 @@ const formatDate = (iso: string) => {
 export default function CalcoloRivalutazioneMonetariaPage() {
   return (
     <ToolLayout config={toolConfig}>
-      {/* ===== JSON-LD: BreadcrumbList ===== */}
-      <JsonLd
-        data={breadcrumbSchema([
-          { name: "Strumenti Legali Gratuiti", path: "/" },
-          { name: "Calcolo Rivalutazione Monetaria", path: "/calcolo-rivalutazione-monetaria" },
-        ])}
-      />
-
       {/* ===== JSON-LD: Article ===== */}
       <JsonLd
         data={articleSchema({

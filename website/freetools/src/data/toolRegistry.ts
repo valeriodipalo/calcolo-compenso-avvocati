@@ -42,7 +42,7 @@ export const CLUSTERS: ToolCluster[] = [
     slug: "interessi-e-rivalutazione",
     description: "Calcolo di interessi legali, moratori e rivalutazione monetaria ISTAT.",
     icon: TrendingUp,
-    hubReady: false,
+    hubReady: true,
   },
   {
     id: "contributo",
@@ -151,7 +151,7 @@ export const TOOLS: ToolEntry[] = [
     ready: true,
     lastModified: "2026-03-15",
     cluster: "compensi",
-    relatedSlugs: ["calcolo-fattura-avvocato"],
+    relatedSlugs: ["contributo-unificato"],
   },
   {
     slug: "calcolo-danno-non-patrimoniale",
@@ -216,7 +216,7 @@ export const TOOLS: ToolEntry[] = [
     ready: true,
     lastModified: "2026-03-26",
     cluster: "compensi",
-    relatedSlugs: ["calcolo-compenso"],
+    relatedSlugs: ["contributo-unificato"],
   },
   {
     slug: "calcolo-termini-impugnazione",
@@ -281,7 +281,10 @@ export function getRelatedTools(slug: string): {
   );
   const crossCluster = (tool.relatedSlugs ?? [])
     .map((s) => TOOLS.find((t) => t.slug === s))
-    .filter((t): t is ToolEntry => t !== undefined && t.ready);
+    .filter(
+      (t): t is ToolEntry =>
+        t !== undefined && t.ready && t.cluster !== tool.cluster
+    );
 
   return { sameCluster, crossCluster };
 }

@@ -413,6 +413,12 @@ Create `src/components/{SLUG}/Calcolatore.tsx`:
 
 Create `src/app/{SLUG}/page.tsx` — follow `references/implementation-guide.md` exactly for the skeleton.
 
+**Cluster-aware page structure**: The page component should NOT include:
+- Any `breadcrumbSchema` import or inline breadcrumb JSON-LD (handled by `ToolLayout` → `Breadcrumb`)
+- Any `RelatedTools` component (handled by `ToolLayout` automatically)
+
+The page only needs: metadata export, `ToolConfig`, JSON-LD for `Article` (and `WebApplication` if calculator), `ToolLayout` wrapper, and content sections.
+
 **Content depth is critical.** Read `references/content-model.md` for examples. Each content section should:
 - Open with a clear explanation paragraph citing the relevant law
 - Include a data table (LegalTable) where applicable
@@ -422,7 +428,7 @@ Create `src/app/{SLUG}/page.tsx` — follow `references/implementation-guide.md`
 - Cross-reference related sections
 
 **Schema markup — read `references/schema-enrichment.md`**:
-- **BreadcrumbList**: Check if the shared `Breadcrumb` component exists in `src/components/shared/Breadcrumb.tsx`. If it does, it is automatically injected by `ToolLayout` — do NOT add inline breadcrumb schema. If it does not exist yet, add a 3-level BreadcrumbList inline: `Home → [Cluster Label] → [Tool Name]`. Use `getClusterForTool(slug)` from `toolRegistry.ts` to get the cluster label and hub slug.
+- **BreadcrumbList**: Handled automatically by the `Breadcrumb` component in `ToolLayout`. Do NOT add any inline breadcrumb schema or `breadcrumbSchema` import. The component generates a 3-level breadcrumb (Home → Cluster → Tool) with both visual HTML and JSON-LD, reading cluster data from `toolRegistry.ts`.
 - Always include: **Article** (with `image` property)
 - Add **WebApplication** if the page has a calculator
 - **Do NOT include FAQPage** — since Aug 2023, Google restricts FAQ rich results to government/healthcare sites only. Keep the FAQ UI component for UX, but no JSON-LD.
@@ -468,6 +474,26 @@ This **automatically** updates:
 
 **No other navigation files need editing.** Only update `src/app/layout.tsx` if the site-wide root description needs to change.
 
+### Step 4.4b: Cluster Integration Verification
+
+After registering the tool, verify the cluster integration is complete:
+
+1. **Breadcrumb** (automatic via `ToolLayout`): The `Breadcrumb` component reads the tool's `cluster` field and renders `Home › [Cluster Label] › [Tool Title]` with both visual HTML and JSON-LD. No code needed in the page file — do NOT import `breadcrumbSchema`.
+
+2. **RelatedTools** (automatic via `ToolLayout`): The `RelatedTools` component renders at the bottom of every tool page. It shows:
+   - "Nello stesso ambito" — other tools in the same cluster (automatic from `cluster` field)
+   - "Potrebbe servirti anche" — tools listed in `relatedSlugs` (cross-cluster only; same-cluster slugs are filtered out)
+   - "Strumenti più utilizzati" — fallback to popular tools if both sections are empty
+   No code needed in the page file.
+
+3. **Homepage** (automatic): The homepage groups tools by cluster. The new tool appears in its cluster section automatically.
+
+4. **Navbar** (automatic): The navbar groups tools by cluster within macro-area dropdowns. The new tool appears under its cluster automatically.
+
+5. **relatedSlugs validation**: Ensure `relatedSlugs` only contains tools from OTHER clusters. Same-cluster tools are shown automatically by `RelatedTools` — listing them in `relatedSlugs` is redundant (they're filtered out).
+
+6. **Cross-cluster backlinks**: After adding the new tool, check if any existing tools should add the new tool's slug to THEIR `relatedSlugs`. For example, if you create a "Risarcimento INAIL" tool in the `danno` cluster, existing tools like `calcolo-interessi-legali` might benefit from linking to it.
+
 ### Step 4.5: Build Check
 
 ```bash
@@ -510,7 +536,7 @@ Classify every finding from every audit into one of three levels:
 - Missing or duplicate H1
 - Missing or duplicate canonical URL
 - Missing meta description
-- Missing required JSON-LD schema (BreadcrumbList, Article, FAQPage)
+- Missing required JSON-LD schema (Article — BreadcrumbList is automatic via ToolLayout)
 - Broken JSON-LD syntax (invalid JSON, wrong `@type`, missing required fields)
 - Empty content sections (zero words between two SectionTitle components)
 - Missing `lang="it"` on `<html>`
@@ -548,7 +574,7 @@ cd "website/freetools" && npm run dev &
 Run these 5 SEO audits on `http://localhost:3000/{SLUG}`:
 
 1. **`/seo-page`** — on-page elements, meta tags, headings, content structure, internal links
-2. **`/seo-schema`** — validate ALL JSON-LD blocks (BreadcrumbList, Article, FAQPage + optional HowTo, WebApplication, etc.)
+2. **`/seo-schema`** — validate ALL JSON-LD blocks (BreadcrumbList from ToolLayout, Article + optional WebApplication)
 3. **`/seo-content`** — E-E-A-T signals, content depth, readability, thin content detection
 4. **`/seo-technical`** — crawlability, indexability, security headers, canonical, URL structure, mobile rendering
 5. **`/seo-geo`** — AI Overview optimization, LLM citability, passage-level structure, AI crawler accessibility

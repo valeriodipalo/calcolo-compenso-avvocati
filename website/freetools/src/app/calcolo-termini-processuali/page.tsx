@@ -18,7 +18,7 @@ import {
   tabellaFestivi,
 } from "@/data/calcolo-termini-processuali/terminiData";
 import { faqData } from "@/data/calcolo-termini-processuali/faqData";
-import { JsonLd, breadcrumbSchema, articleSchema, webApplicationSchema } from "@/lib/schema";
+import { JsonLd, articleSchema, webApplicationSchema } from "@/lib/schema";
 import type { ToolConfig } from "@/types/tool";
 import type { Metadata } from "next";
 
@@ -76,12 +76,6 @@ export default function CalcoloTerminiProcessualiPage() {
   return (
     <ToolLayout config={toolConfig}>
       {/* ===== Structured Data ===== */}
-      <JsonLd
-        data={breadcrumbSchema([
-          { name: "Strumenti Legali Gratuiti", path: "/" },
-          { name: "Calcolo Termini Processuali", path: "/calcolo-termini-processuali" },
-        ])}
-      />
       <JsonLd
         data={articleSchema({
           headline: "Calcolo Termini Processuali 2026: Guida Completa al Computo dei Termini Civili",

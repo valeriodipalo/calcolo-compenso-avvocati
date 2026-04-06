@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Scale, Menu, X, ChevronDown, ChevronRight, Search } from "lucide-react";
 import { NAV_SECTIONS, type NavCluster } from "@/data/navData";
 import { TOOLS } from "@/data/toolRegistry";
+import { SearchCommand } from "@/components/shared/SearchCommand";
 import type { LucideIcon } from "lucide-react";
 
 /* ────────────────────────────────────────────
@@ -43,6 +44,7 @@ function buildLiveSections() {
 export function Navbar() {
   const pathname = usePathname();
   const liveSections = useMemo(() => buildLiveSections(), []);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   /* ── Desktop flyout state ── */
   const [openSection, setOpenSection] = useState<string | null>(null);
@@ -142,7 +144,7 @@ export function Navbar() {
               <Scale className="w-4 h-4 text-[oklch(0.22_0.04_250)]" />
             </div>
             <span className="font-serif text-lg text-white tracking-tight group-hover:text-[oklch(0.75_0.10_85)] transition-colors">
-              Avvocatitools<span className="text-[oklch(0.75_0.10_85)]">.it</span>
+              Avvocatotools<span className="text-[oklch(0.75_0.10_85)]">.it</span>
             </span>
           </Link>
 
@@ -170,13 +172,6 @@ export function Navbar() {
                 </button>
               );
             })}
-            <Link
-              href="/"
-              className="flex items-center h-full px-4 text-[13.5px] font-medium text-[oklch(0.75_0.03_250)] border-b-2 border-transparent hover:text-white transition-colors"
-              onMouseEnter={handleCloseAll}
-            >
-              Tutti gli strumenti
-            </Link>
           </div>
 
           {/* Right side */}
@@ -185,10 +180,13 @@ export function Navbar() {
             <button
               className="hidden lg:flex items-center gap-2 px-3 py-1.5 text-[13px] text-[oklch(0.60_0.03_250)] bg-[oklch(0.28_0.04_250)] border border-[oklch(0.35_0.04_250)] hover:border-[oklch(0.45_0.04_250)] transition-colors"
               style={{ borderRadius: "1.25rem" }}
-              onClick={() => {/* future command palette */}}
+              onClick={() => setSearchOpen(true)}
             >
               <Search className="w-3.5 h-3.5" />
               <span>Cerca...</span>
+              <kbd className="hidden xl:inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[10px] font-mono text-[oklch(0.50_0.03_250)] bg-[oklch(0.22_0.04_250)] border border-[oklch(0.35_0.04_250)]" style={{ borderRadius: "0.25rem" }}>
+                ⌘K
+              </kbd>
             </button>
 
             {/* Mobile hamburger */}
@@ -337,11 +335,15 @@ export function Navbar() {
           </button>
         </div>
 
-        {/* Search placeholder */}
-        <div className="flex items-center gap-2 mx-4 my-3 px-3 py-2.5 border border-[oklch(0.88_0.01_85)] text-[13px] text-[oklch(0.60_0.02_250)] shrink-0" style={{ borderRadius: "0.5rem" }}>
+        {/* Search trigger */}
+        <button
+          className="flex items-center gap-2 mx-4 my-3 px-3 py-2.5 border border-[oklch(0.88_0.01_85)] text-[13px] text-[oklch(0.60_0.02_250)] shrink-0 w-[calc(100%-2rem)] text-left"
+          style={{ borderRadius: "0.5rem" }}
+          onClick={() => { setDrawerOpen(false); setSearchOpen(true); }}
+        >
           <Search className="w-3.5 h-3.5 text-[oklch(0.65_0.02_250)]" />
           Cerca uno strumento...
-        </div>
+        </button>
 
         {/* Scrollable body */}
         <div className="flex-1 overflow-y-auto">
@@ -434,6 +436,9 @@ export function Navbar() {
           </Link>
         </div>
       </div>
+
+      {/* ━━━ SEARCH COMMAND PALETTE ━━━ */}
+      <SearchCommand open={searchOpen} onOpenChange={setSearchOpen} />
     </>
   );
 }

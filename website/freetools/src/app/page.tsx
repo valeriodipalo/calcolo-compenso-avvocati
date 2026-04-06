@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { JsonLd, webPageSchema } from "@/lib/schema";
-import { TOOLS } from "@/data/toolRegistry";
+import { getActiveClusters, getToolsByCluster } from "@/data/toolRegistry";
 
 export default function HomePage() {
   return (
@@ -35,60 +35,80 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Tools grid */}
-      <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {TOOLS.map((tool) => {
-            const Icon = tool.icon;
-            const cardContent = (
-              <>
-                <div className="flex items-start justify-between mb-3">
-                  <div className="bg-[oklch(0.25_0.04_250)] p-2.5" style={{ borderRadius: "0.375rem" }}>
-                    <Icon className="w-5 h-5 text-[oklch(0.75_0.10_85)]" />
-                  </div>
-                  <span
-                    className={`text-[10px] font-semibold uppercase tracking-wider px-2 py-1 ${
-                      tool.ready
-                        ? "bg-[oklch(0.97_0.005_155)] text-[oklch(0.40_0.10_155)]"
-                        : "bg-[oklch(0.95_0.005_85)] text-[oklch(0.50_0.02_250)]"
-                    }`}
-                    style={{ borderRadius: "0.25rem" }}
-                  >
-                    {tool.badge}
-                  </span>
-                </div>
-                <h2 className="text-xl text-[oklch(0.25_0.04_250)] mb-2">{tool.title}</h2>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  {tool.description}
-                </p>
-                {tool.ready && (
-                  <span className="inline-flex items-center gap-1 text-sm font-semibold text-[oklch(0.45_0.12_250)] group-hover:text-[oklch(0.35_0.15_250)] transition-colors">
-                    Apri strumento <ArrowRight className="w-4 h-4" />
-                  </span>
-                )}
-              </>
-            );
+      {/* Tools by cluster */}
+      <div className="container py-12 space-y-14">
+        {getActiveClusters().map((cluster) => {
+          const tools = getToolsByCluster(cluster.id);
+          if (tools.length === 0) return null;
+          const ClusterIcon = cluster.icon;
 
-            return tool.ready ? (
-              <Link
-                key={tool.slug}
-                href={`/${tool.slug}`}
-                className="group bg-white border border-border p-6 transition-all hover:border-[oklch(0.75_0.10_85)] hover:shadow-md"
-                style={{ borderRadius: "0.5rem" }}
-              >
-                {cardContent}
-              </Link>
-            ) : (
-              <div
-                key={tool.slug}
-                className="bg-white border border-border p-6 opacity-60"
-                style={{ borderRadius: "0.5rem" }}
-              >
-                {cardContent}
+          return (
+            <section key={cluster.id} id={cluster.id}>
+              <div className="flex items-center gap-3 mb-2">
+                <div
+                  className="bg-[oklch(0.25_0.04_250)] p-2"
+                  style={{ borderRadius: "0.375rem" }}
+                >
+                  <ClusterIcon className="w-5 h-5 text-[oklch(0.75_0.10_85)]" />
+                </div>
+                {cluster.hubReady ? (
+                  <Link href={`/${cluster.slug}`} className="group inline-flex items-center gap-2">
+                    <h2 className="text-2xl font-serif text-[oklch(0.25_0.04_250)] group-hover:text-[oklch(0.45_0.12_250)] transition-colors">
+                      {cluster.label}
+                    </h2>
+                    <ArrowRight className="w-4 h-4 text-[oklch(0.50_0.02_250)] group-hover:text-[oklch(0.45_0.12_250)] group-hover:translate-x-0.5 transition-all" />
+                  </Link>
+                ) : (
+                  <h2 className="text-2xl font-serif text-[oklch(0.25_0.04_250)]">
+                    {cluster.label}
+                  </h2>
+                )}
               </div>
-            );
-          })}
-        </div>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-6 max-w-2xl">
+                {cluster.description}
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {tools.map((tool) => {
+                  const Icon = tool.icon;
+                  return (
+                    <Link
+                      key={tool.slug}
+                      href={`/${tool.slug}`}
+                      className="group bg-white border border-border p-6 transition-all hover:border-[oklch(0.75_0.10_85)] hover:shadow-md"
+                      style={{ borderRadius: "0.5rem" }}
+                    >
+                      <div className="flex items-start justify-between mb-3">
+                        <div
+                          className="bg-[oklch(0.25_0.04_250)] p-2.5"
+                          style={{ borderRadius: "0.375rem" }}
+                        >
+                          <Icon className="w-5 h-5 text-[oklch(0.75_0.10_85)]" />
+                        </div>
+                        <span
+                          className="text-[10px] font-semibold uppercase tracking-wider px-2 py-1 bg-[oklch(0.97_0.005_155)] text-[oklch(0.40_0.10_155)]"
+                          style={{ borderRadius: "0.25rem" }}
+                        >
+                          {tool.badge}
+                        </span>
+                      </div>
+                      <h3 className="text-xl text-[oklch(0.25_0.04_250)] mb-2">
+                        {tool.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                        {tool.description}
+                      </p>
+                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-[oklch(0.45_0.12_250)] group-hover:text-[oklch(0.35_0.15_250)] transition-colors">
+                        Apri strumento <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </Link>
+                  );
+                })}
+              </div>
+
+            </section>
+          );
+        })}
       </div>
     </div>
   );

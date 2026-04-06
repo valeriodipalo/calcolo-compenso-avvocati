@@ -18,7 +18,7 @@ import {
   sections,
 } from "@/data/calcolo-interessi-legali/interessiData";
 import { faqData } from "@/data/calcolo-interessi-legali/faqData";
-import { JsonLd, breadcrumbSchema, articleSchema } from "@/lib/schema";
+import { JsonLd, articleSchema } from "@/lib/schema";
 import type { ToolConfig } from "@/types/tool";
 import type { Metadata } from "next";
 
@@ -92,17 +92,9 @@ const formatDate = (iso: string) => {
 export default function CalcoloInteressiLegaliPage() {
   return (
     <ToolLayout config={toolConfig}>
-      {/* ===== Structured Data: 3 JSON-LD blocks ===== */}
+      {/* ===== Structured Data ===== */}
 
-      {/* 1. BreadcrumbList */}
-      <JsonLd
-        data={breadcrumbSchema([
-          { name: "Strumenti Legali Gratuiti", path: "/" },
-          { name: "Calcolo Interessi Legali 2026", path: "/calcolo-interessi-legali" },
-        ])}
-      />
-
-      {/* 2. Article */}
+      {/* Article */}
       <JsonLd
         data={articleSchema({
           headline: "Calcolo Interessi Legali 2026: Tasso, Tabella Storica e Calcolatore Online",

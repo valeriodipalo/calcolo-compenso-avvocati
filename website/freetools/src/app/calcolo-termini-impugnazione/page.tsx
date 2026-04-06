@@ -16,7 +16,7 @@ import {
   sections,
 } from "@/data/calcolo-termini-impugnazione/impugnazioneData";
 import { faqData } from "@/data/calcolo-termini-impugnazione/faqData";
-import { JsonLd, breadcrumbSchema, articleSchema, webApplicationSchema } from "@/lib/schema";
+import { JsonLd, articleSchema, webApplicationSchema } from "@/lib/schema";
 import type { ToolConfig } from "@/types/tool";
 import type { Metadata } from "next";
 
@@ -76,12 +76,6 @@ export default function CalcoloTerminiImpugnazionePage() {
   return (
     <ToolLayout config={toolConfig}>
       {/* ===== Structured Data ===== */}
-      <JsonLd
-        data={breadcrumbSchema([
-          { name: "Strumenti Legali Gratuiti", path: "/" },
-          { name: "Calcolo Termini di Impugnazione", path: "/calcolo-termini-impugnazione" },
-        ])}
-      />
       <JsonLd
         data={articleSchema({
           headline: "Calcolo Termini di Impugnazione 2026: Appello, Cassazione, Revocazione e Opposizione di Terzo",

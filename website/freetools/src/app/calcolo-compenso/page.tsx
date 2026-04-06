@@ -24,7 +24,6 @@ import {
 import { faqData } from "@/data/calcolo-compenso/faqData";
 import {
   JsonLd,
-  breadcrumbSchema,
   articleSchema,
   webApplicationSchema,
 } from "@/lib/schema";
@@ -95,20 +94,9 @@ const toolConfig: ToolConfig = {
 export default function CalcoloCompensoPage() {
   return (
     <ToolLayout config={toolConfig}>
-      {/* ===== JSON-LD Structured Data: 5 schemas ===== */}
+      {/* ===== JSON-LD Structured Data ===== */}
 
-      {/* 1. BreadcrumbList */}
-      <JsonLd
-        data={breadcrumbSchema([
-          { name: "Strumenti Legali Gratuiti", path: "/" },
-          {
-            name: "Calcolo Compenso Avvocato 2026",
-            path: "/calcolo-compenso",
-          },
-        ])}
-      />
-
-      {/* 2. Article */}
+      {/* Article */}
       <JsonLd
         data={articleSchema({
           headline:

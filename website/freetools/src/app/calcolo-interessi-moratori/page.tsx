@@ -17,7 +17,7 @@ import {
   sections,
 } from "@/data/calcolo-interessi-moratori/interessiMoratoriData";
 import { faqData } from "@/data/calcolo-interessi-moratori/faqData";
-import { JsonLd, breadcrumbSchema, articleSchema, webApplicationSchema } from "@/lib/schema";
+import { JsonLd, articleSchema, webApplicationSchema } from "@/lib/schema";
 import type { ToolConfig } from "@/types/tool";
 import type { Metadata } from "next";
 
@@ -84,17 +84,9 @@ const formatDate = (iso: string) => {
 export default function CalcoloInteressiMoratoriPage() {
   return (
     <ToolLayout config={toolConfig}>
-      {/* ===== Structured Data: 5 JSON-LD blocks ===== */}
+      {/* ===== Structured Data ===== */}
 
-      {/* 1. BreadcrumbList */}
-      <JsonLd
-        data={breadcrumbSchema([
-          { name: "Strumenti Legali Gratuiti", path: "/" },
-          { name: "Calcolo Interessi Moratori 2026", path: "/calcolo-interessi-moratori" },
-        ])}
-      />
-
-      {/* 2. Article */}
+      {/* Article */}
       <JsonLd
         data={articleSchema({
           headline: "Calcolo Interessi Moratori 2026: Tasso, Tabella Storica e Calcolatore Online",
