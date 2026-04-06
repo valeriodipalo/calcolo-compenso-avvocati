@@ -23,15 +23,16 @@ export function ToolLayout({ config, children }: ToolLayoutProps) {
       />
 
       <div className="container py-8">
+        {/* Mobile nav — outside flex to avoid asymmetric padding */}
+        <div className="lg:hidden mb-6">
+          <SideNav sections={config.sections} />
+        </div>
+
         <div className="flex gap-8">
-          {/* Sidebar */}
+          {/* Desktop sidebar */}
           <aside className="hidden lg:block w-56 shrink-0">
             <SideNav sections={config.sections} />
           </aside>
-          {/* Mobile nav */}
-          <div className="lg:hidden">
-            <SideNav sections={config.sections} />
-          </div>
 
           {/* Content */}
           <div className="flex-1 min-w-0 max-w-4xl">
