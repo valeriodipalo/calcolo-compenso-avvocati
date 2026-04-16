@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import { JsonLd, breadcrumbSchema, articleSchema } from "@/lib/schema";
 import { getToolsByCluster } from "@/data/toolRegistry";
+import { NormativaRefTable } from "@/components/shared/NormativaRefTable";
 
 export const metadata: Metadata = {
   title: "Interessi Legali, Moratori e Rivalutazione: Guida 2026",
@@ -437,34 +438,55 @@ export default function InteressiERivalutazionePage() {
             <h2 className="text-2xl font-serif text-[oklch(0.25_0.04_250)] mb-4">
               Normativa di riferimento
             </h2>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm border border-border" style={{ borderRadius: "0.375rem" }}>
-                <thead>
-                  <tr className="bg-[oklch(0.97_0.005_250)]">
-                    <th className="text-left p-3 border-b border-border font-semibold text-[oklch(0.25_0.04_250)]">Norma</th>
-                    <th className="text-left p-3 border-b border-border font-semibold text-[oklch(0.25_0.04_250)]">Argomento</th>
-                  </tr>
-                </thead>
-                <tbody className="text-[oklch(0.30_0.04_250)]">
-                  {[
-                    { norma: "Art. 1284 c.c.", desc: "Tasso di interesse legale e sua determinazione annuale" },
-                    { norma: "Art. 1224 c.c.", desc: "Danni nelle obbligazioni pecuniarie (interessi moratori tra privati)" },
-                    { norma: "Art. 1283 c.c.", desc: "Anatocismo — divieto di capitalizzazione degli interessi" },
-                    { norma: "Art. 1219 c.c.", desc: "Costituzione in mora del debitore" },
-                    { norma: "D.Lgs. 231/2002", desc: "Lotta contro i ritardi di pagamento nelle transazioni commerciali" },
-                    { norma: "Direttiva 2011/7/UE", desc: "Direttiva europea sui ritardi di pagamento (recepita dal D.Lgs. 231/2002)" },
-                    { norma: "Art. 429, co. 3, c.p.c.", desc: "Rivalutazione e interessi sui crediti da lavoro" },
-                    { norma: "Art. 2043 c.c.", desc: "Risarcimento del danno extracontrattuale" },
-                    { norma: "D.M. 10/12/2025", desc: "Fissazione del tasso legale 2026 all'1,60%" },
-                  ].map((row) => (
-                    <tr key={row.norma}>
-                      <td className="p-3 border-b border-border font-medium">{row.norma}</td>
-                      <td className="p-3 border-b border-border">{row.desc}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <NormativaRefTable
+              items={[
+                {
+                  norma: "Art. 1284 c.c.",
+                  descrizione: "Tasso di interesse legale e sua determinazione annuale",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art1284",
+                },
+                {
+                  norma: "Art. 1224 c.c.",
+                  descrizione: "Danni nelle obbligazioni pecuniarie (interessi moratori tra privati)",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art1224",
+                },
+                {
+                  norma: "Art. 1283 c.c.",
+                  descrizione: "Anatocismo — divieto di capitalizzazione degli interessi",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art1283",
+                },
+                {
+                  norma: "Art. 1219 c.c.",
+                  descrizione: "Costituzione in mora del debitore",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art1219",
+                },
+                {
+                  norma: "D.Lgs. 231/2002",
+                  descrizione: "Lotta contro i ritardi di pagamento nelle transazioni commerciali",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2002-10-09;231",
+                },
+                {
+                  norma: "Direttiva 2011/7/UE",
+                  descrizione: "Direttiva europea sui ritardi di pagamento (recepita dal D.Lgs. 231/2002)",
+                  url: "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32011L0007",
+                },
+                {
+                  norma: "Art. 429, co. 3, c.p.c.",
+                  descrizione: "Rivalutazione e interessi sui crediti da lavoro",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1940-10-28;1443~art429",
+                },
+                {
+                  norma: "Art. 2043 c.c.",
+                  descrizione: "Risarcimento del danno extracontrattuale",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art2043",
+                },
+                {
+                  norma: "D.M. Economia 10 dicembre 2025",
+                  descrizione: "Fissazione del tasso legale 2026 all'1,60%",
+                  url: "https://www.gazzettaufficiale.it/eli/id/2025/12/13/25A06705/sg",
+                },
+              ]}
+            />
           </section>
 
           {/* FAQ */}

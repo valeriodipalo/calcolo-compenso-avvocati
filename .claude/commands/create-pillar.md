@@ -237,6 +237,7 @@ Create `src/app/{hub-slug}/page.tsx` following this exact template structure:
   [Section: H2 per topic — 400-600 words each, with contextual link to tool]
   [Section: Comparison table — targets "differenza" keywords, featured snippet format]
   [Section: Practical use cases — "Quando si applicano nella pratica forense"]
+  [Section: Quadro normativo — uses shared <NormativaRefTable /> component; every entry { norma, descrizione, url } with url → Normattiva/Gazzetta Ufficiale/EUR-Lex]
   [Section: FAQ — 6-10 items from PAA questions, using <details> accordion]
   [Section: Cross-cluster links — 2-3 tools from other clusters]
 ```
@@ -341,6 +342,7 @@ This phase is iterative. The page is NOT ready until it passes SEO validation wi
 - E-E-A-T score below audit threshold
 - AI Overview / GEO citability issues
 - Internal link count below minimum ((N tools × 2) + 3)
+- Normativa table entries without `url` field — every norm in the "Quadro normativo" section must link to an authoritative juridical source. Plain-text norms hurt E-E-A-T and citability.
 
 **WARNING (nice to have — log but don't block):**
 - Minor readability score dips
@@ -427,6 +429,15 @@ Maximum 3 iterations — if still failing after 3, present remaining issues to u
 - **Server component.** No `"use client"` — hub pages have no interactive elements.
 - **max-w-5xl mx-auto** for content width (wider than tool pages).
 - **No external dependencies.** Don't add npm packages.
+- **"Quadro normativo" section MUST use the shared `<NormativaRefTable />` component** (`@/components/shared/NormativaRefTable`). Every entry has shape `{ norma, descrizione, url }` — the component renders an external-link icon per row. **Every `url` MUST point to a juridical/authoritative website that provides a clear reference to the norm** (Normattiva, Gazzetta Ufficiale, EUR-Lex, official institutional portals). Never leave a norm without a URL — this is a HIGH severity issue in the SEO audit.
+  - Normattiva URN patterns (useful shortcuts):
+    - Codice civile article: `https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art{N}`
+    - Legge: `https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:{YYYY-MM-DD};{N}`
+    - D.M. (ministero giustizia): `https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:{YYYY-MM-DD};{N}`
+    - D.P.R.: `https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:{YYYY-MM-DD};{N}`
+    - D.L.: `https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:{YYYY-MM-DD};{N}`
+    - D.Lgs.: `https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:{YYYY-MM-DD};{N}`
+  - If no clear institutional reference exists for a norm, omit it from the table rather than include a generic search result.
 - **Hub page JSON-LD schemas** (both are MANDATORY for Google indexing):
   - **BreadcrumbList** — 2 levels: `Home → [Cluster Label]`. Use `breadcrumbSchema()` from `@/lib/schema`. This tells Google the page's position in the site hierarchy.
   - **Article** — with ALL required fields: `headline`, `description`, `path`, `datePublished`, `dateModified`, `image` (use `/apple-icon.png` if no dedicated image). Use `articleSchema()` from `@/lib/schema`. This enables Article rich results in Google.

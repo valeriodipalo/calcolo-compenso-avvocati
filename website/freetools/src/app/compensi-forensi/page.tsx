@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import { JsonLd, breadcrumbSchema, articleSchema } from "@/lib/schema";
 import { getToolsByCluster } from "@/data/toolRegistry";
+import { NormativaRefTable } from "@/components/shared/NormativaRefTable";
 
 export const metadata: Metadata = {
   title: "Parcella Avvocato: Compenso, Fattura e Parametri 2026",
@@ -482,78 +483,76 @@ export default function CompensiForensiPage() {
             <h2 className="text-2xl font-serif text-[oklch(0.25_0.04_250)] mb-4">
               Quadro normativo di riferimento
             </h2>
-            <div className="overflow-x-auto">
-              <table
-                className="w-full text-sm border border-border"
-                style={{ borderRadius: "0.375rem" }}
-              >
-                <thead>
-                  <tr className="bg-[oklch(0.97_0.005_250)]">
-                    <th className="text-left p-3 border-b border-border font-semibold text-[oklch(0.25_0.04_250)]">
-                      Norma
-                    </th>
-                    <th className="text-left p-3 border-b border-border font-semibold text-[oklch(0.25_0.04_250)]">
-                      Argomento
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="text-[oklch(0.30_0.04_250)]">
-                  {[
-                    {
-                      norma: "Art. 2233 c.c.",
-                      desc: "Compenso del prestatore d'opera intellettuale — determinazione in primo luogo dall'accordo tra le parti",
-                    },
-                    {
-                      norma: "L. 31 dicembre 2012, n. 247, art. 13",
-                      desc: "Ordinamento della professione forense — disciplina del compenso, obbligo di preventivo, divieto patto di quota lite puro",
-                    },
-                    {
-                      norma: "D.M. 10 marzo 2014, n. 55",
-                      desc: "Parametri forensi — tabelle ufficiali per la liquidazione giudiziale dei compensi degli avvocati (28 tabelle, 17 scaglioni)",
-                    },
-                    {
-                      norma: "D.M. 13 agosto 2022, n. 147",
-                      desc: "Aggiornamento parametri forensi — variazione uniforme ±50%, nuovi scaglioni per cause di alto valore, tariffazione oraria; in vigore dal 23/10/2022",
-                    },
-                    {
-                      norma: "L. 21 aprile 2023, n. 49",
-                      desc: "Equo compenso — tutela dei professionisti nei rapporti con contraenti forti (banche, PA, imprese con più di 50 dipendenti)",
-                    },
-                    {
-                      norma: "D.L. 24 gennaio 2012, n. 1, art. 9",
-                      desc: "Abrogazione delle tariffe forensi (decreto liberalizzazioni) — sostituite dai parametri ministeriali",
-                    },
-                    {
-                      norma: "Art. 21 DPR 26 ottobre 1972, n. 633",
-                      desc: "Testo Unico IVA — obbligo di fatturazione, contenuto della fattura, codici natura",
-                    },
-                    {
-                      norma: "Art. 15 DPR 633/72",
-                      desc: "Esclusione dall'imponibile IVA delle spese anticipate in nome e per conto del cliente (contributo unificato, marche da bollo, spese di notifica)",
-                    },
-                    {
-                      norma: "Art. 25 DPR 29 settembre 1973, n. 600",
-                      desc: "Ritenuta d'acconto del 20% sui compensi corrisposti ai professionisti da sostituti d'imposta",
-                    },
-                    {
-                      norma: "Art. 130, DPR 30 maggio 2002, n. 115",
-                      desc: "Gratuito patrocinio — riduzione del 50% del compenso liquidato per gli avvocati ammessi al patrocinio a spese dello Stato",
-                    },
-                    {
-                      norma: "Art. 636 c.p.c.",
-                      desc: "Parere di congruità — procedura monitoria per il recupero del compenso professionale con decreto ingiuntivo",
-                    },
-                  ].map((row) => (
-                    <tr key={row.norma}>
-                      <td className="p-3 border-b border-border font-medium whitespace-nowrap">
-                        {row.norma}
-                      </td>
-                      <td className="p-3 border-b border-border">{row.desc}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <NormativaRefTable
+              items={[
+                {
+                  norma: "Art. 2233 c.c.",
+                  descrizione:
+                    "Compenso del prestatore d'opera intellettuale — determinazione in primo luogo dall'accordo tra le parti",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art2233",
+                },
+                {
+                  norma: "L. 31 dicembre 2012, n. 247, art. 13",
+                  descrizione:
+                    "Ordinamento della professione forense — disciplina del compenso, obbligo di preventivo, divieto patto di quota lite puro",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-31;247~art13",
+                },
+                {
+                  norma: "D.M. 10 marzo 2014, n. 55",
+                  descrizione:
+                    "Parametri forensi — tabelle ufficiali per la liquidazione giudiziale dei compensi degli avvocati (28 tabelle, 17 scaglioni)",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2014-03-10;55",
+                },
+                {
+                  norma: "D.M. 13 agosto 2022, n. 147",
+                  descrizione:
+                    "Aggiornamento parametri forensi — variazione uniforme ±50%, nuovi scaglioni per cause di alto valore, tariffazione oraria; in vigore dal 23/10/2022",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.giustizia:decreto:2022-08-13;147",
+                },
+                {
+                  norma: "L. 21 aprile 2023, n. 49",
+                  descrizione:
+                    "Equo compenso — tutela dei professionisti nei rapporti con contraenti forti (banche, PA, imprese con più di 50 dipendenti)",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2023-04-21;49",
+                },
+                {
+                  norma: "D.L. 24 gennaio 2012, n. 1, art. 9",
+                  descrizione:
+                    "Abrogazione delle tariffe forensi (decreto liberalizzazioni) — sostituite dai parametri ministeriali",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2012-01-24;1~art9",
+                },
+                {
+                  norma: "Art. 21 DPR 26 ottobre 1972, n. 633",
+                  descrizione:
+                    "Testo Unico IVA — obbligo di fatturazione, contenuto della fattura, codici natura",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art21",
+                },
+                {
+                  norma: "Art. 15 DPR 633/72",
+                  descrizione:
+                    "Esclusione dall'imponibile IVA delle spese anticipate in nome e per conto del cliente (contributo unificato, marche da bollo, spese di notifica)",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art15",
+                },
+                {
+                  norma: "Art. 25 DPR 29 settembre 1973, n. 600",
+                  descrizione:
+                    "Ritenuta d'acconto del 20% sui compensi corrisposti ai professionisti da sostituti d'imposta",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600~art25",
+                },
+                {
+                  norma: "Art. 130 DPR 30 maggio 2002, n. 115",
+                  descrizione:
+                    "Gratuito patrocinio — riduzione del 50% del compenso liquidato per gli avvocati ammessi al patrocinio a spese dello Stato",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2002-05-30;115~art130",
+                },
+                {
+                  norma: "Art. 636 c.p.c.",
+                  descrizione:
+                    "Parere di congruità — procedura monitoria per il recupero del compenso professionale con decreto ingiuntivo",
+                  url: "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1940-10-28;1443~art636",
+                },
+              ]}
+            />
           </section>
 
           {/* FAQ */}
