@@ -34,7 +34,7 @@ export const CLUSTERS: ToolCluster[] = [
     slug: "termini-processuali",
     description: "Calcolo dei termini processuali, di impugnazione e delle scadenze legali.",
     icon: Clock,
-    hubReady: false,
+    hubReady: true,
   },
   {
     id: "interessi",
