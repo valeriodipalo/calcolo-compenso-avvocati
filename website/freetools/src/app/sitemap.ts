@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Hub/pillar pages (only when published)
     ...CLUSTERS.filter((c) => c.hubReady).map((cluster) => ({
       url: `${baseUrl}/${cluster.slug}`,
-      lastModified: new Date("2026-04-05"),
+      lastModified: new Date("2026-04-16"),
       changeFrequency: "weekly" as const,
       priority: 0.9,
     })),

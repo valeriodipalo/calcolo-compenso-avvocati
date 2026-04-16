@@ -26,7 +26,7 @@ export const CLUSTERS: ToolCluster[] = [
     slug: "compensi-forensi",
     description: "Strumenti per il calcolo dei compensi professionali forensi e la fatturazione dell'avvocato.",
     icon: Calculator,
-    hubReady: false,
+    hubReady: true,
   },
   {
     id: "termini",
