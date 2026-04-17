@@ -58,7 +58,7 @@ export const CLUSTERS: ToolCluster[] = [
     slug: "danno-e-risarcimento",
     description: "Calcolo del danno biologico, non patrimoniale e dei risarcimenti.",
     icon: HeartPulse,
-    hubReady: false,
+    hubReady: true,
   },
   {
     id: "fiscale",
