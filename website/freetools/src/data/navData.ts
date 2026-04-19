@@ -163,7 +163,7 @@ export const NAV_SECTIONS: NavSection[] = [
           { label: "Calcolo codice fiscale", badge: "Top" },
           { label: "Calcolatrice online" },
           { label: "Calcolo percentuale" },
-          { label: "Giorni tra date" },
+          { label: "Giorni tra date", slug: "calcolo-giorni-tra-date", badge: "Nuovo" },
           { label: "Verifica IBAN" },
           { label: "Differenza ore" },
         ],

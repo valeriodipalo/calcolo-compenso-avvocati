@@ -464,15 +464,36 @@ Add the new tool to the **single registry file** `src/data/toolRegistry.ts`:
 - Each tool belongs to **exactly one cluster** — no duplicates across clusters
 - `relatedSlugs` is optional but recommended — list 1-2 tools from OTHER clusters that have a logical workflow connection (e.g., after computing damages, the user may need interest calculation)
 
-This **automatically** updates:
-- `Navbar.tsx` (desktop + mobile nav links, grouped by cluster)
+This **automatically** updates (reads from `toolRegistry.ts`):
 - `SiteFooter.tsx` (footer tools list, grouped by cluster)
 - `app/page.tsx` (homepage tools grid, organized in cluster sections)
 - `app/sitemap.ts` (XML sitemap entries)
 - `RelatedTools` component on sibling tool pages (same-cluster tools auto-appear)
 - `Breadcrumb` component (shows cluster context: Home › Cluster › Tool)
 
-**No other navigation files need editing.** Only update `src/app/layout.tsx` if the site-wide root description needs to change.
+### Step 4.4a: Link the Tool in the Navbar (MANDATORY — manual)
+
+**The Navbar is NOT driven by `toolRegistry.ts`.** It reads from a separate curated file `src/data/navData.ts` (type `NAV_SECTIONS`) because the navbar labels, descriptions, icons, and ordering are hand-tuned for UX — they do not match the registry 1:1. A tool only appears in the Navbar if its `slug` is set in a `NavTool` entry AND the `slug` matches a `ready: true` entry in `toolRegistry.ts`.
+
+**Required action:** Open `src/data/navData.ts`, find the cluster that matches your new tool's cluster (e.g., `id: "generici"` for the `generici` cluster), and either:
+
+1. **Tool already listed as a coming-soon placeholder** (e.g., `{ label: "Giorni tra date" }` with no slug): add the `slug` field to link it:
+   ```typescript
+   { label: "Giorni tra date", slug: "calcolo-giorni-tra-date", badge: "Nuovo" },
+   ```
+
+2. **Tool NOT yet in navData.ts**: add a new `NavTool` entry to the appropriate cluster's `tools` array:
+   ```typescript
+   { label: "{Short User-Facing Label}", slug: "{SLUG}", badge: "Nuovo" },
+   ```
+
+**Rules:**
+- `label` is the short user-facing text shown in the dropdown (keep concise, e.g., "Giorni tra date" not "Calcolo Giorni tra Due Date 2026")
+- `slug` must exactly match the `slug` in `toolRegistry.ts`
+- `badge` can be `"Top"` (highlighted, for flagship tools) or `"Nuovo"` (for just-launched tools) — remove or downgrade after a few weeks
+- If the target cluster doesn't exist yet in `navData.ts`, add a new `NavCluster` inside the appropriate `NavSection`, with `id`, `name`, `description`, `icon`, `iconBg`/`iconFg` Tailwind classes, and the `tools` array
+
+**Do not** attempt to refactor `Navbar.tsx` to read from `toolRegistry.ts` — the decoupling is intentional so the nav labels and ordering can differ from the registry.
 
 ### Step 4.4b: Cluster Integration Verification
 
@@ -488,7 +509,7 @@ After registering the tool, verify the cluster integration is complete:
 
 3. **Homepage** (automatic): The homepage groups tools by cluster. The new tool appears in its cluster section automatically.
 
-4. **Navbar** (automatic): The navbar groups tools by cluster within macro-area dropdowns. The new tool appears under its cluster automatically.
+4. **Navbar** (MANUAL — see Step 4.4a): The navbar uses a separate curated file `src/data/navData.ts`. A tool only appears if you add/link its slug there. This is NOT automatic from `toolRegistry.ts`.
 
 5. **relatedSlugs validation**: Ensure `relatedSlugs` only contains tools from OTHER clusters. Same-cluster tools are shown automatically by `RelatedTools` — listing them in `relatedSlugs` is redundant (they're filtered out).
 
