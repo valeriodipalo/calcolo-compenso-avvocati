@@ -66,6 +66,7 @@ export const NAV_SECTIONS: NavSection[] = [
         tools: [
           { label: "Calcolo termini processuali", slug: "calcolo-termini-processuali", badge: "Top" },
           { label: "Termini impugnazioni", slug: "calcolo-termini-impugnazione" },
+          { label: "Calcolo giorni tra due date", slug: "calcolo-giorni-tra-date", badge: "Nuovo" },
           { label: "Scadenze e termini udienze" },
           { label: "Memorie 183/190 c.p.c." },
         ],
@@ -163,7 +164,7 @@ export const NAV_SECTIONS: NavSection[] = [
           { label: "Calcolo codice fiscale", badge: "Top" },
           { label: "Calcolatrice online" },
           { label: "Calcolo percentuale" },
-          { label: "Giorni tra date", slug: "calcolo-giorni-tra-date", badge: "Nuovo" },
+          { label: "Giorni tra date" },
           { label: "Verifica IBAN" },
           { label: "Differenza ore" },
         ],

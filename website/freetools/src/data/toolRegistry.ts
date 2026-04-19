@@ -254,8 +254,8 @@ export const TOOLS: ToolEntry[] = [
     badge: "Aggiornato 2026",
     ready: true,
     lastModified: "2026-04-19",
-    cluster: "generici",
-    relatedSlugs: ["calcolo-termini-processuali", "calcolo-interessi-legali"],
+    cluster: "termini",
+    relatedSlugs: ["calcolo-interessi-legali"],
   },
 ];
 
