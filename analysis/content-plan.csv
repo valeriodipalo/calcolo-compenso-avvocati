@@ -34,7 +34,7 @@
 32,3,Calcolo Percentuale,/strumenti/calcolatori-generici/percentuale/,,calcolo percentuale,135000,bassa,73556,,,DA FARE
 33,3,Calcolo Codice Fiscale,/strumenti/calcolatori-generici/codice-fiscale/,,calcolo codice fiscale,1220000,17,17123,,,DA FARE
 34,3,Decodifica Codice Fiscale,/strumenti/calcolatori-generici/decodifica-codice-fiscale/,,decodifica codice fiscale,6600,bassa,16883,,,DA FARE
-35,3,Calcolo Giorni tra Date,/strumenti/calcolatori-generici/giorni-tra-date/,,calcolo giorni tra date,720,bassa,34945,,,DA FARE
+35,3,Calcolo Giorni tra Date,/strumenti/calcolatori-generici/giorni-tra-date/,/calcolo-giorni-tra-date,calcolo giorni tra due date,27100,bassa,34945,,informational,LIVE,2026-04-19
 36,3,Differenza Ore,/strumenti/calcolatori-generici/differenza-ore/,,calcolo tempo trascorso,cluster,bassa,18134,,,DA FARE
 37,3,Calcolatrice Online,/strumenti/calcolatori-generici/calcolatrice/,,calcolatrice online,246000,bassa,10914,,,DA FARE
 38,3,Verifica IBAN,/strumenti/calcolatori-generici/verifica-iban/,,verifica codice iban,3600,14,4205,,,DA FARE

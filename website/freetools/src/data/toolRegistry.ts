@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { ToolCluster, NavGroup } from "@/types/tool";
 
@@ -242,7 +242,20 @@ export const TOOLS: ToolEntry[] = [
     ready: true,
     lastModified: "2026-04-05",
     cluster: "termini",
-    relatedSlugs: ["calcolo-termini-impugnazione"],
+    relatedSlugs: ["calcolo-termini-impugnazione", "calcolo-giorni-tra-date"],
+  },
+  {
+    slug: "calcolo-giorni-tra-date",
+    title: "Calcolo Giorni tra Due Date",
+    navLabel: "Giorni tra Date",
+    description:
+      "Contagiorni online: calcola giorni tra due date con breakdown anni/mesi/settimane, giorni lavorativi/feriali/liberi, sospensione feriale e festività italiane 2026 incluso San Francesco d'Assisi (L. 151/2025).",
+    icon: CalendarDays,
+    badge: "Aggiornato 2026",
+    ready: true,
+    lastModified: "2026-04-19",
+    cluster: "generici",
+    relatedSlugs: ["calcolo-termini-processuali", "calcolo-interessi-legali"],
   },
 ];
 

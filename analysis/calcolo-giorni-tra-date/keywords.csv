@@ -1,0 +1,50 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+secondary,giorni,40500,0,0.23,informational,201.25,242.91
+primary,calcolo giorni tra due date,27100,0,0.00,informational,164.62,164.62
+secondary,calcola giorni,27100,0,0.00,commercial,164.62,164.62
+secondary,calcola giorni tra due date,27100,0,0.00,informational,164.62,164.62
+secondary,calcola i giorni tra due date,27100,0,0.00,informational,164.62,164.62
+secondary,calcolare giorni,27100,0,0.00,commercial,164.62,164.62
+secondary,calcolare giorni tra due date,27100,0,0.00,informational,164.62,164.62
+secondary,calcolare i giorni tra due date,27100,0,0.00,informational,164.62,164.62
+secondary,calcolatore di giorni,27100,0,0.00,transactional,164.62,164.62
+secondary,calcolatore giorni,27100,0,0.00,transactional,164.62,164.62
+secondary,calcolatore giorni tra due date,27100,0,0.00,informational,164.62,164.62
+secondary,calcolatrice giorni,27100,0,0.00,commercial,164.62,164.62
+secondary,calcolo date tra due giorni,27100,0,0.00,informational,164.62,164.62
+secondary,calcolo dei giorni,27100,0,0.00,informational,164.62,164.62
+secondary,calcolo di giorni tra due date,27100,0,0.00,informational,164.62,164.62
+secondary,calcolo giorni,27100,0,0.00,commercial,164.62,164.62
+secondary,calcolo giorno,27100,0,0.00,commercial,164.62,164.62
+longtail,calcolo giorni lavorativi tra due date,1900,4,3.47,informational,41.85,104.5
+secondary,contagiorni,9900,0,0.00,informational,99.5,99.5
+secondary,conta i giorni,9900,0,0.00,informational,99.5,99.5
+secondary,contare i giorni,9900,0,0.00,informational,99.5,99.5
+secondary,contatore giorni,9900,9,0.00,informational,90.54,90.54
+secondary,contatori giorni,9900,9,0.00,informational,90.54,90.54
+secondary,giorni tra due date,8100,0,0.00,informational,90.0,90.0
+secondary,giorno tra due date,8100,0,0.00,informational,90.0,90.0
+secondary,calcola data,8100,0,0.00,commercial,90.0,90.0
+secondary,calcolo data,8100,0,0.00,commercial,90.0,90.0
+secondary,calcolo date,8100,0,0.00,commercial,90.0,90.0
+secondary,calcolatore di date,8100,0,0.00,transactional,90.0,90.0
+secondary,calcolo giorni da una data,5400,0,0.00,informational,73.48,73.48
+secondary,calcola giorni da una data,5400,0,0.00,informational,73.48,73.48
+secondary,calcolatore giorni da una data,5400,0,0.00,informational,73.48,73.48
+secondary,calcolare giorni da una data,5400,0,0.00,informational,73.48,73.48
+longtail,calcolo giorni tra date,720,0,0.00,informational,26.83,26.83
+longtail,calcolo numero giorni tra due date,320,0,0.00,informational,17.89,17.89
+longtail,calcolo giorni tra due date excel,210,0,0.00,informational,14.49,14.49
+longtail,calcolo giorni tra due date andreani,170,7,0.00,informational,12.13,12.13
+longtail,calcolo giorni tra due date online,110,0,0.00,informational,10.49,10.49
+longtail,excel calcolo giorni tra due date,110,0,0.00,informational,10.49,10.49
+longtail,calcolo giorni intercorrenti tra due date,90,0,0.00,informational,9.49,9.49
+longtail,calcolo giorni liberi tra due date,70,0,0.00,informational,8.37,8.37
+longtail,calcolo mesi e giorni tra due date,70,0,0.00,informational,8.37,8.37
+longtail,calcolo giorni lavorativi tra due date excel,70,9,0.02,informational,7.61,7.76
+longtail,formula per calcolare i giorni tra due date,50,0,0.00,informational,7.07,7.07
+longtail,app calcolo giorni tra due date,50,0,0.00,informational,7.07,7.07
+longtail,calcolo anni mesi giorni tra due date,50,0,0.00,informational,7.07,7.07
+longtail,contagiorni senza sabato e domenica,50,0,0.00,informational,7.07,7.07
+longtail,contagiorni lavorativi,50,0,0.00,informational,7.07,7.07
+longtail,aggiungi giorni a data,50,0,0.00,informational,7.07,7.07
