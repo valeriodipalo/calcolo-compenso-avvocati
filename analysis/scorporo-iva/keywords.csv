@@ -1,0 +1,68 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+secondary,calcolatore iva,40500,0,2.50,transactional,201.25,453.36
+secondary,calcola iva,40500,1,2.50,transactional,199.23,448.83
+secondary,iva calcolo,40500,0,1.12,commercial,201.25,352.47
+secondary,calcolatrice iva,40500,1,1.12,commercial,199.23,348.94
+secondary,fattura con scorporo,9900,0,6.52,informational,99.5,300.24
+primary,scorporo iva,33100,0,0.32,informational,181.93,232.44
+secondary,scorporare iva,33100,0,0.32,transactional,181.93,232.44
+secondary,calcolo inverso fattura,3600,0,2.88,commercial,60.0,141.35
+secondary,calcolare scorporo iva,4400,0,1.26,commercial,66.33,120.42
+secondary,calcolo scorporo iva,4400,0,1.26,commercial,66.33,120.42
+secondary,calcolo iva 22,4400,0,1.12,transactional,66.33,116.18
+secondary,calcolare iva online,2900,0,2.11,transactional,53.85,114.95
+secondary,calcolo iva online,2900,0,2.11,transactional,53.85,114.95
+longtail,come scorporare iva,880,0,8.37,commercial,29.66,96.04
+longtail,come scorporo iva,880,0,8.37,informational,29.66,96.04
+secondary,calcola iva online,2900,0,1.06,transactional,53.85,92.77
+secondary,come si calcola l'iva,1900,0,2.04,informational,43.59,92.05
+secondary,calcola iva 22,4400,0,0.44,transactional,66.33,90.52
+secondary,calcolare iva al 22,4400,0,0.44,transactional,66.33,90.52
+secondary,calcolo iva al 22,4400,0,0.44,transactional,66.33,90.52
+secondary,calcolare iva 22,4400,2,0.44,transactional,65.01,88.71
+secondary,calcolo iva scorporo,4400,0,0.36,commercial,66.33,86.73
+secondary,scorporo iva calcolo,4400,0,0.36,commercial,66.33,86.73
+secondary,calcolo per scorporo iva,4400,0,0.36,informational,66.33,86.73
+secondary,come si calcola l'iva al 22,1300,0,2.33,commercial,36.06,79.43
+secondary,scorporare iva 22,2900,0,0.48,transactional,53.85,74.96
+secondary,scorporare iva al 22,2900,0,0.48,transactional,53.85,74.96
+secondary,scorporo iva 22,2900,0,0.48,informational,53.85,74.96
+secondary,scorporo iva al 22,2900,0,0.48,commercial,53.85,74.96
+longtail,aggiungi iva,880,0,2.61,transactional,29.66,67.75
+longtail,calcolare iva 22 con calcolatrice,1300,10,1.90,commercial,32.45,67.0
+longtail,come scorporare iva 22,1000,0,1.73,transactional,31.62,63.38
+longtail,come scorporare iva al 22,1000,0,1.73,navigational,31.62,63.38
+secondary,scorpora iva,2400,0,0.25,informational,48.99,59.92
+secondary,scorporo iva online,1900,0,0.23,transactional,43.59,52.61
+longtail,scorporo iva calcolo veloce,480,0,1.91,transactional,21.91,45.31
+secondary,formula scorporo iva,1300,0,0.14,commercial,36.06,40.78
+secondary,formula per scorporare iva,1300,0,0.14,commercial,36.06,40.78
+secondary,iva scorporo formula,1300,0,0.14,commercial,36.06,40.78
+secondary,formula per scorporo iva,1300,0,0.14,informational,36.06,40.78
+secondary,scorporo iva formula,1300,0,0.14,commercial,36.06,40.78
+longtail,aggiungere iva,880,0,0.40,transactional,29.66,39.65
+longtail,al netto di iva,880,0,0,informational,29.66,29.66
+longtail,al netto iva,880,0,0,informational,29.66,29.66
+longtail,scorporo iva al 10,480,0,0.02,transactional,21.91,22.34
+longtail,scorporo iva 10,480,0,0.02,transactional,21.91,22.34
+longtail,scorporo iva calcolo online,140,0,1.25,transactional,11.83,21.43
+longtail,scorporo iva andreani,90,0,1.85,informational,9.49,19.42
+longtail,scorporo iva 22 formula,260,0,0.02,commercial,16.12,16.44
+longtail,formula scorporo iva 22,260,0,0.02,commercial,16.12,16.44
+longtail,formula per scorporo iva 22,260,0,0.02,informational,16.12,16.44
+longtail,scorporo iva e cpa,260,0,0,commercial,16.12,16.12
+longtail,scorporo iva cpa,260,0,0,commercial,16.12,16.12
+longtail,calcolo scorporo iva online,140,0,0.35,informational,11.83,15.38
+longtail,scorporo iva al 4,170,0,0.01,informational,13.04,13.17
+longtail,scorporo iva 4,170,0,0.01,informational,13.04,13.17
+longtail,scorporo iva excel,110,0,0.02,commercial,10.49,10.7
+longtail,excel scorporo iva,110,0,0.02,commercial,10.49,10.7
+longtail,scorporo iva formula excel,90,0,0,commercial,9.49,9.49
+longtail,scorporo iva avvocato,90,0,0,informational,9.49,9.49
+longtail,scorporo iva avvocati,90,0,0,informational,9.49,9.49
+longtail,scorporo iva 10 formula,90,0,0,transactional,9.49,9.49
+longtail,formula scorporo iva 10,90,0,0,transactional,9.49,9.49
+longtail,formula calcolo scorporo iva,90,0,0,informational,9.49,9.49
+longtail,fattura scorporo iva,90,0,0,informational,9.49,9.49
+longtail,calcolo scorporo iva formula,90,0,0,informational,9.49,9.49
+longtail,scorporo iva fattura,90,4,0,commercial,9.11,9.11

@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays, Percent } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { ToolCluster, NavGroup } from "@/types/tool";
 
@@ -256,6 +256,19 @@ export const TOOLS: ToolEntry[] = [
     lastModified: "2026-04-19",
     cluster: "termini",
     relatedSlugs: ["calcolo-interessi-legali"],
+  },
+  {
+    slug: "scorporo-iva",
+    title: "Scorporo IVA",
+    navLabel: "Scorporo IVA",
+    description:
+      "Calcolatore scorporo IVA online: tutte le aliquote 2026 (22%, 10%, 5%, 4%), formula, coefficienti, esempi pratici, scorporo in fattura e per parcelle avvocato, split payment e reverse charge.",
+    icon: Percent,
+    badge: "Aggiornato 2026",
+    ready: true,
+    lastModified: "2026-04-23",
+    cluster: "fiscale",
+    relatedSlugs: ["calcolo-fattura-avvocato"],
   },
 ];
 

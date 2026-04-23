@@ -123,7 +123,7 @@ export const NAV_SECTIONS: NavSection[] = [
         iconBg: "bg-[oklch(0.95_0.03_85)]",
         iconFg: "text-[oklch(0.50_0.12_85)]",
         tools: [
-          { label: "Scorporo IVA", badge: "Top" },
+          { label: "Scorporo IVA", slug: "scorporo-iva", badge: "Top" },
           { label: "Verifica partita IVA" },
           { label: "Calcolo IRPEF" },
           { label: "Ravvedimento operoso" },
