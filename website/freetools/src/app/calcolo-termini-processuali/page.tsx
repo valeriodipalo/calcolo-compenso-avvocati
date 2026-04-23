@@ -56,6 +56,7 @@ const toolConfig: ToolConfig = {
   icon: Clock,
   updatedDate: "Aggiornato al 2026",
   heroImage: HERO_IMG,
+  heroImageAlt: "Calcolo Termini Processuali 2026 — scadenze civili e Riforma Cartabia",
   heroEyebrow: "Calcolatore e Guida Completa",
   heroTitle: "Calcolo Termini Processuali",
   heroDescription:

@@ -54,7 +54,8 @@ const toolConfig: ToolConfig = {
   shortTitle: "Interessi Moratori",
   icon: Landmark,
   updatedDate: "Aggiornato al 2026",
-  heroImage: "",
+  heroImage: HERO_IMG,
+  heroImageAlt: "Calcolo Interessi Moratori 2026 — tasso BCE + 8% secondo D.Lgs. 231/2002",
   heroEyebrow: "Calcolatore, Tabella Tassi e Guida Completa",
   heroTitle: "Calcolo Interessi Moratori 2026",
   heroDescription:

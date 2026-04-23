@@ -58,10 +58,17 @@ export function SideNav({ sections }: SideNavProps) {
         <ul className="py-2">
           {sections.map((s) => (
             <li key={s.id}>
-              <button
-                onClick={() => scrollTo(s.id)}
+              <a
+                href={`#${s.id}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollTo(s.id);
+                  if (typeof window !== "undefined") {
+                    history.replaceState(null, "", `#${s.id}`);
+                  }
+                }}
                 className={`
-                  w-full text-left px-4 py-2 text-sm transition-all
+                  block w-full text-left px-4 py-2 text-sm transition-all
                   ${
                     activeSection === s.id
                       ? "bg-[oklch(0.97_0.005_85)] text-[oklch(0.25_0.04_250)] font-semibold border-l-3 border-[oklch(0.75_0.10_85)]"
@@ -70,7 +77,7 @@ export function SideNav({ sections }: SideNavProps) {
                 `}
               >
                 {s.label}
-              </button>
+              </a>
             </li>
           ))}
         </ul>

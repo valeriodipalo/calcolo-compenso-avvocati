@@ -1,17 +1,31 @@
+import Image from "next/image";
+
 interface HeroSectionProps {
   image: string;
+  imageAlt: string;
   eyebrow: string;
   title: string;
   description: string;
   reference?: string;
 }
 
-export function HeroSection({ image, eyebrow, title, description, reference }: HeroSectionProps) {
+export function HeroSection({
+  image,
+  imageAlt,
+  eyebrow,
+  title,
+  description,
+  reference,
+}: HeroSectionProps) {
   return (
     <section className="relative overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${image})` }}
+      <Image
+        src={image}
+        alt={imageAlt}
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center"
       />
       <div className="absolute inset-0 bg-[oklch(0.25_0.04_250)]/80" />
       <div className="relative container py-16 md:py-24">

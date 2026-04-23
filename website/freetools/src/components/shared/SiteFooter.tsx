@@ -97,6 +97,8 @@ export function SiteFooter() {
               <li>
                 <a
                   href="https://www.iubenda.com/privacy-policy/87843785"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="iubenda-white iubenda-noiframe iubenda-embed"
                   title="Privacy Policy"
                 >
@@ -106,6 +108,8 @@ export function SiteFooter() {
               <li>
                 <a
                   href="https://www.iubenda.com/privacy-policy/87843785/cookie-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="iubenda-white iubenda-noiframe iubenda-embed"
                   title="Cookie Policy"
                 >

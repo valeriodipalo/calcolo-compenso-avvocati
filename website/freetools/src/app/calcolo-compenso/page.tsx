@@ -70,6 +70,7 @@ const toolConfig: ToolConfig = {
   icon: Scale,
   updatedDate: "Aggiornato al 2026",
   heroImage: HERO_IMG,
+  heroImageAlt: "Calcolo Compenso Avvocato 2026 — parametri forensi D.M. 147/2022",
   heroEyebrow: "Parametri Forensi, Tabelle e Calcolatore Gratuito",
   heroTitle: "Calcolo Compenso Avvocato 2026",
   heroDescription:

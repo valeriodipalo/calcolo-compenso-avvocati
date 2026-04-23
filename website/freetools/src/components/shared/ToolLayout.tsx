@@ -16,6 +16,7 @@ export function ToolLayout({ config, children }: ToolLayoutProps) {
       <Breadcrumb slug={config.slug} />
       <HeroSection
         image={config.heroImage}
+        imageAlt={config.heroImageAlt}
         eyebrow={config.heroEyebrow}
         title={config.heroTitle}
         description={config.heroDescription}

@@ -39,6 +39,9 @@ export function organizationSchema() {
     name: SITE_NAME,
     url: SITE_URL,
     logo: { "@type": "ImageObject", url: `${SITE_URL}/apple-icon.png` },
+    // sameAs: verified external profiles (LinkedIn, X, YouTube...).
+    // Populate with real URLs only — inventing them harms the Knowledge Graph signal.
+    sameAs: [] as string[],
   };
 }
 
@@ -121,6 +124,12 @@ export function articleSchema(opts: {
   dateModified: string;
   image?: string;
   sections?: string[];
+  author?: {
+    name: string;
+    jobTitle?: string;
+    url?: string;
+    sameAs?: string[];
+  };
 }) {
   return {
     "@context": "https://schema.org",
@@ -139,7 +148,15 @@ export function articleSchema(opts: {
     }),
     datePublished: opts.datePublished,
     dateModified: opts.dateModified,
-    author: organizationSchema(),
+    author: opts.author
+      ? {
+          "@type": "Person",
+          name: opts.author.name,
+          ...(opts.author.jobTitle && { jobTitle: opts.author.jobTitle }),
+          ...(opts.author.url && { url: opts.author.url }),
+          ...(opts.author.sameAs && { sameAs: opts.author.sameAs }),
+        }
+      : organizationSchema(),
     publisher: organizationSchema(),
     mainEntityOfPage: {
       "@type": "WebPage",

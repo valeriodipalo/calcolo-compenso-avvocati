@@ -63,6 +63,7 @@ const toolConfig: ToolConfig = {
   icon: TrendingUp,
   updatedDate: "Aggiornato al 2026",
   heroImage: HERO_IMG,
+  heroImageAlt: "Calcolo Interessi Legali 2026 — tasso 1,60% e tabella storica dal 1942",
   heroEyebrow: "Calcolatore, Tabella Tassi e Guida Completa",
   heroTitle: "Calcolo Interessi Legali 2026",
   heroDescription:

@@ -27,6 +27,7 @@ export interface ToolConfig {
   icon: LucideIcon;
   updatedDate: string;
   heroImage: string;
+  heroImageAlt: string;
   heroEyebrow: string;
   heroTitle: string;
   heroDescription: string;

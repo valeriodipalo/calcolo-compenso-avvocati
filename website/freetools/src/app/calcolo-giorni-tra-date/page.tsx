@@ -53,7 +53,8 @@ const toolConfig: ToolConfig = {
   shortTitle: "Giorni tra Date",
   icon: CalendarDays,
   updatedDate: "Aggiornato al 2026",
-  heroImage: "",
+  heroImage: HERO_IMG,
+  heroImageAlt: "Calcolo Giorni tra Due Date 2026 — contagiorni con sospensione feriale",
   heroEyebrow: "Contagiorni, Calcolatore Scadenze e Guida Legale",
   heroTitle: "Calcolo Giorni tra Due Date 2026",
   heroDescription:

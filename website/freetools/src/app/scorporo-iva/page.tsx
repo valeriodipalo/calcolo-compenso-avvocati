@@ -84,6 +84,7 @@ const toolConfig: ToolConfig = {
   icon: Percent,
   updatedDate: "Aggiornato al 2026",
   heroImage: HERO_IMG,
+  heroImageAlt: "Scorporo IVA 2026 — calcolatore multi-aliquota 22%, 10%, 5%, 4%",
   heroEyebrow: "Calcolatore multi-aliquota e guida completa",
   heroTitle: "Scorporo IVA 2026 — Calcolatore Online",
   heroDescription:

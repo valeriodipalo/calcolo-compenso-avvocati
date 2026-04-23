@@ -70,6 +70,7 @@ const toolConfig: ToolConfig = {
   icon: HeartPulse,
   updatedDate: "Aggiornato Marzo 2026",
   heroImage: HERO_IMG,
+  heroImageAlt: "Calcolo Danno Biologico 2026 — Tabelle Milano e Tabella Unica Nazionale",
   heroEyebrow: "Strumento Gratuito — Aggiornato Marzo 2026",
   heroTitle: "Calcolo Danno Biologico",
   heroDescription:

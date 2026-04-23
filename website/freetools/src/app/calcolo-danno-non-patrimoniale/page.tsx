@@ -69,6 +69,7 @@ const toolConfig: ToolConfig = {
   icon: Scale,
   updatedDate: "Aggiornato Marzo 2026",
   heroImage: HERO_IMG,
+  heroImageAlt: "Calcolo Danno Non Patrimoniale 2026 — Tabelle Milano aggiornate",
   heroEyebrow: "Strumento Gratuito — Aggiornato Marzo 2026",
   heroTitle: "Calcolo Danno Non Patrimoniale",
   heroDescription:

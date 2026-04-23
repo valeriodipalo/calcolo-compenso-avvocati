@@ -62,6 +62,7 @@ const toolConfig: ToolConfig = {
   icon: TrendingUp,
   updatedDate: "Aggiornato al 2026",
   heroImage: HERO_IMG,
+  heroImageAlt: "Calcolo Rivalutazione Monetaria 2026 — indici ISTAT FOI e interessi legali",
   heroEyebrow: "Calcolatore ISTAT, Indici FOI e Guida Completa",
   heroTitle: "Calcolo Rivalutazione Monetaria 2026",
   heroDescription:

@@ -68,6 +68,7 @@ const toolConfig: ToolConfig = {
   icon: Scale,
   updatedDate: "Aggiornato al 2026",
   heroImage: HERO_IMG,
+  heroImageAlt: "Contributo Unificato 2026 — tabella scaglioni e calcolatore per valore causa",
   heroEyebrow: "Tabella, Calcolo e Guida Completa",
   heroTitle: "Contributo Unificato 2026",
   heroDescription:

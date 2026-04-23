@@ -54,6 +54,7 @@ const toolConfig: ToolConfig = {
   icon: Clock,
   updatedDate: "Aggiornato al 2026",
   heroImage: HERO_IMG,
+  heroImageAlt: "Calcolo Termini di Impugnazione — appello, cassazione e sospensione feriale",
   heroEyebrow: "Calcolatore, Tabelle e Guida Completa",
   heroTitle: "Calcolo Termini di Impugnazione",
   heroDescription:

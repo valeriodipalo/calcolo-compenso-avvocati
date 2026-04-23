@@ -78,6 +78,7 @@ const toolConfig: ToolConfig = {
   icon: FileText,
   updatedDate: "Aggiornato al 2026",
   heroImage: HERO_IMG,
+  heroImageAlt: "Calcolo Fattura Avvocato 2026 — calcolatore diretto e inverso con IVA, CPA e ritenuta",
   heroEyebrow: "Calcolatore Diretto e Inverso, Guida Completa",
   heroTitle: "Calcolo Fattura Avvocato 2026",
   heroDescription:
