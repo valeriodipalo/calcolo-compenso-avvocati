@@ -74,7 +74,7 @@ const toolConfig: ToolConfig = {
   heroDescription:
     "Tabella contributo unificato con scaglioni aggiornati al 2026. Calcolo rapido per valore della causa, decreto ingiuntivo, pignoramento, processo tributario e giudice di pace. Esenzioni, sanzioni e normativa.",
   heroReference:
-    "D.P.R. 115/2002 e successive modificazioni \u2014 Aggiornato alla Legge di Bilancio 2025",
+    "D.P.R. 115/2002 e successive modificazioni — Aggiornato alla Legge di Bilancio 2025",
   sections,
   disclaimerLines: [
     "Le informazioni contenute in questa pagina hanno carattere meramente informativo e non costituiscono parere legale.",

@@ -27,7 +27,7 @@ const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028236822/PYXMa
 export const metadata: Metadata = {
   title: "Calcolo Interessi Legali 2026: Tasso, Tabella e Calcolatore",
   description:
-    "Calcola gli interessi legali online con il calcolatore aggiornato al 2026. Tasso 1,60%, tabella storica completa, formula e guida Art. 1284 c.c.",
+    "Calcola gli interessi legali online con il calcolatore aggiornato al 2026. Tasso 1,60%, tabella storica completa, formula di calcolo e guida all'Art. 1284 c.c.",
   alternates: {
     canonical: "/calcolo-interessi-legali",
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     url: "/calcolo-interessi-legali",
     title: "Calcolo Interessi Legali 2026: Tasso, Tabella e Calcolatore",
     description:
-      "Calcola gli interessi legali online con il calcolatore aggiornato al 2026. Tasso 1,60%, tabella storica completa, formula e guida Art. 1284 c.c.",
+      "Calcola gli interessi legali online con il calcolatore aggiornato al 2026. Tasso 1,60%, tabella storica completa, formula di calcolo e guida all'Art. 1284 c.c.",
     images: [
       {
         url: HERO_IMG,
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Calcolo Interessi Legali 2026: Tasso, Tabella e Calcolatore",
     description:
-      "Calcola gli interessi legali online con il calcolatore aggiornato al 2026. Tasso 1,60%, tabella storica completa, formula e guida Art. 1284 c.c.",
+      "Calcola gli interessi legali online con il calcolatore aggiornato al 2026. Tasso 1,60%, tabella storica completa, formula di calcolo e guida all'Art. 1284 c.c.",
   },
 };
 
@@ -69,7 +69,7 @@ const toolConfig: ToolConfig = {
   heroDescription:
     "Calcola gli interessi legali con il calcolatore aggiornato al tasso 2026 (1,60%). Tabella storica completa dei tassi dal 1942, formula di calcolo, anatocismo, interessi moratori e normativa di riferimento.",
   heroReference:
-    "Art. 1284 Codice Civile \u2014 DM Economia 10 dicembre 2025 (G.U. n. 289 del 13/12/2025)",
+    "Art. 1284 Codice Civile — DM Economia 10 dicembre 2025 (G.U. n. 289 del 13/12/2025)",
   sections,
   disclaimerLines: [
     "Le informazioni contenute in questa pagina hanno carattere meramente informativo e non costituiscono parere legale.",
@@ -100,7 +100,7 @@ export default function CalcoloInteressiLegaliPage() {
         data={articleSchema({
           headline: "Calcolo Interessi Legali 2026: Tasso, Tabella Storica e Calcolatore Online",
           description:
-            "Guida completa al calcolo degli interessi legali: tasso 2026 all\u20191,60%, tabella storica dal 1942, formula I = C × S × N / 36.500, anatocismo, interessi moratori e normativa.",
+            "Guida completa al calcolo degli interessi legali: tasso 2026 all'1,60%, tabella storica dal 1942, formula I = C × S × N / 36.500, anatocismo, interessi moratori e normativa.",
           path: "/calcolo-interessi-legali",
           datePublished: "2026-03-10",
           dateModified: "2026-03-10",
@@ -148,7 +148,7 @@ export default function CalcoloInteressiLegaliPage() {
       <LegalTable
         headers={["Periodo", "Tasso annuo", "Norma di riferimento"]}
         rows={tassiStorici.map((t) => [
-          `${formatDate(t.dal)} \u2013 ${t.al ? formatDate(t.al) : "in vigore"}`,
+          `${formatDate(t.dal)} – ${t.al ? formatDate(t.al) : "in vigore"}`,
           formatPct(t.tasso),
           t.norma,
         ])}
@@ -186,9 +186,9 @@ export default function CalcoloInteressiLegaliPage() {
         <LegalTable
           headers={["Periodo", "Giorni", "Tasso", "Interessi"]}
           rows={[
-            ["01/07/2025 \u2013 31/12/2025", "184", "2,00%", "\u20AC 100,82"],
-            ["01/01/2026 \u2013 30/06/2026", "181", "1,60%", "\u20AC 79,34"],
-            ["Totale", "365", "\u2014", "\u20AC 180,16"],
+            ["01/07/2025 – 31/12/2025", "184", "2,00%", "€ 100,82"],
+            ["01/01/2026 – 30/06/2026", "181", "1,60%", "€ 79,34"],
+            ["Totale", "365", "—", "€ 180,16"],
           ]}
         />
       </div>
@@ -203,7 +203,7 @@ export default function CalcoloInteressiLegaliPage() {
           headers={["", "Interessi Legali", "Interessi Moratori"]}
           rows={[
             ["Fonte", "Art. 1284 cod. civ.", "D.Lgs. 231/2002"],
-            ["Tasso 2026", "1,60%", "Tasso BCE + 8 pp (\u2248 11,65%)"],
+            ["Tasso 2026", "1,60%", "Tasso BCE + 8 pp (≈ 11,65%)"],
             ["Funzione", "Remuneratoria", "Sanzionatoria"],
             ["Ambito", "Tutti i rapporti civili", "Transazioni commerciali"],
             ["Decorrenza", "Liquidità ed esigibilità", "Scadenza termine di pagamento"],
@@ -247,7 +247,7 @@ export default function CalcoloInteressiLegaliPage() {
           { title: "Obbligazioni pecuniarie", desc: "Interessi automatici su crediti liquidi ed esigibili dal giorno della scadenza (art. 1282 c.c.)" },
           { title: "Risarcimento danni", desc: "Interessi dalla data del fatto illecito sulla somma liquidata rivalutata (Cass. SS.UU. 1712/1995)" },
           { title: "TFR e retribuzioni", desc: "Interessi legali sul TFR dalla cessazione del rapporto e sulle retribuzioni arretrate" },
-          { title: "Espropriazioni", desc: "Interessi sull\u2019indennità dal decreto di esproprio fino al pagamento (art. 22 DPR 327/2001)" },
+          { title: "Espropriazioni", desc: "Interessi sull'indennità dal decreto di esproprio fino al pagamento (art. 22 DPR 327/2001)" },
           { title: "Debiti condominiali", desc: "Interessi sulle quote non versate dalla data di approvazione della delibera assembleare" },
         ]} />
         <AlertBox variant="info" title="Prescrizione">
