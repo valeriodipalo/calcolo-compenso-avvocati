@@ -1,0 +1,73 @@
+source	keyword	search_volume	keyword_difficulty	cpc	main_intent
+ranked	tfr	49500	null	1.34	navigational
+ranked	tassazione tfr	12100	null	0.38	commercial
+ranked	calcola tfr	9900	null	0.51	commercial
+ranked+suggestions	calcolo tfr	9900	null	0.58	commercial
+ranked	tfr come calcolarlo	9900	null	0.51	commercial
+ranked	come si calcola il tfr	8100	null	0.17	commercial
+ranked	come si calcola tfr	8100	null	0.17	commercial
+ranked	anticipo tfr	6600	null	0.22	commercial
+ranked	tfr inps	6600	4	1.34	navigational
+ranked+suggestions	tfr calcolo	4400	null	0.25	commercial
+ranked	calcolatore online tfr	3600	null	0.5	transactional
+ranked+suggestions	calcolo tfr online	3600	null	0.77	transactional
+ranked	quanto è tassato il tfr	3600	null	0.87	commercial
+ranked	tassazione tfr azienda	3600	null	0.16	commercial
+ranked+suggestions	tfr calcolo online	3600	null	0.5	transactional
+ranked+suggestions	tfr: calcolo	3600	3	0.1	commercial
+suggestions	calcolo online tfr	3600	null	0.5	transactional
+suggestions	calcolo del tfr online	3600	null	0.5	informational
+ranked	calcolatore tfr netto	2900	null	1.18	transactional
+ranked+suggestions	calcolo netto tfr	2900	null	1.18	commercial
+ranked+suggestions	calcolo tfr netto	2900	null	0.99	commercial
+ranked	come calcolare il tfr	2900	2	0.37	commercial
+ranked	come calcolare tfr	2900	null	0.37	commercial
+ranked+suggestions	come calcolo il tfr	2900	2	0.37	commercial
+ranked	tassa tfr	2900	null	0.37	commercial
+ranked	tassazione su tfr	2900	null	0.02	commercial
+ranked	tasse tfr	2900	null	0.02	commercial
+ranked	tfr tassazione	2900	null	1.57	commercial
+suggestions	calcolo del tfr netto	2900	null	0.99	informational
+suggestions	calcolo tfr al netto	2900	10	0.99	informational
+suggestions	tfr calcolo netto	2900	null	0.99	commercial
+ranked	esempio busta paga liquidazione tfr	2400	null	0.02	commercial
+ranked	anticipazione del tfr dipendenti pubblici	1900	null	1.62	commercial
+ranked	anticipazione tfr dipendenti pubblici	1900	null	1.62	commercial
+ranked+suggestions	esempio pratico calcolo tfr	1600	null	0.49	commercial
+ranked	retribuzione utile tfr	1600	null	0.01	commercial
+suggestions	tfr netto calcolo online	1600	null	0.27	transactional
+suggestions	calcolo tfr per colf	880	null	0.22	informational
+suggestions	calcolo tfr colf	880	null	0.22	informational
+suggestions	calcolo del tfr colf	880	null	0.22	commercial
+suggestions	colf calcolo tfr	880	null	0.22	informational
+suggestions	tfr calcolo colf	880	null	0.22	commercial
+suggestions	tfr colf calcolo	880	null	0.22	commercial
+suggestions	come calcolo tfr netto	720	null	0.22	informational
+suggestions	tfr dipendenti pubblici calcolo	720	null	0.01	commercial
+suggestions	calcolo tfr dipendenti pubblici	720	null	0.01	informational
+suggestions	calcolo del tfr dipendenti pubblici	720	null	0.01	informational
+suggestions	calcolo tfr netto online	720	null	null	informational
+suggestions	calcolo del tfr dipendente pubblico	720	null	0.01	informational
+suggestions	calcolo online tfr netto	720	null	null	informational
+suggestions	calcolo del tfr netto online	720	null	null	informational
+suggestions	calcolo tfr per 3 mesi di lavoro	590	null	0.29	informational
+suggestions	tfr tassazione calcolo	590	2	null	commercial
+suggestions	tfr calcolo tassazione	590	null	null	commercial
+suggestions	calcolo tassazione tfr	590	2	null	informational
+suggestions	calcolo tfr tassazione	590	2	null	informational
+suggestions	tassazione tfr calcolo online	590	null	0.28	commercial
+suggestions	calcolo tfr online inps	590	11	1.4	transactional
+suggestions	tassazione tfr calcolo	590	3	null	commercial
+suggestions	calcolo del tfr	590	null	0.12	informational
+suggestions	rivalutazione tfr calcolo	480	null	null	informational
+suggestions	calcolo tfr per colf a ore	480	null	0.16	informational
+suggestions	calcolo tfr mese	480	2	null	commercial
+suggestions	calcolo rivalutazione tfr	480	null	null	informational
+suggestions	calcolo tfr rivalutazione	480	null	null	informational
+suggestions	tfr calcolo rivalutazione	480	null	null	commercial
+suggestions	calcolo tfr mensile	480	null	null	informational
+suggestions	tfr calcolo mensile	480	null	null	commercial
+suggestions	calcolo tfr colf a ore	480	null	0.16	informational
+suggestions	tfr mensile calcolo	480	null	null	commercial
+suggestions	calcolo del tfr mensile	480	null	null	informational
+suggestions	calcolo tfr lordo netto	390	null	null	informational

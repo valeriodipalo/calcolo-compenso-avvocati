@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays, Percent } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays, Percent, Wallet } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { ToolCluster, NavGroup } from "@/types/tool";
 
@@ -269,6 +269,19 @@ export const TOOLS: ToolEntry[] = [
     lastModified: "2026-04-23",
     cluster: "fiscale",
     relatedSlugs: ["calcolo-fattura-avvocato"],
+  },
+  {
+    slug: "calcolo-tfr",
+    title: "Calcolo TFR",
+    navLabel: "Calcolo TFR",
+    description:
+      "Calcolatore TFR 2026: lordo, netto con tassazione separata, rivalutazione ISTAT. Formula 1/13,5 ex art. 2120 c.c. per dipendenti privati, pubblici (6,91%) e colf. Anticipazione, previdenza complementare e normativa.",
+    icon: Wallet,
+    badge: "Nuovo",
+    ready: true,
+    lastModified: "2026-04-24",
+    cluster: "fiscale",
+    relatedSlugs: ["calcolo-fattura-avvocato", "scorporo-iva"],
   },
 ];
 

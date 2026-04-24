@@ -1,0 +1,60 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+secondary,tfr,49500,0,1.34,navigational,222.49,411.63
+secondary,tassazione tfr,12100,0,0.38,commercial,110.0,145.43
+primary,calcolo tfr,9900,0,0.58,commercial,99.5,145.01
+secondary,tfr inps,6600,4,1.34,navigational,77.99,144.29
+secondary,calcola tfr,9900,0,0.51,commercial,99.5,140.5
+secondary,tfr come calcolarlo,9900,0,0.51,commercial,99.5,140.5
+longtail,tfr tassazione,2900,0,1.57,commercial,53.85,104.68
+secondary,come si calcola il tfr,8100,0,0.17,commercial,90.0,104.13
+secondary,come si calcola tfr,8100,0,0.17,commercial,90.0,104.13
+secondary,quanto è tassato il tfr,3600,0,0.87,commercial,60.0,97.56
+secondary,anticipo tfr,6600,0,0.22,commercial,81.24,97.4
+secondary,calcolo netto tfr,2900,0,1.18,commercial,53.85,95.82
+secondary,calcolatore tfr netto,2900,0,1.18,transactional,53.85,95.82
+secondary,calcolo tfr online,3600,0,0.77,transactional,60.0,94.26
+secondary,calcolo tfr netto,2900,0,0.99,commercial,53.85,90.91
+longtail,calcolo del tfr netto,2900,0,0.99,informational,53.85,90.91
+longtail,tfr calcolo netto,2900,0,0.99,commercial,53.85,90.91
+secondary,anticipazione tfr dipendenti pubblici,1900,0,1.62,commercial,43.59,85.57
+longtail,anticipazione del tfr dipendenti pubblici,1900,0,1.62,commercial,43.59,85.57
+secondary,calcolatore online tfr,3600,0,0.50,transactional,60.0,84.33
+secondary,tfr calcolo online,3600,0,0.50,transactional,60.0,84.33
+longtail,calcolo online tfr,3600,0,0.50,transactional,60.0,84.33
+longtail,calcolo del tfr online,3600,0,0.50,informational,60.0,84.33
+secondary,calcolo tfr al netto,2900,10,0.99,informational,48.47,81.82
+secondary,tfr calcolo,4400,0,0.25,commercial,66.33,81.13
+longtail,come calcolare tfr,2900,0,0.37,commercial,53.85,70.8
+longtail,tassa tfr,2900,0,0.37,commercial,53.85,70.8
+longtail,come calcolare il tfr,2900,2,0.37,commercial,52.77,69.39
+longtail,come calcolo il tfr,2900,2,0.37,commercial,52.77,69.39
+secondary,tassazione tfr azienda,3600,0,0.16,commercial,60.0,68.91
+longtail,tfr: calcolo,3600,3,0.10,commercial,58.2,63.75
+secondary,esempio pratico calcolo tfr,1600,0,0.49,commercial,40.0,55.95
+longtail,tassazione su tfr,2900,0,0.02,commercial,53.85,54.92
+longtail,tasse tfr,2900,0,0.02,commercial,53.85,54.92
+secondary,esempio busta paga liquidazione tfr,2400,0,0.02,commercial,48.99,49.96
+secondary,tfr netto calcolo online,1600,0,0.27,transactional,40.0,49.56
+longtail,calcolo tfr online inps,590,11,1.40,transactional,21.62,40.54
+secondary,retribuzione utile tfr,1600,0,0.01,commercial,40.0,40.4
+longtail,calcolo tfr per colf,880,0,0.22,informational,29.66,35.56
+longtail,calcolo tfr colf,880,0,0.22,informational,29.66,35.56
+longtail,calcolo del tfr colf,880,0,0.22,commercial,29.66,35.56
+longtail,come calcolo tfr netto,720,0,0.22,informational,26.83,32.17
+longtail,calcolo tfr per 3 mesi di lavoro,590,0,0.29,informational,24.29,30.48
+longtail,tassazione tfr calcolo online,590,0,0.28,commercial,24.29,30.29
+longtail,calcolo tfr dipendenti pubblici,720,0,0.01,informational,26.83,27.1
+longtail,tfr dipendenti pubblici calcolo,720,0,0.01,commercial,26.83,27.1
+longtail,calcolo del tfr,590,0,0.12,informational,24.29,27.04
+longtail,calcolo tfr netto online,720,0,0,informational,26.83,26.83
+longtail,calcolo tfr per colf a ore,480,0,0.16,informational,21.91,25.16
+longtail,calcolo tfr colf a ore,480,0,0.16,informational,21.91,25.16
+longtail,tfr tassazione calcolo,590,2,0,commercial,23.8,23.8
+longtail,calcolo tassazione tfr,590,2,0,informational,23.8,23.8
+longtail,calcolo tfr tassazione,590,2,0,informational,23.8,23.8
+longtail,tassazione tfr calcolo,590,3,0,commercial,23.56,23.56
+longtail,rivalutazione tfr calcolo,480,0,0,informational,21.91,21.91
+longtail,calcolo rivalutazione tfr,480,0,0,informational,21.91,21.91
+longtail,calcolo tfr mensile,480,0,0,informational,21.91,21.91
+longtail,calcolo tfr mese,480,2,0,commercial,21.47,21.47
+longtail,calcolo tfr lordo netto,390,0,0,informational,19.75,19.75
