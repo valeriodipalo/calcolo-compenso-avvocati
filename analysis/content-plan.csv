@@ -20,7 +20,7 @@
 18,2,Scorporo IVA,/strumenti/fiscale/scorporo-iva/,/scorporo-iva,scorporo iva,33100,bassa,29133,€0.12,,LIVE,2026-04-23
 19,2,Calcolo IRPEF,/strumenti/fiscale/irpef/,,calcolo irpef,8100,16,11916,€0.23,,DA FARE
 20,2,Calcolo TFR,/strumenti/lavoro/tfr/,/calcolo-tfr,calcolo tfr,9900,bassa,12884,€0.41,commercial,LIVE,2026-04-24
-21,2,Ravvedimento Operoso,/strumenti/fiscale/ravvedimento-operoso/,,calcolo ravvedimento operoso,8100,bassa,10590,€5.84,,DA FARE
+21,2,Ravvedimento Operoso,/strumenti/fiscale/ravvedimento-operoso/,/ravvedimento-operoso,calcolo ravvedimento operoso,8100,bassa,10590,€5.84,,LIVE,2026-04-29
 22,2,Ritenuta d'Acconto,/strumenti/fiscale/ritenuta-acconto/,,calcolo ritenuta acconto,880,bassa,9285,€4.07,,DA FARE
 23,2,Detrazione Lavoro Dipendente,/strumenti/lavoro/detrazione-dipendente/,,detrazione lavoro dipendente,1600,bassa,11049,€1.28,,DA FARE
 24,2,Detrazione Pensione,/strumenti/lavoro/detrazione-pensione/,,detrazione redditi pensione,cluster,bassa,2143,,,DA FARE

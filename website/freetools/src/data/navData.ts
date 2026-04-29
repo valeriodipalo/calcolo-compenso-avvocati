@@ -127,7 +127,7 @@ export const NAV_SECTIONS: NavSection[] = [
           { label: "Calcolo TFR", slug: "calcolo-tfr", badge: "Nuovo" },
           { label: "Verifica partita IVA" },
           { label: "Calcolo IRPEF" },
-          { label: "Ravvedimento operoso" },
+          { label: "Ravvedimento operoso", slug: "ravvedimento-operoso", badge: "Nuovo" },
           { label: "Ritenuta d'acconto" },
         ],
       },

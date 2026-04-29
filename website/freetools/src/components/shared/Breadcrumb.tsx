@@ -20,11 +20,13 @@ export function Breadcrumb({ slug }: BreadcrumbProps) {
     ? `/${cluster.slug}`
     : `/#${cluster.id}`;
 
-  // JSON-LD always points to the hub slug (even before it exists)
+  // JSON-LD path matches the visible URL: hub slug if hubReady, otherwise
+  // homepage anchor. Linking to a non-existent hub URL invalidates the
+  // breadcrumb rich result.
   const breadcrumbItems = showClusterLevel
     ? [
         { name: "Home", path: "/" },
-        { name: cluster.label, path: `/${cluster.slug}` },
+        { name: cluster.label, path: clusterHref },
         { name: tool.title, path: `/${tool.slug}` },
       ]
     : [

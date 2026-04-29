@@ -124,6 +124,8 @@ export function articleSchema(opts: {
   dateModified: string;
   image?: string;
   sections?: string[];
+  wordCount?: number;
+  keywords?: string;
   author?: {
     name: string;
     jobTitle?: string;
@@ -148,6 +150,8 @@ export function articleSchema(opts: {
     }),
     datePublished: opts.datePublished,
     dateModified: opts.dateModified,
+    ...(opts.wordCount && { wordCount: opts.wordCount }),
+    ...(opts.keywords && { keywords: opts.keywords }),
     author: opts.author
       ? {
           "@type": "Person",
@@ -184,6 +188,7 @@ export function webApplicationSchema(opts: {
   description: string;
   path: string;
   applicationCategory?: string;
+  featureList?: string[];
 }) {
   return {
     "@context": "https://schema.org",
@@ -198,8 +203,10 @@ export function webApplicationSchema(opts: {
       "@type": "Offer",
       price: "0",
       priceCurrency: "EUR",
+      availability: "https://schema.org/InStock",
     },
     inLanguage: "it-IT",
+    ...(opts.featureList && { featureList: opts.featureList }),
     publisher: organizationSchema(),
   };
 }

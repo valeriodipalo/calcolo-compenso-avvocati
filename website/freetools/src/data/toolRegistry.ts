@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays, Percent, Wallet } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays, Percent, Wallet, FileWarning } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { ToolCluster, NavGroup } from "@/types/tool";
 
@@ -282,6 +282,19 @@ export const TOOLS: ToolEntry[] = [
     lastModified: "2026-04-24",
     cluster: "fiscale",
     relatedSlugs: ["calcolo-fattura-avvocato", "scorporo-iva"],
+  },
+  {
+    slug: "ravvedimento-operoso",
+    title: "Calcolo Ravvedimento Operoso",
+    navLabel: "Ravvedimento Operoso",
+    description:
+      "Calcolatore ravvedimento operoso 2026: sanzioni ridotte D.Lgs. 87/2024 (25% / 12,5%), tasso legale 1,60%, codici tributo F24 per IRPEF, IVA, IRES, IMU, ritenute. Sprint, breve, intermedio, lungo, ultrannuale con auto-rilevamento del regime.",
+    icon: FileWarning,
+    badge: "Nuovo",
+    ready: true,
+    lastModified: "2026-04-29",
+    cluster: "fiscale",
+    relatedSlugs: ["calcolo-interessi-moratori", "calcolo-interessi-legali"],
   },
 ];
 
