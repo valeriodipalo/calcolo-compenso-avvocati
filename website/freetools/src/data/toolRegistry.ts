@@ -66,7 +66,7 @@ export const CLUSTERS: ToolCluster[] = [
     slug: "fiscale-e-lavoro",
     description: "Strumenti per calcoli fiscali, tributari e del lavoro.",
     icon: Landmark,
-    hubReady: false,
+    hubReady: true,
   },
   {
     id: "immobiliare",

@@ -1,0 +1,40 @@
+type,keyword,sv,kd,cpc,intent,category
+primary,adempimenti fiscali,260,0,1.11,informational,PILLAR_PRIMARY
+primary,scadenze fiscali,390,35,0,informational,PILLAR_PRIMARY
+secondary,scadenze fiscali 2026,1000,0,3.58,commercial,PILLAR_SECONDARY
+secondary,regime fiscale forfettario,590,14,0.62,informational,PILLAR_SECONDARY
+secondary,trattamento fine rapporto,390,8,0,informational,PILLAR_SECONDARY
+secondary,calendario fiscale 2026,170,0,0,informational,PILLAR_SECONDARY
+secondary,compliance fiscale,110,0,1.36,informational,PILLAR_SECONDARY
+secondary,iva avvocato,110,0,0,informational,PILLAR_SECONDARY
+secondary,trattamento fine rapporto calcolo,590,0,0.12,informational,PILLAR_SECONDARY
+secondary,obblighi fiscali,90,0,0,informational,PILLAR_SECONDARY
+secondary,calendario fiscale,70,64,0.72,informational,PILLAR_SECONDARY
+secondary,guida fiscale,50,12,10.66,informational,PILLAR_SECONDARY
+secondary,tassazione lavoro autonomo,50,0,0,informational,PILLAR_SECONDARY
+longtail,come pagare f24 in ritardo,40,51,0,informational,PILLAR_SECONDARY
+longtail,dichiarazione redditi avvocato,30,50,0,informational,PILLAR_SECONDARY
+longtail,tasse avvocato,20,47,0,informational,PILLAR_SECONDARY
+longtail,scadenze fiscali professionisti,10,0,0,informational,PILLAR_SECONDARY
+longtail,scadenze tributarie,10,0,0,informational,PILLAR_SECONDARY
+longtail,adempimenti fiscali professionisti,10,0,0,informational,PILLAR_SECONDARY
+longtail,tassazione professionisti,10,0,0.79,informational,PILLAR_SECONDARY
+longtail,regolarizzazione fiscale,10,0,0,informational,PILLAR_SECONDARY
+longtail,guida tasse,10,0,0,informational,PILLAR_SECONDARY
+longtail,guida fisco,10,50,3.22,informational,PILLAR_SECONDARY
+protected,scorporo iva,33100,0,0.32,informational,PROTECTED_scorporo-iva
+protected,calcolo tfr,9900,0,0.58,commercial,PROTECTED_calcolo-tfr
+protected,calcolo ravvedimento operoso,8100,0,4.67,informational,PROTECTED_ravvedimento-operoso
+protected,tfr,49500,0,1.34,navigational,PROTECTED_calcolo-tfr
+protected,tassazione tfr,12100,0,0.38,commercial,PROTECTED_calcolo-tfr
+protected,ravvedimento operoso,22200,7,2.56,informational,PROTECTED_ravvedimento-operoso
+protected,calcolo iva,40500,1,1.12,transactional,PROTECTED_scorporo-iva
+protected,fattura con scorporo,9900,0,6.52,informational,PROTECTED_scorporo-iva
+protected,scorporo iva 22,2900,0,0.48,transactional,PROTECTED_scorporo-iva
+protected,calcolo iva 22,4400,2,0.44,transactional,PROTECTED_scorporo-iva
+protected,formula scorporo iva,1300,0,0.14,commercial,PROTECTED_scorporo-iva
+protected,tassazione separata tfr,880,0,0,informational,PROTECTED_calcolo-tfr
+protected,calcolo tfr netto,2900,0,0.99,commercial,PROTECTED_calcolo-tfr
+protected,anticipo tfr,6600,0,0.22,commercial,PROTECTED_calcolo-tfr
+protected,ravvedimento operoso 2026,4400,0,9.71,informational,PROTECTED_ravvedimento-operoso
+protected,calcolo ravvedimento operoso imu,1900,0,0,informational,PROTECTED_ravvedimento-operoso
