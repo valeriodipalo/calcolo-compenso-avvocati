@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays, Percent, Wallet, FileWarning } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays, Percent, Wallet, FileWarning, Handshake, Gavel, BadgePercent } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { ToolCluster, NavGroup } from "@/types/tool";
 
@@ -295,6 +295,58 @@ export const TOOLS: ToolEntry[] = [
     lastModified: "2026-04-29",
     cluster: "fiscale",
     relatedSlugs: ["calcolo-interessi-moratori", "calcolo-interessi-legali"],
+  },
+  {
+    slug: "calcolo-irpef",
+    title: "Calcolo IRPEF 2026",
+    navLabel: "Calcolo IRPEF",
+    description:
+      "Calcolatore IRPEF 2026 con nuove aliquote 23/33/43% (Legge 199/2025). Selettore 2024/2025/2026, detrazioni base art. 13 TUIR per dipendenti, pensionati e autonomi, no tax area, addizionali regionali e comunali e confronto risparmio rispetto al 2025.",
+    icon: Landmark,
+    badge: "Nuovo",
+    ready: true,
+    lastModified: "2026-05-16",
+    cluster: "fiscale",
+    relatedSlugs: ["calcolo-fattura-avvocato", "calcolo-tfr"],
+  },
+  {
+    slug: "compenso-stragiudiziale",
+    title: "Compenso Avvocato Stragiudiziale",
+    navLabel: "Compenso Stragiudiziale",
+    description:
+      "Calcola il compenso dell'avvocato per attività stragiudiziale: Tabella 25 D.M. 55/2014 e D.M. 147/2022, variazioni ±50%, spese generali 15%, CPA 4%, IVA 22% e ritenuta 20%. Pareri, transazioni, contratti, mediazione e negoziazione.",
+    icon: Handshake,
+    badge: "Nuovo",
+    ready: true,
+    lastModified: "2026-05-16",
+    cluster: "compensi",
+    relatedSlugs: ["scorporo-iva"],
+  },
+  {
+    slug: "opposizione-decreto-ingiuntivo",
+    title: "Opposizione a Decreto Ingiuntivo",
+    navLabel: "Opposizione DI",
+    description:
+      "Calcolatore della scadenza dei 40 giorni per opporre il decreto ingiuntivo: sospensione feriale (L. 742/1969), termini speciali per crediti di lavoro, debitori UE/extra-UE e abbreviazioni del giudice. Forma dell'atto (citazione vs ricorso), Riforma Cartabia, mediazione obbligatoria, contributo unificato dimezzato e fac-simile struttura atto.",
+    icon: Gavel,
+    badge: "Nuovo",
+    ready: true,
+    lastModified: "2026-05-16",
+    cluster: "termini",
+    relatedSlugs: ["contributo-unificato", "calcolo-compenso"],
+  },
+  {
+    slug: "calcolo-percentuale",
+    title: "Calcolo Percentuale",
+    navLabel: "Calcolo Percentuale",
+    description:
+      "Calcolatore percentuale online gratuito con 7 modalità: percentuale di un numero, sconto, aumento, variazione, percentuale inversa, IVA e sconti successivi composti. Formula visibile, calcolo step-by-step, trucchi mentali e formule pronte per Excel.",
+    icon: BadgePercent,
+    badge: "Nuovo",
+    ready: true,
+    lastModified: "2026-05-16",
+    cluster: "generici",
+    relatedSlugs: ["scorporo-iva", "calcolo-giorni-tra-date"],
   },
 ];
 

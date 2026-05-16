@@ -1,0 +1,41 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+primary,opposizione decreto ingiuntivo,3600,0,0.62,informational,60.0,88.95
+secondary,opposizione a decreto ingiuntivo,3600,0,0.62,informational,60.0,88.95
+secondary,opposizione a decreto ingiuntivo riforma cartabia,590,0,1.70,informational,24.29,48.42
+secondary,calcolo termine opposizione decreto ingiuntivo,1300,0,0,informational,36.06,36.06
+secondary,calcolo termini opposizione decreto ingiuntivo,1300,2,0,informational,35.33,35.33
+secondary,opposizione decreto ingiuntivo termini,1000,0,0,informational,31.62,31.62
+secondary,opposizione decreto ingiuntivo termine,1000,0,0,informational,31.62,31.62
+secondary,opposizione decreto ingiuntivo giudice di pace,1000,0,0,transactional,31.62,31.62
+secondary,opposizione a decreto ingiuntivo giudice di pace,1000,0,0,transactional,31.62,31.62
+secondary,termini opposizione decreto ingiuntivo,1000,0,0,informational,31.62,31.62
+secondary,termine opposizione decreto ingiuntivo,1000,0,0,informational,31.62,31.62
+secondary,termine per opposizione a decreto ingiuntivo,1000,0,0,informational,31.62,31.62
+secondary,art 645 cpc,880,0,0,informational,29.66,29.66
+secondary,contributo unificato opposizione a decreto ingiuntivo,880,0,0,transactional,29.66,29.66
+secondary,opposizione decreto ingiuntivo sospensione feriale,480,0,0,transactional,21.91,21.91
+secondary,opposizione decreto ingiuntivo riforma cartabia fac simile,390,0,0,informational,19.75,19.75
+secondary,opposizione decreto ingiuntivo mediazione,320,0,0.02,informational,17.89,18.24
+secondary,opposizione a decreto ingiuntivo cartabia,320,0,0,informational,17.89,17.89
+secondary,opposizione tardiva a decreto ingiuntivo,320,0,0,transactional,17.89,17.89
+longtail,opponente,260,0,0,informational,16.12,16.12
+longtail,ricorso in opposizione a decreto ingiuntivo giudice di pace,260,0,0,transactional,16.12,16.12
+longtail,opposizione decreto ingiuntivo giudice di pace cartabia,260,0,0,transactional,16.12,16.12
+longtail,notifica opposizione a decreto ingiuntivo,210,0,0.02,transactional,14.49,14.78
+longtail,atto di citazione opposizione decreto ingiuntivo,210,0,0,informational,14.49,14.49
+longtail,atto di citazione in opposizione a decreto ingiuntivo,210,0,0,informational,14.49,14.49
+longtail,notifica opposizione decreto ingiuntivo,210,0,0,informational,14.49,14.49
+longtail,opposizione a decreto ingiuntivo citazione o ricorso,210,0,0,informational,14.49,14.49
+longtail,iscrizione a ruolo opposizione a decreto ingiuntivo,170,0,0,transactional,13.04,13.04
+longtail,ricorso in opposizione a decreto ingiuntivo,170,0,0,transactional,13.04,13.04
+longtail,ricorso opposizione decreto ingiuntivo,170,0,0,informational,13.04,13.04
+longtail,opposizione a decreto ingiuntivo ricorso o citazione,140,0,0,transactional,11.83,11.83
+longtail,opposizione a decreto ingiuntivo fac simile,140,0,0,informational,11.83,11.83
+longtail,art 643 cpc,140,0,0,informational,11.83,11.83
+longtail,art 641 cpc,110,0,0,informational,10.49,10.49
+longtail,opposizione decreto ingiuntivo lavoro,90,0,0,informational,9.49,9.49
+longtail,termini costituzione opposizione decreto ingiuntivo,90,0,0,informational,9.49,9.49
+longtail,termine ridotto opposizione decreto ingiuntivo,50,0,0,informational,7.07,7.07
+longtail,opposizione decreto ingiuntivo costo,50,0,0,transactional,7.07,7.07
+longtail,provvisoria esecutivita decreto ingiuntivo,40,0,0,informational,6.32,6.32
+longtail,decreto ingiuntivo opposizione tempi,30,0,0,informational,5.48,5.48

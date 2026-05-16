@@ -1,0 +1,47 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+secondary,aliquota irpef 2025,60500,1,0.06,informational,243.51,257.7
+secondary,scaglioni irpef,27100,2,0.04,informational,161.33,167.66
+secondary,aliquote irpef,18100,0,0.18,informational,134.54,156.8
+secondary,irpef,40500,26,0.04,informational,148.92,154.76
+secondary,irpef aliquote,18100,4,0.18,informational,129.15,150.53
+secondary,aliquota irpef,18100,11,0.18,informational,119.74,139.56
+secondary,irpef 2025,12100,7,0.23,informational,102.3,123.48
+secondary,aliquote irpef 2024,12100,0,0.02,informational,110.0,112.18
+secondary,aliquota irpef 2024,12100,3,0.02,informational,106.7,108.81
+secondary,scaglioni irpef 2024,9900,7,0.00,informational,92.53,92.53
+secondary,aliquote irpef 2025 scaglioni,4400,2,0.40,informational,65.01,86.88
+secondary,calcola irpef,6600,10,0.15,informational,73.12,83.34
+primary,calcolo irpef,6600,17,0.15,informational,67.43,76.85
+secondary,irpef calcolo,6600,17,0.15,informational,67.43,76.85
+secondary,scaglione irpef,4400,0,0.03,informational,66.33,68.29
+secondary,scaglione irpef 2025,4400,4,0.03,informational,63.68,65.56
+secondary,nuove aliquote irpef 2026,2900,1,0.18,informational,53.31,62.14
+secondary,calcolo irpef 2025,5400,24,0.09,informational,55.85,60.66
+longtail,simulatore calcolo irpef 2026 gratis,1000,0,1.37,informational,31.62,58.91
+secondary,irpef scaglioni,4400,15,0.03,informational,56.38,58.05
+secondary,irpef 2025 scaglioni,2900,1,0.02,informational,53.31,54.37
+secondary,taglio irpef 2026 simulazione,2900,0,0.00,informational,53.85,53.85
+longtail,calcolo irpef esempio,2400,6,0.02,informational,46.05,46.96
+longtail,calcolo irpef online,1900,8,0.02,informational,40.1,40.9
+longtail,irpef calcolo online,1900,8,0.02,informational,40.1,40.9
+longtail,simulatore calcolo irpef pensione netta,480,0,1.18,informational,21.91,38.98
+longtail,simulatore calcolo irpef 2025 gratis,1600,11,0.00,informational,35.6,35.6
+longtail,calcolo irpef 2025 online,1300,12,0.02,informational,31.73,32.36
+longtail,calcolo irpef 2024,1300,19,0.00,informational,29.2,29.2
+longtail,simulatore calcolo irpef 2025,720,6,0.14,informational,25.22,28.53
+longtail,esempio calcolo irpef busta paga,720,0,0.03,informational,26.83,27.63
+longtail,esempio calcolo reddito fabbricati ai fini irpef,720,0,0.00,informational,26.83,26.83
+longtail,calcolo irpef 2026,1000,17,0.02,commercial,26.25,26.77
+longtail,simulatore calcolo irpef 2026,880,17,0.00,informational,24.62,24.62
+longtail,calcolo irpef mensile,590,1,0.00,informational,24.05,24.05
+longtail,calcolo irpef mese,590,5,0.00,informational,23.08,23.08
+longtail,calcolo irpef netta,480,17,0.02,informational,18.18,18.54
+longtail,calcolo netto irpef,480,17,0.02,informational,18.18,18.54
+longtail,irpef netta calcolo,480,17,0.02,informational,18.18,18.54
+longtail,simulazione calcolo irpef 2026,480,17,0.00,informational,18.18,18.18
+longtail,foglio excel calcolo irpef 2025 gratis,320,0,0.00,informational,17.89,17.89
+longtail,aliquota media irpef calcolo,320,14,0.00,informational,15.38,15.38
+longtail,calcolo irpef 2025 andreani,320,19,0.00,informational,14.49,14.49
+longtail,calcolo aliquota media irpef,320,20,0.00,informational,14.31,14.31
+longtail,calcolo irpef pensioni oggi,390,31,0.00,informational,13.63,13.63
+longtail,calcolo irpef pensionati,260,25,0.00,informational,12.09,12.09

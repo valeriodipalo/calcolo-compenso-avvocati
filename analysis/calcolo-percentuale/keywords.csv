@@ -1,0 +1,130 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+primary,calcolo percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcolatore percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcolatrice percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcolo della percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcoli percentuali,110000,0,0.02,informational,331.66,338.23
+secondary,calcolare la percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcola la percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcola percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcola una percentuale,110000,0,0.02,transactional,331.66,338.23
+secondary,calcolare le percentuali,110000,0,0.02,informational,331.66,338.23
+secondary,calcolare percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcolare una percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcolatore di percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcolatore di percentuali,110000,0,0.02,commercial,331.66,338.23
+secondary,calcolatrice di percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcolatrice per percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcolatrice per percentuali,110000,0,0.02,informational,331.66,338.23
+secondary,calcolatrice percentuali,110000,0,0.02,informational,331.66,338.23
+secondary,calcoli con le percentuali,110000,0,0.02,informational,331.66,338.23
+secondary,calcoli con percentuali,110000,0,0.02,informational,331.66,338.23
+secondary,calcolo con le percentuali,110000,0,0.02,informational,331.66,338.23
+secondary,calcolo con percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcolo delle percentuali,110000,0,0.02,informational,331.66,338.23
+secondary,calcolo di percentuali,110000,0,0.02,informational,331.66,338.23
+secondary,calcolo la percentuale,110000,0,0.02,informational,331.66,338.23
+secondary,calcolo percentuali,110000,0,0.02,informational,331.66,338.23
+secondary,percentuale calcolare,110000,0,0.02,informational,331.66,338.23
+secondary,percentuale calcolatrice,110000,0,0.02,informational,331.66,338.23
+secondary,percentuale calcolo,110000,0,0.02,informational,331.66,338.23
+secondary,percentuali calcolo,110000,0,0.02,informational,331.66,338.23
+secondary,come si calcola la percentuale,22200,0,0.00,informational,149.0,149.0
+secondary,come si calcola le percentuali,22200,0,0.00,informational,149.0,149.0
+secondary,come si calcola percentuale,22200,0,0.00,informational,149.0,149.0
+secondary,come si calcola una percentuale,22200,0,0.00,informational,149.0,149.0
+secondary,come si calcolano le percentuali,22200,0,0.00,informational,149.0,149.0
+secondary,percentuale come si calcola,22200,0,0.00,informational,149.0,149.0
+secondary,percentuali come si calcolano,22200,0,0.00,informational,149.0,149.0
+secondary,percentuali,22200,11,0.02,informational,132.61,135.23
+secondary,come calcolare le percentuali,14800,0,0.00,informational,121.66,121.66
+secondary,come calcolare percentuale,14800,0,0.00,informational,121.66,121.66
+secondary,come calcolare percentuali,14800,0,0.00,informational,121.66,121.66
+secondary,come calcolare una percentuale,14800,0,0.00,informational,121.66,121.66
+secondary,come calcolo la percentuale,14800,0,0.00,informational,121.66,121.66
+secondary,come calcolo percentuale,14800,0,0.00,informational,121.66,121.66
+secondary,come calcolare la percentuale,14800,5,0.00,informational,115.57,115.57
+secondary,come calcola la percentuale,14800,5,0.00,informational,115.57,115.57
+secondary,calcola sconto,9900,0,0.00,commercial,99.5,99.5
+secondary,calcola sconti,9900,0,0.00,informational,99.5,99.5
+secondary,calcolare gli sconti,9900,0,0.00,informational,99.5,99.5
+secondary,calcolare sconto,9900,0,0.00,informational,99.5,99.5
+secondary,calcolatore sconto,9900,0,0.00,informational,99.5,99.5
+secondary,calcolatrice sconto,9900,0,0.00,informational,99.5,99.5
+secondary,calcolo dello sconto,9900,0,0.00,informational,99.5,99.5
+secondary,calcolo percentuale online,8100,0,0.02,informational,90.0,91.78
+secondary,calcolatrice online percentuale,8100,0,0.02,informational,90.0,91.78
+secondary,calcola la percentuale online,8100,0,0.02,commercial,90.0,91.78
+secondary,calcola percentuale online,8100,0,0.02,informational,90.0,91.78
+secondary,calcolare la percentuale online,8100,0,0.02,commercial,90.0,91.78
+secondary,calcolare percentuale online,8100,0,0.02,informational,90.0,91.78
+secondary,calcolatore percentuale online,8100,0,0.02,informational,90.0,91.78
+secondary,calcolatrice percentuale online,8100,0,0.02,informational,90.0,91.78
+secondary,calcolo della percentuale online,8100,0,0.02,informational,90.0,91.78
+secondary,calcolo delle percentuali online,8100,0,0.02,informational,90.0,91.78
+secondary,calcolo online percentuale,8100,0,0.02,informational,90.0,91.78
+secondary,calcolo percentuale sconto,4400,0,0.00,informational,66.33,66.33
+secondary,calcolo percentuale di sconto,4400,0,0.00,informational,66.33,66.33
+secondary,calcola la percentuale di sconto,4400,0,0.00,informational,66.33,66.33
+secondary,calcola percentuale di sconto,4400,0,0.00,informational,66.33,66.33
+secondary,calcola percentuale sconto,4400,0,0.00,informational,66.33,66.33
+secondary,calcola sconto in percentuale,4400,0,0.00,informational,66.33,66.33
+secondary,calcola sconto percentuale,4400,0,0.00,informational,66.33,66.33
+secondary,calcolare la percentuale di sconto,4400,0,0.00,informational,66.33,66.33
+secondary,calcolare percentuale di sconto,4400,0,0.00,informational,66.33,66.33
+secondary,calcolare percentuale sconto,4400,0,0.00,informational,66.33,66.33
+secondary,calcolare sconto percentuale,4400,0,0.00,informational,66.33,66.33
+secondary,calcolatore percentuale sconto,4400,0,0.00,informational,66.33,66.33
+secondary,calcolatrice con percentuale di sconto,4400,0,0.00,commercial,66.33,66.33
+secondary,calcolatrice percentuale sconto,4400,0,0.00,informational,66.33,66.33
+secondary,calcolo della percentuale di sconto,4400,0,0.00,informational,66.33,66.33
+secondary,calcolo dello sconto percentuale,4400,0,0.00,informational,66.33,66.33
+secondary,calcolo percentuali di sconto,4400,0,0.00,informational,66.33,66.33
+secondary,calcolo percentuali sconto,4400,0,0.00,informational,66.33,66.33
+secondary,calcolo sconto percentuale,4400,0,0.00,informational,66.33,66.33
+secondary,percentuale sconto calcolo,4400,0,0.00,informational,66.33,66.33
+secondary,sconto percentuale calcolo,4400,0,0.00,informational,66.33,66.33
+secondary,percentuale di votanti,4400,0,0.00,informational,66.33,66.33
+secondary,percentuali di votanti,4400,2,0.00,informational,65.01,65.01
+longtail,calcolo percentuale di un numero,3600,0,0.02,informational,60.0,61.19
+longtail,calcola percentuale di un numero,3600,0,0.02,informational,60.0,61.19
+longtail,calcolo della percentuale di un numero,3600,0,0.02,informational,60.0,61.19
+longtail,calcolo percentuale tra due numeri,3600,0,0.00,informational,60.0,60.0
+longtail,calcola percentuale tra due numeri,3600,0,0.00,informational,60.0,60.0
+longtail,calcolo della percentuale tra due numeri,3600,0,0.00,informational,60.0,60.0
+longtail,calcolare la percentuale tra due numeri,3600,3,0.00,informational,58.2,58.2
+longtail,calcolo percentuale excel,2400,0,0.00,informational,48.99,48.99
+longtail,calcolo percentuale in excel,2400,0,0.00,informational,48.99,48.99
+longtail,calcolo percentuale con excel,2400,0,0.00,informational,48.99,48.99
+longtail,calcolo percentuale su excel,2400,0,0.00,informational,48.99,48.99
+longtail,excel calcolo percentuale,2400,0,0.00,informational,48.99,48.99
+longtail,calcolo della percentuale excel,2400,0,0.00,informational,48.99,48.99
+longtail,calcolo della percentuale in excel,2400,0,0.00,informational,48.99,48.99
+longtail,calcolo della percentuale con excel,2400,0,0.00,informational,48.99,48.99
+longtail,calcolo della percentuale su excel,2400,0,0.00,informational,48.99,48.99
+longtail,calcolo excel percentuale,2400,0,0.00,informational,48.99,48.99
+longtail,calcolo variazione percentuale,1600,0,0.00,informational,40.0,40.0
+longtail,variazione percentuale calcolo,1600,0,0.00,informational,40.0,40.0
+longtail,calcolo della variazione percentuale,1600,0,0.00,informational,40.0,40.0
+longtail,formula per calcolo percentuale,1600,0,0.00,informational,40.0,40.0
+longtail,formula calcolo percentuale,1300,0,0.00,informational,36.06,36.06
+longtail,calcolo percentuale formula,1300,0,0.00,informational,36.06,36.06
+longtail,formule calcolo percentuale,1300,0,0.00,informational,36.06,36.06
+longtail,percentuale calcolo formula,1300,0,0.00,informational,36.06,36.06
+longtail,formula per calcolo della percentuale,1300,0,0.00,informational,36.06,36.06
+longtail,formula calcolo della percentuale,1300,7,0.00,informational,33.53,33.53
+longtail,calcolo aumento percentuale,1000,0,0.00,informational,31.62,31.62
+longtail,calcolo percentuale di aumento,1000,0,0.00,informational,31.62,31.62
+longtail,calcolo percentuale aumento,1000,0,0.00,informational,31.62,31.62
+longtail,aumento percentuale calcolo,1000,0,0.00,informational,31.62,31.62
+longtail,calcolo aumento in percentuale,1000,0,0.00,informational,31.62,31.62
+longtail,incremento percentuale calcolo,880,0,0.00,informational,29.66,29.66
+longtail,calcolo della percentuale di incremento,880,0,0.00,informational,29.66,29.66
+longtail,calcolo percentuale prezzo,590,0,0.00,commercial,24.29,24.29
+longtail,calcolo percentuale stipendio,480,0,0.00,informational,21.91,21.91
+longtail,calcolo percentuale voto,390,0,0.00,informational,19.75,19.75
+longtail,calcolo percentuale iva,320,0,0.02,informational,17.89,18.24
+longtail,calcolo percentuale inverso,260,0,0.00,informational,16.12,16.12
+longtail,percentuale inversa calcolo,210,0,0.00,informational,14.49,14.49
+longtail,esercizi calcolo percentuale,170,0,0.00,informational,13.04,13.04
+longtail,esercizi calcolo percentuale inverso,90,0,0.00,informational,9.49,9.49

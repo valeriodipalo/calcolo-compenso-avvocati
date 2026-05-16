@@ -1,0 +1,39 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+primary,compenso avvocato stragiudiziale,4400,0,0,informational,66.33,66.33
+secondary,compensi avvocati stragiudiziali,4400,0,0,commercial,66.33,66.33
+secondary,parametri stragiudiziali,1300,0,0,informational,36.06,36.06
+secondary,parametri forensi stragiudiziale,1300,0,0,informational,36.06,36.06
+secondary,tariffe forensi stragiudiziale,1300,0,0,informational,36.06,36.06
+secondary,tariffa forense stragiudiziale,1300,0,0,informational,36.06,36.06
+secondary,parcella avvocato stragiudiziale,1000,0,0,transactional,31.62,31.62
+secondary,onorari avvocato stragiudiziale,880,0,0,informational,29.66,29.66
+secondary,tariffa avvocati stragiudiziale,880,0,0,commercial,29.66,29.66
+secondary,tariffe avvocato stragiudiziale,880,0,0,commercial,29.66,29.66
+secondary,compensi stragiudiziali,720,0,0,informational,26.83,26.83
+secondary,andreani parametri stragiudiziali,480,0,0,informational,21.91,21.91
+secondary,calcolo preventivo avvocati,480,0,0,commercial,21.91,21.91
+longtail,calcola compenso avvocato stragiudiziale,390,0,0,transactional,19.75,19.75
+longtail,calcolo compensi avvocato stragiudiziale,390,0,0,informational,19.75,19.75
+longtail,compensi avvocato giudiziale,320,0,0,commercial,17.89,17.89
+longtail,liquidazione compensi avvocati,320,0,0,transactional,17.89,17.89
+secondary,calcolo compensi avvocato andreani,480,24,0,transactional,16.65,16.65
+longtail,attivita stragiudiziale compenso avvocato,170,0,0,informational,13.04,13.04
+longtail,parametri avvocato stragiudiziale,140,0,0,transactional,11.83,11.83
+longtail,nota spese avvocato stragiudiziale,140,0,0,informational,11.83,11.83
+longtail,parametri stragiudiziali andreani,140,1,0,informational,11.71,11.71
+longtail,calcolo compenso stragiudiziale avvocato,110,0,0,commercial,10.49,10.49
+longtail,calcolo onorari avvocato stragiudiziale,110,0,0,informational,10.49,10.49
+longtail,compenso avvocato stragiudiziale andreani,110,0,0,commercial,10.49,10.49
+longtail,compensi avvocati attivita stragiudiziale,110,0,0,informational,10.49,10.49
+longtail,competenze avvocato stragiudiziale,140,14,0,informational,10.18,10.18
+longtail,parametri civili stragiudiziali,40,0,0,informational,6.32,6.32
+longtail,parametri stragiudiziali civili,40,0,0,informational,6.32,6.32
+longtail,tabella parametri stragiudiziali,0,0,0,informational,0.0,0.0
+longtail,compenso avvocato per transazione stragiudiziale,0,0,0,commercial,0.0,0.0
+longtail,compenso avvocato stragiudiziale percentuale,0,0,0,informational,0.0,0.0
+longtail,compenso avvocato stragiudiziale civile,0,0,0,commercial,0.0,0.0
+longtail,compenso avvocato stragiudiziale lavoro,0,0,0,commercial,0.0,0.0
+longtail,compenso avvocato stragiudiziale redazione contratto,0,0,0,commercial,0.0,0.0
+longtail,compenso avvocato per parere stragiudiziale,0,0,0,commercial,0.0,0.0
+longtail,attivita stragiudiziale avvocato senza preventivo,0,0,0,informational,0.0,0.0
+longtail,tariffe forensi stragiudiziale civile,0,0,0,informational,0.0,0.0
