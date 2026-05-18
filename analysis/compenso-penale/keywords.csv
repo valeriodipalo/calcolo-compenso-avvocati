@@ -1,0 +1,42 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+secondary,compensi avvocato penale,1600,0,1.86,informational,40.0,82.03
+primary,parcella avvocato penale,1900,0,1.19,transactional,43.59,77.76
+secondary,parcella di un avvocato penalista,1900,0,1.19,transactional,43.59,77.76
+secondary,compenso avvocato penale,880,0,1.86,informational,29.66,60.84
+secondary,calcolo parcella avvocato penale,880,0,1.76,informational,29.66,59.78
+secondary,calcola parcella avvocato penale,880,0,1.76,transactional,29.66,59.78
+secondary,onorario avvocato penale,720,0,1.66,commercial,26.83,53.08
+secondary,quanto costa avvocato penale,720,5,1.4,informational,25.49,47.81
+longtail,parcella penale andreani,720,4,1.08,informational,25.76,44.62
+secondary,calcola parcella penale,880,0,0,transactional,29.66,29.66
+secondary,parametri forensi penale,880,0,0,informational,29.66,29.66
+secondary,parametri forensi penali,880,0,0,informational,29.66,29.66
+secondary,nota spese penale,720,0,0,informational,26.83,26.83
+secondary,tariffa forense penale,720,0,0,informational,26.83,26.83
+secondary,tariffario forense penale,720,0,0,informational,26.83,26.83
+secondary,tariffe forensi penale,720,0,0,informational,26.83,26.83
+secondary,tariffe forensi penali,720,0,0,informational,26.83,26.83
+longtail,andreani parametri penale,720,1,0,informational,26.56,26.56
+longtail,andreani parametri penali,720,4,0,informational,25.76,25.76
+longtail,parametri penali andreani,720,6,0,informational,25.22,25.22
+longtail,parametri penali avvocato,480,0,0,informational,21.91,21.91
+longtail,compensi avvocati penale,320,0,0,informational,17.89,17.89
+longtail,avvocato andreani parametri penali,110,0,0,navigational,10.49,10.49
+longtail,fase introduttiva penale,110,0,0,informational,10.49,10.49
+longtail,nota spese avvocato penale fac simile,110,0,0,informational,10.49,10.49
+longtail,compenso avvocato penale andreani,90,0,0,informational,9.49,9.49
+longtail,gratuito patrocinio penale compenso,90,5,0,informational,9.01,9.01
+longtail,fase istruttoria penale,70,0,0,informational,8.37,8.37
+longtail,DM 55 2014 penale,70,0,0,informational,8.37,8.37
+longtail,avvocato andreani parcella penale,50,0,0,transactional,7.07,7.07
+longtail,compenso avvocato penale tribunale monocratico,50,0,0,informational,7.07,7.07
+longtail,compenso avvocato penale giudice di pace,50,0,0,informational,7.07,7.07
+longtail,compenso avvocato penale cassazione,50,0,0,informational,7.07,7.07
+longtail,fase studio penale avvocato,50,0,0,informational,7.07,7.07
+longtail,fase decisionale penale,50,0,0,informational,7.07,7.07
+longtail,tabella 15 parametri forensi,50,0,0,informational,7.07,7.07
+longtail,DM 147 2022 penale avvocato,50,0,0,informational,7.07,7.07
+longtail,parcella avvocato penale andreani,40,0,0,transactional,6.32,6.32
+longtail,parcella penale avvocato andreani,30,0,0,transactional,5.48,5.48
+longtail,compenso avvocato corte d'assise,30,0,0,informational,5.48,5.48
+longtail,aumento compenso avvocato pluralità imputati,30,0,0,informational,5.48,5.48

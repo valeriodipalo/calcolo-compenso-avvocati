@@ -1,0 +1,402 @@
+[
+  {
+    "keyword": "parcella",
+    "sv": 9900,
+    "cpc": 3.84,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 21
+  },
+  {
+    "keyword": "gup",
+    "sv": 5400,
+    "cpc": 0,
+    "kd": 4,
+    "intent": "informational",
+    "rank_pos": 56
+  },
+  {
+    "keyword": "oblazione",
+    "sv": 5400,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 38
+  },
+  {
+    "keyword": "altro nome della calcolosi",
+    "sv": 4400,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 29
+  },
+  {
+    "keyword": "avvocati con patrocinio gratuito",
+    "sv": 2900,
+    "cpc": 2.33,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 61
+  },
+  {
+    "keyword": "tribunale.di sorveglianza",
+    "sv": 2900,
+    "cpc": 0.53,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 50
+  },
+  {
+    "keyword": "art 633 codice penale",
+    "sv": 2400,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 44
+  },
+  {
+    "keyword": "udienza preliminare",
+    "sv": 2400,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 107
+  },
+  {
+    "keyword": "denuncia querela",
+    "sv": 1900,
+    "cpc": 0.2,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 53
+  },
+  {
+    "keyword": "parcella avvocato penale",
+    "sv": 1900,
+    "cpc": 1.19,
+    "kd": 0,
+    "intent": "transactional",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "parcella di un avvocato penalista",
+    "sv": 1900,
+    "cpc": 1.19,
+    "kd": 0,
+    "intent": "transactional",
+    "rank_pos": 2
+  },
+  {
+    "keyword": "querela e denuncia",
+    "sv": 1900,
+    "cpc": 0.2,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 61
+  },
+  {
+    "keyword": "querela o denuncia",
+    "sv": 1900,
+    "cpc": 0.2,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 60
+  },
+  {
+    "keyword": "633 cpc",
+    "sv": 1600,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 50
+  },
+  {
+    "keyword": "compensi avvocato penale",
+    "sv": 1600,
+    "cpc": 1.86,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "ufficio del giudice di pace di roma settore penale",
+    "sv": 1600,
+    "cpc": 1.23,
+    "kd": 0,
+    "intent": "navigational",
+    "rank_pos": 16
+  },
+  {
+    "keyword": "codice ateco avvocato",
+    "sv": 1300,
+    "cpc": 0.13,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 43
+  },
+  {
+    "keyword": "interrogatorio preventivo",
+    "sv": 1300,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 37
+  },
+  {
+    "keyword": "gratuito patrocinio telematico",
+    "sv": 1000,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 80
+  },
+  {
+    "keyword": "monocratico",
+    "sv": 1000,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 63
+  },
+  {
+    "keyword": "articolo 7 dpr 633 72",
+    "sv": 880,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "commercial",
+    "rank_pos": 98
+  },
+  {
+    "keyword": "avvocato penalista cosa fa",
+    "sv": 880,
+    "cpc": 2.86,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 50
+  },
+  {
+    "keyword": "avvocato penalista: cosa fa",
+    "sv": 880,
+    "cpc": 2.86,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 48
+  },
+  {
+    "keyword": "calcola parcella penale",
+    "sv": 880,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "transactional",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "calcolo parcella avvocato penale",
+    "sv": 880,
+    "cpc": 1.76,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "parametri forensi penale",
+    "sv": 880,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "parametri forensi penali",
+    "sv": 880,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "andreani parametri penale",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 1,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "andreani parametri penali",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 4,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "calcolo in colonna",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 92
+  },
+  {
+    "keyword": "denunce penali",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 64
+  },
+  {
+    "keyword": "denuncia penale",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 77
+  },
+  {
+    "keyword": "fac-simile prestazione occasionale",
+    "sv": 720,
+    "cpc": 0.21,
+    "kd": 0,
+    "intent": "commercial",
+    "rank_pos": 34
+  },
+  {
+    "keyword": "nota spese penale",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "onorario avvocato penale",
+    "sv": 720,
+    "cpc": 1.66,
+    "kd": 0,
+    "intent": "commercial",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "parametri penali andreani",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 6,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "parcella penale andreani",
+    "sv": 720,
+    "cpc": 1.08,
+    "kd": 4,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "tariffa forense penale",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "tariffario forense penale",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "tariffe forensi penale",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "tariffe forensi penali",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "andreani penale",
+    "sv": 590,
+    "cpc": 0,
+    "kd": 29,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "art.9 dpr 633/72",
+    "sv": 590,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 22
+  },
+  {
+    "keyword": "dm milano centrale",
+    "sv": 590,
+    "cpc": 0.19,
+    "kd": 0,
+    "intent": "navigational",
+    "rank_pos": 42
+  },
+  {
+    "keyword": "gip/gup",
+    "sv": 590,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 58
+  },
+  {
+    "keyword": "giudice minorile onorario",
+    "sv": 590,
+    "cpc": 0.48,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 32
+  },
+  {
+    "keyword": "giudice monocratico",
+    "sv": 590,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 59
+  },
+  {
+    "keyword": "gup gip",
+    "sv": 590,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 23
+  },
+  {
+    "keyword": "liquidazione giudiziale cos'è",
+    "sv": 590,
+    "cpc": 0.03,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 80
+  },
+  {
+    "keyword": "misure di massa tabella",
+    "sv": 590,
+    "cpc": 0.07,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 64
+  }
+]

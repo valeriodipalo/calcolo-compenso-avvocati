@@ -1,0 +1,154 @@
+[
+  {
+    "keyword": "avvocati con patrocinio gratuito",
+    "sv": 2900,
+    "cpc": 2.33,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 61
+  },
+  {
+    "keyword": "parcella avvocato penale",
+    "sv": 1900,
+    "cpc": 1.19,
+    "kd": 0,
+    "intent": "transactional",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "parcella di un avvocato penalista",
+    "sv": 1900,
+    "cpc": 1.19,
+    "kd": 0,
+    "intent": "transactional",
+    "rank_pos": 2
+  },
+  {
+    "keyword": "compensi avvocato penale",
+    "sv": 1600,
+    "cpc": 1.86,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "gratuito patrocinio telematico",
+    "sv": 1000,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 80
+  },
+  {
+    "keyword": "calcola parcella penale",
+    "sv": 880,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "transactional",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "calcolo parcella avvocato penale",
+    "sv": 880,
+    "cpc": 1.76,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "parametri forensi penale",
+    "sv": 880,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "parametri forensi penali",
+    "sv": 880,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "andreani parametri penale",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 1,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "andreani parametri penali",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 4,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "nota spese penale",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "onorario avvocato penale",
+    "sv": 720,
+    "cpc": 1.66,
+    "kd": 0,
+    "intent": "commercial",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "parametri penali andreani",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 6,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "parcella penale andreani",
+    "sv": 720,
+    "cpc": 1.08,
+    "kd": 4,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "tariffa forense penale",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "tariffario forense penale",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "tariffe forensi penale",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  },
+  {
+    "keyword": "tariffe forensi penali",
+    "sv": 720,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational",
+    "rank_pos": 1
+  }
+]

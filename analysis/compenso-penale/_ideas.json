@@ -1,0 +1,702 @@
+[
+  {
+    "keyword": "calcolo codice fiscale",
+    "sv": 1220000,
+    "cpc": 0.1,
+    "kd": 10,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo ascendente",
+    "sv": 135000,
+    "cpc": 0.76,
+    "kd": 5,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo percentuale",
+    "sv": 110000,
+    "cpc": 0.02,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo bmi",
+    "sv": 110000,
+    "cpc": 0.11,
+    "kd": 2,
+    "intent": "informational"
+  },
+  {
+    "keyword": "protezi9ne civile",
+    "sv": 90500,
+    "cpc": 0.31,
+    "kd": 70,
+    "intent": "informational"
+  },
+  {
+    "keyword": "protezione civile",
+    "sv": 90500,
+    "cpc": 0.31,
+    "kd": 70,
+    "intent": "informational"
+  },
+  {
+    "keyword": "avvocato",
+    "sv": 90500,
+    "cpc": 2.68,
+    "kd": 63,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo codice fiscale inverso",
+    "sv": 60500,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "ascendente calcolo",
+    "sv": 60500,
+    "cpc": 0.79,
+    "kd": 3,
+    "intent": "informational"
+  },
+  {
+    "keyword": "protezione civile calabria",
+    "sv": 60500,
+    "cpc": 0,
+    "kd": 38,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo termini processuali",
+    "sv": 60500,
+    "cpc": 4.46,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calabria protezione civile",
+    "sv": 60500,
+    "cpc": 0,
+    "kd": 45,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo rata mutuo",
+    "sv": 49500,
+    "cpc": 1.7,
+    "kd": 45,
+    "intent": "informational"
+  },
+  {
+    "keyword": "invalidità civile",
+    "sv": 49500,
+    "cpc": 1.24,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo settimane gravidanza",
+    "sv": 49500,
+    "cpc": 1.05,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo stipendio netto",
+    "sv": 49500,
+    "cpc": 0,
+    "kd": 17,
+    "intent": "informational"
+  },
+  {
+    "keyword": "borsa di studio",
+    "sv": 49500,
+    "cpc": 2.22,
+    "kd": 18,
+    "intent": "informational"
+  },
+  {
+    "keyword": "servizio civile",
+    "sv": 40500,
+    "cpc": 1.37,
+    "kd": 74,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo iva",
+    "sv": 40500,
+    "cpc": 1.12,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo percorso",
+    "sv": 40500,
+    "cpc": 2.83,
+    "kd": 35,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo mutuo",
+    "sv": 40500,
+    "cpc": 2.38,
+    "kd": 45,
+    "intent": "informational"
+  },
+  {
+    "keyword": "fase lunare oggi",
+    "sv": 40500,
+    "cpc": 3.57,
+    "kd": 10,
+    "intent": "informational"
+  },
+  {
+    "keyword": "qui fattura",
+    "sv": 40500,
+    "cpc": 3.44,
+    "kd": 3,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo pensione inps",
+    "sv": 40500,
+    "cpc": 1.14,
+    "kd": 9,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo termine",
+    "sv": 40500,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo termini",
+    "sv": 40500,
+    "cpc": 0,
+    "kd": 7,
+    "intent": "informational"
+  },
+  {
+    "keyword": "regime forfettario",
+    "sv": 33100,
+    "cpc": 1.47,
+    "kd": 38,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo pedaggio autostradale",
+    "sv": 33100,
+    "cpc": 0.03,
+    "kd": 26,
+    "intent": "informational"
+  },
+  {
+    "keyword": "percentuale votanti referendum",
+    "sv": 33100,
+    "cpc": 0,
+    "kd": 4,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo ldl",
+    "sv": 33100,
+    "cpc": 1.13,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo imu",
+    "sv": 33100,
+    "cpc": 0.02,
+    "kd": 36,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo fattura avvocato",
+    "sv": 33100,
+    "cpc": 10.28,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "scorporo iva",
+    "sv": 33100,
+    "cpc": 0.32,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "protezione civile sicilia",
+    "sv": 27100,
+    "cpc": 0,
+    "kd": 54,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo pensione",
+    "sv": 27100,
+    "cpc": 1.46,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "protezione civile allerta meteo",
+    "sv": 27100,
+    "cpc": 0,
+    "kd": 85,
+    "intent": "informational"
+  },
+  {
+    "keyword": "studio medico",
+    "sv": 27100,
+    "cpc": 0.52,
+    "kd": 28,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo vincite lotto",
+    "sv": 27100,
+    "cpc": 1.92,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo colesterolo ldl",
+    "sv": 27100,
+    "cpc": 1.45,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo giorni tra due date",
+    "sv": 27100,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "protezione civile allerte meteo",
+    "sv": 27100,
+    "cpc": 0,
+    "kd": 96,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo termine andreani",
+    "sv": 27100,
+    "cpc": 0,
+    "kd": 12,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo termini andreani",
+    "sv": 27100,
+    "cpc": 0,
+    "kd": 24,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcola termini andreani",
+    "sv": 27100,
+    "cpc": 0,
+    "kd": 22,
+    "intent": "informational"
+  },
+  {
+    "keyword": "ai studio",
+    "sv": 27100,
+    "cpc": 0.15,
+    "kd": 32,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo tema natale",
+    "sv": 27100,
+    "cpc": 1.52,
+    "kd": 20,
+    "intent": "informational"
+  },
+  {
+    "keyword": "andreani calcolo termini",
+    "sv": 27100,
+    "cpc": 0,
+    "kd": 24,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo giorno",
+    "sv": 22200,
+    "cpc": 0,
+    "kd": 1,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo dei giorni",
+    "sv": 22200,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "codice civile",
+    "sv": 22200,
+    "cpc": 0.24,
+    "kd": 48,
+    "intent": "informational"
+  },
+  {
+    "keyword": "percentuale",
+    "sv": 22200,
+    "cpc": 0.02,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "fattura in cloud",
+    "sv": 22200,
+    "cpc": 0.37,
+    "kd": 24,
+    "intent": "commercial"
+  },
+  {
+    "keyword": "come si calcola la percentuale",
+    "sv": 22200,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo interesse composto",
+    "sv": 22200,
+    "cpc": 0.31,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "stato civile",
+    "sv": 22200,
+    "cpc": 0.68,
+    "kd": 35,
+    "intent": "informational"
+  },
+  {
+    "keyword": "avvocato di difesa",
+    "sv": 22200,
+    "cpc": 0.11,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "tema natale calcolo",
+    "sv": 22200,
+    "cpc": 0.51,
+    "kd": 20,
+    "intent": "informational"
+  },
+  {
+    "keyword": "radio studio nord",
+    "sv": 22200,
+    "cpc": 0,
+    "kd": 20,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo giorni",
+    "sv": 22200,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "compenso avvocato",
+    "sv": 18100,
+    "cpc": 0,
+    "kd": 2,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo cf",
+    "sv": 18100,
+    "cpc": 0.03,
+    "kd": 4,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo buoni fruttiferi postali",
+    "sv": 18100,
+    "cpc": 0.23,
+    "kd": 9,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo ore",
+    "sv": 18100,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "avvocato lovati",
+    "sv": 18100,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "navigational"
+  },
+  {
+    "keyword": "calcolo pedaggio",
+    "sv": 18100,
+    "cpc": 0.04,
+    "kd": 26,
+    "intent": "informational"
+  },
+  {
+    "keyword": "compenso avvocati",
+    "sv": 18100,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "commercial"
+  },
+  {
+    "keyword": "calcolo peso ideale",
+    "sv": 18100,
+    "cpc": 0.13,
+    "kd": 2,
+    "intent": "informational"
+  },
+  {
+    "keyword": "contributo unificato calcolo",
+    "sv": 18100,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo contributo unificato",
+    "sv": 18100,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo pedaggio autostrada",
+    "sv": 18100,
+    "cpc": 0.08,
+    "kd": 15,
+    "intent": "informational"
+  },
+  {
+    "keyword": "motorizzazione civile milano",
+    "sv": 18100,
+    "cpc": 2.46,
+    "kd": 0,
+    "intent": "navigational"
+  },
+  {
+    "keyword": "calcolo superbollo",
+    "sv": 14800,
+    "cpc": 1.06,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "qui studio voi stadio",
+    "sv": 14800,
+    "cpc": 0,
+    "kd": 13,
+    "intent": "informational"
+  },
+  {
+    "keyword": "percentuale votanti referendum 2026",
+    "sv": 14800,
+    "cpc": 0,
+    "kd": 6,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo bollo",
+    "sv": 14800,
+    "cpc": 0.78,
+    "kd": 6,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo isee",
+    "sv": 14800,
+    "cpc": 1.2,
+    "kd": 29,
+    "intent": "informational"
+  },
+  {
+    "keyword": "radar protezione civile",
+    "sv": 14800,
+    "cpc": 0,
+    "kd": 39,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo imc",
+    "sv": 14800,
+    "cpc": 0.08,
+    "kd": 2,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo bmi donna",
+    "sv": 14800,
+    "cpc": 0.09,
+    "kd": 1,
+    "intent": "informational"
+  },
+  {
+    "keyword": "radio studio più",
+    "sv": 14800,
+    "cpc": 0.02,
+    "kd": 36,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo peso forma",
+    "sv": 14800,
+    "cpc": 0.12,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "come calcolare percentuale",
+    "sv": 14800,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo ascendente gratis",
+    "sv": 14800,
+    "cpc": 0.89,
+    "kd": 1,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo media ponderata",
+    "sv": 14800,
+    "cpc": 0,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "scorporo fattura avvocato",
+    "sv": 14800,
+    "cpc": 9.67,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo gravidanza",
+    "sv": 14800,
+    "cpc": 1.11,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo ascendente paolo fox",
+    "sv": 12100,
+    "cpc": 1.77,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "ospedale civile",
+    "sv": 12100,
+    "cpc": 0.65,
+    "kd": 22,
+    "intent": "navigational"
+  },
+  {
+    "keyword": "calcolo ovulazione",
+    "sv": 12100,
+    "cpc": 0.4,
+    "kd": 10,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo fabbisogno calorico",
+    "sv": 12100,
+    "cpc": 0.21,
+    "kd": 16,
+    "intent": "informational"
+  },
+  {
+    "keyword": "giustizia civile",
+    "sv": 12100,
+    "cpc": 1.48,
+    "kd": 59,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo netto lordo",
+    "sv": 12100,
+    "cpc": 4.53,
+    "kd": 17,
+    "intent": "informational"
+  },
+  {
+    "keyword": "aci calcolo bollo",
+    "sv": 12100,
+    "cpc": 0.94,
+    "kd": 17,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo giorni fertili",
+    "sv": 12100,
+    "cpc": 0.57,
+    "kd": 4,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo metabolismo basale",
+    "sv": 12100,
+    "cpc": 0.08,
+    "kd": 0,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo netto da lordo",
+    "sv": 12100,
+    "cpc": 4.53,
+    "kd": 17,
+    "intent": "informational"
+  },
+  {
+    "keyword": "michelin calcolo percorso",
+    "sv": 12100,
+    "cpc": 0,
+    "kd": 100,
+    "intent": "informational"
+  },
+  {
+    "keyword": "calcolo interessi",
+    "sv": 12100,
+    "cpc": 1.65,
+    "kd": 19,
+    "intent": "informational"
+  },
+  {
+    "keyword": "codice penale",
+    "sv": 12100,
+    "cpc": 0.26,
+    "kd": 49,
+    "intent": "informational"
+  },
+  {
+    "keyword": "percorso michelin calcolo",
+    "sv": 12100,
+    "cpc": 0,
+    "kd": 55,
+    "intent": "informational"
+  }
+]
