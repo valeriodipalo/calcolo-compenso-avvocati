@@ -7,6 +7,7 @@ import {
   FileText,
   Home,
   Calculator,
+  ShieldAlert,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -49,7 +50,7 @@ export const NAV_SECTIONS: NavSection[] = [
         iconFg: "text-[oklch(0.40_0.08_250)]",
         tools: [
           { label: "Calcolo compenso civile", slug: "calcolo-compenso", badge: "Top" },
-          { label: "Calcolo compenso penale" },
+          { label: "Calcolo compenso penale", slug: "compenso-penale", badge: "Nuovo" },
           { label: "Compenso stragiudiziale", slug: "compenso-stragiudiziale", badge: "Nuovo" },
           { label: "Calcolo fattura avvocato", slug: "calcolo-fattura-avvocato" },
           { label: "Fattura elettronica" },
@@ -108,6 +109,18 @@ export const NAV_SECTIONS: NavSection[] = [
           { label: "Interessi legali", slug: "calcolo-interessi-legali" },
           { label: "Interessi moratori", slug: "calcolo-interessi-moratori" },
           { label: "Rivalutazione monetaria", slug: "calcolo-rivalutazione-monetaria" },
+        ],
+      },
+      {
+        id: "penale",
+        name: "Penale ed esecuzione",
+        description: "Fine pena, liberazione anticipata, benefici",
+        icon: ShieldAlert,
+        iconBg: "bg-[oklch(0.94_0.04_30)]",
+        iconFg: "text-[oklch(0.45_0.14_30)]",
+        tools: [
+          { label: "Calcolo fine pena con liberazione anticipata", slug: "calcolo-fine-pena-liberazione-anticipata", badge: "Nuovo" },
+          { label: "Calcolo compenso penale" },
         ],
       },
     ],

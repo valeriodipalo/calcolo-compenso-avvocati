@@ -38,7 +38,7 @@ When triggered with `/create-page {args}`:
 
 ### Content Plan Integration
 
-**Always start from the content plan.** Read `analysis/content-plan.csv` — this is the master list of all planned pages.
+**Always start from the content plan.** Read `analysis/content-plan.csv` — this is the master list of all planned pages and 
 
 **Cluster assignment is mandatory.** Read `src/data/toolRegistry.ts` to get the `CLUSTERS` array and the cluster map from `silos-restructure/2.Manus-Guida Operativa_ Ristrutturazione a Topic Cluster per avvocatotools.it.md` (Section 3). Every new tool MUST be assigned to exactly one cluster.
 
@@ -465,6 +465,7 @@ Add the new tool to the **single registry file** `src/data/toolRegistry.ts`:
 - `relatedSlugs` is optional but recommended — list 1-2 tools from OTHER clusters that have a logical workflow connection (e.g., after computing damages, the user may need interest calculation)
 
 This **automatically** updates (reads from `toolRegistry.ts`):
+- `Navbar.tsx` (desktop + mobile nav links, grouped by cluster)
 - `SiteFooter.tsx` (footer tools list, grouped by cluster)
 - `app/page.tsx` (homepage tools grid, organized in cluster sections)
 - `app/sitemap.ts` (XML sitemap entries)

@@ -1,4 +1,4 @@
-# Piano SEO Strategico — Piattaforma Avvocati
+ # Piano SEO Strategico — Piattaforma AvvocatiM `
 
 > **Obiettivo**: Replicare e superare avvocatoandreani.it con tool legali/fiscali gratuiti di qualita superiore.
 > **Audience**: 100% italiana | **Stack**: Next.js 16 + TypeScript + Tailwind CSS + shadcn/ui

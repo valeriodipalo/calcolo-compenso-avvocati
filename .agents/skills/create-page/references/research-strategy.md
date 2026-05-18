@@ -181,9 +181,9 @@ Perplexity tools have no explicit `language` parameter. To get results in Italia
 
 4. **`perplexity_ask` and `perplexity_reason`**: use `search_context_size: "high"` to pull more Italian web context, and add `search_domain_filter` to prioritize Italian legal sources:
    ```json
-   ["normattiva.it", "gazzettaufficiale.it", "giustizia.it", "agenziaentrate.gov.it", "altalex.com", "brocardi.it", "camera.it", "senato.it"]
+   ["normattiva.it", "gazzettaufficiale.it", "giustizia.it", "agenziaentrate.gov.it", "altalex.com", "brocardi.it", "camera.it", "senato.it", "finanze.gov.it", "inps.it", "istat.it", "fiscooggi.it"]
    ```
-   Note: domain filter restricts results to ONLY those domains — use it when you need precise institutional data. Omit it when you need broader coverage (practical how-to content, fiscal treatment, etc.).
+   Note: domain filter restricts results to ONLY those domains — use it when you need precise institutional data. Omit it when you need broader coverage (practical how-to content, fiscal treatment, etc.). The last four domains (`finanze.gov.it`, `inps.it`, `istat.it`, `fiscooggi.it`) are most relevant when the topic is fiscal — you can safely keep them in every call since Perplexity will simply not return results from them for non-fiscal queries.
 
 ### Research Workflow
 
@@ -203,6 +203,23 @@ Perplexity tools have no explicit `language` parameter. To get results in Italia
 | Ministero della Giustizia | giustizia.it | Ministerial circulars, official interpretations |
 | Altalex | altalex.com/guide/ | Comprehensive guides with organized tables |
 | Agenzia delle Entrate | agenziaentrate.gov.it | Tax-related circulars and resolutions |
+
+### Additional Sources for Fiscal Topics (Suggested, Not Mandatory)
+
+When the tool covers imposte, contributi, rivalutazioni or other fiscal subjects, the sources above often aren't enough. Consider reaching for these as well — pick based on the topic, nothing here is required:
+
+| Source | URL Pattern | Use For |
+|--------|------------|---------|
+| MEF – Dip. Finanze | finanze.gov.it | Note tecniche, statistiche fiscali, Portale Federalismo Fiscale (tributi locali) |
+| INPS | inps.it | Aliquote contributive, massimali, TFR, fondo garanzia |
+| ISTAT | istat.it | Indici di rivalutazione (FOI), coefficienti statistici |
+| FiscoOggi | fiscooggi.it | Rivista telematica ufficiale dell'Agenzia delle Entrate — citabile come fonte istituzionale |
+| AdE-Riscossione | agenziaentrateriscossione.gov.it | Cartelle, rateazioni, rottamazione |
+| Cassazione Sez. Tributaria | italgiure.giustizia.it | Orientamenti giurisprudenziali su contenziosi tributari |
+| CNDCEC | commercialisti.it | Documenti tecnici dell'ordine dei commercialisti |
+| Dossier parlamentari | temi.camera.it, senato.it | Riassunti tecnici di riforme fiscali (utili per EEAT) |
+
+Editorial sources of decent quality (use only for cross-check, never as the sole source for a fact): **Eutekne** (eutekne.info), **Il Sole 24 Ore – Norme e Tributi**, **IPSOA**. These do not belong in the `sources` array of the page.
 
 ### Normattiva URL Patterns
 

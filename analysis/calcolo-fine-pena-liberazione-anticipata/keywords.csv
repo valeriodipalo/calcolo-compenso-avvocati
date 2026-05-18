@@ -1,0 +1,32 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+secondary,liberazione anticipata,2400,5,0.00,informational,46.54,46.54
+secondary,liberazione anticipata 75 giorni 2025,590,5,0.00,informational,23.08,23.08
+secondary,liberazione anticipata 75 giorni 2026,480,5,0.00,transactional,20.81,20.81
+primary,calcolo fine pena con liberazione anticipata,390,5,0.00,informational,18.76,18.76
+secondary,liberazione anticipata speciale,320,5,0.00,informational,16.99,16.99
+secondary,liberazione anticipata nuova legge,320,5,0.00,informational,16.99,16.99
+secondary,liberazione anticipata 45 o 75 giorni 2025,210,5,0.00,informational,13.77,13.77
+secondary,art 54 op,170,5,0.00,informational,12.39,12.39
+secondary,liberazione anticipata 45 o 75 giorni 2024,140,5,0.00,informational,11.24,11.24
+secondary,liberazione anticipata tempi di risposta,110,5,0.00,informational,9.96,9.96
+secondary,fine pena,90,5,0.09,informational,9.01,9.79
+secondary,liberazione anticipata 75 giorni cartabia,90,5,0.00,informational,9.01,9.01
+secondary,sconto di pena ogni 6 mesi,90,5,0.00,commercial,9.01,9.01
+secondary,calcolo liberazione anticipata,90,5,0.00,informational,9.01,9.01
+secondary,calcolo fine pena con liberazione anticipata 2025,90,5,0.00,commercial,9.01,9.01
+secondary,semestre quanti mesi sono,90,5,0.00,informational,9.01,9.01
+longtail,calcolo liberazione anticipata andreani,70,5,0.00,informational,7.95,7.95
+longtail,calcolo pena online,50,5,0.00,informational,6.72,6.72
+longtail,software calcolo pena,50,5,0.00,informational,6.72,6.72
+longtail,calcolo fine pena online,30,5,0.00,informational,5.2,5.2
+longtail,ordine di scarcerazione per fine pena,30,5,0.00,informational,5.2,5.2
+longtail,fine pena virtuale,30,5,0.00,informational,5.2,5.2
+longtail,reati ostativi 4 bis,30,5,0.00,informational,5.2,5.2
+longtail,liberazione anticipata 2026 ultime notizie,30,5,0.00,informational,5.2,5.2
+longtail,calcolo fine pena,70,47,0.00,informational,4.43,4.43
+longtail,presofferto liberazione anticipata,20,5,0.00,informational,4.25,4.25
+longtail,interruzioni della pena,20,5,0.00,informational,4.25,4.25
+longtail,calcolo semestri liberazione anticipata,10,5,0.00,transactional,3.0,3.0
+longtail,calcolo fine pena detentiva,10,5,0.00,informational,3.0,3.0
+longtail,calcolo fine pena virtuale,10,5,0.00,transactional,3.0,3.0
+longtail,liberazione anticipata fine pena virtuale,10,5,0.00,transactional,3.0,3.0

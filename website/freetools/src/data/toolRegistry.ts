@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays, Percent, Wallet, FileWarning, Handshake, Gavel, BadgePercent } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays, Percent, Wallet, FileWarning, Handshake, Gavel, BadgePercent, Lock, ShieldAlert } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { ToolCluster, NavGroup } from "@/types/tool";
 
@@ -53,6 +53,14 @@ export const CLUSTERS: ToolCluster[] = [
     hubReady: false,
   },
   {
+    id: "penale",
+    label: "Diritto Penale ed Esecuzione",
+    slug: "diritto-penale-esecuzione",
+    description: "Strumenti per il calcolo del fine pena, dei benefici penitenziari e dei termini in materia penale.",
+    icon: ShieldAlert,
+    hubReady: false,
+  },
+  {
     id: "danno",
     label: "Danno e Risarcimento",
     slug: "danno-e-risarcimento",
@@ -94,7 +102,7 @@ export const NAV_GROUPS: NavGroup[] = [
   {
     id: "processo",
     label: "Processo",
-    clusterIds: ["compensi", "termini", "contributo"],
+    clusterIds: ["compensi", "termini", "contributo", "penale"],
   },
   {
     id: "calcoli",
@@ -323,6 +331,19 @@ export const TOOLS: ToolEntry[] = [
     relatedSlugs: ["scorporo-iva"],
   },
   {
+    slug: "compenso-penale",
+    title: "Calcolo Compenso Avvocato Penale",
+    navLabel: "Compenso Penale",
+    description:
+      "Calcolatore parcella avvocato penalista 2026: Tabella 15 D.M. 147/2022, 14 competenze (Giudice di Pace, GIP/GUP, Tribunale Monocratico, Collegiale, Cassazione, Sorveglianza), 4 fasi del procedimento, aumenti per pluralità imputati, gratuito patrocinio penale −1/3 ex art. 106-bis DPR 115/2002, spese generali 15%, CPA 4%, IVA 22%, ritenuta 20%.",
+    icon: ShieldAlert,
+    badge: "Nuovo",
+    ready: true,
+    lastModified: "2026-05-18",
+    cluster: "compensi",
+    relatedSlugs: ["scorporo-iva", "calcolo-interessi-legali"],
+  },
+  {
     slug: "opposizione-decreto-ingiuntivo",
     title: "Opposizione a Decreto Ingiuntivo",
     navLabel: "Opposizione DI",
@@ -334,6 +355,19 @@ export const TOOLS: ToolEntry[] = [
     lastModified: "2026-05-16",
     cluster: "termini",
     relatedSlugs: ["contributo-unificato", "calcolo-compenso"],
+  },
+  {
+    slug: "calcolo-fine-pena-liberazione-anticipata",
+    title: "Calcolo Fine Pena con Liberazione Anticipata",
+    navLabel: "Calcolo Fine Pena",
+    description:
+      "Calcolatore fine pena con liberazione anticipata art. 54 O.P.: 45 giorni per ogni semestre di pena scontata, fine pena virtuale obbligatorio dal 2024 (art. 656 c.p.p. c. 10-bis), interruzioni della pena, presofferto in custodia cautelare e domiciliari. Aggiornato a Corte Cost. sent. 201/2025.",
+    icon: Lock,
+    badge: "Nuovo",
+    ready: true,
+    lastModified: "2026-05-18",
+    cluster: "penale",
+    relatedSlugs: ["calcolo-giorni-tra-date"],
   },
   {
     slug: "calcolo-percentuale",

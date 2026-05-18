@@ -10,7 +10,7 @@
 9,1,Danno Biologico,/strumenti/danno-risarcimento/biologico/,/calcolo-danno-biologico,calcolo danno biologico,8100,3,10954,€1.44,nav,LIVE,2026-03-30
 10,1,Danno Non Patrimoniale,/strumenti/danno-risarcimento/non-patrimoniale/,/calcolo-danno-non-patrimoniale,calcolo danno non patrimoniale,1300,6,6671,€0.97,info,LIVE
 11,1,Compenso Stragiudiziale,/strumenti/compenso-avvocato/stragiudiziale/,/compenso-stragiudiziale,compenso avvocato stragiudiziale,4400,bassa,6679,,info+comm,LIVE,2026-05-16
-12,1,Compenso Penale,/strumenti/compenso-avvocato/penale/,,parametri penali avvocato,cluster,bassa,4751,,nav,DA FARE
+12,1,Compenso Penale,/strumenti/compenso-avvocato/penale/,/compenso-penale,parcella avvocato penale,1900,bassa,4751,€1.19,transactional,LIVE,2026-05-18,"Primary KW shift: 'parcella avvocato penale' (SV 1.900 / KD 0 / CPC €1.19 transactional) ha opportunity_score più alto di 'parametri penali avvocato'. Page include 14 competenze Tabella 15 D.M. 147/2022 + calcolatore con gratuito patrocinio penale -1/3 (art. 106-bis vs 50% civile)."
 13,1,Risarcimento INAIL,/strumenti/danno-risarcimento/inail/,,calcolo risarcimento inail,140,bassa,6649,,nav,DA FARE
 14,1,Termini Memorie 183/190,/strumenti/termini-processuali/memorie-183-190/,,termini memorie integrative,cluster,bassa,5923,,info,DA FARE
 15,1,Tabella Contributo Unificato,/tabelle/contributo-unificato/,,tabella contributo unificato,cluster,bassa,11868,,info,DA FARE
@@ -50,3 +50,4 @@
 48,4,Esempio Testamento Olografo,/guide/testamento-olografo-esempio/,,,,,,2680,,DA FARE
 49,4,Relata di Notifica PEC,/guide/relata-notifica-pec/,,,,,,3534,,DA FARE
 50,4,Ultimo Indice ISTAT,/tabelle/ultimo-indice-istat/,,,,,,2028,,DA FARE
+51,2,Calcolo Fine Pena con Liberazione Anticipata,/strumenti/penale/calcolo-fine-pena-liberazione-anticipata/,/calcolo-fine-pena-liberazione-anticipata,calcolo fine pena con liberazione anticipata,390,5,2200,,informational,LIVE,2026-05-18,"Apre cluster penale (nuovo). Off-plan add: ricerca DFS post-suggerimento utente. Coverage: art. 54 O.P. + D.L. 92/2024 + Corte Cost. 201/2025 (29-12-2025). Experiment: H2s in forma di domanda (9/11)."
