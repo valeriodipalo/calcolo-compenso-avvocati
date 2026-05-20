@@ -1,0 +1,64 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+secondary,art 183 cpc,2400,15,0,informational,41.64,41.64
+longtail,sabato giorno feriale o festivo,2400,15,0,informational,41.64,41.64
+secondary,183 cpc,1600,15,0,informational,34.0,34.0
+secondary,art 190 cpc,1600,15,0,informational,34.0,34.0
+secondary,comparse conclusionali,390,15,1.58,informational,16.79,32.7
+secondary,calcolo termini 190,1300,10,0,informational,32.45,32.45
+secondary,190 cpc,1000,15,0,informational,26.88,26.88
+secondary,termine perentorio,720,10,0,informational,24.15,24.15
+secondary,memorie ex art 183 cpc,540,5,0,informational,22.08,22.08
+secondary,calcolo termini 190 cpc,480,8,0,informational,20.16,20.16
+secondary,termini 190 cpc,390,5,0,informational,18.76,18.76
+primary,termini memorie 183 cpc,260,5,0,informational,15.32,15.32
+secondary,calcolo termini conclusionali,260,5,0,transactional,15.32,15.32
+secondary,memorie di replica,260,5,0,informational,15.32,15.32
+secondary,termini 190,210,5,0,informational,13.77,13.77
+secondary,art 183,260,15,0,informational,13.71,13.71
+secondary,calcola termini 183,170,5,0,transactional,12.39,12.39
+secondary,calcolo termini 183,170,5,0,transactional,12.39,12.39
+secondary,memoria di replica fac simile,170,8,0,informational,12.0,12.0
+secondary,memorie integrative cartabia,170,12,0,informational,11.47,11.47
+longtail,art 155 cpc computo termini,170,12,0,informational,11.47,11.47
+secondary,calcolo termini comparsa conclusionale,140,5,0,transactional,11.24,11.24
+secondary,comparse conclusionali termini,140,8,0,informational,10.89,10.89
+secondary,memoria conclusionale,140,10,0,informational,10.65,10.65
+secondary,rimessione della causa in decisione,140,15,0,informational,10.06,10.06
+secondary,art 171 ter cpc,140,15,0,informational,10.06,10.06
+secondary,art 183 cpc comma 6,110,10,0,informational,9.44,9.44
+secondary,note conclusionali,110,10,0,informational,9.44,9.44
+secondary,note conclusive,110,10,0,informational,9.44,9.44
+secondary,memorie integrative,110,15,0,informational,8.91,8.91
+secondary,memorie integrative 171 ter,90,8,0,informational,8.73,8.73
+secondary,termini comparsa conclusionale,90,10,0,informational,8.54,8.54
+secondary,calcolo termini processuali 190,110,19,0,informational,8.5,8.5
+secondary,art 189 cpc cartabia,80,10,0,informational,8.05,8.05
+secondary,termini memorie cartabia,70,8,0,informational,7.7,7.7
+longtail,memorie 183 comma 6,40,8,0,informational,5.82,5.82
+longtail,memoria 183 cpc n 1,40,8,0,informational,5.82,5.82
+longtail,art 190 cpc abrogato,40,8,0,informational,5.82,5.82
+longtail,quando si applica sospensione feriale termini,40,12,0,informational,5.57,5.57
+longtail,memoria 183 cpc n 2,30,8,0,informational,5.04,5.04
+longtail,memoria 183 cpc n 3,30,8,0,informational,5.04,5.04
+longtail,art 190 cpc riforma cartabia,30,10,0,informational,4.93,4.93
+longtail,art 183 cpc riforma cartabia,30,10,0,informational,4.93,4.93
+longtail,mancato deposito memorie 171 ter,30,10,0,informational,4.93,4.93
+longtail,memorie ex art 183 c.p.c. riforma cartabia,30,10,0,informational,4.93,4.93
+longtail,memoria 171 ter n 1 modello,30,12,0,informational,4.82,4.82
+longtail,memoria 171 ter n 2 modello,30,12,0,informational,4.82,4.82
+longtail,art 275 bis cpc,30,12,0,informational,4.82,4.82
+longtail,termini ritroso udienza memorie,30,12,0,informational,4.82,4.82
+longtail,calcolo termini memorie 183,20,3,0,informational,4.34,4.34
+longtail,art 190 cpc giudizi pendenti,20,10,0,informational,4.02,4.02
+longtail,art 190 cpc vecchio rito,20,10,0,informational,4.02,4.02
+longtail,memorie 183 deposito tardivo,20,10,0,informational,4.02,4.02
+longtail,memoria 171 ter n 3 modello,20,12,0,informational,3.94,3.94
+longtail,discussione orale art 275 bis,20,12,0,informational,3.94,3.94
+longtail,note precisazione conclusioni art 189,20,12,0,informational,3.94,3.94
+longtail,calcolo termini ritroso prima udienza,20,12,0,informational,3.94,3.94
+longtail,termini memorie 183 cartabia,10,5,0,informational,3.0,3.0
+longtail,sospensione feriale termini memorie 183,10,5,0,informational,3.0,3.0
+longtail,decorrenza termini memorie 183 comunicazione cancelleria,10,5,0,informational,3.0,3.0
+longtail,rimessione in termini memorie 183,10,5,0,informational,3.0,3.0
+longtail,memorie 183 cpc sospensione termini feriali,10,5,0,transactional,3.0,3.0
+longtail,calcolo termini processuali memorie 183,10,5,0,informational,3.0,3.0

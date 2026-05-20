@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays, Percent, Wallet, FileWarning, Handshake, Gavel, BadgePercent, Lock, ShieldAlert } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays, Percent, Wallet, FileWarning, Handshake, Gavel, BadgePercent, Lock, ShieldAlert, FileClock, Stethoscope } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { ToolCluster, NavGroup } from "@/types/tool";
 
@@ -370,6 +370,19 @@ export const TOOLS: ToolEntry[] = [
     relatedSlugs: ["calcolo-giorni-tra-date"],
   },
   {
+    slug: "calcolo-termini-memorie",
+    title: "Calcolo Termini Memorie 183/190 c.p.c. e Cartabia",
+    navLabel: "Termini Memorie 183/190",
+    description:
+      "Calcolatore unificato dei termini delle memorie processuali civili: vecchio rito (artt. 183 c. 6 e 190 c.p.c., 30+30+20 e 60+20) e Riforma Cartabia (artt. 171-ter, 189 e 275-bis c.p.c., termini a ritroso 40+20+10, 60+30+15 e 30+15). Sospensione feriale, gestione sabato/festivi, modalità Cassazione 13201/2006, decorrenza, rimessione in termini e correttivo Cartabia 164/2024.",
+    icon: FileClock,
+    badge: "Nuovo",
+    ready: true,
+    lastModified: "2026-05-20",
+    cluster: "termini",
+    relatedSlugs: ["calcolo-compenso", "contributo-unificato"],
+  },
+  {
     slug: "calcolo-percentuale",
     title: "Calcolo Percentuale",
     navLabel: "Calcolo Percentuale",
@@ -381,6 +394,19 @@ export const TOOLS: ToolEntry[] = [
     lastModified: "2026-05-16",
     cluster: "generici",
     relatedSlugs: ["scorporo-iva", "calcolo-giorni-tra-date"],
+  },
+  {
+    slug: "calcolo-risarcimento-inail",
+    title: "Calcolo Risarcimento INAIL 2026",
+    navLabel: "Risarcimento INAIL",
+    description:
+      "Calcolatore risarcimento INAIL per infortunio sul lavoro e malattia professionale: indennizzo in capitale 6-15% (tabelle DM 12/07/2000 e DM 45/2019 unisex), rendita vitalizia 16-100% con quota biologica e patrimoniale, tabella coefficienti A-D, quote integrative familiari art. 77 T.U., rivalutazione DM 85/2025 (+0,8%) e Circ. INAIL 45/2025, danno differenziale e casi particolari (tunnel carpale, mesotelioma, COVID, in itinere).",
+    icon: Stethoscope,
+    badge: "Nuovo",
+    ready: true,
+    lastModified: "2026-05-20",
+    cluster: "danno",
+    relatedSlugs: ["calcolo-danno-biologico", "calcolo-rivalutazione-monetaria"],
   },
 ];
 

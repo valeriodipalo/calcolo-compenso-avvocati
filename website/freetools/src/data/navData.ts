@@ -70,7 +70,7 @@ export const NAV_SECTIONS: NavSection[] = [
           { label: "Opposizione decreto ingiuntivo", slug: "opposizione-decreto-ingiuntivo", badge: "Nuovo" },
           { label: "Calcolo giorni tra due date", slug: "calcolo-giorni-tra-date" },
           { label: "Scadenze e termini udienze" },
-          { label: "Memorie 183/190 c.p.c." },
+          { label: "Memorie 183/190 c.p.c.", slug: "calcolo-termini-memorie", badge: "Nuovo" },
         ],
       },
       {
@@ -95,7 +95,7 @@ export const NAV_SECTIONS: NavSection[] = [
         tools: [
           { label: "Danno non patrimoniale", slug: "calcolo-danno-non-patrimoniale", badge: "Top" },
           { label: "Danno biologico", slug: "calcolo-danno-biologico" },
-          { label: "Risarcimento INAIL" },
+          { label: "Risarcimento INAIL", slug: "calcolo-risarcimento-inail", badge: "Nuovo" },
         ],
       },
       {

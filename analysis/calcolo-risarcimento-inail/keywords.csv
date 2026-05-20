@@ -1,0 +1,84 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+primary,tabella danno biologico inail,1300,0,1.84,informational,36.06,73.69
+secondary,tabelle danno biologico inail,1300,0,1.84,informational,36.06,73.69
+secondary,danno biologico inail tabelle,1300,0,1.84,informational,36.06,73.69
+secondary,tabelle inail danno biologico,1300,0,1.84,informational,36.06,73.69
+secondary,tabella inail danno biologico,1300,0,1.84,informational,36.06,73.69
+secondary,danno biologico tabella inail,1300,0,1.84,informational,36.06,73.69
+secondary,rendita mensile inail 16 punti,1300,0,1.74,informational,36.06,72.4
+secondary,rendita inail 20 punti,1300,0,1.33,informational,36.06,66.55
+secondary,inail infortunio sul lavoro,1300,5,1.26,informational,34.25,62.18
+longtail,rendita inail,880,0,1.95,commercial,29.66,61.76
+secondary,danno biologico tabelle inail,1300,0,0.91,informational,36.06,59.39
+secondary,infortuni lavoro inail,1300,16,1.26,informational,30.29,54.98
+longtail,danno biologico inail,720,0,1.36,informational,26.83,49.87
+longtail,inail danno biologico,720,0,1.36,informational,26.83,49.87
+longtail,rendita inail 18 punti,590,0,1.09,informational,24.29,42.2
+secondary,tabella inail invalidità permanente,1600,0,0,informational,40.0,40.0
+secondary,tabelle inail invalidità permanente,1600,0,0,informational,40.0,40.0
+secondary,invalidità permanente tabelle inail,1600,0,0,informational,40.0,40.0
+secondary,rendita inail 16 punti,1300,0,0,informational,36.06,36.06
+secondary,rivalutazione rendita inail 2026,1300,0,0,informational,36.06,36.06
+longtail,rivalutazione rendita inail 2025,1000,0,0,informational,31.62,31.62
+longtail,rendita inail a vita,880,0,0,informational,29.66,29.66
+longtail,calcolo rendita inail,880,0,0,informational,29.66,29.66
+longtail,rivalutazione rendita inail 2026 2027,880,0,0,informational,29.66,29.66
+longtail,rendita inail calcolo,880,0,0,informational,29.66,29.66
+longtail,anmil rivalutazione rendita inail 2026,720,0,0,informational,26.83,26.83
+longtail,anmil rivalutazione rendita inail 2025,720,0,0,informational,26.83,26.83
+longtail,indennizzo inail infortunio,210,0,0.98,informational,14.49,24.39
+longtail,aumento rendita inail 2026,480,0,0,informational,21.91,21.91
+longtail,aumento rendita inail 2025,480,0,0,informational,21.91,21.91
+longtail,aumento rendita inail,390,0,0,informational,19.75,19.75
+longtail,rendita inail 16 punti 2025,390,0,0,informational,19.75,19.75
+longtail,tabella indennizzo inail aggiornata,390,0,0,informational,19.75,19.75
+longtail,rendita inail tabelle,320,0,0,informational,17.89,17.89
+longtail,tabella rendita inail,320,0,0,informational,17.89,17.89
+longtail,rendita inail 25 punti,320,0,0,informational,17.89,17.89
+longtail,anmil rivalutazione rendita inail 2025 2026,320,0,0,informational,17.89,17.89
+longtail,indennizzo inail infortunio lavoratore autonomo,90,0,1.38,informational,9.49,17.71
+secondary,calcolo risarcimento inail,140,0,0.50,navigational,11.83,16.63
+longtail,danno biologico inail calcolo,260,0,0,informational,16.12,16.12
+longtail,calcolo danno biologico inail,260,0,0,informational,16.12,16.12
+longtail,danno biologico calcolo inail,260,0,0,informational,16.12,16.12
+longtail,rendita inail quando diventa definitiva,260,0,0,informational,16.12,16.12
+longtail,rivalutazione rendita inail,260,0,0,informational,16.12,16.12
+longtail,rendita inail 17 punti,260,0,0,informational,16.12,16.12
+longtail,rendita inail fa cumulo con pensione inps,260,0,0,informational,16.12,16.12
+longtail,rendita inail per ipoacusia,210,0,0,informational,14.49,14.49
+longtail,rendita inail 16 punti 2024,210,0,0,informational,14.49,14.49
+longtail,rendita inail e pensione di vecchiaia,210,0,0,informational,14.49,14.49
+longtail,rendita inail gennaio 2026,210,0,0,informational,14.49,14.49
+longtail,inail indennizzo infortunio,210,0,0,informational,14.49,14.49
+longtail,indennizzo inail per mesotelioma pleurico professionale,50,0,1.79,informational,7.07,14.33
+longtail,indennizzo inail,170,0,0,informational,13.04,13.04
+longtail,ricorso inail danno biologico,170,0,0,informational,13.04,13.04
+longtail,tabelle inail danno biologico 2025,170,0,0,informational,13.04,13.04
+longtail,liquidazione inail danno biologico,140,0,0,informational,11.83,11.83
+longtail,tabella indennizzo inail aggiornata 2025,140,0,0,informational,11.83,11.83
+longtail,calcolo indennizzo inail,110,0,0,informational,10.49,10.49
+longtail,tabelle danno biologico inail pdf,110,0,0,informational,10.49,10.49
+longtail,tabelle inail danno biologico pdf,90,0,0.07,informational,9.49,10.13
+longtail,indennizzo inail malattia professionale,90,0,0,informational,9.49,9.49
+longtail,malattia professionale inail indennizzo,90,0,0,informational,9.49,9.49
+longtail,tabella indennizzo inail,90,0,0,informational,9.49,9.49
+longtail,indennizzo inail per malattia professionale,90,0,0,transactional,9.49,9.49
+longtail,tabella indennizzo inail aggiornata 2024,90,0,0,informational,9.49,9.49
+longtail,tabelle indennizzo inail,90,0,0,informational,9.49,9.49
+longtail,tabella inail danno biologico 2024,90,0,0,informational,9.49,9.49
+longtail,tabelle inail danno biologico 2024,90,0,0,informational,9.49,9.49
+longtail,revisione inail danno biologico,70,0,0,informational,8.37,8.37
+longtail,tabella inail danno biologico 2025,70,0,0,informational,8.37,8.37
+longtail,indennizzo inail danno biologico,50,0,0,informational,7.07,7.07
+longtail,indennizzo danno biologico inail,50,0,0,informational,7.07,7.07
+longtail,tabelle indennizzo danno biologico inail,50,0,0,informational,7.07,7.07
+longtail,tabella danno biologico inail 2025,50,0,0,informational,7.07,7.07
+longtail,tunnel carpale indennizzo inail,50,0,0,informational,7.07,7.07
+longtail,rivalutazione danno biologico inail 2025,40,0,0,transactional,6.32,6.32
+longtail,tabella inail danno biologico 2023,30,2,0,informational,5.37,5.37
+longtail,cumulo indennizzo inail e risarcimento,20,0,0,informational,4.47,4.47
+longtail,tabella indennizzo in rendita inail,20,0,0,informational,4.47,4.47
+longtail,indennizzo inail 6 punti,20,0,0,informational,4.47,4.47
+longtail,indennizzo inail infortunio sul lavoro,20,49,1.24,informational,2.28,4.12
+longtail,risarcimento danno biologico inail,50,47,0,informational,3.75,3.75
+longtail,tabella indennizzo danno biologico inail,50,47,0,informational,3.75,3.75
