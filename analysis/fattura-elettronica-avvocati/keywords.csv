@@ -1,0 +1,36 @@
+type,keyword,sv,kd,cpc,intent,opportunity_score,opportunity_score_cpc
+longtail,come fare una fattura elettronica,1300,10,7.24,informational,32.45,100.89
+secondary,fattura elettronica andreani,880,12,6.31,informational,26.11,78.03
+longtail,come si fa una fattura elettronica,590,4,4.19,informational,23.32,61.72
+longtail,modello fattura,1300,30,2.44,informational,25.24,56.42
+longtail,td20 quando si usa,480,8,4.28,informational,20.16,53.69
+longtail,fattura elettronica pubblica amministrazione,1300,5,0.65,informational,34.25,51.41
+longtail,fattura forfettario,480,15,4.65,informational,18.62,50.87
+longtail,fatturazione forfettario,480,15,4.65,informational,18.62,50.87
+longtail,esempio fatturazione elettronica,590,15,2.91,informational,20.65,48.8
+secondary,andreani fattura elettronica,320,17,4.91,navigational,14.85,41.23
+primary,fattura elettronica avvocati,170,5,6.65,transactional,12.39,37.59
+secondary,fattura elettronica avvocato,170,5,6.65,transactional,12.39,37.59
+secondary,fatturazione elettronica avvocati,170,5,6.65,commercial,12.39,37.59
+longtail,fattura elettronica pec,390,10,1.69,informational,17.77,35.36
+secondary,avvocati fattura elettronica,170,5,5.06,commercial,12.39,34.7
+longtail,td01,480,8,0.76,informational,20.16,31.55
+secondary,fattura elettronica avvocati regime forfettario,30,27,3.31,informational,4.0,9.84
+longtail,software fattura elettronica avvocati,10,30,22.67,commercial,2.21,9.22
+longtail,fattura elettronica avvocato andreani,140,27,0,informational,8.64,8.64
+longtail,fattura elettronica avvocati andreani,40,27,0,informational,4.62,4.62
+secondary,fattura elettronica avvocati gratis,10,47,1.23,informational,1.68,3.02
+secondary,fattura elettronica gratis avvocati,10,47,1.23,informational,1.68,3.02
+secondary,obbligo fattura elettronica avvocati,10,5,0,informational,3.0,3.0
+secondary,fattura elettronica avvocati gratuito patrocinio,10,5,0,transactional,3.0,3.0
+longtail,guida fattura elettronica avvocati,10,5,0,informational,3.0,3.0
+secondary,fattura elettronica avvocato regime forfettario,10,9,0,informational,2.88,2.88
+longtail,avvocati regime forfettario fattura elettronica,10,9,0,informational,2.88,2.88
+secondary,fattura elettronica avvocati come fare,10,10,0,informational,2.85,2.85
+secondary,come fare fattura elettronica avvocati,10,10,0,informational,2.85,2.85
+secondary,ordine avvocati fattura elettronica,10,10,0,transactional,2.85,2.85
+secondary,fattura elettronica avvocati agenzia entrate,10,10,0,informational,2.85,2.85
+longtail,fattura elettronica aruba avvocati,10,15,0,informational,2.69,2.69
+longtail,fattura elettronica avvocati lextel,10,15,0,informational,2.69,2.69
+longtail,fattura elettronica avvocati milano,10,15,0,transactional,2.69,2.69
+longtail,fattura elettronica avvocati software gratuito,10,30,0,transactional,2.21,2.21

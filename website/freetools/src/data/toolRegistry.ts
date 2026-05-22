@@ -1,4 +1,4 @@
-import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays, Percent, Wallet, FileWarning, Handshake, Gavel, BadgePercent, Lock, ShieldAlert, FileClock, Stethoscope } from "lucide-react";
+import { Scale, Calculator, TrendingUp, HeartPulse, Landmark, FileText, Activity, ArrowRightLeft, Clock, Timer, Building, Hash, CalendarDays, Percent, Wallet, FileWarning, Handshake, Gavel, BadgePercent, Lock, ShieldAlert, FileClock, Stethoscope, FileSpreadsheet } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { ToolCluster, NavGroup } from "@/types/tool";
 
@@ -407,6 +407,19 @@ export const TOOLS: ToolEntry[] = [
     lastModified: "2026-05-20",
     cluster: "danno",
     relatedSlugs: ["calcolo-danno-biologico", "calcolo-rivalutazione-monetaria"],
+  },
+  {
+    slug: "fattura-elettronica-avvocati",
+    title: "Fattura Elettronica Avvocati 2026",
+    navLabel: "Fattura Elettronica",
+    description:
+      "Guida completa alla fattura elettronica per avvocati 2026: calcolatore parcella con anteprima dei campi XML SDI, codici TD/N/MP, regime ordinario e forfettario, gratuito patrocinio (DPR 115/2002), split payment abolito (D.L. 87/2018), tracciato 1.9.1 obbligatorio dal 15/05/2026, sanzioni post-D.Lgs. 87/2024.",
+    icon: FileSpreadsheet,
+    badge: "Nuovo",
+    ready: true,
+    lastModified: "2026-05-22",
+    cluster: "compensi",
+    relatedSlugs: ["calcolo-fattura-avvocato", "scorporo-iva"],
   },
 ];
 

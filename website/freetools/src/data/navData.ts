@@ -53,7 +53,7 @@ export const NAV_SECTIONS: NavSection[] = [
           { label: "Calcolo compenso penale", slug: "compenso-penale", badge: "Nuovo" },
           { label: "Compenso stragiudiziale", slug: "compenso-stragiudiziale", badge: "Nuovo" },
           { label: "Calcolo fattura avvocato", slug: "calcolo-fattura-avvocato" },
-          { label: "Fattura elettronica" },
+          { label: "Fattura elettronica avvocati", slug: "fattura-elettronica-avvocati", badge: "Nuovo" },
           { label: "Tabella parametri forensi" },
         ],
       },
